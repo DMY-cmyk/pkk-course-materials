@@ -75,7 +75,7 @@ fn main() {
         }
         Commands::MasterBundle => {
             println!("Building Master Bundle...");
-            bundle::build_master_bundle(config_path_str, output_root_str);
+            bundle::build_master_bundle(assets_dir_str, output_root_str);
         }
     }
 

@@ -58,6 +58,7 @@ pub fn build_weeks_range(
         .map(|s| s.trim().parse::<u8>().expect("Invalid week number in range"))
         .collect();
     assert_eq!(parts.len(), 2, "Range must be in format 'N-M', e.g. '1-7'");
+    assert!(parts[0] <= parts[1], "Range start must not exceed end: '{}'", range);
     for week in parts[0]..=parts[1] {
         build_week(week, tera, config_path, content_dir, assets_dir, output_root);
     }
@@ -96,10 +97,11 @@ pub(crate) fn make_week_summaries(
     summaries
 }
 
-fn copy_assets(out_dir: &str, assets_dir: &str) {
+pub(crate) fn copy_assets(out_dir: &str, assets_dir: &str) {
     let css_src = Path::new(assets_dir).join("css");
     let css_dst = Path::new(out_dir).join("css");
     fs::create_dir_all(&css_dst).ok();
+    if !css_src.exists() { return; }
     for entry in fs::read_dir(&css_src).expect("Cannot read assets/css") {
         let entry = entry.unwrap();
         let dst = css_dst.join(entry.file_name());
