@@ -1,5 +1,17 @@
+use serde::Serialize;
 use tera::{Context, Tera};
 use crate::config::WeekConfig;
+
+#[derive(Serialize)]
+pub struct WeekSummary {
+    pub week_num: u8,
+    pub week_pad: String,
+    pub title: String,
+    pub phase_key: String,
+    pub phase_label: String,
+    pub company_ticker: String,
+    pub company_name: String,
+}
 
 pub struct DeliverableMeta {
     pub type_key: &'static str,
@@ -58,8 +70,10 @@ pub fn build_context(
     config: &WeekConfig,
     content_html: &str,
     meta: &DeliverableMeta,
-    all_weeks: &[(u8, String)],
+    all_weeks: &[WeekSummary],
 ) -> Context {
+    let pre_done = week.min(7) as u32;
+    let post_done = week.saturating_sub(7) as u32;
     let mut ctx = Context::new();
     ctx.insert("week_num", &week);
     ctx.insert("week_pad", &format!("{:02}", week));
@@ -75,7 +89,10 @@ pub fn build_context(
     ctx.insert("content_html", content_html);
     ctx.insert("deliverable_type", meta.type_key);
     ctx.insert("deliverable_label", meta.label);
-    ctx.insert("deliverables", &DELIVERABLES.iter().map(|d| d.label).collect::<Vec<_>>());
+    ctx.insert("pre_done", &pre_done);
+    ctx.insert("post_done", &post_done);
+    ctx.insert("pre_done_pct", &(pre_done * 100 / 7));
+    ctx.insert("post_done_pct", &(post_done * 100 / 7));
     ctx.insert("all_weeks", all_weeks);
     ctx
 }

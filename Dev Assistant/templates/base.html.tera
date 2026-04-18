@@ -96,7 +96,7 @@
         {% for r in core_readings %}
         <div class="ref-item">
           <div class="ref-dot" style="background:#7c3aed;"></div>
-          <div class="ref-text"><strong>{{ r }}</strong>Core required reading</div>
+          <div class="ref-text"><strong>{{ r }}</strong> · Core required reading</div>
         </div>
         {% endfor %}
         {% for s in supplementary %}
@@ -112,15 +112,13 @@
     <div class="side-card">
       <div class="side-header">📈 Progress Semester</div>
       <div class="side-body">
-        {% set pre_done = [week_num, 7] | min %}
-        {% set post_done = [week_num - 7, 0] | max %}
         <div>
           <div class="prog-label"><span style="font-size:12px;">Pra-UTS (W1–7)</span><span style="font-size:11px;color:#64748b;">{{ pre_done }} / 7</span></div>
-          <div class="prog-bar"><div class="prog-fill prog-pre" style="width:{{ pre_done * 100 / 7 }}%;"></div></div>
+          <div class="prog-bar"><div class="prog-fill prog-pre" style="width:{{ pre_done_pct }}%;"></div></div>
         </div>
         <div>
           <div class="prog-label"><span style="font-size:12px;">Pasca-UTS (W8–14)</span><span style="font-size:11px;color:#64748b;">{{ post_done }} / 7</span></div>
-          <div class="prog-bar"><div class="prog-fill prog-post" style="width:{{ post_done * 100 / 7 }}%;"></div></div>
+          <div class="prog-bar"><div class="prog-fill prog-post" style="width:{{ post_done_pct }}%;"></div></div>
         </div>
       </div>
     </div>
