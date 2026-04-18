@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FASB Conceptual Framework — Presentasi Interaktif</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>body{margin:0;overflow:hidden}html,body,#root{height:100%}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect } = React;
+// no external chart library needed - charts use CSS
+
+const qualCharRadarData = [
+  { char: 'Relevansi', value: 95 }, { char: 'Rep. Tepat', value: 90 },
+  { char: 'Keterbandingan', value: 80 }, { char: 'Keterverifikasian', value: 75 },
+  { char: 'Ketepatan Waktu', value: 70 }, { char: 'Keterpahaman', value: 85 },
+];
+const elementsData = [
+  { name: 'Aset', value: 30, color: '#1e3a8a' },
+  { name: 'Liabilitas', value: 20, color: '#0d9488' },
+  { name: 'Ekuitas', value: 15, color: '#d97706' },
+  { name: 'Pendapatan', value: 15, color: '#059669' },
+  { name: 'Beban', value: 12, color: '#dc2626' },
+  { name: 'Lainnya', value: 8, color: '#7c3aed' },
+];
+const measurementData = [
+  { basis: 'Historical Cost', relevance: 60, reliability: 95 },
+  { basis: 'Fair Value', relevance: 95, reliability: 65 },
+  { basis: 'Net Realizable', relevance: 80, reliability: 75 },
+  { basis: 'Present Value', relevance: 90, reliability: 60 },
+  { basis: 'Current Cost', relevance: 75, reliability: 70 },
+];
+const groupMembers = [
+  { name: 'Ahmad Rizki Pratama', nim: '22010001' },
+  { name: 'Bella Putri Santoso', nim: '22010014' },
+  { name: 'Cahya Nur Hidayat', nim: '22010027' },
+  { name: 'Dinda Ayu Rahayu', nim: '22010039' },
+  { name: 'Eko Fajar Wijaya', nim: '22010052' },
+  { name: 'Fira Amelia Natasya', nim: '22010065' },
+];
+const NAV = 'from-[#0f2557] via-[#1a3a8a] to-[#1e40af]';
+const SLATE = 'from-slate-50 to-blue-50';
+const TOTAL_SLIDES = 30;
+
+const Card = ({ className = '', children }) => (
+  <div className={'rounded-xl border border-gray-200 bg-white ' + className}>{children}</div>
+);
+const Badge = ({ children, color = 'bg-[#1a3a8a]' }) => (
+  <span className={color + ' text-white text-sm px-3 py-1 rounded-full'}>{children}</span>
+);
+const SlideHeader = ({ icon, title, subtitle }) => (
+  <div className="flex items-center gap-3 mb-6 border-b-2 border-[#1a3a8a]/20 pb-4">
+    {icon && <span className="text-4xl flex-shrink-0">{icon}</span>}
+    <div>
+      <h2 className="text-4xl text-[#1a3a8a]">{title}</h2>
+      {subtitle && <p className="text-lg text-gray-500 mt-0.5">{subtitle}</p>}
+    </div>
+  </div>
+);
+const getSectionLabel = (i) => {
+  if (i===0) return 'Cover'; if (i===1) return 'Agenda';
+  if (i>=2&&i<=4) return 'FASB'; if (i>=5&&i<=8) return 'Framework';
+  if (i>=9&&i<=11) return 'Tujuan'; if (i>=12&&i<=16) return 'Kualitas';
+  if (i>=17&&i<=20) return 'Elemen'; if (i>=21&&i<=24) return 'Pengukuran';
+  if (i>=25&&i<=26) return 'Penyajian'; if (i>=27&&i<=28) return 'Global';
+  return 'Kesimpulan';
+};
+
+function Presentation() {
+  const [cur, setCur] = useState(0);
+  const next = () => { if (cur < TOTAL_SLIDES-1) setCur(s => s+1); };
+  const prev = () => { if (cur > 0) setCur(s => s-1); };
+  useEffect(() => {
+    const h = (e) => {
+      if (e.key==='ArrowRight'||e.key==='ArrowDown') next();
+      if (e.key==='ArrowLeft'||e.key==='ArrowUp') prev();
+    };
+    window.addEventListener('keydown', h);
+    return () => window.removeEventListener('keydown', h);
+  }, [cur]);
+  const slide = () => { switch(cur) {
+
+  case 0: return (
+    <div className={"flex flex-col items-center justify-center h-full bg-gradient-to-br " + NAV + " text-white p-12 relative overflow-hidden"}>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"/>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"/>
+      <div className="relative z-10 text-center max-w-5xl">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="h-px w-16 bg-amber-400"/>
+          <Badge color="bg-amber-500">Pelaporan Keuangan Korporat</Badge>
+          <div className="h-px w-16 bg-amber-400"/>
+        </div>
+        <h1 className="text-6xl mb-3 leading-tight"><span className="text-amber-400">FASB</span> Conceptual Framework</h1>
+        <p className="text-2xl opacity-80 mb-2">Kerangka Konseptual Pelaporan Keuangan</p>
+        <div className="h-px w-32 bg-amber-400 mx-auto my-6"/>
+        <div className="grid grid-cols-3 gap-3 mt-6 max-w-3xl mx-auto">
+          {groupMembers.map((m,i) => (
+            <div key={m.nim} className="bg-white/10 rounded-lg px-4 py-2 text-left">
+              <p className="text-amber-300 text-sm">Anggota {i+1}</p>
+              <p className="text-white font-medium text-sm">{m.name}</p>
+              <p className="text-white/60 text-xs">{m.nim}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-6 flex items-center justify-center gap-8 text-white/70 text-sm">
+          <span>📅 April 2026</span><span>⏱ 30 Menit Presentasi</span><span>📊 30 Slide</span>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 1: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="🗂️" title="Agenda Presentasi" subtitle="Struktur materi selama 30 menit"/>
+      <div className="grid grid-cols-2 gap-5 mt-4">
+        {[
+          {no:'01',topic:'Pengantar FASB',sub:'Sejarah, mandat, dan peran FASB',time:'~3 mnt',color:'border-blue-600 bg-blue-50'},
+          {no:'02',topic:'Conceptual Framework',sub:'Definisi, tujuan, dan struktur SFAC',time:'~4 mnt',color:'border-indigo-600 bg-indigo-50'},
+          {no:'03',topic:'Tujuan Pelaporan Keuangan',sub:'Pengguna utama & informasi berguna',time:'~4 mnt',color:'border-teal-600 bg-teal-50'},
+          {no:'04',topic:'Karakteristik Kualitatif',sub:'Fundamental & Peningkat',time:'~5 mnt',color:'border-purple-600 bg-purple-50'},
+          {no:'05',topic:'Elemen Laporan Keuangan',sub:'Aset, Liabilitas, Ekuitas, dll.',time:'~5 mnt',color:'border-amber-600 bg-amber-50'},
+          {no:'06',topic:'Pengakuan & Pengukuran',sub:'Kriteria, dasar pengukuran, modal',time:'~5 mnt',color:'border-rose-600 bg-rose-50'},
+          {no:'07',topic:'Penyajian & Pengungkapan',sub:'Prinsip penyajian informasi',time:'~2 mnt',color:'border-green-600 bg-green-50'},
+          {no:'08',topic:'Isu Global & Kesimpulan',sub:'FASB-IASB, tantangan, penutup',time:'~2 mnt',color:'border-gray-600 bg-gray-50'},
+        ].map(a => (
+          <div key={a.no} className={"flex items-start gap-4 p-4 rounded-xl border-l-4 " + a.color}>
+            <span className="text-3xl font-mono text-gray-300">{a.no}</span>
+            <div className="flex-1"><p className="text-lg text-gray-800">{a.topic}</p><p className="text-sm text-gray-500">{a.sub}</p></div>
+            <span className="text-xs bg-white border border-gray-200 text-gray-500 px-2 py-1 rounded-full whitespace-nowrap">{a.time}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  case 2: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="🏢" title="Apa itu FASB?" subtitle="Financial Accounting Standards Board"/>
+      <div className="grid grid-cols-2 gap-8 mt-2">
+        <div className="space-y-4">
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl">
+            <h3 className="text-xl mb-2 text-amber-400">Definisi</h3>
+            <p className="text-white/90 leading-relaxed">FASB adalah badan swasta independen yang bertanggung jawab menetapkan standar akuntansi dan pelaporan keuangan di Amerika Serikat (GAAP).</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {[{label:'Didirikan',value:'1973'},{label:'Lokasi',value:'Norwalk, CT'},{label:'Status',value:'Independen'},{label:'Diakui SEC',value:'1973'}].map(item => (
+              <div key={item.label} className="bg-blue-50 border border-blue-100 rounded-lg p-3 text-center">
+                <p className="text-2xl text-[#1a3a8a]">{item.value}</p>
+                <p className="text-xs text-gray-500 mt-1">{item.label}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-amber-50 border border-amber-200 p-4 rounded-xl">
+            <p className="text-amber-800 text-sm leading-relaxed">FASB beroperasi di bawah pengawasan <strong>Financial Accounting Foundation (FAF)</strong> dan diakui oleh <strong>Securities and Exchange Commission (SEC)</strong> sebagai penyusun standar untuk perusahaan publik.</p>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-xl text-gray-700 mb-2">Fungsi Utama FASB</h3>
+          {[
+            {icon:'📐',title:'Menetapkan Standar',desc:'Membuat dan memperbarui Generally Accepted Accounting Principles (GAAP)'},
+            {icon:'🔍',title:'Riset & Konsultasi',desc:'Melakukan riset mendalam dan konsultasi publik sebelum menerbitkan standar baru'},
+            {icon:'🤝',title:'Konvergensi Global',desc:'Berkolaborasi dengan IASB untuk mencapai harmonisasi standar akuntansi global'},
+            {icon:'📢',title:'Edukasi Publik',desc:'Memberikan panduan implementasi dan edukasi kepada para pemangku kepentingan'},
+          ].map(f => (
+            <div key={f.title} className="flex items-start gap-3 p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span className="text-2xl">{f.icon}</span>
+              <div><p className="text-gray-800">{f.title}</p><p className="text-sm text-gray-500">{f.desc}</p></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  case 3: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="🕐" title="Sejarah FASB" subtitle="Evolusi standar akuntansi AS"/>
+      <div className="relative mt-2">
+        <div className="absolute left-12 top-0 bottom-0 w-0.5 bg-[#1a3a8a]/20"/>
+        <div className="space-y-4">
+          {[
+            {year:'1934',event:'SEC dibentuk',desc:'Kongres AS mendelegasikan penetapan standar akuntansi kepada SEC',color:'bg-gray-100 border-gray-300'},
+            {year:'1939',event:'CAP Dibentuk',desc:'Committee on Accounting Procedure (CAP) — badan standar akuntansi pertama AS',color:'bg-blue-50 border-blue-200'},
+            {year:'1959',event:'APB Didirikan',desc:'Accounting Principles Board menggantikan CAP, menerbitkan APB Opinions',color:'bg-indigo-50 border-indigo-200'},
+            {year:'1973',event:'FASB Didirikan',desc:'Menggantikan APB; diakui oleh SEC sebagai otoritas standar akuntansi AS',color:'bg-blue-100 border-[#1a3a8a]'},
+            {year:'2002',event:'Norwalk Agreement',desc:'Perjanjian konvergensi FASB-IASB untuk menyatukan GAAP dan IFRS',color:'bg-amber-50 border-amber-300'},
+            {year:'2010',event:'SFAC No. 8',desc:'FASB menerbitkan Conceptual Framework terbaru (Chapter 1 & 3)',color:'bg-teal-50 border-teal-300'},
+          ].map(item => (
+            <div key={item.year} className="flex items-start gap-6 pl-6">
+              <div className="relative z-10 flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#1a3a8a] text-white flex items-center justify-center text-xs text-center leading-tight p-1">{item.year}</div>
+              </div>
+              <div className={"flex-1 border rounded-xl p-4 " + item.color}>
+                <p className="text-gray-800">{item.event}</p>
+                <p className="text-sm text-gray-600 mt-0.5">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  case 4: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="🎯" title="Mandat & Misi FASB" subtitle="Landasan operasional FASB"/>
+      <div className="grid grid-cols-3 gap-6 mt-4">
+        <div className="col-span-3 bg-gradient-to-r from-[#0f2557] to-[#1a3a8a] text-white p-6 rounded-2xl text-center">
+          <p className="text-lg opacity-80 mb-2">Pernyataan Misi FASB</p>
+          <p className="text-xl leading-relaxed italic">"Menetapkan dan meningkatkan standar akuntansi dan pelaporan keuangan untuk memberikan informasi yang berguna kepada investor dan pengguna lainnya dari laporan keuangan."</p>
+        </div>
+        {[
+          {title:'Independensi',icon:'⚖️',color:'bg-blue-50 border-blue-200',points:['Bebas dari tekanan politik','Tidak berpihak pada industri tertentu','Proses due process terbuka']},
+          {title:'Transparansi',icon:'🔎',color:'bg-teal-50 border-teal-200',points:['Konsultasi publik terbuka','Agenda dan rapat publik','Komentar publik diterima']},
+          {title:'Kepentingan Publik',icon:'👥',color:'bg-amber-50 border-amber-200',points:['Melindungi investor','Meningkatkan efisiensi pasar','Mendukung alokasi modal yang optimal']},
+        ].map(m => (
+          <div key={m.title} className={"p-5 rounded-xl border-2 " + m.color}>
+            <div className="text-3xl mb-3">{m.icon}</div>
+            <h3 className="text-xl mb-3 text-gray-800">{m.title}</h3>
+            <ul className="space-y-2">
+              {m.points.map(p => (
+                <li key={p} className="flex items-start gap-2 text-sm text-gray-600">
+                  <span className="text-green-500 flex-shrink-0">✅</span>{p}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  case 5: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="📚" title="Apa itu Conceptual Framework?" subtitle="Kerangka Konseptual Pelaporan Keuangan"/>
+      <div className="grid grid-cols-2 gap-8 mt-2">
+        <div className="space-y-5">
+          <div className="bg-white border border-blue-100 p-5 rounded-xl shadow-sm">
+            <h3 className="text-lg text-[#1a3a8a] mb-2">Definisi</h3>
+            <p className="text-gray-700 leading-relaxed text-sm">Conceptual Framework adalah <strong>sistem koheren dari tujuan dan konsep-konsep dasar</strong> yang saling berkaitan, yang mendasari pengembangan standar akuntansi yang konsisten dan yang menentukan sifat, fungsi, serta keterbatasan akuntansi keuangan dan laporan keuangan.</p>
+          </div>
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl">
+            <h3 className="text-lg text-amber-400 mb-3">Framework bukan standar, tapi:</h3>
+            <ul className="space-y-2 text-sm">
+              {['Panduan bagi FASB dalam menyusun standar baru','Referensi ketika tidak ada standar spesifik','Dasar untuk memahami dan menginterpretasi standar yang ada','Alat untuk menyelesaikan masalah akuntansi baru'].map((item,i) => (
+                <li key={i} className="flex items-start gap-2"><span className="text-amber-400 flex-shrink-0">→</span>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-lg text-gray-700">Analogi: Framework sebagai "Konstitusi"</h3>
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              {[
+                {label:'Konstitusi Negara',value:'Conceptual Framework'},
+                {label:'Undang-undang',value:'Standar FASB (ASC)'},
+                {label:'Peraturan Pemerintah',value:'Interpretasi & Panduan'},
+                {label:'Praktik Umum',value:'Kebijakan Akuntansi'},
+              ].map(r => (
+                <div key={r.label} className="text-center">
+                  <div className="bg-gray-100 rounded-lg p-2 mb-1 text-gray-700">{r.label}</div>
+                  <div className="text-xs text-gray-400">≈</div>
+                  <div className="bg-blue-100 rounded-lg p-2 text-[#1a3a8a]">{r.value}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 p-4 rounded-xl text-sm text-amber-800"><strong>Penting:</strong> Jika terjadi konflik antara Conceptual Framework dengan standar akuntansi spesifik, maka <strong>standar spesifik yang berlaku</strong>, bukan framework.</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 6: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="🎯" title="Tujuan Conceptual Framework" subtitle="Mengapa framework ini diperlukan?"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-4">
+          {[
+            {no:'1',title:'Panduan bagi FASB',desc:'Menyediakan arah yang jelas bagi FASB dalam mengembangkan standar akuntansi yang baru dan mengevaluasi standar yang sudah ada.',color:'border-blue-500 bg-blue-50'},
+            {no:'2',title:'Konsistensi Standar',desc:'Memastikan standar-standar yang ditetapkan FASB saling konsisten satu sama lain dan didasarkan pada prinsip-prinsip yang sama.',color:'border-teal-500 bg-teal-50'},
+            {no:'3',title:'Penyelesaian Masalah Baru',desc:'Memberikan dasar untuk menangani transaksi dan peristiwa baru yang belum diatur oleh standar yang ada.',color:'border-purple-500 bg-purple-50'},
+          ].map(t => (
+            <div key={t.no} className={"flex gap-4 p-4 rounded-xl border-l-4 " + t.color}>
+              <span className="text-3xl text-gray-200 font-mono">{t.no}</span>
+              <div><p className="text-gray-800 mb-1">{t.title}</p><p className="text-sm text-gray-600">{t.desc}</p></div>
+            </div>
+          ))}
+        </div>
+        <div className="space-y-4">
+          {[
+            {no:'4',title:'Pemahaman Penyusun Laporan',desc:'Membantu penyusun laporan keuangan memahami tujuan dan sifat laporan keuangan sehingga dapat membuat kebijakan akuntansi yang tepat.',color:'border-amber-500 bg-amber-50'},
+            {no:'5',title:'Kepercayaan Publik',desc:'Meningkatkan kepercayaan publik terhadap proses penetapan standar akuntansi dengan menunjukkan bahwa standar didasarkan pada logika yang koheren.',color:'border-rose-500 bg-rose-50'},
+            {no:'6',title:'Pendidikan Akuntansi',desc:'Memfasilitasi pemahaman yang lebih baik tentang standar GAAP bagi para mahasiswa, praktisi, dan pengguna laporan keuangan.',color:'border-green-500 bg-green-50'},
+          ].map(t => (
+            <div key={t.no} className={"flex gap-4 p-4 rounded-xl border-l-4 " + t.color}>
+              <span className="text-3xl text-gray-200 font-mono">{t.no}</span>
+              <div><p className="text-gray-800 mb-1">{t.title}</p><p className="text-sm text-gray-600">{t.desc}</p></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  case 7: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="🗂️" title="Struktur SFAC" subtitle="Statements of Financial Accounting Concepts"/>
+      <div className="grid grid-cols-2 gap-4 mt-2">
+        {[
+          {no:'SFAC 1',year:'1978',title:'Tujuan Pelaporan Keuangan (Digantikan SFAC 8)',status:'Digantikan',color:'bg-gray-100 border-gray-300 opacity-60'},
+          {no:'SFAC 2',year:'1980',title:'Karakteristik Kualitatif Informasi Akuntansi (Digantikan SFAC 8)',status:'Digantikan',color:'bg-gray-100 border-gray-300 opacity-60'},
+          {no:'SFAC 3',year:'1980',title:'Elemen Laporan Keuangan Entitas Bisnis (Digantikan SFAC 6)',status:'Digantikan',color:'bg-gray-100 border-gray-300 opacity-60'},
+          {no:'SFAC 4',year:'1980',title:'Tujuan Pelaporan oleh Entitas Non-Laba',status:'Berlaku',color:'bg-blue-50 border-blue-200'},
+          {no:'SFAC 5',year:'1984',title:'Pengakuan dan Pengukuran dalam Laporan Keuangan Entitas Bisnis',status:'Berlaku',color:'bg-teal-50 border-teal-200'},
+          {no:'SFAC 6',year:'1985',title:'Elemen Laporan Keuangan (Menggantikan SFAC 3)',status:'Berlaku',color:'bg-teal-50 border-teal-200'},
+          {no:'SFAC 7',year:'2000',title:'Menggunakan Informasi Arus Kas dan Nilai Kini',status:'Berlaku',color:'bg-teal-50 border-teal-200'},
+          {no:'SFAC 8',year:'2010',title:'Conceptual Framework for Financial Reporting (Chapter 1, 3 & terbaru)',status:'Terbaru',color:'bg-blue-100 border-[#1a3a8a]'},
+        ].map(sfac => (
+          <div key={sfac.no} className={"flex items-start gap-3 p-3 rounded-xl border " + sfac.color}>
+            <div className="flex-shrink-0">
+              <span className="text-sm font-mono text-[#1a3a8a] bg-white px-2 py-1 rounded border border-blue-200">{sfac.no}</span>
+              <p className="text-xs text-gray-400 text-center mt-1">{sfac.year}</p>
+            </div>
+            <div className="flex-1"><p className="text-sm text-gray-700 leading-snug">{sfac.title}</p></div>
+            <span className={"text-xs px-2 py-0.5 rounded-full flex-shrink-0 " + (sfac.status==='Terbaru'?'bg-green-100 text-green-700':sfac.status==='Berlaku'?'bg-blue-100 text-blue-700':'bg-gray-200 text-gray-500')}>{sfac.status}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  case 8: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="🗂️" title="Hierarki Conceptual Framework" subtitle="Tiga level konseptual FASB"/>
+      <div className="flex flex-col items-center gap-3 mt-4">
+        {[
+          {level:'Level 1 — WHY',title:'Tujuan Pelaporan Keuangan',desc:'Memberikan informasi keuangan yang berguna untuk pengambilan keputusan',width:'w-2/5',color:'bg-[#0f2557] text-white'},
+          {level:'Level 2 — WHAT',title:'Karakteristik Kualitatif & Elemen Laporan Keuangan',desc:'Apa jenis informasi yang harus ada dan bagaimana kualitasnya',width:'w-3/5',color:'bg-[#1a3a8a] text-white'},
+          {level:'Level 3 — HOW',title:'Konsep Pengakuan, Pengukuran, & Penyajian',desc:'Bagaimana mengimplementasikan tujuan dan karakteristik dalam laporan keuangan',width:'w-4/5',color:'bg-[#1e40af] text-white'},
+        ].map(l => (
+          <div key={l.level} className={l.width + " " + l.color + " rounded-xl p-5 text-center shadow-lg"}>
+            <Badge color="bg-white/20">{l.level}</Badge>
+            <p className="mt-2 text-lg">{l.title}</p>
+            <p className="text-sm opacity-80 mt-1">{l.desc}</p>
+          </div>
+        ))}
+        <div className="w-full bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-center gap-4 mt-2">
+          <span className="text-3xl">💡</span>
+          <p className="text-amber-800 text-sm">SFAC No. 8 (2010) mengintegrasikan Level 1 (Chapter 1) dan Level 2 Karakteristik Kualitatif (Chapter 3) dalam satu pernyataan. Update terbaru menambahkan Chapter 4–8 yang mencakup keseluruhan framework.</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 9: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="📄" title="Tujuan Pelaporan Keuangan" subtitle="SFAC 8 — Chapter 1 (OB1–OB21)"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-4">
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl">
+            <h3 className="text-amber-400 text-lg mb-2">Tujuan Utama (OB2)</h3>
+            <p className="text-white/90 leading-relaxed text-sm">"Tujuan umum pelaporan keuangan adalah menyediakan informasi keuangan tentang entitas pelapor yang berguna bagi <strong className="text-amber-300">investor, pemberi pinjaman, dan kreditor lainnya</strong> yang ada maupun potensial dalam membuat keputusan tentang penyediaan sumber daya kepada entitas."</p>
+            <p className="text-xs text-white/50 mt-2">— SFAC 8, OB2</p>
+          </div>
+          <div className="bg-white border border-gray-100 p-4 rounded-xl">
+            <h4 className="text-gray-700 mb-3">Keputusan yang Difasilitasi:</h4>
+            <ul className="space-y-2 text-sm text-gray-600">
+              {['Membeli, menjual, atau menahan instrumen ekuitas dan utang','Memberikan atau menyelesaikan pinjaman dan bentuk kredit lainnya','Menggunakan hak suara terkait tindakan manajemen'].map((d,i) => (
+                <li key={i} className="flex items-start gap-2"><span className="text-green-500 flex-shrink-0">✅</span>{d}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-white border border-gray-100 p-4 rounded-xl">
+            <h4 className="text-gray-700 mb-3">Informasi yang Harus Disediakan:</h4>
+            <div className="space-y-3">
+              {[
+                {icon:'💰',title:'Sumber Daya Ekonomi',desc:'Aset, liabilitas, dan ekuitas entitas'},
+                {icon:'📊',title:'Perubahan Sumber Daya',desc:'Kinerja keuangan dan arus kas entitas'},
+                {icon:'🔮',title:'Arus Kas Masa Depan',desc:'Prospek penerimaan kas di masa mendatang'},
+              ].map(info => (
+                <div key={info.title} className="flex items-start gap-3 bg-blue-50 rounded-lg p-3">
+                  <span className="text-xl">{info.icon}</span>
+                  <div><p className="text-sm text-gray-800">{info.title}</p><p className="text-xs text-gray-500">{info.desc}</p></div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 p-4 rounded-xl text-sm text-amber-800"><strong>Catatan:</strong> Manajemen bertanggung jawab atas laporan keuangan, sedangkan FASB menetapkan standar tentang bagaimana laporan tersebut harus disajikan.</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 10: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="👥" title="Pengguna Utama (Primary Users)" subtitle="SFAC 8 — Chapter 1 (OB5–OB10)"/>
+      <div className="grid grid-cols-3 gap-5 mt-4">
+        {[
+          {icon:'📈',title:'Investor (Existing & Potential)',desc:'Penyedia modal ekuitas yang berisiko — mereka membutuhkan informasi untuk memutuskan apakah akan membeli, menahan, atau menjual saham.',needs:['Imbal hasil investasi','Kemampuan bayar dividen','Pertumbuhan nilai saham'],color:'bg-blue-50 border-blue-200'},
+          {icon:'🏦',title:'Pemberi Pinjaman (Lenders)',desc:'Bank dan institusi keuangan yang memberikan kredit kepada entitas — membutuhkan informasi tentang kemampuan membayar kembali utang.',needs:['Likuiditas entitas','Kemampuan bayar pokok & bunga','Jaminan (collateral)'],color:'bg-teal-50 border-teal-200'},
+          {icon:'💼',title:'Kreditor Lainnya',desc:'Pemasok dan pihak lain yang memberikan kredit perdagangan kepada entitas — membutuhkan kepastian pembayaran.',needs:['Arus kas operasional','Kemampuan bayar utang dagang','Solvabilitas jangka pendek'],color:'bg-purple-50 border-purple-200'},
+        ].map(u => (
+          <div key={u.title} className={"p-5 rounded-xl border-2 " + u.color}>
+            <div className="text-4xl mb-3">{u.icon}</div>
+            <h3 className="text-lg mb-2 text-gray-800">{u.title}</h3>
+            <p className="text-sm text-gray-600 mb-4 leading-relaxed">{u.desc}</p>
+            <div className="bg-white rounded-lg p-3 border border-gray-100">
+              <p className="text-xs text-gray-500 mb-2">Kebutuhan Informasi:</p>
+              <ul className="space-y-1">
+                {u.needs.map(n => (
+                  <li key={n} className="text-sm text-gray-700 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#1a3a8a] flex-shrink-0"/>
+                    {n}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-5 bg-blue-50 border border-[#1a3a8a]/20 rounded-xl p-4 flex items-start gap-3">
+        <span className="flex-shrink-0 mt-0.5">⚠️</span>
+        <p className="text-sm text-gray-600"><strong>Bukan pengguna utama:</strong> Manajemen, regulator (SEC, pajak), dan masyarakat umum bukan target utama laporan keuangan umum — meskipun mereka juga menggunakannya. Mereka dapat memperoleh informasi secara langsung, berbeda dengan investor/kreditor.</p>
+      </div>
+    </div>
+  );
+
+  case 11: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="💡" title="Informasi Keuangan yang Berguna" subtitle="SFAC 8 — Chapter 1 (OB11–OB21)"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-4">
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 className="text-lg text-[#1a3a8a] mb-3">Informasi Sumber Daya Ekonomi</h3>
+            <p className="text-sm text-gray-600 mb-3">Informasi tentang jenis dan jumlah sumber daya ekonomi entitas (aset) dan klaim atas sumber daya tersebut (liabilitas dan ekuitas) membantu pengguna mengidentifikasi kekuatan dan kelemahan keuangan.</p>
+            <div className="grid grid-cols-3 gap-2 text-center text-xs">
+              {['Aset','Liabilitas','Ekuitas'].map(e => (
+                <div key={e} className="bg-blue-50 rounded-lg p-2 text-[#1a3a8a]">{e}</div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 className="text-lg text-[#1a3a8a] mb-3">Kinerja Keuangan</h3>
+            <p className="text-sm text-gray-600 mb-3">Informasi tentang kinerja keuangan entitas selama periode tertentu membantu pengguna memahami return on investment.</p>
+            <div className="grid grid-cols-2 gap-2 text-xs">
+              {[{label:'Berbasis Akrual',desc:'Mencerminkan dampak ekonomi'},{label:'Berbasis Kas',desc:'Arus kas aktual'}].map(e => (
+                <div key={e.label} className="bg-teal-50 rounded-lg p-2">
+                  <p className="text-teal-700">{e.label}</p>
+                  <p className="text-gray-500">{e.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-[#0f2557] text-white rounded-xl p-5">
+            <h3 className="text-amber-400 text-lg mb-3">Akuntansi Berbasis Akrual (OB17)</h3>
+            <p className="text-sm text-white/90 mb-3 leading-relaxed">Akrual mencerminkan dampak transaksi pada sumber daya entitas <strong>pada periode terjadinya</strong>, bukan ketika penerimaan/pengeluaran kas terjadi — memberikan gambaran yang lebih baik tentang kinerja masa lalu dan prospek arus kas masa depan.</p>
+            <div className="bg-white/10 rounded-lg p-3 text-sm">
+              <p className="text-amber-300 mb-1">Contoh:</p>
+              <p className="text-white/80">Pendapatan diakui saat diperoleh, bukan saat kas diterima. Beban diakui saat terjadi, bukan saat kas dibayar.</p>
+            </div>
+          </div>
+          <div className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <h3 className="text-lg text-gray-700 mb-3">Pelaporan Arus Kas (OB20–OB21)</h3>
+            <p className="text-sm text-gray-600">Informasi arus kas membantu pengguna memahami operasi entitas, mengevaluasi aktivitas pendanaan dan investasi, serta menilai likuiditas dan solvabilitas entitas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 12: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="👁️" title="Karakteristik Kualitatif" subtitle="SFAC 8 — Chapter 3 (QC1–QC39)"/>
+      <div className="flex flex-col items-center mt-2">
+        <div className="w-full max-w-4xl">
+          <div className="bg-[#0f2557] rounded-2xl p-5 text-white text-center mb-4">
+            <p className="text-amber-400 text-sm">Tujuan</p>
+            <p className="text-lg">Informasi Keuangan yang Berguna (Useful Financial Information)</p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-blue-50 border-2 border-blue-400 rounded-2xl p-5">
+              <p className="text-center text-[#1a3a8a] mb-3">Karakteristik Kualitatif <strong>Fundamental</strong></p>
+              <div className="grid grid-cols-2 gap-3">
+                {[{name:'Relevansi',sub:'Relevance',color:'bg-blue-100'},{name:'Representasi Tepat',sub:'Faithful Representation',color:'bg-indigo-100'}].map(c => (
+                  <div key={c.name} className={"rounded-lg p-3 text-center " + c.color}>
+                    <p className="text-gray-800">{c.name}</p>
+                    <p className="text-xs text-gray-500">{c.sub}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-gray-500 text-center mt-3">↑ Membuat informasi menjadi berguna</p>
+            </div>
+            <div className="bg-teal-50 border-2 border-teal-400 rounded-2xl p-5">
+              <p className="text-center text-teal-700 mb-3">Karakteristik Kualitatif <strong>Peningkat</strong></p>
+              <div className="grid grid-cols-2 gap-2">
+                {[{name:'Keterbandingan',sub:'Comparability'},{name:'Keterverifikasian',sub:'Verifiability'},{name:'Ketepatan Waktu',sub:'Timeliness'},{name:'Keterpahaman',sub:'Understandability'}].map(c => (
+                  <div key={c.name} className="bg-teal-100 rounded-lg p-2 text-center">
+                    <p className="text-teal-800 text-sm">{c.name}</p>
+                    <p className="text-xs text-gray-500">{c.sub}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-gray-500 text-center mt-3">↑ Meningkatkan kegunaan informasi</p>
+            </div>
+          </div>
+          <div className="mt-4 bg-amber-50 border border-amber-200 rounded-xl p-3 flex items-center gap-3">
+            <span className="text-2xl">⚠️</span>
+            <div className="text-sm"><strong>Kendala Biaya (Cost Constraint):</strong> Manfaat yang diperoleh dari informasi harus melebihi biaya penyediaannya — membatasi semua karakteristik di atas.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 13: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="🎯" title="Relevansi (Relevance)" subtitle="Karakteristik Fundamental Pertama — QC6–QC11"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl mb-5">
+            <h3 className="text-amber-400 text-lg mb-2">Definisi (QC6)</h3>
+            <p className="text-white/90 text-sm leading-relaxed">Informasi keuangan dikatakan relevan jika mampu membuat <strong className="text-amber-300">perbedaan dalam keputusan</strong> yang dibuat oleh pengguna. Informasi yang tidak relevan tidak akan membuat perbedaan.</p>
+          </div>
+          <div className="space-y-3">
+            {[
+              {title:'Nilai Prediktif (QC8)',color:'bg-blue-50 border-blue-200',desc:'Informasi dapat digunakan sebagai masukan dalam proses memprediksi hasil di masa depan.',example:'Tren pendapatan historis → memprediksi pendapatan masa depan'},
+              {title:'Nilai Konfirmasi (QC9)',color:'bg-purple-50 border-purple-200',desc:'Informasi memberikan umpan balik tentang evaluasi sebelumnya (mengonfirmasi atau mengubah).',example:'Laba aktual vs perkiraan analis → konfirmasi/koreksi prediksi'},
+            ].map(v => (
+              <div key={v.title} className={"p-4 rounded-xl border " + v.color}>
+                <p className="text-gray-800 mb-1">{v.title}</p>
+                <p className="text-sm text-gray-600 mb-2">{v.desc}</p>
+                <div className="bg-white rounded-lg p-2 text-xs text-gray-500"><span className="text-green-600">Contoh: </span>{v.example}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm mb-4">
+            <h3 className="text-gray-700 mb-3">Materialitas (QC11)</h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">Informasi bersifat material jika penghilangan atau salah saji dapat mempengaruhi keputusan pengguna. Materialitas adalah aspek spesifik entitas dari relevansi.</p>
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-800"><strong>Rumus sederhana:</strong><p className="mt-1 font-mono text-center">Material = Dampak pada Keputusan Pengguna</p></div>
+          </div>
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 className="text-gray-700 mb-3">Hubungan Nilai Prediktif & Konfirmasi</h3>
+            <div className="flex items-center gap-3 text-center text-sm">
+              <div className="flex-1 bg-blue-100 rounded-lg p-3"><p className="text-blue-700">Nilai Prediktif</p><p className="text-xs text-gray-500 mt-1">Masa depan</p></div>
+              <div className="text-gray-400">⟺</div>
+              <div className="flex-1 bg-purple-100 rounded-lg p-3"><p className="text-purple-700">Nilai Konfirmasi</p><p className="text-xs text-gray-500 mt-1">Masa lalu</p></div>
+            </div>
+            <p className="text-xs text-gray-500 text-center mt-2">Keduanya saling melengkapi dan seringkali saling berkaitan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 14: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="✅" title="Representasi Tepat (Faithful Representation)" subtitle="Karakteristik Fundamental Kedua — QC12–QC16"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl mb-5">
+            <h3 className="text-amber-400 text-lg mb-2">Definisi (QC12)</h3>
+            <p className="text-white/90 text-sm leading-relaxed">Informasi keuangan harus merepresentasikan <strong className="text-amber-300">fenomena ekonomi yang sebenarnya</strong> yang diklaim untuk direpresentasikan. Representasi yang sempurna akan bersifat lengkap, netral, dan bebas dari kesalahan material.</p>
+          </div>
+          <div className="space-y-3">
+            {[
+              {title:'1. Kelengkapan (Completeness) — QC13',desc:'Semua informasi yang diperlukan agar pengguna dapat memahami fenomena yang digambarkan harus disertakan, termasuk semua deskripsi dan penjelasan yang diperlukan.',icon:'✅'},
+              {title:'2. Kenetralan (Neutrality) — QC14',desc:'Tidak ada bias dalam pemilihan atau penyajian informasi keuangan. Informasi tidak dipilih atau disajikan untuk memengaruhi perilaku pengguna ke arah tertentu.',icon:'⚖️'},
+              {title:'3. Bebas dari Kesalahan (Free from Error) — QC15',desc:'Tidak ada kesalahan atau kelalaian dalam deskripsi fenomena dan proses yang digunakan untuk menghasilkan informasi yang dilaporkan.',icon:'🎯'},
+            ].map(item => (
+              <div key={item.title} className="flex gap-3 p-3 bg-slate-50 border border-slate-100 rounded-xl">
+                <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                <div><p className="text-gray-800 text-sm mb-1">{item.title}</p><p className="text-xs text-gray-500">{item.desc}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+            <h3 className="text-gray-700 mb-3">Relevansi vs. Representasi Tepat</h3>
+            <div className="space-y-3 text-sm">
+              <div className="bg-white rounded-lg p-3 border"><p className="text-[#1a3a8a] mb-1">Relevansi</p><p className="text-gray-500">Informasi berdampak pada keputusan → nilai prediktif/konfirmasi</p></div>
+              <div className="text-center text-gray-400">+</div>
+              <div className="bg-white rounded-lg p-3 border"><p className="text-teal-700 mb-1">Representasi Tepat</p><p className="text-gray-500">Informasi menggambarkan kenyataan dengan benar</p></div>
+              <div className="text-center text-gray-400">=</div>
+              <div className="bg-green-100 rounded-lg p-3 text-center"><p className="text-green-700">Informasi yang Berguna Bagi Pengguna</p></div>
+            </div>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800"><strong>Catatan Penting (QC16):</strong><p className="mt-1">Representasi tepat tidak berarti informasi harus akurat secara sempurna. Estimasi dapat dipresentasikan secara tepat jika dijelaskan dengan jelas bahwa itu adalah estimasi dan ketidakpastiannya diungkapkan.</p></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 15: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="📈" title="Karakteristik Kualitatif Peningkat" subtitle="Enhancing Qualitative Characteristics — QC19–QC34"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-3">
+          {[
+            {name:'Keterbandingan (Comparability)',code:'QC21–QC25',desc:'Pengguna dapat mengidentifikasi dan memahami persamaan dan perbedaan antar item. Termasuk konsistensi penerapan metode akuntansi.',color:'border-blue-400 bg-blue-50',badge:'bg-blue-100 text-blue-700'},
+            {name:'Keterverifikasian (Verifiability)',code:'QC26–QC28',desc:'Pengamat independen yang berpengetahuan berbeda dapat mencapai konsensus bahwa representasi tertentu adalah faithful.',color:'border-purple-400 bg-purple-50',badge:'bg-purple-100 text-purple-700'},
+            {name:'Ketepatan Waktu (Timeliness)',code:'QC29',desc:'Informasi tersedia bagi pengambil keputusan sebelum kehilangan kapasitasnya untuk mempengaruhi keputusan.',color:'border-amber-400 bg-amber-50',badge:'bg-amber-100 text-amber-700'},
+            {name:'Keterpahaman (Understandability)',code:'QC30–QC32',desc:'Informasi disajikan dan diklasifikasikan dengan jelas dan ringkas. Pengguna diasumsikan memiliki pengetahuan bisnis dan keuangan yang memadai.',color:'border-green-400 bg-green-50',badge:'bg-green-100 text-green-700'},
+          ].map(c => (
+            <div key={c.name} className={"p-4 rounded-xl border-l-4 " + c.color}>
+              <div className="flex items-center justify-between mb-1">
+                <p className="text-gray-800 text-sm">{c.name}</p>
+                <span className={"text-xs px-2 py-0.5 rounded-full " + c.badge}>{c.code}</span>
+              </div>
+              <p className="text-xs text-gray-600">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+        <div>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 mb-4">
+            <p className="text-xs text-gray-500 mb-2 text-center">Skor Karakteristik Peningkat</p>
+            <div className="space-y-2">
+              {qualCharRadarData.map(d => (
+                <div key={d.char} className="flex items-center gap-2 text-xs">
+                  <span className="w-28 text-gray-600 flex-shrink-0 text-right">{d.char}</span>
+                  <div className="flex-1 bg-gray-100 rounded-full h-3 overflow-hidden">
+                    <div className="bg-[#1a3a8a] h-3 rounded-full" style={{width: d.value + '%'}}/>
+                  </div>
+                  <span className="w-8 text-gray-500 text-right">{d.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-[#0f2557] text-white rounded-xl p-4 text-sm">
+            <h4 className="text-amber-400 mb-2">Perbedaan dengan Karakteristik Fundamental</h4>
+            <ul className="space-y-1.5 text-white/80">
+              <li>• Karakteristik peningkat <strong className="text-white">tidak dapat membuat</strong> informasi yang tidak relevan atau tidak merepresentasikan tepat menjadi berguna</li>
+              <li>• Mereka hanya <strong className="text-white">meningkatkan kegunaan</strong> informasi yang sudah memenuhi karakteristik fundamental</li>
+              <li>• Tidak ada urutan prioritas yang tetap di antara keempat karakteristik peningkat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 16: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="⚖️" title="Kendala Biaya (Cost Constraint)" subtitle="SFAC 8 — Chapter 3 (QC35–QC39)"/>
+      <div className="grid grid-cols-2 gap-8 mt-4">
+        <div>
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl mb-5">
+            <h3 className="text-amber-400 text-lg mb-2">Konsep Dasar</h3>
+            <p className="text-sm text-white/90 leading-relaxed">Biaya merupakan kendala universal dalam penyediaan informasi keuangan. FASB harus mempertimbangkan apakah manfaat informasi yang disediakan oleh standar tertentu kemungkinan akan melebihi biaya yang diperlukan untuk menyediakan dan menggunakan informasi tersebut.</p>
+          </div>
+          <div className="space-y-3">
+            <h4 className="text-gray-700">Jenis Biaya Pelaporan:</h4>
+            {[
+              {type:'Biaya Pengumpulan & Pemrosesan',desc:'Biaya mengumpulkan data dan memproses informasi keuangan'},
+              {type:'Biaya Verifikasi',desc:'Biaya audit dan verifikasi informasi yang disajikan'},
+              {type:'Biaya Penyebaran',desc:'Biaya menyebarkan informasi kepada pengguna'},
+              {type:'Biaya Analisis & Interpretasi',desc:'Biaya yang ditanggung pengguna untuk menganalisis informasi'},
+              {type:'Biaya Litigasi',desc:'Potensi biaya hukum dari pelaporan yang tidak tepat'},
+            ].map(b => (
+              <div key={b.type} className="flex items-start gap-2 text-sm bg-red-50 border border-red-100 rounded-lg p-3">
+                <span className="text-red-500">💸</span>
+                <div><p className="text-gray-800">{b.type}</p><p className="text-gray-500 text-xs">{b.desc}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+            <h4 className="text-green-700 mb-3">Manfaat Pelaporan Keuangan:</h4>
+            <ul className="space-y-2 text-sm text-gray-600">
+              {['Keputusan alokasi modal yang lebih baik','Pasar modal yang lebih efisien','Biaya modal yang lebih rendah','Peningkatan akuntabilitas manajemen','Pengurangan asimetri informasi'].map((m,i) => (
+                <li key={i} className="flex items-start gap-2"><span className="text-green-500">✓</span>{m}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-5">
+            <h4 className="text-amber-800 mb-2">⚖️ Analisis Biaya-Manfaat</h4>
+            <div className="flex items-center justify-center gap-4 my-3">
+              <div className="text-center bg-red-100 rounded-xl p-3 flex-1"><p className="text-2xl">💰</p><p className="text-sm text-red-700">Biaya</p></div>
+              <div className="text-2xl text-gray-400">&lt;</div>
+              <div className="text-center bg-green-100 rounded-xl p-3 flex-1"><p className="text-2xl">📊</p><p className="text-sm text-green-700">Manfaat</p></div>
+            </div>
+            <p className="text-xs text-amber-700 text-center">Standar hanya layak ditetapkan jika manfaat &gt; biaya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 17: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="📄" title="Elemen Laporan Keuangan" subtitle="SFAC 6 — 10 Elemen Utama"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 mb-4">
+            <p className="text-xs text-gray-500 text-center mb-2">Distribusi Elemen Laporan Keuangan</p>
+            <div className="space-y-1.5">
+              {elementsData.map(d => (
+                <div key={d.name} className="flex items-center gap-2 text-xs">
+                  <div className="w-3 h-3 rounded-full flex-shrink-0" style={{background: d.color}}/>
+                  <span className="w-20 text-gray-700">{d.name}</span>
+                  <div className="flex-1 bg-gray-100 rounded-full h-3 overflow-hidden">
+                    <div className="h-3 rounded-full" style={{width: d.value * 3 + '%', background: d.color}}/>
+                  </div>
+                  <span className="w-6 text-gray-500 text-right">{d.value}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-[#0f2557] text-white rounded-xl p-4 text-sm">
+            <p className="text-amber-400 mb-2">Klasifikasi Elemen</p>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-white/10 rounded-lg p-2"><p className="text-xs text-white/70">Neraca (Balance Sheet)</p><p>Aset, Liabilitas, Ekuitas</p></div>
+              <div className="bg-white/10 rounded-lg p-2"><p className="text-xs text-white/70">Laba Rugi (Income Statement)</p><p>Pendapatan, Beban, Untung, Rugi</p></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="grid grid-cols-1 gap-3">
+            {[
+              {no:1,name:'Aset',en:'Assets',desc:'Sumber daya ekonomi masa kini yang dikendalikan entitas sebagai akibat peristiwa masa lalu',color:'bg-blue-50 border-blue-200'},
+              {no:2,name:'Liabilitas',en:'Liabilities',desc:'Kewajiban masa kini entitas untuk mentransfer sumber daya ekonomi sebagai akibat peristiwa masa lalu',color:'bg-red-50 border-red-200'},
+              {no:3,name:'Ekuitas',en:'Equity',desc:'Kepentingan residual dalam aset setelah dikurangi semua liabilitas',color:'bg-green-50 border-green-200'},
+              {no:4,name:'Pendapatan',en:'Revenues',desc:'Arus masuk atau peningkatan aset atau penurunan liabilitas dari kegiatan utama entitas',color:'bg-emerald-50 border-emerald-200'},
+              {no:5,name:'Beban',en:'Expenses',desc:'Arus keluar atau penggunaan aset atau penambahan liabilitas dari kegiatan utama entitas',color:'bg-orange-50 border-orange-200'},
+            ].map(e => (
+              <div key={e.no} className={"flex items-start gap-3 p-3 rounded-xl border " + e.color}>
+                <span className="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-sm text-gray-600 flex-shrink-0">{e.no}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <p className="text-gray-800 text-sm">{e.name}</p>
+                    <span className="text-xs text-gray-400 italic">({e.en})</span>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-0.5 leading-snug">{e.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 18: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="💼" title="Aset & Liabilitas" subtitle="Dua Elemen Kunci Neraca — SFAC 6"/>
+      <div className="grid grid-cols-2 gap-6 mt-4">
+        <div className="space-y-4">
+          <div className="bg-blue-700 text-white rounded-2xl p-5">
+            <h3 className="text-xl mb-2 text-blue-200">ASET (Assets)</h3>
+            <p className="text-sm leading-relaxed opacity-90 mb-3">Sumber daya ekonomi masa kini yang dikendalikan oleh entitas sebagai akibat dari peristiwa masa lalu.</p>
+            <p className="text-xs text-blue-200">3 Karakteristik Esensial:</p>
+            <div className="grid grid-cols-3 gap-2 mt-2 text-center text-xs">
+              {['Manfaat Ekonomi Masa Depan','Dikendalikan Entitas','Akibat Transaksi Masa Lalu'].map(c => (
+                <div key={c} className="bg-white/20 rounded-lg p-2">{c}</div>
+              ))}
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              {cat:'Aset Lancar',items:['Kas & Setara Kas','Piutang Usaha','Persediaan','Beban Dibayar Dimuka'],cl:'bg-blue-50 border-blue-100',tc:'text-blue-700'},
+              {cat:'Aset Tidak Lancar',items:['Aset Tetap','Investasi Jangka Panjang','Aset Tak Berwujud','Goodwill'],cl:'bg-blue-50 border-blue-100',tc:'text-blue-700'},
+            ].map(g => (
+              <div key={g.cat} className={"p-3 rounded-xl border " + g.cl}>
+                <p className={"text-sm mb-2 " + g.tc}>{g.cat}</p>
+                <ul className="text-xs text-gray-600 space-y-1">{g.items.map(i => <li key={i}>• {i}</li>)}</ul>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-red-700 text-white rounded-2xl p-5">
+            <h3 className="text-xl mb-2 text-red-200">LIABILITAS (Liabilities)</h3>
+            <p className="text-sm leading-relaxed opacity-90 mb-3">Kewajiban masa kini entitas yang timbul dari peristiwa masa lalu untuk mentransfer sumber daya ekonomi kepada pihak lain.</p>
+            <p className="text-xs text-red-200">3 Karakteristik Esensial:</p>
+            <div className="grid grid-cols-3 gap-2 mt-2 text-center text-xs">
+              {['Kewajiban Masa Kini','Transfer Sumber Daya Ekonomi','Akibat Peristiwa Masa Lalu'].map(c => (
+                <div key={c} className="bg-white/20 rounded-lg p-2">{c}</div>
+              ))}
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              {cat:'Liabilitas Jangka Pendek',items:['Utang Usaha','Utang Jangka Pendek','Beban Akrual','Pendapatan Diterima Dimuka'],cl:'bg-red-50 border-red-100',tc:'text-red-700'},
+              {cat:'Liabilitas Jangka Panjang',items:['Utang Obligasi','Utang Sewa Pembiayaan','Liabilitas Pajak Tangguhan','Liabilitas Pensiun'],cl:'bg-red-50 border-red-100',tc:'text-red-700'},
+            ].map(g => (
+              <div key={g.cat} className={"p-3 rounded-xl border " + g.cl}>
+                <p className={"text-sm mb-2 " + g.tc}>{g.cat}</p>
+                <ul className="text-xs text-gray-600 space-y-1">{g.items.map(i => <li key={i}>• {i}</li>)}</ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 19: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="💼" title="Ekuitas, Keuntungan & Kerugian" subtitle="Elemen Lanjutan — SFAC 6"/>
+      <div className="grid grid-cols-3 gap-5 mt-4">
+        <div className="col-span-1">
+          <div className="bg-green-700 text-white rounded-2xl p-5 h-full">
+            <h3 className="text-xl mb-2 text-green-200">EKUITAS (Equity)</h3>
+            <p className="text-sm leading-relaxed opacity-90 mb-4">Kepentingan residual dalam aset entitas setelah dikurangi seluruh liabilitas.</p>
+            <div className="bg-white/20 rounded-lg p-3 text-center font-mono text-sm mb-4">Ekuitas = Aset − Liabilitas</div>
+            <h4 className="text-green-200 text-sm mb-2">Komponen Ekuitas:</h4>
+            <ul className="text-xs space-y-1.5">
+              {['Modal Saham (Common Stock)','Tambahan Modal Disetor (APIC)','Saldo Laba (Retained Earnings)','Saham Treasuri','Pendapatan Komprehensif Lain (OCI)'].map(c => (
+                <li key={c} className="flex items-start gap-1"><span className="text-green-300">•</span>{c}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="col-span-2 space-y-4">
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              {title:'Keuntungan (Gains)',color:'bg-emerald-50 border-emerald-300 text-emerald-700',desc:'Peningkatan ekuitas dari transaksi peripheral atau insidental, bukan dari kegiatan utama entitas.',example:'Keuntungan penjualan aset tetap, keuntungan investasi'},
+              {title:'Kerugian (Losses)',color:'bg-rose-50 border-rose-300 text-rose-700',desc:'Penurunan ekuitas dari transaksi peripheral atau insidental, bukan dari kegiatan utama entitas.',example:'Kerugian penghapusan piutang, kerugian bencana alam'},
+            ].map(item => (
+              <div key={item.title} className={"p-4 border-2 rounded-xl " + item.color}>
+                <h4 className="text-lg mb-2">{item.title}</h4>
+                <p className="text-sm text-gray-600 mb-3">{item.desc}</p>
+                <div className="bg-white rounded-lg p-2 text-xs text-gray-500"><span className="text-gray-400">Contoh: </span>{item.example}</div>
+              </div>
+            ))}
+          </div>
+          <div className="bg-[#0f2557] text-white rounded-xl p-5">
+            <h3 className="text-amber-400 mb-3">Comprehensive Income</h3>
+            <p className="text-sm text-white/90 mb-3">Perubahan total dalam ekuitas selama periode tertentu dari transaksi dan kejadian lain selain investasi oleh dan distribusi kepada pemilik.</p>
+            <div className="bg-white/10 rounded-lg p-3 font-mono text-sm text-center">Comprehensive Income = Net Income + OCI</div>
+            <p className="text-xs text-white/60 mt-2">OCI: Other Comprehensive Income — item yang belum direalisasi, seperti unrealized gains/losses dari investasi AFS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 20: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="📈" title="Pendapatan & Beban" subtitle="Revenue & Expenses — SFAC 6"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-emerald-600 text-white rounded-2xl p-5 mb-4">
+            <h3 className="text-xl mb-2 text-emerald-100">PENDAPATAN (Revenues)</h3>
+            <p className="text-sm leading-relaxed opacity-90">Arus masuk atau peningkatan aset lainnya dari sebuah entitas atau penyelesaian liabilitasnya (atau kombinasi keduanya) dari pengiriman atau produksi barang, pemberian jasa, atau aktivitas lain yang merupakan operasi utama entitas.</p>
+          </div>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mb-3">
+            <h4 className="text-emerald-700 mb-2 text-sm">Kriteria Pengakuan Pendapatan (ASC 606):</h4>
+            <ol className="text-xs text-gray-600 space-y-1.5 list-decimal list-inside">
+              <li>Identifikasi kontrak dengan pelanggan</li>
+              <li>Identifikasi kewajiban kinerja (performance obligations)</li>
+              <li>Tentukan harga transaksi</li>
+              <li>Alokasikan harga ke kewajiban kinerja</li>
+              <li>Akui pendapatan saat kewajiban kinerja terpenuhi</li>
+            </ol>
+          </div>
+          <div className="bg-white border rounded-xl p-4"><p className="text-xs text-gray-500">Contoh: Pendapatan penjualan, pendapatan jasa, pendapatan sewa</p></div>
+        </div>
+        <div>
+          <div className="bg-orange-600 text-white rounded-2xl p-5 mb-4">
+            <h3 className="text-xl mb-2 text-orange-100">BEBAN (Expenses)</h3>
+            <p className="text-sm leading-relaxed opacity-90">Arus keluar atau penggunaan aset lainnya atau penambahan liabilitas dari entitas selama suatu periode dari pengiriman atau produksi barang, pemberian jasa, atau pelaksanaan aktivitas lain yang merupakan operasi utama entitas.</p>
+          </div>
+          <div className="bg-orange-50 border border-orange-200 rounded-xl p-4 mb-3">
+            <h4 className="text-orange-700 mb-2 text-sm">Prinsip Pengakuan Beban:</h4>
+            <div className="space-y-2 text-xs text-gray-600">
+              {[
+                {p:'Matching Principle',d:'Beban diakui dalam periode yang sama dengan pendapatan terkait'},
+                {p:'Cause & Effect',d:'HPP diakui bersamaan dengan pendapatan penjualan'},
+                {p:'Systematic Allocation',d:'Penyusutan aset tetap dialokasikan secara sistematis'},
+                {p:'Immediate Recognition',d:'Beban yang tidak dapat dikaitkan langsung diakui segera'},
+              ].map(item => (
+                <div key={item.p} className="flex gap-2">
+                  <span className="text-orange-500 flex-shrink-0">→</span>
+                  <div><span className="text-gray-700">{item.p}:</span> {item.d}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 21: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="✅" title="Pengakuan & Penghentian Pengakuan" subtitle="Recognition & Derecognition — SFAC 5 & SFAC 8 Chap. 5"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl mb-4">
+            <h3 className="text-amber-400 text-lg mb-2">Pengakuan (Recognition)</h3>
+            <p className="text-sm text-white/90 leading-relaxed">Proses memasukkan suatu item ke dalam laporan keuangan sebagai aset, liabilitas, ekuitas, pendapatan, beban, keuntungan, atau kerugian.</p>
+          </div>
+          <div className="space-y-3">
+            <h4 className="text-gray-700">Kriteria Pengakuan (SFAC 5):</h4>
+            {[
+              {crit:'Definisi (Definition)',desc:'Item harus memenuhi definisi elemen laporan keuangan'},
+              {crit:'Keterukuran (Measurability)',desc:'Memiliki atribut yang relevan yang dapat diukur dengan keandalan yang memadai'},
+              {crit:'Relevansi (Relevance)',desc:'Informasi tentang item tersebut mampu membuat perbedaan bagi pengguna'},
+              {crit:'Keandalan (Reliability)',desc:'Informasi tersebut direpresentasikan secara tepat dan dapat diverifikasi'},
+            ].map((c,i) => (
+              <div key={c.crit} className="flex gap-3 bg-white border border-gray-100 rounded-xl p-3 shadow-sm">
+                <div className="w-7 h-7 bg-[#1a3a8a] text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">{i+1}</div>
+                <div><p className="text-gray-800 text-sm">{c.crit}</p><p className="text-xs text-gray-500">{c.desc}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h3 className="text-gray-700 mb-3">Penghentian Pengakuan (Derecognition)</h3>
+            <p className="text-sm text-gray-600 mb-3">Penghapusan seluruh atau sebagian aset atau liabilitas yang sebelumnya telah diakui dari laporan keuangan entitas.</p>
+            <div className="grid grid-cols-2 gap-3 text-xs">
+              {[
+                {type:'Aset',when:'Ketika entitas kehilangan kendali atas aset (dijual, dihapus, atau habis dikonsumsi)',color:'bg-blue-50'},
+                {type:'Liabilitas',when:'Ketika kewajiban entitas berakhir (dilunasi, dibatalkan, atau kadaluarsa)',color:'bg-red-50'},
+              ].map(d => (
+                <div key={d.type} className={"rounded-lg p-3 " + d.color}>
+                  <p className="font-medium text-gray-700">{d.type}</p>
+                  <p className="text-gray-500 mt-1">{d.when}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800"><strong>Update Terbaru:</strong> SFAC 8 Chapter 5 (2021) memperbarui konsep pengakuan dan penghentian pengakuan untuk lebih selaras dengan framework IASB, menekankan konsep "kendali" sebagai kriteria utama.</div>
+          <div className="bg-white border border-gray-100 rounded-xl p-4 text-sm"><p className="text-gray-600"><strong>Contoh Pengakuan:</strong> Mesin yang dibeli diakui sebagai aset tetap karena memenuhi definisi aset, dapat diukur keandalannya (biaya perolehan), relevan bagi pengguna, dan dapat diverifikasi.</p></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 22: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="⚖️" title="Konsep Pengukuran" subtitle="Measurement Concepts — SFAC 5 & SFAC 7"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-[#0f2557] text-white p-5 rounded-xl mb-4">
+            <h3 className="text-amber-400 text-lg mb-2">Definisi Pengukuran</h3>
+            <p className="text-sm text-white/90 leading-relaxed">Pengukuran adalah proses penetapan nilai moneter yang akan diatribusikan kepada elemen laporan keuangan yang diakui dan dilaporkan dalam laporan keuangan.</p>
+          </div>
+          <div className="space-y-3">
+            <h4 className="text-gray-700 text-sm">Atribut Pengukuran (SFAC 5):</h4>
+            {[
+              {attr:'Historical Cost',desc:'Jumlah kas atau setara kas yang dibayarkan untuk memperoleh aset',example:'Harga beli mesin'},
+              {attr:'Current Cost',desc:'Jumlah kas yang harus dibayarkan saat ini untuk memperoleh aset serupa',example:'Harga penggantian aset'},
+              {attr:'Net Realizable Value',desc:'Jumlah kas yang diharapkan dapat diterima dari penjualan aset',example:'NRV persediaan'},
+              {attr:'Present Value',desc:'Nilai kini arus kas masa depan yang didiskontokan',example:'Nilai kini obligasi'},
+            ].map((a,i) => (
+              <div key={a.attr} className="bg-slate-50 border border-slate-100 rounded-xl p-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="w-5 h-5 bg-[#1a3a8a] text-white rounded-full flex items-center justify-center text-xs flex-shrink-0">{i+1}</span>
+                  <p className="text-gray-800 text-sm">{a.attr}</p>
+                </div>
+                <p className="text-xs text-gray-500 ml-7">{a.desc}</p>
+                <p className="text-xs text-[#1a3a8a] ml-7 mt-1">Contoh: {a.example}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-teal-50 border border-teal-200 rounded-xl p-5">
+            <h3 className="text-teal-700 mb-3">Fair Value (Nilai Wajar)</h3>
+            <p className="text-sm text-gray-600 mb-3 leading-relaxed">Harga yang akan diterima untuk menjual aset atau dibayarkan untuk mengalihkan liabilitas dalam transaksi yang teratur antara pelaku pasar pada tanggal pengukuran (ASC 820).</p>
+            <div className="space-y-2">
+              {[
+                {level:'Level 1',desc:'Harga kuotasi di pasar aktif',color:'bg-green-100 text-green-700'},
+                {level:'Level 2',desc:'Input observable lain selain Level 1',color:'bg-amber-100 text-amber-700'},
+                {level:'Level 3',desc:'Input yang tidak observable (unobservable)',color:'bg-red-100 text-red-700'},
+              ].map(l => (
+                <div key={l.level} className="flex items-center gap-3 text-sm">
+                  <span className={"px-2 py-0.5 rounded text-xs " + l.color}>{l.level}</span>
+                  <span className="text-gray-600">{l.desc}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <h3 className="text-gray-700 mb-2 text-sm">SFAC 7 — Nilai Kini (Present Value)</h3>
+            <p className="text-xs text-gray-600 mb-2">SFAC 7 menyediakan kerangka penggunaan arus kas masa depan dan nilai kini sebagai alat pengukuran, bukan sebagai basis pengukuran itu sendiri.</p>
+            <div className="bg-gray-50 rounded-lg p-3 font-mono text-xs text-center text-gray-700">PV = Σ [CF_t / (1 + r)^t]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 23: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="📊" title="Perbandingan Dasar Pengukuran" subtitle="Relevansi vs. Keandalan"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
+            <p className="text-xs text-gray-500 text-center mb-3">Relevansi vs. Keandalan per Dasar Pengukuran</p>
+            <div className="flex gap-4 text-xs mb-2">
+              <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[#1a3a8a] inline-block"/>Relevansi</span>
+              <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[#0d9488] inline-block"/>Keandalan</span>
+            </div>
+            <div className="space-y-3">
+              {measurementData.map(d => (
+                <div key={d.basis} className="text-xs">
+                  <p className="text-gray-600 mb-1">{d.basis}</p>
+                  <div className="flex gap-1">
+                    <div className="flex-1 space-y-1">
+                      <div className="bg-gray-100 rounded h-2.5 overflow-hidden">
+                        <div className="bg-[#1a3a8a] h-2.5 rounded" style={{width: d.relevance + '%'}}/>
+                      </div>
+                      <div className="bg-gray-100 rounded h-2.5 overflow-hidden">
+                        <div className="bg-[#0d9488] h-2.5 rounded" style={{width: d.reliability + '%'}}/>
+                      </div>
+                    </div>
+                    <div className="text-gray-400 w-12 text-right text-xs leading-4">
+                      <p>{d.relevance}</p>
+                      <p>{d.reliability}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-[#0f2557] text-white rounded-xl p-4 mt-4 text-sm">
+            <p className="text-amber-400 mb-2">Trade-off Relevansi vs Keandalan</p>
+            <p className="text-white/80">Sering terjadi trade-off: Fair Value lebih relevan tetapi kurang andal, sedangkan Historical Cost lebih andal tetapi kurang relevan. FASB cenderung bergerak ke arah Fair Value.</p>
+          </div>
+        </div>
+        <div className="space-y-3">
+          <h4 className="text-gray-700">Penggunaan Praktis per Jenis Aset:</h4>
+          {[
+            {asset:'Kas & Setara Kas',basis:'Face Value / Historical Cost',icon:'💵'},
+            {asset:'Piutang Usaha',basis:'Net Realizable Value (NRV)',icon:'📄'},
+            {asset:'Persediaan',basis:'Lower of Cost or NRV (LCNRV)',icon:'📦'},
+            {asset:'Investasi Saham (Trading)',basis:'Fair Value',icon:'📊'},
+            {asset:'Aset Tetap',basis:'Historical Cost dikurangi Depresiasi',icon:'🏭'},
+            {asset:'Investasi HTM',basis:'Amortized Cost',icon:'🏦'},
+            {asset:'Aset Biologis',basis:'Fair Value (IFRS) / Historical Cost (GAAP)',icon:'🌱'},
+          ].map(item => (
+            <div key={item.asset} className="flex items-center gap-3 bg-white border border-gray-100 rounded-xl p-3 shadow-sm">
+              <span className="text-xl">{item.icon}</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-gray-800 text-sm">{item.asset}</p>
+                <p className="text-xs text-[#1a3a8a]">{item.basis}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  case 24: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="📖" title="Asumsi-Asumsi Dasar Akuntansi" subtitle="Underlying Assumptions — SFAC 6 & SFAC 8"/>
+      <div className="grid grid-cols-2 gap-6 mt-4">
+        {[
+          {title:'Entitas Ekonomi (Economic Entity)',icon:'🏢',color:'bg-blue-50 border-blue-300',desc:'Aktivitas entitas harus dipisahkan dan dibedakan dari aktivitas pemiliknya dan entitas lain. Setiap unit ekonomi dianggap sebagai entitas terpisah.',example:'PT ABC dan pemiliknya, Pak Budi, memiliki rekening bank terpisah'},
+          {title:'Kelangsungan Usaha (Going Concern)',icon:'♾️',color:'bg-teal-50 border-teal-300',desc:'Entitas diasumsikan akan terus beroperasi dalam jangka waktu yang dapat diperkirakan (biasanya 12 bulan ke depan). Mendasari penggunaan historical cost dan penyusutan.',example:'Aset tetap dicatat pada harga perolehan, bukan harga likuidasi'},
+          {title:'Unit Moneter (Monetary Unit)',icon:'💱',color:'bg-purple-50 border-purple-300',desc:'Hanya transaksi dan kejadian yang dapat dinyatakan dalam satuan mata uang yang dicatat. Diasumsikan bahwa daya beli mata uang relatif stabil dari waktu ke waktu.',example:'Laporan keuangan PT ABC disajikan dalam Rupiah (IDR)'},
+          {title:'Periodisitas (Periodicity)',icon:'📅',color:'bg-amber-50 border-amber-300',desc:'Kehidupan ekonomi entitas dapat dibagi menjadi periode waktu buatan (artificial time periods) untuk keperluan pelaporan — bulanan, kuartalan, tahunan.',example:'Laporan keuangan triwulanan Q1 2026 (Januari–Maret)'},
+        ].map(a => (
+          <div key={a.title} className={"p-5 border-2 rounded-xl " + a.color}>
+            <div className="flex items-start gap-3 mb-3">
+              <span className="text-3xl">{a.icon}</span>
+              <h3 className="text-lg text-gray-800">{a.title}</h3>
+            </div>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">{a.desc}</p>
+            <div className="bg-white rounded-lg p-2 border border-gray-100 text-xs text-gray-500"><span className="text-green-600">Contoh: </span>{a.example}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  case 25: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="📄" title="Penyajian & Pengungkapan" subtitle="Presentation & Disclosure — SFAC 8 Chapter 7 & 8"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-4">
+          <div className="bg-[#0f2557] text-white rounded-xl p-5">
+            <h3 className="text-amber-400 text-lg mb-2">Tujuan Penyajian & Pengungkapan</h3>
+            <p className="text-sm text-white/90 leading-relaxed">Menyampaikan informasi kepada pengguna laporan keuangan dengan cara yang paling efektif dan efisien, mendukung keputusan investasi, kredit, dan alokasi sumber daya lainnya.</p>
+          </div>
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h4 className="text-gray-700 mb-3">Prinsip Penyajian:</h4>
+            <div className="space-y-2 text-sm">
+              {[
+                {p:'Disagregasi',d:'Item yang berbeda secara ekonomi harus disajikan secara terpisah'},
+                {p:'Agregasi',d:'Item yang sejenis dapat digabungkan untuk kejelasan penyajian'},
+                {p:'Offsetting',d:'Aset dan liabilitas umumnya tidak boleh saling menghapus (netting)'},
+                {p:'Klasifikasi',d:'Item diklasifikasikan berdasarkan karakteristik ekonominya'},
+              ].map(item => (
+                <div key={item.p} className="flex gap-2">
+                  <span className="text-[#1a3a8a] flex-shrink-0">◆</span>
+                  <div><span className="text-gray-800">{item.p}: </span><span className="text-gray-500">{item.d}</span></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <h4 className="text-gray-700 mb-3">Hierarki Pengungkapan:</h4>
+            <div className="space-y-2">
+              {[
+                {level:'Di dalam laporan keuangan',color:'bg-blue-600 text-white',priority:'Tertinggi'},
+                {level:'Catatan atas laporan keuangan',color:'bg-blue-400 text-white',priority:'Tinggi'},
+                {level:'Suplemen laporan keuangan',color:'bg-blue-200 text-blue-800',priority:'Sedang'},
+                {level:'Informasi lain-lain',color:'bg-blue-50 text-blue-700 border border-blue-200',priority:'Rendah'},
+              ].map(l => (
+                <div key={l.level} className={"flex items-center justify-between p-3 rounded-lg " + l.color}>
+                  <span className="text-sm">{l.level}</span>
+                  <span className="text-xs opacity-80">{l.priority}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800"><strong>Update SFAC 8 (2021):</strong> Chapter 7 dan 8 memperkuat prinsip bahwa pengungkapan harus relevan bagi pengguna dan biayanya proporsional dengan manfaatnya — menghindari information overload.</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 26: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="🗂️" title="Konsep Modal & Pemeliharaan Modal" subtitle="Capital & Capital Maintenance — SFAC 5"/>
+      <div className="grid grid-cols-2 gap-6 mt-4">
+        <div className="space-y-4">
+          <div className="bg-[#0f2557] text-white rounded-xl p-5">
+            <h3 className="text-amber-400 text-lg mb-2">Konsep Modal</h3>
+            <p className="text-sm text-white/90 leading-relaxed mb-3">FASB mengidentifikasi dua konsep modal yang menjadi dasar penentuan laba:</p>
+            <div className="grid grid-cols-1 gap-3">
+              {[
+                {type:'Modal Finansial (Financial Capital)',desc:'Modal diukur dalam satuan moneter nominal (jumlah uang yang diinvestasikan)'},
+                {type:'Modal Fisik (Physical Capital)',desc:'Modal diukur berdasarkan kapasitas produktif fisik entitas'},
+              ].map(c => (
+                <div key={c.type} className="bg-white/10 rounded-lg p-3">
+                  <p className="text-amber-300 text-sm mb-1">{c.type}</p>
+                  <p className="text-white/80 text-xs">{c.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm">
+            <h4 className="text-blue-700 mb-2">Konsep yang Diadopsi GAAP:</h4>
+            <p className="text-gray-600">US GAAP menggunakan konsep <strong>modal finansial</strong> dalam unit moneter nominal. Laba diakui hanya setelah modal awal terpelihara.</p>
+          </div>
+        </div>
+        <div className="space-y-4">
+          <div className="bg-teal-50 border border-teal-200 rounded-xl p-5">
+            <h3 className="text-teal-700 mb-3">Konsep Pemeliharaan Modal</h3>
+            <p className="text-sm text-gray-600 mb-3">Laba hanya dapat diakui setelah modal entitas terpelihara. Ini menentukan titik mana keuntungan/kerugian diakui.</p>
+            <div className="bg-white rounded-xl p-3 font-mono text-sm text-center text-gray-700 border">Laba = Aset Bersih Akhir − Aset Bersih Awal (setelah pemeliharaan modal)</div>
+          </div>
+          <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-5">
+            <h4 className="text-amber-700 mb-3">Implikasi Praktis:</h4>
+            <ul className="space-y-2 text-sm text-gray-600">
+              {['Dividen tidak mengurangi laba — hanya mengurangi modal','Return on equity mengukur kemampuan pemeliharaan modal','Konsep ini mendasari pembedaan antara "return on capital" dan "return of capital"'].map((item,i) => (
+                <li key={i} className="flex items-start gap-2"><span className="text-amber-500 flex-shrink-0">•</span>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 27: return (
+    <div className={"h-full p-12 bg-gradient-to-br " + SLATE}>
+      <SlideHeader icon="🌍" title="FASB & IASB: Konvergensi Global" subtitle="Menuju Standar Akuntansi yang Harmonis"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-4">
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              {label:'FASB',sub:'AS — GAAP',color:'bg-blue-600'},
+              {label:'IASB',sub:'Global — IFRS',color:'bg-red-600'},
+            ].map(b => (
+              <div key={b.label} className={b.color + " text-white rounded-xl p-4 text-center"}>
+                <p className="text-2xl mb-1">{b.label}</p>
+                <p className="text-xs opacity-80">{b.sub}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+            <h4 className="text-gray-700 mb-3 text-sm">Perbandingan Framework:</h4>
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="border-b">
+                  <th className="text-left py-1 pr-3 text-gray-500">Aspek</th>
+                  <th className="text-center py-1 px-3 text-blue-600">FASB (GAAP)</th>
+                  <th className="text-center py-1 pl-3 text-red-600">IASB (IFRS)</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-600">
+                {[
+                  ['Pendekatan','Rules-based','Principles-based'],
+                  ['Char. Fundamental','Relevansi & Rep. Tepat','Relevansi & Rep. Tepat'],
+                  ['Inventori','LIFO diperbolehkan','LIFO dilarang'],
+                  ['Dev. Cost','Dibebankan langsung','Dikapitalisasi (kondisi tertentu)'],
+                  ['Revaluasi','Umumnya tidak diizinkan','Diizinkan'],
+                ].map(row => (
+                  <tr key={row[0]} className="border-b border-gray-50">
+                    <td className="py-1.5 pr-3 font-medium">{row[0]}</td>
+                    <td className="py-1.5 px-3 text-center">{row[1]}</td>
+                    <td className="py-1.5 pl-3 text-center">{row[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="space-y-3">
+          <div className="bg-[#0f2557] text-white rounded-xl p-5">
+            <h3 className="text-amber-400 mb-2">Norwalk Agreement (2002)</h3>
+            <p className="text-sm text-white/90 mb-2">FASB dan IASB sepakat untuk membuat standar akuntansi mereka kompatibel dan mengoordinasikan program kerja ke depan.</p>
+            <ul className="text-xs text-white/70 space-y-1">
+              <li>→ Proyek konvergensi jangka pendek dan jangka panjang</li>
+              <li>→ Proyek bersama: Revenue Recognition, Leases, Insurance</li>
+              <li>→ ASC 606 (Revenue) selaras dengan IFRS 15</li>
+              <li>→ ASC 842 (Leases) selaras dengan IFRS 16</li>
+            </ul>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800"><strong>Status Konvergensi Saat Ini:</strong><p className="mt-1">SEC belum mengadopsi IFRS untuk perusahaan publik AS. Konvergensi penuh masih jauh, namun kolaborasi terus berlanjut dalam area-area tertentu.</p></div>
+          <div className="bg-teal-50 border border-teal-200 rounded-xl p-4 text-sm text-teal-800"><strong>Untuk Indonesia:</strong><p className="mt-1">PSAK (Pernyataan Standar Akuntansi Keuangan) mengacu pada IFRS, sehingga pemahaman FASB Conceptual Framework penting untuk memahami perbedaan dan persamaan PSAK vs GAAP.</p></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  case 28: return (
+    <div className="h-full p-12 bg-white">
+      <SlideHeader icon="⚠️" title="Kritik & Tantangan Conceptual Framework" subtitle="Perspektif Kritis"/>
+      <div className="grid grid-cols-2 gap-6 mt-2">
+        <div className="space-y-4">
+          <h4 className="text-gray-700">Kritik terhadap Framework:</h4>
+          {[
+            {icon:'⚠️',title:'Terlalu Abstrak',desc:'Framework bersifat terlalu umum dan abstrak sehingga tidak cukup membantu dalam memecahkan masalah akuntansi spesifik di lapangan.'},
+            {icon:'🔄',title:'Tidak Konsisten Diterapkan',desc:'Standar-standar FASB yang ada tidak selalu konsisten dengan framework — sering ada tekanan politik dan praktis yang menghasilkan "exceptions".'},
+            {icon:'⚖️',title:'Bias terhadap Relevansi',desc:'Pergeseran ke Fair Value accounting dianggap terlalu memprioritaskan relevansi dibandingkan keandalan (reliability), menciptakan volatilitas laporan keuangan.'},
+            {icon:'🌍',title:'Kurang Mempertimbangkan Konteks Global',desc:'Framework FASB cenderung berfokus pada konteks pasar modal AS dan tidak cukup mempertimbangkan kebutuhan pengguna di pasar berkembang.'},
+          ].map(c => (
+            <div key={c.title} className="flex gap-3 bg-red-50 border border-red-100 rounded-xl p-4">
+              <span className="text-xl flex-shrink-0">{c.icon}</span>
+              <div><p className="text-gray-800 text-sm mb-1">{c.title}</p><p className="text-xs text-gray-500">{c.desc}</p></div>
+            </div>
+          ))}
+        </div>
+        <div className="space-y-4">
+          <h4 className="text-gray-700">Tantangan Masa Depan:</h4>
+          {[
+            {icon:'🤖',title:'Teknologi & Digitalisasi',desc:'Aset digital (cryptocurrency, NFT), AI, dan transformasi bisnis digital memunculkan pertanyaan baru tentang pengakuan dan pengukuran yang belum terjawab framework.'},
+            {icon:'🌿',title:'ESG & Sustainability',desc:'Pelaporan keberlanjutan (Environmental, Social, Governance) semakin penting namun belum terintegrasi dalam framework tradisional FASB.'},
+            {icon:'📉',title:'Krisis Keuangan',desc:'Krisis 2008 mempertanyakan relevansi Fair Value dalam kondisi pasar yang tidak aktif dan mendorong revisi konsep pengukuran.'},
+            {icon:'🔗',title:'Integrasi FASB-IASB',desc:'Tekanan untuk konvergensi global terus ada, namun perbedaan fundamental antara pendekatan rules-based dan principles-based masih menjadi hambatan.'},
+          ].map(c => (
+            <div key={c.title} className="flex gap-3 bg-amber-50 border border-amber-100 rounded-xl p-4">
+              <span className="text-xl flex-shrink-0">{c.icon}</span>
+              <div><p className="text-gray-800 text-sm mb-1">{c.title}</p><p className="text-xs text-gray-500">{c.desc}</p></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  case 29: return (
+    <div className={"flex flex-col h-full bg-gradient-to-br " + NAV + " text-white p-12 relative overflow-hidden"}>
+      <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3"/>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/3 -translate-x-1/3"/>
+      <div className="relative z-10 flex flex-col h-full">
+        <div className="text-center mb-6">
+          <Badge color="bg-amber-500">Kesimpulan</Badge>
+          <h2 className="text-5xl mt-3 mb-2">Ringkasan FASB Conceptual Framework</h2>
+          <div className="h-px w-24 bg-amber-400 mx-auto"/>
+        </div>
+        <div className="grid grid-cols-3 gap-4 flex-1">
+          {[
+            {icon:'🏛️',title:'Fondasi Pelaporan',points:['FASB adalah penyusun standar independen AS','Conceptual Framework adalah "konstitusi" akuntansi','SFAC 8 adalah framework paling terkini']},
+            {icon:'🎯',title:'Tujuan & Kualitas',points:['Tujuan: informasi berguna untuk investor & kreditor','Char. Fundamental: Relevansi + Representasi Tepat','Char. Peningkat: 4 karakteristik tambahan']},
+            {icon:'📊',title:'Elemen & Pengukuran',points:['10 elemen laporan keuangan (SFAC 6)','Berbagai dasar pengukuran (Fair Value, Historical Cost)','Kendala biaya membatasi semua keputusan']},
+          ].map(s => (
+            <div key={s.title} className="bg-white/10 backdrop-blur rounded-2xl p-5">
+              <div className="text-3xl mb-3">{s.icon}</div>
+              <h3 className="text-lg mb-3 text-amber-300">{s.title}</h3>
+              <ul className="space-y-2">
+                {s.points.map((p,i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-white/80">
+                    <span className="text-amber-400 flex-shrink-0 mt-0.5">✓</span>{p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className="mt-5 text-center">
+          <p className="text-xl text-amber-300 mb-4">Terima kasih atas perhatiannya!</p>
+          <div className="flex items-center justify-center gap-6 flex-wrap">
+            {groupMembers.map(m => (
+              <div key={m.nim} className="text-center">
+                <p className="text-white text-sm">{m.name}</p>
+                <p className="text-white/50 text-xs">{m.nim}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-white/40 text-xs mt-4">Pelaporan Keuangan Korporat — FASB Conceptual Framework — April 2026</p>
+        </div>
+      </div>
+    </div>
+  );
+
+  default: return null;
+  }}; // end switch + slide()
+
+  return (
+    <div className="w-full h-screen flex flex-col bg-gray-900">
+      <div className="bg-gray-900 border-b border-gray-800 px-6 py-2 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="w-2 h-2 bg-amber-400 rounded-full"/>
+          <span className="text-gray-400 text-sm">Pelaporan Keuangan Korporat</span>
+          <span className="text-gray-600">›</span>
+          <span className="text-white text-sm">FASB Conceptual Framework</span>
+        </div>
+        <div className="flex items-center gap-2 text-xs text-gray-500">
+          <span className="bg-gray-800 px-2 py-1 rounded">{getSectionLabel(cur)}</span>
+          <span>Slide {cur+1} / {TOTAL_SLIDES}</span>
+        </div>
+      </div>
+      <div className="flex-1 relative overflow-hidden">
+        <div className="w-full h-full overflow-y-auto">{slide()}</div>
+      </div>
+      <div className="bg-gray-800 border-t border-gray-700 px-6 py-3">
+        <div className="flex items-center justify-between gap-4">
+          <button onClick={prev} disabled={cur===0}
+            className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-sm disabled:opacity-40 flex items-center gap-1">
+            ‹ Sebelumnya
+          </button>
+          <div className="flex items-center gap-1 flex-wrap justify-center">
+            {Array.from({length:TOTAL_SLIDES}).map((_,index) => (
+              <button key={index} onClick={() => setCur(index)}
+                title={"Slide " + (index+1) + ": " + getSectionLabel(index)}
+                className={"rounded-full transition-all duration-200 " + (index===cur ? "bg-amber-400 w-6 h-2.5" : "bg-gray-600 hover:bg-gray-400 w-2 h-2")}
+              />
+            ))}
+          </div>
+          <button onClick={next} disabled={cur===TOTAL_SLIDES-1}
+            className="px-4 py-2 bg-[#1a3a8a] hover:bg-[#1e40af] text-white rounded-lg text-sm disabled:opacity-40 flex items-center gap-1">
+            Berikutnya ›
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Presentation/>);
+</script>
+</body>
+</html>
