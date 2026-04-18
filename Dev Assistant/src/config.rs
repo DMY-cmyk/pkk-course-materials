@@ -3,7 +3,7 @@ use std::collections::HashMap;
 
 #[derive(Deserialize, Debug, Clone)]
 pub struct MappingConfig {
-    pub weeks: HashMap<u8, WeekConfig>,
+    pub weeks: HashMap<String, WeekConfig>,
 }
 
 #[derive(Deserialize, Debug, Clone)]
@@ -35,7 +35,7 @@ mod tests {
         let manifest = env!("CARGO_MANIFEST_DIR");
         let path = format!("{}/configs/mapping.toml", manifest);
         let config = load_config(&path).unwrap();
-        let w1 = config.weeks.get(&1).unwrap();
+        let w1 = config.weeks.get("1").expect("week 1 must exist in mapping.toml");
         assert_eq!(w1.company_ticker, "TLKM");
         assert_eq!(w1.phase, "pre-uts");
     }
@@ -46,7 +46,7 @@ mod tests {
         let path = format!("{}/configs/mapping.toml", manifest);
         let config = load_config(&path).unwrap();
         for w in 1u8..=14 {
-            assert!(config.weeks.contains_key(&w), "Week {} missing from config", w);
+            assert!(config.weeks.contains_key(&w.to_string()), "Week {} missing from config", w);
         }
     }
 }

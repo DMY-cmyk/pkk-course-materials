@@ -17,7 +17,7 @@ pub fn build_week(
     let config = load_config(config_path).expect("Failed to load mapping.toml");
     let all_weeks = make_week_summaries(&config.weeks);
 
-    let week_config = config.weeks.get(&week)
+    let week_config = config.weeks.get(&week.to_string())
         .unwrap_or_else(|| panic!("Week {} not found in mapping.toml", week));
 
     for meta in DELIVERABLES {
@@ -78,11 +78,11 @@ pub fn build_all(
 }
 
 pub(crate) fn make_week_summaries(
-    weeks: &std::collections::HashMap<u8, crate::config::WeekConfig>,
+    weeks: &std::collections::HashMap<String, crate::config::WeekConfig>,
 ) -> Vec<WeekSummary> {
     let mut summaries: Vec<WeekSummary> = (1u8..=14)
         .filter_map(|w| {
-            weeks.get(&w).map(|c| WeekSummary {
+            weeks.get(&w.to_string()).map(|c| WeekSummary {
                 week_num: w,
                 week_pad: format!("{:02}", w),
                 title: c.title.clone(),
