@@ -33,9 +33,6 @@
   /* Chips and pills: flatten */
   .chip, .pill { border: 1px solid #ccc !important; }
 
-  /* Prog bars: print flat */
-  .prog-fill { print-color-adjust: exact; }
-
   /* Links: show URL */
   a[href]::after { content: none; }
 

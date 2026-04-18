@@ -33,7 +33,7 @@
 .chip { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 10px;
         border-radius: var(--r-sm); border: 1px solid; }
 .chip-book   { background: var(--c-purple-soft); color: var(--c-purple); border-color: #ddd6fe; }
-.chip-psak   { background: var(--c-red-soft);    color: var(--c-red);    border-color: #fed7aa; }
+.chip-psak   { background: var(--c-red-soft);    color: var(--c-red);    border-color: var(--cb-amber-border); }
 .chip-co     { background: var(--c-green-soft);  color: var(--c-green);  border-color: #bbf7d0; }
 .chip-supp   { background: var(--c-bg);          color: var(--c-text-3); border-color: var(--c-border); }
 
@@ -50,6 +50,7 @@
   gap: var(--space-lg);
   padding: var(--space-xl) var(--space-xl);
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ── Section Cards ── */
@@ -91,7 +92,7 @@
 /* Quote block */
 .quote-block { border-left: 3px solid var(--c-blue); background: var(--c-bg);
                padding: 14px 18px; border-radius: 0 var(--r-md) var(--r-md) 0; margin-bottom: 16px; }
-.quote-block p       { color: #1e3a5f; font-style: italic; }
+.quote-block p       { color: var(--c-text-navy); font-style: italic; }
 .quote-source { font-size: 11px; color: var(--c-text-3); margin-top: 6px; font-weight: 600; font-style: normal; }
 
 /* Reading steps */
