@@ -13,3 +13,14 @@ node_modules/
 
 # Logs
 *.log
+
+# Claude Code local settings (machine-specific)
+.claude/
+
+# Large binary reference files — never commit
+*.pdf
+*.xlsx
+*.png
+
+# Pipeline-generated output (rendered by devassist, not tracked in git)
+course-materials/outputs/
