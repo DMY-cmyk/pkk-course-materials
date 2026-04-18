@@ -1,0 +1,139 @@
+[weeks.1]
+title = "Pengantar & Perspektif Historis Akuntansi"
+title_en = "Introduction and Historical Perspective of Accounting"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.1 §1.1–1.4", "Silabus MNK202"]
+supplementary = ["IASB CF 2018", "Sejarah BAPEPAM-LK", "TLKM AR 2024"]
+company_name = "Telkom Indonesia"
+company_ticker = "TLKM"
+company_exchange = "IDX"
+
+[weeks.2]
+title = "Kontrak Efisien, Asimetri Informasi & Pengukuran"
+title_en = "Efficient Contracting, Information Asymmetry and Measurement"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.1", "Wolk Ch.2"]
+supplementary = ["Jensen & Meckling (1976)", "PSAK 1 rev.2023", "BBRI AR 2025"]
+company_name = "Bank Rakyat Indonesia"
+company_ticker = "BBRI"
+company_exchange = "IDX"
+
+[weeks.3]
+title = "Perkembangan Struktur Kelembagaan Akuntansi Keuangan"
+title_en = "Development of the Institutional Structure of Financial Accounting"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.3"]
+supplementary = ["Peraturan OJK", "Sejarah DSAK-IAI", "GIAA AR 2024"]
+company_name = "Garuda Indonesia"
+company_ticker = "GIAA"
+company_exchange = "IDX"
+
+[weeks.4]
+title = "Postulat, Prinsip, dan Konsep Akuntansi"
+title_en = "Postulates, Principles, and Concepts"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.5"]
+supplementary = ["PSAK 72", "PSAK 16", "ASII AR 2025"]
+company_name = "Astra International"
+company_ticker = "ASII"
+company_exchange = "IDX"
+
+[weeks.5]
+title = "Kerangka Konseptual FASB / IASB"
+title_en = "The FASB's Conceptual Framework"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.7"]
+supplementary = ["IASB CF 2018 (lengkap)", "Kerangka Konseptual IAI", "UNVR AR 2024"]
+company_name = "Unilever Indonesia"
+company_ticker = "UNVR"
+company_exchange = "IDX"
+
+[weeks.6]
+title = "Kegunaan Informasi Akuntansi bagi Investor & Kreditur"
+title_en = "Usefulness of Accounting Information to Investors and Creditors"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.8"]
+supplementary = ["Scott Ch.3 (supp.)", "Ohlson (1995)", "PSAK 71", "BBCA AR 2025"]
+company_name = "Bank Central Asia"
+company_ticker = "BBCA"
+company_exchange = "IDX"
+
+[weeks.7]
+title = "Keseragaman dan Pengungkapan: Arah Kebijakan Standar"
+title_en = "Uniformity and Disclosure: Some Policy-Making Directions"
+phase = "pre-uts"
+core_readings = ["Wolk Ch.9"]
+supplementary = ["PSAK 5 (segmen operasi)", "PSAK 7 (transaksi pihak berelasi)", "ICBP AR 2024"]
+company_name = "Indofood CBP Sukses Makmur"
+company_ticker = "ICBP"
+company_exchange = "IDX"
+
+[weeks.8]
+title = "Neraca / Laporan Posisi Keuangan"
+title_en = "The Balance Sheet"
+phase = "post-uts"
+core_readings = ["Wolk Ch.11"]
+supplementary = ["PSAK 71 ECL", "PSAK 68 (nilai wajar)", "BBCA AR 2025"]
+company_name = "Bank Central Asia"
+company_ticker = "BBCA"
+company_exchange = "IDX"
+
+[weeks.9]
+title = "Laporan Laba Rugi & Kualitas Laba"
+title_en = "The Income Statement"
+phase = "post-uts"
+core_readings = ["Wolk Ch.12"]
+supplementary = ["PSAK 72 (pengakuan pendapatan)", "PSAK 24 (imbalan kerja)", "UNVR AR 2024"]
+company_name = "Unilever Indonesia"
+company_ticker = "UNVR"
+company_exchange = "IDX"
+
+[weeks.10]
+title = "Laporan Arus Kas & Kualitas Akrual"
+title_en = "Statement of Cash Flows"
+phase = "post-uts"
+core_readings = ["Wolk Ch.13"]
+supplementary = ["PSAK 2 (laporan arus kas)", "Dechow (1994)", "TLKM AR 2024"]
+company_name = "Telkom Indonesia"
+company_ticker = "TLKM"
+company_exchange = "IDX"
+
+[weeks.11]
+title = "Pasar Sekuritas Efisien (EMH)"
+title_en = "Efficient Securities Markets"
+phase = "post-uts"
+core_readings = ["Scott Ch.4"]
+supplementary = ["Fama (1970)", "Fama (1991)", "Data harga IDX BBRI", "BBRI AR 2025"]
+company_name = "Bank Rakyat Indonesia"
+company_ticker = "BBRI"
+company_exchange = "IDX"
+
+[weeks.12]
+title = "Manajemen Laba (Earnings Management)"
+title_en = "Earnings Management"
+phase = "post-uts"
+core_readings = ["Scott Ch.11"]
+supplementary = ["Healy & Wahlen (1999)", "Jones (1991)", "GIAA AR 2024"]
+company_name = "Garuda Indonesia"
+company_ticker = "GIAA"
+company_exchange = "IDX"
+
+[weeks.13]
+title = "Presentasi Term Paper (Sesi 1)"
+title_en = "Term Paper Presentation — Session 1"
+phase = "post-uts"
+core_readings = ["Journal papers (per kelompok)"]
+supplementary = ["Panduan UAS", "Rubrik presentasi"]
+company_name = "Student-selected"
+company_ticker = "—"
+company_exchange = "—"
+
+[weeks.14]
+title = "Presentasi Term Paper (Sesi 2) & Review UAS"
+title_en = "Term Paper Presentation — Session 2 & UAS Review"
+phase = "post-uts"
+core_readings = ["Journal papers (per kelompok)"]
+supplementary = ["Review komprehensif W1–W12", "Peta framework UAS"]
+company_name = "Student-selected"
+company_ticker = "—"
+company_exchange = "—"
