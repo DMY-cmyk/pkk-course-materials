@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W{{ week_pad }} — {{ title }} | MNK202</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+
+<!-- ══ WEEK HERO ══ -->
+<div class="week-hero">
+  <div class="hero-top">
+    <div>
+      <div class="hero-badge">
+        <span class="pill pill-week">Minggu {{ week_pad }}</span>
+        <span class="pill pill-{{ phase_class }}">{{ phase_label }}</span>
+      </div>
+      <h1 class="hero-title">{{ title }}</h1>
+      <p class="hero-subtitle">{{ title_en }}</p>
+      <div class="ref-chips">
+        {% for r in core_readings %}<span class="chip chip-book">{{ r }}</span>{% endfor %}
+        {% for s in supplementary %}<span class="chip chip-supp">{{ s }}</span>{% endfor %}
+        {% if company_ticker != "—" %}<span class="chip chip-co">{{ company_ticker }} · {{ company_name }}</span>{% endif %}
+      </div>
+    </div>
+    <div class="hero-watermark">{{ week_pad }}</div>
+  </div>
+
+  <nav class="tab-nav">
+    <div class="tab {% if deliverable_type == 'study-guide' %}active{% endif %}">📖 Study Guide</div>
+    <div class="tab {% if deliverable_type == 'summary' %}active{% endif %}">📄 Main Summary</div>
+    <div class="tab {% if deliverable_type == 'company-example' %}active{% endif %}">🏢 Company Example</div>
+    <div class="tab {% if deliverable_type == 'review-sheet' %}active{% endif %}">📋 Review Sheet</div>
+    <div class="tab {% if deliverable_type == 'exercises' %}active{% endif %}">✏️ Exercises</div>
+  </nav>
+</div>
+
+<!-- ══ BODY GRID ══ -->
+<div class="body-grid">
+  <div class="main-col">
+    {% block main %}{% endblock main %}
+  </div>
+  <aside class="sidebar">
+    {% block sidebar %}
+    <!-- Deliverable switcher -->
+    <div class="side-card">
+      <div class="side-header">📂 Deliverables</div>
+      <div class="side-body">
+        <div class="deliv-grid">
+          <div class="deliv-btn {% if deliverable_type == 'study-guide' %}active{% endif %}">
+            <span>📖</span><span>Study Guide</span>
+          </div>
+          <div class="deliv-btn {% if deliverable_type == 'summary' %}active{% endif %}">
+            <span>📄</span><span>Main Summary</span>
+          </div>
+          <div class="deliv-btn {% if deliverable_type == 'company-example' %}active{% endif %}">
+            <span>🏢</span><span>Company Example</span>
+          </div>
+          <div class="deliv-btn {% if deliverable_type == 'review-sheet' %}active{% endif %}">
+            <span>📋</span><span>Review Sheet</span>
+          </div>
+          <div class="deliv-btn deliv-btn-full {% if deliverable_type == 'exercises' %}active{% endif %}">
+            <span>✏️</span><span>Exercises</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Anchor Company -->
+    {% if company_ticker != "—" %}
+    <div class="side-card">
+      <div class="side-header">🏢 Anchor Company</div>
+      <div class="side-body">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div class="co-logo" style="background:linear-gradient(135deg,#1d4ed8,#2563eb);">
+            {{ company_ticker | truncate(length=3, end="") }}
+          </div>
+          <div>
+            <div class="co-name">{{ company_name }}</div>
+            <div class="co-sub">{{ company_exchange }}</div>
+            <div class="co-ticker">{{ company_exchange }}: {{ company_ticker }}</div>
+          </div>
+        </div>
+        {% block company_sidebar %}{% endblock company_sidebar %}
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- References -->
+    <div class="side-card">
+      <div class="side-header">📚 Referensi</div>
+      <div class="side-body">
+        {% for r in core_readings %}
+        <div class="ref-item">
+          <div class="ref-dot" style="background:#7c3aed;"></div>
+          <div class="ref-text"><strong>{{ r }}</strong>Core required reading</div>
+        </div>
+        {% endfor %}
+        {% for s in supplementary %}
+        <div class="ref-item">
+          <div class="ref-dot" style="background:#94a3b8;"></div>
+          <div class="ref-text">{{ s }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="side-card">
+      <div class="side-header">📈 Progress Semester</div>
+      <div class="side-body">
+        {% set pre_done = [week_num, 7] | min %}
+        {% set post_done = [week_num - 7, 0] | max %}
+        <div>
+          <div class="prog-label"><span style="font-size:12px;">Pra-UTS (W1–7)</span><span style="font-size:11px;color:#64748b;">{{ pre_done }} / 7</span></div>
+          <div class="prog-bar"><div class="prog-fill prog-pre" style="width:{{ pre_done * 100 / 7 }}%;"></div></div>
+        </div>
+        <div>
+          <div class="prog-label"><span style="font-size:12px;">Pasca-UTS (W8–14)</span><span style="font-size:11px;color:#64748b;">{{ post_done }} / 7</span></div>
+          <div class="prog-bar"><div class="prog-fill prog-post" style="width:{{ post_done * 100 / 7 }}%;"></div></div>
+        </div>
+      </div>
+    </div>
+    {% endblock sidebar %}
+  </aside>
+</div>
+
+<footer class="page-footer">
+  MNK202 Pelaporan Keuangan Korporat · Pascasarjana STIE YKPN 2025/2026 · Minggu {{ week_pad }}
+</footer>
+
+</body>
+</html>

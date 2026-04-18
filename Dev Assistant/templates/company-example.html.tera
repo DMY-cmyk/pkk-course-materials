@@ -1,0 +1,16 @@
+{% extends "base.html.tera" %}
+
+{% block main %}
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-icon icon-green">🏢</div>
+    <div>
+      <div class="section-title">Indonesian Company Example — {{ company_name }}</div>
+      <div class="section-sub">Analisis primer berdasarkan Annual Report teraudit · {{ company_exchange }}: {{ company_ticker }}</div>
+    </div>
+  </div>
+  <div class="section-body">
+    {{ content_html | safe }}
+  </div>
+</div>
+{% endblock main %}

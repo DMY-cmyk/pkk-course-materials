@@ -1,0 +1,16 @@
+{% extends "base.html.tera" %}
+
+{% block main %}
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-icon icon-amber">📋</div>
+    <div>
+      <div class="section-title">Review Sheet — Minggu {{ week_pad }}</div>
+      <div class="section-sub">Referensi cepat · target 1–2 halaman A4</div>
+    </div>
+  </div>
+  <div class="section-body">
+    {{ content_html | safe }}
+  </div>
+</div>
+{% endblock main %}

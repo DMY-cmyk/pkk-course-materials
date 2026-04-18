@@ -1,0 +1,16 @@
+{% extends "base.html.tera" %}
+
+{% block main %}
+<div class="section-card">
+  <div class="section-header">
+    <div class="section-icon icon-blue">✏️</div>
+    <div>
+      <div class="section-title">Exercises — Minggu {{ week_pad }}</div>
+      <div class="section-sub">Soal latihan gaya UTS/UAS · 5–8 soal per minggu</div>
+    </div>
+  </div>
+  <div class="section-body">
+    {{ content_html | safe }}
+  </div>
+</div>
+{% endblock main %}
