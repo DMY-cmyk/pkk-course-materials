@@ -1,0 +1,41 @@
+/* ── MNK202 Design B — Print: PDF-ready overrides ── */
+
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  body { background: #fff !important; font-size: 12px; }
+
+  /* Hero */
+  .week-hero { border-bottom: 2px solid #0f172a; padding: 20px 24px 0; }
+  .week-hero::before { height: 3px; }
+
+  /* Body: single column */
+  .body-grid { display: block; padding: 16px 24px; }
+  .sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+
+  /* Tab nav: hide */
+  .tab-nav { display: none; }
+
+  /* Cards */
+  .section-card { box-shadow: none; border: 1px solid #e2e8f0; margin-bottom: 14px; }
+
+  /* Never break inside these elements */
+  .concept-box, .flow-row, .quote-block, .read-step,
+  .metric-box, .ref-item, .exercise-block,
+  .section-card { break-inside: avoid; }
+
+  /* Section headers don't orphan */
+  .section-header { break-after: avoid; }
+
+  /* Force page break before each week (used in master bundle) */
+  .week-page-break { break-before: page; }
+
+  /* Chips and pills: flatten */
+  .chip, .pill { border: 1px solid #ccc !important; }
+
+  /* Links: show URL */
+  a[href]::after { content: none; }
+
+  /* Footer */
+  .page-footer { border-top: 1px solid #e2e8f0; }
+}
