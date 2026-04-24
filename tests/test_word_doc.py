@@ -146,3 +146,16 @@ def test_bagian_i_contains_key_content():
     assert "PSAK" in text
     # Tabel 1.1 and Tabel 1.2
     assert len(doc.tables) >= 2
+
+
+def test_bagian_ii_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_ii import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Faithful Representation" in text
+    assert "Reliability" in text
+    assert "BC3.27" in text
+    assert len(doc.tables) >= 1
+    assert len(doc.inline_shapes) >= 3   # 2 trees + 1 bar chart
