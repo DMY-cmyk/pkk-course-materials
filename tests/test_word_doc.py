@@ -244,3 +244,21 @@ def test_bibliography_parses_txt_file():
     assert "Daftar Pustaka" in text or "DAFTAR PUSTAKA" in text
     # At least some reference entries should be present
     assert len([p for p in doc.paragraphs if p.text.strip()]) > 5
+
+
+import tempfile
+
+
+def test_generate_full_document_produces_docx():
+    import subprocess, sys, os
+    output_dir = tempfile.mkdtemp()
+    output_path = os.path.join(output_dir, "test_output.docx")
+    result = subprocess.run(
+        [sys.executable, "scripts/generate_word_doc.py", "--output", output_path],
+        capture_output=True, text=True, timeout=120
+    )
+    assert result.returncode == 0, f"Script failed:\n{result.stderr}"
+    assert os.path.exists(output_path), "Output .docx not created"
+    from docx import Document
+    doc = Document(output_path)
+    assert len(doc.paragraphs) > 50, "Document too short"
