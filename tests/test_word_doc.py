@@ -91,3 +91,35 @@ def test_all_visuals_return_bytesio():
         assert hasattr(buf, "read"), f"{fn.__name__} must return BytesIO"
         data = buf.read()
         assert data[:8] == PNG_MAGIC, f"{fn.__name__} must return PNG"
+
+
+import os
+BASE_DIR = os.path.join(
+    os.path.dirname(__file__), ".."
+)
+
+
+def test_cover_adds_all_six_members():
+    from docx import Document
+    from scripts.word_doc.cover import build_cover
+    doc = Document()
+    logo_path = os.path.join(BASE_DIR, "STIE Logo.png")
+    build_cover(doc, logo_path)
+    full_text = "\n".join(p.text for p in doc.paragraphs)
+    for name in [
+        "Efri Nurmalinda", "Dzaki Muhammad Yusfian",
+        "Nuradila", "Achmad Dimas Wibawa",
+        "Adinda Putri Dewi", "Setiabudi Yudha Pratama",
+    ]:
+        assert name in full_text, f"Missing member: {name}"
+
+
+def test_cover_contains_title_keywords():
+    from docx import Document
+    from scripts.word_doc.cover import build_cover
+    doc = Document()
+    logo_path = os.path.join(BASE_DIR, "STIE Logo.png")
+    build_cover(doc, logo_path)
+    full_text = "\n".join(p.text for p in doc.paragraphs)
+    assert "KERANGKA KONSEPTUAL FASB" in full_text
+    assert "MNK202" in full_text
