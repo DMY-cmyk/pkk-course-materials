@@ -133,3 +133,16 @@ def test_front_matter_contains_kata_pengantar():
     full_text = "\n".join(p.text for p in doc.paragraphs)
     assert "Kata Pengantar" in full_text
     assert "DAFTAR ISI" in full_text
+
+
+def test_bagian_i_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_i import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "SFAC 1" in text
+    assert "Norwalk Agreement" in text
+    assert "PSAK" in text
+    # Tabel 1.1 and Tabel 1.2
+    assert len(doc.tables) >= 2
