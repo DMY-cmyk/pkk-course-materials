@@ -204,3 +204,17 @@ def test_bagian_vi_contains_key_content():
     text = "\n".join(p.text for p in doc.paragraphs)
     assert "Chapter 8" in text or "Catatan" in text
     assert len(doc.tables) >= 1
+
+
+def test_bagian_vii_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_vii import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "115,79" in text or "115.79" in text   # Net Sales
+    assert "52,2" in text or "52.2" in text        # Goodwill
+    assert "First Pacific" in text
+    assert "43,077" in text or "43.077" in text    # NCI
+    assert len(doc.tables) >= 4
+    assert len(doc.inline_shapes) >= 3             # org, pie, matrix
