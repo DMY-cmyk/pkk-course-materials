@@ -218,3 +218,29 @@ def test_bagian_vii_contains_key_content():
     assert "43,077" in text or "43.077" in text    # NCI
     assert len(doc.tables) >= 4
     assert len(doc.inline_shapes) >= 3             # org, pie, matrix
+
+
+def test_bagian_viii_contains_conclusion():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_viii import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Kesimpulan" in text or "KESIMPULAN" in text
+    assert "DSAK" in text or "OJK" in text
+
+
+def test_bibliography_parses_txt_file():
+    import os
+    from docx import Document
+    from scripts.word_doc.bibliography import build_bibliography
+    txt_path = os.path.join(
+        os.path.dirname(__file__), "..",
+        "Daftar Pustaka — Presentasi Kelompok 3.txt"
+    )
+    doc = Document()
+    build_bibliography(doc, txt_path)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Daftar Pustaka" in text or "DAFTAR PUSTAKA" in text
+    # At least some reference entries should be present
+    assert len([p for p in doc.paragraphs if p.text.strip()]) > 5
