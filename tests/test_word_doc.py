@@ -159,3 +159,15 @@ def test_bagian_ii_contains_key_content():
     assert "BC3.27" in text
     assert len(doc.tables) >= 1
     assert len(doc.inline_shapes) >= 3   # 2 trees + 1 bar chart
+
+
+def test_bagian_iii_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_iii import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "present right" in text
+    assert "BC4.7" in text
+    assert "Comprehensive Income" in text
+    assert len(doc.tables) >= 2
