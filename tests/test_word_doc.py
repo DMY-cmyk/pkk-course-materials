@@ -49,3 +49,45 @@ def test_add_table_with_headers_shape():
     table = add_table_with_headers(doc, headers, rows)
     assert len(table.rows) == 3   # 1 header + 2 data
     assert len(table.columns) == 3
+
+
+PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
+
+
+def _is_valid_png(buf):
+    return buf.read(8) == PNG_MAGIC
+
+
+def test_grafik_eps_is_png():
+    from scripts.word_doc.visuals import generate_grafik_eps_indf
+    buf = generate_grafik_eps_indf()
+    assert _is_valid_png(buf)
+
+
+def test_bagan_timeline_is_png():
+    from scripts.word_doc.visuals import generate_bagan_timeline
+    buf = generate_bagan_timeline()
+    assert _is_valid_png(buf)
+
+
+def test_all_visuals_return_bytesio():
+    from scripts.word_doc import visuals
+    funcs = [
+        visuals.generate_bagan_timeline,
+        visuals.generate_bagan_primary_users,
+        visuals.generate_bagan_qc_sfac2,
+        visuals.generate_bagan_qc_sfac8,
+        visuals.generate_grafik_eps_indf,
+        visuals.generate_bagan_ci_waterfall,
+        visuals.generate_bagan_entry_exit_tree,
+        visuals.generate_bagan_fs_hierarchy,
+        visuals.generate_bagan_fasb_to_psak,
+        visuals.generate_bagan_indf_org,
+        visuals.generate_bagan_kepemilikan_pie,
+        visuals.generate_bagan_matrix_relevance_fr,
+    ]
+    for fn in funcs:
+        buf = fn()
+        assert hasattr(buf, "read"), f"{fn.__name__} must return BytesIO"
+        data = buf.read()
+        assert data[:8] == PNG_MAGIC, f"{fn.__name__} must return PNG"
