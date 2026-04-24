@@ -123,3 +123,13 @@ def test_cover_contains_title_keywords():
     full_text = "\n".join(p.text for p in doc.paragraphs)
     assert "KERANGKA KONSEPTUAL FASB" in full_text
     assert "MNK202" in full_text
+
+
+def test_front_matter_contains_kata_pengantar():
+    from docx import Document
+    from scripts.word_doc.front_matter import build_front_matter
+    doc = Document()
+    build_front_matter(doc)
+    full_text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Kata Pengantar" in full_text
+    assert "DAFTAR ISI" in full_text
