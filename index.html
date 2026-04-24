@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MNK202 — Pelaporan Keuangan Korporat | Course Hub</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0f172a;
+    --navy2: #1e293b;
+    --navy3: #334155;
+    --accent: #3b82f6;
+    --accent2: #60a5fa;
+    --gold: #f59e0b;
+    --green: #10b981;
+    --purple: #8b5cf6;
+    --pink: #ec4899;
+    --teal: #14b8a6;
+    --orange: #f97316;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --border: rgba(255,255,255,0.08);
+    --radius: 12px;
+  }
+
+  body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy2) 0%, #0d1b2a 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 3rem 1.5rem 2.5rem;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(59,130,246,0.15);
+    border: 1px solid rgba(59,130,246,0.3);
+    border-radius: 999px;
+    padding: 0.25rem 0.9rem;
+    font-size: 0.78rem;
+    color: var(--accent2);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .meta-chip {
+    background: var(--navy3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .meta-chip strong { color: var(--text); }
+
+  /* ── WEEK TITLES ── */
+  .week-grid-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .week-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+  }
+  .week-chip {
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+  .week-num {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--accent2);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  /* ── MAIN CARDS ── */
+  .cards-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+  }
+  .cards-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.25rem;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .card {
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover { border-color: rgba(255,255,255,0.18); transform: translateY(-2px); }
+
+  .card-header {
+    padding: 1.1rem 1.25rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+  .card-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .card-info h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+  }
+  .card-info p {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 0.15rem;
+  }
+
+  .weeks-list {
+    padding: 0.85rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .week-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .w-badge {
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    min-width: 30px;
+    color: var(--muted);
+  }
+  .w-link {
+    font-size: 0.8rem;
+    color: var(--text);
+    text-decoration: none;
+    flex: 1;
+    padding: 0.25rem 0.4rem;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1.3;
+  }
+  .w-link:hover { background: rgba(255,255,255,0.07); color: #fff; }
+
+  /* accent colors per section */
+  .c-blue .card-icon { background: rgba(59,130,246,0.15); color: var(--accent); }
+  .c-blue .w-badge { color: var(--accent2); }
+
+  .c-green .card-icon { background: rgba(16,185,129,0.15); color: var(--green); }
+  .c-green .w-badge { color: var(--green); }
+
+  .c-purple .card-icon { background: rgba(139,92,246,0.15); color: var(--purple); }
+  .c-purple .w-badge { color: var(--purple); }
+
+  .c-gold .card-icon { background: rgba(245,158,11,0.15); color: var(--gold); }
+  .c-gold .w-badge { color: var(--gold); }
+
+  .c-teal .card-icon { background: rgba(20,184,166,0.15); color: var(--teal); }
+  .c-teal .w-badge { color: var(--teal); }
+
+  .c-pink .card-icon { background: rgba(236,72,153,0.15); color: var(--pink); }
+  .c-pink .w-badge { color: var(--pink); }
+
+  .c-orange .card-icon { background: rgba(249,115,22,0.15); color: var(--orange); }
+  .c-orange .w-badge { color: var(--orange); }
+
+  /* single-link cards */
+  .single-link-wrap {
+    padding: 0.85rem 1.25rem;
+  }
+  .single-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent2);
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    background: rgba(59,130,246,0.1);
+    border: 1px solid rgba(59,130,246,0.25);
+    border-radius: 8px;
+    transition: background 0.15s;
+  }
+  .single-link:hover { background: rgba(59,130,246,0.18); }
+
+  /* footer */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Course Hub</div>
+  <h1>Pelaporan Keuangan Korporat</h1>
+  <p class="hero-sub">MNK202 · Program Magister Manajemen · Semester 1</p>
+  <div class="hero-meta">
+    <span class="meta-chip"><strong>14</strong> Minggu</span>
+    <span class="meta-chip"><strong>5</strong> Jenis Materi</span>
+    <span class="meta-chip">Dzaki Muhammad Yusfian</span>
+  </div>
+</div>
+
+<!-- WEEK OVERVIEW -->
+<div class="week-grid-section">
+  <div class="section-label">Topik per Minggu</div>
+  <div class="week-list">
+    <div class="week-chip"><span class="week-num">W01</span> Pengantar &amp; Perspektif Historis Akuntansi</div>
+    <div class="week-chip"><span class="week-num">W02</span> Kontrak Efisien, Asimetri Informasi &amp; Pengukuran</div>
+    <div class="week-chip"><span class="week-num">W03</span> Perkembangan Struktur Kelembagaan Akuntansi</div>
+    <div class="week-chip"><span class="week-num">W04</span> Postulat, Prinsip, dan Konsep Akuntansi</div>
+    <div class="week-chip"><span class="week-num">W05</span> Kerangka Konseptual FASB / IASB</div>
+    <div class="week-chip"><span class="week-num">W06</span> Kegunaan Informasi Akuntansi bagi Investor</div>
+    <div class="week-chip"><span class="week-num">W07</span> Keseragaman dan Pengungkapan: Arah Kebijakan</div>
+    <div class="week-chip"><span class="week-num">W08</span> Neraca / Laporan Posisi Keuangan</div>
+    <div class="week-chip"><span class="week-num">W09</span> Laporan Laba Rugi &amp; Kualitas Laba</div>
+    <div class="week-chip"><span class="week-num">W10</span> Laporan Arus Kas &amp; Kualitas Akrual</div>
+    <div class="week-chip"><span class="week-num">W11</span> Pasar Sekuritas Efisien (EMH)</div>
+    <div class="week-chip"><span class="week-num">W12</span> Manajemen Laba (Earnings Management)</div>
+    <div class="week-chip"><span class="week-num">W13</span> Presentasi Term Paper (Sesi 1)</div>
+    <div class="week-chip"><span class="week-num">W14</span> Presentasi Term Paper (Sesi 2) &amp; Review UAS</div>
+  </div>
+</div>
+
+<!-- SECTION CARDS -->
+<div class="cards-wrap">
+  <div class="cards-title">Pilih Materi</div>
+  <div class="cards-grid">
+
+    <!-- 1. Main Summary - Ebook -->
+    <div class="card c-blue">
+      <div class="card-header">
+        <div class="card-icon">📘</div>
+        <div class="card-info">
+          <h3>Main Summary — Ebook</h3>
+          <p>Ringkasan lengkap tiap minggu · 14 dokumen</p>
+        </div>
+      </div>
+      <div class="weeks-list">
+        <div class="week-row"><span class="w-badge">W01</span><a class="w-link" href="Main Summary - Ebook/Week 01/">Pengantar &amp; Perspektif Historis</a></div>
+        <div class="week-row"><span class="w-badge">W02</span><a class="w-link" href="Main Summary - Ebook/Week 02/">Kontrak Efisien &amp; Asimetri Informasi</a></div>
+        <div class="week-row"><span class="w-badge">W03</span><a class="w-link" href="Main Summary - Ebook/Week 03/">Struktur Kelembagaan Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W04</span><a class="w-link" href="Main Summary - Ebook/Week 04/">Postulat, Prinsip, Konsep Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W05</span><a class="w-link" href="Main Summary - Ebook/Week 05/">Kerangka Konseptual FASB/IASB</a></div>
+        <div class="week-row"><span class="w-badge">W06</span><a class="w-link" href="Main Summary - Ebook/Week 06/">Kegunaan Informasi Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W07</span><a class="w-link" href="Main Summary - Ebook/Week 07/">Keseragaman &amp; Pengungkapan</a></div>
+        <div class="week-row"><span class="w-badge">W08</span><a class="w-link" href="Main Summary - Ebook/Week 08/">Neraca / Laporan Posisi Keuangan</a></div>
+        <div class="week-row"><span class="w-badge">W09</span><a class="w-link" href="Main Summary - Ebook/Week 09/">Laporan Laba Rugi &amp; Kualitas Laba</a></div>
+        <div class="week-row"><span class="w-badge">W10</span><a class="w-link" href="Main Summary - Ebook/Week 10/">Laporan Arus Kas &amp; Kualitas Akrual</a></div>
+        <div class="week-row"><span class="w-badge">W11</span><a class="w-link" href="Main Summary - Ebook/Week 11/">Pasar Sekuritas Efisien (EMH)</a></div>
+        <div class="week-row"><span class="w-badge">W12</span><a class="w-link" href="Main Summary - Ebook/Week 12/">Manajemen Laba</a></div>
+        <div class="week-row"><span class="w-badge">W13</span><a class="w-link" href="Main Summary - Ebook/Week 13/">Presentasi Term Paper I</a></div>
+        <div class="week-row"><span class="w-badge">W14</span><a class="w-link" href="Main Summary - Ebook/Week 14/">Presentasi Term Paper II &amp; Review</a></div>
+      </div>
+    </div>
+
+    <!-- 2. Study Guide -->
+    <div class="card c-green">
+      <div class="card-header">
+        <div class="card-icon">📗</div>
+        <div class="card-info">
+          <h3>Study Guide — Aid</h3>
+          <p>Panduan belajar tiap minggu · 14 dokumen</p>
+        </div>
+      </div>
+      <div class="weeks-list">
+        <div class="week-row"><span class="w-badge">W01</span><a class="w-link" href="Study Guide - Aid/Week 01/">Pengantar &amp; Perspektif Historis</a></div>
+        <div class="week-row"><span class="w-badge">W02</span><a class="w-link" href="Study Guide - Aid/Week 02/">Kontrak Efisien &amp; Asimetri Informasi</a></div>
+        <div class="week-row"><span class="w-badge">W03</span><a class="w-link" href="Study Guide - Aid/Week 03/">Struktur Kelembagaan Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W04</span><a class="w-link" href="Study Guide - Aid/Week 04/">Postulat, Prinsip, Konsep Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W05</span><a class="w-link" href="Study Guide - Aid/Week 05/">Kerangka Konseptual FASB/IASB</a></div>
+        <div class="week-row"><span class="w-badge">W06</span><a class="w-link" href="Study Guide - Aid/Week 06/">Kegunaan Informasi Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W07</span><a class="w-link" href="Study Guide - Aid/Week 07/">Keseragaman &amp; Pengungkapan</a></div>
+        <div class="week-row"><span class="w-badge">W08</span><a class="w-link" href="Study Guide - Aid/Week 08/">Neraca / Laporan Posisi Keuangan</a></div>
+        <div class="week-row"><span class="w-badge">W09</span><a class="w-link" href="Study Guide - Aid/Week 09/">Laporan Laba Rugi &amp; Kualitas Laba</a></div>
+        <div class="week-row"><span class="w-badge">W10</span><a class="w-link" href="Study Guide - Aid/Week 10/">Laporan Arus Kas &amp; Kualitas Akrual</a></div>
+        <div class="week-row"><span class="w-badge">W11</span><a class="w-link" href="Study Guide - Aid/Week 11/">Pasar Sekuritas Efisien (EMH)</a></div>
+        <div class="week-row"><span class="w-badge">W12</span><a class="w-link" href="Study Guide - Aid/Week 12/">Manajemen Laba</a></div>
+        <div class="week-row"><span class="w-badge">W13</span><a class="w-link" href="Study Guide - Aid/Week 13/">Presentasi Term Paper I</a></div>
+        <div class="week-row"><span class="w-badge">W14</span><a class="w-link" href="Study Guide - Aid/Week 14/">Presentasi Term Paper II &amp; Review</a></div>
+      </div>
+    </div>
+
+    <!-- 3. Exercises -->
+    <div class="card c-purple">
+      <div class="card-header">
+        <div class="card-icon">📝</div>
+        <div class="card-info">
+          <h3>Exercises</h3>
+          <p>Latihan soal tiap minggu · 14 dokumen</p>
+        </div>
+      </div>
+      <div class="weeks-list">
+        <div class="week-row"><span class="w-badge">W01</span><a class="w-link" href="Exercises/Week 01/">Pengantar &amp; Perspektif Historis</a></div>
+        <div class="week-row"><span class="w-badge">W02</span><a class="w-link" href="Exercises/Week 02/">Kontrak Efisien &amp; Asimetri Informasi</a></div>
+        <div class="week-row"><span class="w-badge">W03</span><a class="w-link" href="Exercises/Week 03/">Struktur Kelembagaan Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W04</span><a class="w-link" href="Exercises/Week 04/">Postulat, Prinsip, Konsep Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W05</span><a class="w-link" href="Exercises/Week 05/">Kerangka Konseptual FASB/IASB</a></div>
+        <div class="week-row"><span class="w-badge">W06</span><a class="w-link" href="Exercises/Week 06/">Kegunaan Informasi Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W07</span><a class="w-link" href="Exercises/Week 07/">Keseragaman &amp; Pengungkapan</a></div>
+        <div class="week-row"><span class="w-badge">W08</span><a class="w-link" href="Exercises/Week 08/">Neraca / Laporan Posisi Keuangan</a></div>
+        <div class="week-row"><span class="w-badge">W09</span><a class="w-link" href="Exercises/Week 09/">Laporan Laba Rugi &amp; Kualitas Laba</a></div>
+        <div class="week-row"><span class="w-badge">W10</span><a class="w-link" href="Exercises/Week 10/">Laporan Arus Kas &amp; Kualitas Akrual</a></div>
+        <div class="week-row"><span class="w-badge">W11</span><a class="w-link" href="Exercises/Week 11/">Pasar Sekuritas Efisien (EMH)</a></div>
+        <div class="week-row"><span class="w-badge">W12</span><a class="w-link" href="Exercises/Week 12/">Manajemen Laba</a></div>
+        <div class="week-row"><span class="w-badge">W13</span><a class="w-link" href="Exercises/Week 13/">Presentasi Term Paper I</a></div>
+        <div class="week-row"><span class="w-badge">W14</span><a class="w-link" href="Exercises/Week 14/">Presentasi Term Paper II &amp; Review</a></div>
+      </div>
+    </div>
+
+    <!-- 4. Review Sheet -->
+    <div class="card c-gold">
+      <div class="card-header">
+        <div class="card-icon">📋</div>
+        <div class="card-info">
+          <h3>Review Sheet</h3>
+          <p>Lembar review tiap minggu · 14 dokumen</p>
+        </div>
+      </div>
+      <div class="weeks-list">
+        <div class="week-row"><span class="w-badge">W01</span><a class="w-link" href="Review Sheet/Week 01/">Pengantar &amp; Perspektif Historis</a></div>
+        <div class="week-row"><span class="w-badge">W02</span><a class="w-link" href="Review Sheet/Week 02/">Kontrak Efisien &amp; Asimetri Informasi</a></div>
+        <div class="week-row"><span class="w-badge">W03</span><a class="w-link" href="Review Sheet/Week 03/">Struktur Kelembagaan Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W04</span><a class="w-link" href="Review Sheet/Week 04/">Postulat, Prinsip, Konsep Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W05</span><a class="w-link" href="Review Sheet/Week 05/">Kerangka Konseptual FASB/IASB</a></div>
+        <div class="week-row"><span class="w-badge">W06</span><a class="w-link" href="Review Sheet/Week 06/">Kegunaan Informasi Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W07</span><a class="w-link" href="Review Sheet/Week 07/">Keseragaman &amp; Pengungkapan</a></div>
+        <div class="week-row"><span class="w-badge">W08</span><a class="w-link" href="Review Sheet/Week 08/">Neraca / Laporan Posisi Keuangan</a></div>
+        <div class="week-row"><span class="w-badge">W09</span><a class="w-link" href="Review Sheet/Week 09/">Laporan Laba Rugi &amp; Kualitas Laba</a></div>
+        <div class="week-row"><span class="w-badge">W10</span><a class="w-link" href="Review Sheet/Week 10/">Laporan Arus Kas &amp; Kualitas Akrual</a></div>
+        <div class="week-row"><span class="w-badge">W11</span><a class="w-link" href="Review Sheet/Week 11/">Pasar Sekuritas Efisien (EMH)</a></div>
+        <div class="week-row"><span class="w-badge">W12</span><a class="w-link" href="Review Sheet/Week 12/">Manajemen Laba</a></div>
+        <div class="week-row"><span class="w-badge">W13</span><a class="w-link" href="Review Sheet/Week 13/">Presentasi Term Paper I</a></div>
+        <div class="week-row"><span class="w-badge">W14</span><a class="w-link" href="Review Sheet/Week 14/">Presentasi Term Paper II &amp; Review</a></div>
+      </div>
+    </div>
+
+    <!-- 5. Indonesian Company Examples -->
+    <div class="card c-teal">
+      <div class="card-header">
+        <div class="card-icon">🏢</div>
+        <div class="card-info">
+          <h3>Indonesian Company Examples</h3>
+          <p>Contoh perusahaan Indonesia · 14 dokumen</p>
+        </div>
+      </div>
+      <div class="weeks-list">
+        <div class="week-row"><span class="w-badge">W01</span><a class="w-link" href="Indonesian Company Examples/Week 01/">Pengantar &amp; Perspektif Historis</a></div>
+        <div class="week-row"><span class="w-badge">W02</span><a class="w-link" href="Indonesian Company Examples/Week 02/">Kontrak Efisien &amp; Asimetri Informasi</a></div>
+        <div class="week-row"><span class="w-badge">W03</span><a class="w-link" href="Indonesian Company Examples/Week 03/">Struktur Kelembagaan Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W04</span><a class="w-link" href="Indonesian Company Examples/Week 04/">Postulat, Prinsip, Konsep Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W05</span><a class="w-link" href="Indonesian Company Examples/Week 05/">Kerangka Konseptual FASB/IASB</a></div>
+        <div class="week-row"><span class="w-badge">W06</span><a class="w-link" href="Indonesian Company Examples/Week 06/">Kegunaan Informasi Akuntansi</a></div>
+        <div class="week-row"><span class="w-badge">W07</span><a class="w-link" href="Indonesian Company Examples/Week 07/">Keseragaman &amp; Pengungkapan</a></div>
+        <div class="week-row"><span class="w-badge">W08</span><a class="w-link" href="Indonesian Company Examples/Week 08/">Neraca / Laporan Posisi Keuangan</a></div>
+        <div class="week-row"><span class="w-badge">W09</span><a class="w-link" href="Indonesian Company Examples/Week 09/">Laporan Laba Rugi &amp; Kualitas Laba</a></div>
+        <div class="week-row"><span class="w-badge">W10</span><a class="w-link" href="Indonesian Company Examples/Week 10/">Laporan Arus Kas &amp; Kualitas Akrual</a></div>
+        <div class="week-row"><span class="w-badge">W11</span><a class="w-link" href="Indonesian Company Examples/Week 11/">Pasar Sekuritas Efisien (EMH)</a></div>
+        <div class="week-row"><span class="w-badge">W12</span><a class="w-link" href="Indonesian Company Examples/Week 12/">Manajemen Laba</a></div>
+        <div class="week-row"><span class="w-badge">W13</span><a class="w-link" href="Indonesian Company Examples/Week 13/">Presentasi Term Paper I</a></div>
+        <div class="week-row"><span class="w-badge">W14</span><a class="w-link" href="Indonesian Company Examples/Week 14/">Presentasi Term Paper II &amp; Review</a></div>
+      </div>
+    </div>
+
+    <!-- 6. Visual Companion -->
+    <div class="card c-pink">
+      <div class="card-header">
+        <div class="card-icon">🎨</div>
+        <div class="card-info">
+          <h3>Visual Companion</h3>
+          <p>Ringkasan visual seluruh materi · 1 dokumen</p>
+        </div>
+      </div>
+      <div class="single-link-wrap">
+        <a class="single-link" href="Visual Companion/">Buka Visual Companion →</a>
+      </div>
+    </div>
+
+    <!-- 7. Master Print Bundle -->
+    <div class="card c-orange">
+      <div class="card-header">
+        <div class="card-icon">🗂️</div>
+        <div class="card-info">
+          <h3>Master Print Bundle</h3>
+          <p>Paket cetak lengkap semua materi · 1 dokumen</p>
+        </div>
+      </div>
+      <div class="single-link-wrap">
+        <a class="single-link" href="Master Print Bundle/course-companion.html">Buka Master Bundle →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  MNK202 Pelaporan Keuangan Korporat · Dzaki Muhammad Yusfian · Program Magister Manajemen
+</footer>
+
+</body>
+</html>
