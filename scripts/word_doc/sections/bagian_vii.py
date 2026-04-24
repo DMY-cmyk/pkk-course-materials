@@ -132,13 +132,6 @@ def build(doc) -> None:
             ["Total Goodwill INDF", "Rp 52,2 T", "Berbasis DCF", "Tidak ada penurunan nilai 2024"],
         ],
     )
-    add_body_paragraph(
-        doc,
-        "Catatan kepada implementor: Isi nilai tercatat per UPK di atas harus diverifikasi dari "
-        "Catatan atas Laporan Keuangan INDF 2024 (sources/indf-2024-ar.pdf). Kolom 'Indikasi' "
-        "juga harus diverifikasi dari laporan audit."
-    )
-
     add_sub_heading(doc, "VII.6 Liabilitas dan Ekuitas: Klasifikasi NCI")
     add_body_paragraph(
         doc,
