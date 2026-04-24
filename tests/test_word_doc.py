@@ -184,3 +184,23 @@ def test_bagian_iv_contains_key_content():
     assert "Entry Price" in text
     assert "PR12" in text
     assert len(doc.tables) >= 2
+
+
+def test_bagian_v_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_v import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Achilles" in text
+    assert "pro-cyclicality" in text or "pro-siklikalitas" in text
+
+
+def test_bagian_vi_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_vi import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Chapter 8" in text or "Catatan" in text
+    assert len(doc.tables) >= 1
