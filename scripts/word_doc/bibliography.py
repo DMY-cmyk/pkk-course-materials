@@ -26,7 +26,7 @@ def build_bibliography(doc, txt_path: str) -> None:
         lines = f.readlines()
 
     for line in lines:
-        stripped = line.rstrip("\n")
+        stripped = line.rstrip("\r\n")
         if not stripped.strip():
             doc.add_paragraph()
             continue
