@@ -171,3 +171,16 @@ def test_bagian_iii_contains_key_content():
     assert "BC4.7" in text
     assert "Comprehensive Income" in text
     assert len(doc.tables) >= 2
+
+
+def test_bagian_iv_contains_key_content():
+    from docx import Document
+    from scripts.word_doc.sections.bagian_iv import build
+    doc = Document()
+    build(doc)
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "RD3" in text
+    assert "M30" in text
+    assert "Entry Price" in text
+    assert "PR12" in text
+    assert len(doc.tables) >= 2
