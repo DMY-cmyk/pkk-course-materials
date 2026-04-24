@@ -1,10 +1,15 @@
+"""
+Visual generators for Word document: 150 dpi PNG charts and diagrams.
+
+Each function returns io.BytesIO at position 0, ready for embedding in
+python-docx. Uses matplotlib Agg backend for headless rendering.
+"""
 import io
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import matplotlib.ticker as mticker
-import numpy as np
 
 
 def _save_fig(fig) -> io.BytesIO:
@@ -14,6 +19,27 @@ def _save_fig(fig) -> io.BytesIO:
     plt.close(fig)
     buf.seek(0)
     return buf
+
+
+def _draw_box(ax, cx, cy, w, h, label, bold=False, fill="white", fontsize=8):
+    """Draw a rounded box with centered text."""
+    r = mpatches.FancyBboxPatch(
+        (cx - w/2, cy - h/2), w, h,
+        boxstyle="round,pad=0.1", lw=1, ec="black", fc=fill
+    )
+    ax.add_patch(r)
+    ax.text(cx, cy, label, ha="center", va="center",
+            fontsize=fontsize, fontfamily="serif",
+            fontweight="bold" if bold else "normal")
+
+
+def _draw_arrow(ax, x1, y1, x2, y2, label="", fontsize=7.5):
+    """Draw an annotated arrow."""
+    ax.annotate("", xy=(x2, y2), xytext=(x1, y1),
+                arrowprops=dict(arrowstyle="->", color="black", lw=0.8))
+    if label:
+        ax.text((x1 + x2) / 2 + 0.1, (y1 + y2) / 2, label,
+                fontsize=fontsize, fontstyle="italic", fontfamily="serif")
 
 
 # ── Bagan 1.1 — Timeline SFAC 1–8 ─────────────────────────────────────────────
@@ -101,35 +127,21 @@ def generate_bagan_qc_sfac2() -> io.BytesIO:
     ax.set_ylim(0, 6)
     ax.axis("off")
 
-    def box(cx, cy, w, h, label, bold=False, fill="white"):
-        r = mpatches.FancyBboxPatch(
-            (cx - w/2, cy - h/2), w, h,
-            boxstyle="round,pad=0.1", lw=1, ec="black", fc=fill
-        )
-        ax.add_patch(r)
-        ax.text(cx, cy, label, ha="center", va="center",
-                fontsize=8, fontfamily="serif",
-                fontweight="bold" if bold else "normal")
-
-    def arrow(x1, y1, x2, y2):
-        ax.annotate("", xy=(x2, y2), xytext=(x1, y1),
-                    arrowprops=dict(arrowstyle="->", color="black", lw=0.8))
-
-    box(5, 5.3, 3.5, 0.7, "KEGUNAAN INFORMASI KEUANGAN", bold=True, fill="#d0d0d0")
+    _draw_box(ax, 5, 5.3, 3.5, 0.7, "KEGUNAAN INFORMASI KEUANGAN", bold=True, fill="#d0d0d0")
 
     for cx, label in [(3, "Relevansi\n(Relevance)"), (7, "Keandalan\n(Reliability)")]:
-        box(cx, 4.1, 2.4, 0.7, label, bold=True)
-        arrow(5, 4.92, cx, 4.45)
+        _draw_box(ax, cx, 4.1, 2.4, 0.7, label, bold=True)
+        _draw_arrow(ax, 5, 4.92, cx, 4.45)
 
     for cx, label in [(2, "Predictive\nValue"), (4, "Feedback\nValue")]:
-        box(cx, 2.9, 1.8, 0.65, label)
-        arrow(3, 3.75, cx, 3.23)
+        _draw_box(ax, cx, 2.9, 1.8, 0.65, label)
+        _draw_arrow(ax, 3, 3.75, cx, 3.23)
 
     for cx, label in [(6, "Representational\nFaithfulness"), (7.8, "Verifiability"), (9, "Neutrality")]:
-        box(cx, 2.9, 1.7, 0.65, label)
-        arrow(7, 3.75, cx, 3.23)
+        _draw_box(ax, cx, 2.9, 1.7, 0.65, label)
+        _draw_arrow(ax, 7, 3.75, cx, 3.23)
 
-    box(5, 1.6, 2.5, 0.6, "Materialitas (Threshold)", fill="#eeeeee")
+    _draw_box(ax, 5, 1.6, 2.5, 0.6, "Materialitas (Threshold)", fill="#eeeeee")
     ax.text(5, 1.0, "↑ ambang batas relevansi",
             ha="center", fontsize=7.5, fontfamily="serif", fontstyle="italic")
 
@@ -146,38 +158,24 @@ def generate_bagan_qc_sfac8() -> io.BytesIO:
     ax.set_ylim(0, 6)
     ax.axis("off")
 
-    def box(cx, cy, w, h, label, bold=False, fill="white"):
-        r = mpatches.FancyBboxPatch(
-            (cx - w/2, cy - h/2), w, h,
-            boxstyle="round,pad=0.1", lw=1, ec="black", fc=fill
-        )
-        ax.add_patch(r)
-        ax.text(cx, cy, label, ha="center", va="center",
-                fontsize=8, fontfamily="serif",
-                fontweight="bold" if bold else "normal")
-
-    def arrow(x1, y1, x2, y2):
-        ax.annotate("", xy=(x2, y2), xytext=(x1, y1),
-                    arrowprops=dict(arrowstyle="->", color="black", lw=0.8))
-
-    box(5, 5.3, 3.5, 0.7, "KEGUNAAN INFORMASI KEUANGAN", bold=True, fill="#d0d0d0")
+    _draw_box(ax, 5, 5.3, 3.5, 0.7, "KEGUNAAN INFORMASI KEUANGAN", bold=True, fill="#d0d0d0")
 
     for cx, label in [(3, "Relevansi\n(Relevance)"), (7, "Faithful\nRepresentation")]:
-        box(cx, 4.1, 2.4, 0.7, label, bold=True)
-        arrow(5, 4.92, cx, 4.45)
+        _draw_box(ax, cx, 4.1, 2.4, 0.7, label, bold=True)
+        _draw_arrow(ax, 5, 4.92, cx, 4.45)
 
     for cx, label in [(2, "Predictive\nValue"), (3, "Confirmatory\nValue"), (4, "Materiality")]:
-        box(cx, 2.9, 1.6, 0.6, label)
-        arrow(3, 3.75, cx, 3.2)
+        _draw_box(ax, cx, 2.9, 1.6, 0.6, label)
+        _draw_arrow(ax, 3, 3.75, cx, 3.2)
 
     for cx, label in [(6, "Completeness"), (7.5, "Neutrality"), (9, "Free from\nError")]:
-        box(cx, 2.9, 1.6, 0.6, label)
-        arrow(7, 3.75, cx, 3.2)
+        _draw_box(ax, cx, 2.9, 1.6, 0.6, label)
+        _draw_arrow(ax, 7, 3.75, cx, 3.2)
 
     ax.text(5, 2.1, "QC Peningkat (Enhancing):", ha="center",
             fontsize=8, fontfamily="serif", fontweight="bold")
     for i, label in enumerate(["Comparability", "Verifiability*", "Timeliness", "Understandability"]):
-        box(1.5 + i * 2.3, 1.45, 2.1, 0.55, label, fill="#eeeeee")
+        _draw_box(ax, 1.5 + i * 2.3, 1.45, 2.1, 0.55, label, fill="#eeeeee")
     ax.text(5, 0.7,
             "* Verifiability: diturunkan dari komponen Keandalan (SFAC 2) ke Enhancing QC (SFAC 8)",
             ha="center", fontsize=7, fontfamily="serif", fontstyle="italic")
@@ -255,37 +253,22 @@ def generate_bagan_entry_exit_tree() -> io.BytesIO:
     ax.set_ylim(0, 6)
     ax.axis("off")
 
-    def box(cx, cy, w, h, text, bold=False, fill="white"):
-        r = mpatches.FancyBboxPatch(
-            (cx - w/2, cy - h/2), w, h,
-            boxstyle="round,pad=0.15", lw=1, ec="black", fc=fill
-        )
-        ax.add_patch(r)
-        ax.text(cx, cy, text, ha="center", va="center",
-                fontsize=8, fontfamily="serif",
-                fontweight="bold" if bold else "normal")
+    _draw_box(ax, 5, 5.3, 4.5, 0.75, "PEMILIHAN BASIS PENGUKURAN\n(SFAC 8 Ch.6, M30–M34)", bold=True, fill="#d0d0d0")
+    _draw_box(ax, 5, 4.0, 4.0, 0.7, "Apakah aset/liabilitas\nmemiliki harga pasar unik?", fill="#eeeeee")
+    _draw_arrow(ax, 5, 4.92, 5, 4.35)
 
-    def arrow(x1, y1, x2, y2, label=""):
-        ax.annotate("", xy=(x2, y2), xytext=(x1, y1),
-                    arrowprops=dict(arrowstyle="->", color="black", lw=0.8))
-        if label:
-            ax.text((x1+x2)/2 + 0.1, (y1+y2)/2, label,
-                    fontsize=7.5, fontstyle="italic", fontfamily="serif")
+    _draw_box(ax, 2.5, 2.6, 3.2, 0.75, "Entry Price\n(Harga Masuk)", bold=True, fill="white")
+    _draw_arrow(ax, 5, 3.65, 2.5, 2.98, "YA — harga unik")
 
-    box(5, 5.3, 4.5, 0.75, "PEMILIHAN BASIS PENGUKURAN\n(SFAC 8 Ch.6, M30–M34)", bold=True, fill="#d0d0d0")
-    box(5, 4.0, 4.0, 0.7, "Apakah aset/liabilitas\nmemiliki harga pasar unik?", fill="#eeeeee")
-    arrow(5, 4.92, 5, 4.35)
-
-    box(2.5, 2.6, 3.2, 0.75, "Entry Price\n(Harga Masuk)", bold=True, fill="white")
-    arrow(5, 3.65, 2.5, 2.98, "YA — harga unik")
-
-    box(7.5, 2.6, 3.2, 0.75, "Exit Price\n(Harga Keluar)", bold=True, fill="#eeeeee")
-    arrow(5, 3.65, 7.5, 2.98, "TIDAK — tidak unik")
+    _draw_box(ax, 7.5, 2.6, 3.2, 0.75, "Exit Price\n(Harga Keluar)", bold=True, fill="#eeeeee")
+    _draw_arrow(ax, 5, 3.65, 7.5, 2.98, "TIDAK — tidak unik")
 
     for cx, items in [(2.5, ["Historical Cost", "Replacement Cost"]),
                       (7.5, ["Fair Value (IFRS 13)", "Net Realizable Value"])]:
         for i, label in enumerate(items):
-            box(cx, 1.5 - i * 0.85, 2.8, 0.6, label)
+            y_leaf = 1.5 - i * 0.85
+            _draw_box(ax, cx, y_leaf, 2.8, 0.6, label)
+            _draw_arrow(ax, cx, 2.22, cx, y_leaf + 0.3)
 
     ax.set_title("Bagan 4.1 — Pohon Keputusan Basis Pengukuran (SFAC 8 Ch.6, M30–M34)",
                  fontfamily="serif", fontsize=10, fontweight="bold")
@@ -368,19 +351,9 @@ def generate_bagan_indf_org() -> io.BytesIO:
     ax.set_ylim(0, 6)
     ax.axis("off")
 
-    def box(cx, cy, w, h, label, bold=False, fill="white"):
-        r = mpatches.FancyBboxPatch(
-            (cx - w/2, cy - h/2), w, h,
-            boxstyle="round,pad=0.15", lw=1, ec="black", fc=fill
-        )
-        ax.add_patch(r)
-        ax.text(cx, cy, label, ha="center", va="center",
-                fontsize=7.5, fontfamily="serif",
-                fontweight="bold" if bold else "normal")
-
-    box(5, 5.3, 4.5, 0.75,
+    _draw_box(ax, 5, 5.3, 4.5, 0.75,
         "PT Indofood Sukses Makmur Tbk (INDF)\nNet Sales: Rp115,79 T | EPS 2024: Rp984",
-        bold=True, fill="#d0d0d0")
+        bold=True, fill="#d0d0d0", fontsize=7.5)
 
     divisi = [
         (1.5, 3.7, "Bogasari\n(Tepung Terigu)"),
@@ -389,7 +362,7 @@ def generate_bagan_indf_org() -> io.BytesIO:
         (8.5, 3.7, "Distribusi\n& Lainnya"),
     ]
     for cx, cy, label in divisi:
-        box(cx, cy, 2.3, 0.8, label)
+        _draw_box(ax, cx, cy, 2.3, 0.8, label, fontsize=7.5)
         ax.plot([5, cx], [4.92, 4.1], color="black", lw=0.8)
 
     ax.text(5, 2.7, "Angka Kunci 2024:", ha="center",
