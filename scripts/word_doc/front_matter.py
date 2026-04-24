@@ -9,17 +9,16 @@ from scripts.word_doc.styles import (
 
 def _add_toc_field(doc):
     p = doc.add_paragraph()
-    run = p.add_run()
-    for tag, text in [("begin", None), (None, ' TOC \\o "1-3" \\h \\z \\u '), ("end", None)]:
-        if tag:
+    for fld_type in ("begin", None, "end"):
+        r = p.add_run()
+        if fld_type is not None:
             el = OxmlElement("w:fldChar")
-            el.set(qn("w:fldCharType"), tag)
-            run._r.append(el)
+            el.set(qn("w:fldCharType"), fld_type)
         else:
-            instr = OxmlElement("w:instrText")
-            instr.set(qn("xml:space"), "preserve")
-            instr.text = text
-            run._r.append(instr)
+            el = OxmlElement("w:instrText")
+            el.set(qn("xml:space"), "preserve")
+            el.text = ' TOC \\o "1-3" \\h \\z \\u '
+        r._r.append(el)
 
     note = doc.add_paragraph()
     note.paragraph_format.space_before = Pt(6)
@@ -68,7 +67,7 @@ def build_front_matter(doc) -> None:
     p_ttd = doc.add_paragraph()
     p_ttd.paragraph_format.space_before = Pt(20)
     p_ttd.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    run_ttd = p_ttd.add_run("Yogyakarta, April 2026\n\nKelompok 3 — MNK202")
+    run_ttd = p_ttd.add_run("Yogyakarta, April 2026\nKelompok 3 — MNK202")
     set_run_font(run_ttd, 12)
 
     add_page_break(doc)
