@@ -12,41 +12,41 @@ Delivery crimes #4 (reading), #5 (laser), #6 (distance) di `delivery-checklist.m
 ## Executive Summary
 
 **Total slides audited:** 32
-**Total crime occurrences:** 109
+**Total crime occurrences:** 98
 
 ### Severity Breakdown
 
 | Severity | Count |
 |----------|-------|
-| HIGH | 40 |
-| MED | 56 |
-| LOW | 13 |
-| **Total** | **109** |
+| HIGH | 55 |
+| MED | 40 |
+| LOW | 3 |
+| **Total** | **98** |
 
 ### Effort Breakdown
 
 | Effort | Count |
 |--------|-------|
-| S | 4 |
-| M | 37 |
-| L | 36 |
+| S | 0 |
+| M | 27 |
+| L | 39 |
 | XL | 32 |
-| **Total** | **109** |
+| **Total** | **98** |
 
 ### Per-Crime Frequency
 
 | Crime | Total Occurrences |
 |-------|-------------------|
 | #1 Too many slides | 3 |
-| #2 Too many words | 32 |
+| #2 Too many words | 31 |
 | #3 Font <40pt | 32 |
-| #7 No white space | 29 |
+| #7 No white space | 30 |
 | #8 Background clutter / logos | 0 |
 | #9 Collaborators list as final slide | 1 |
 | #10 "Thank you" / "Questions?" final | 1 |
-| **Total** | **98\*** |
+| **Total** | **98** |
 
-> \*Catatan: beberapa slide mengalami beberapa crime berbeda; total entri tabel = 109 (satu baris per crime per slide). Crime #8 adalah 0 — logo hanya di slide 01 (cover), tepat sesuai standar. Grid background (`.grid-bg`) di multiple slides bersifat dekoratif dengan opasitas sangat rendah (4–5%) dan tidak termasuk "background clutter" per definisi operasional F2.
+> Catatan: Aggregate dihitung ulang via grep pada baris tabel; konsisten dengan jumlah aktual 98 entries. Crime #8 adalah 0 — logo hanya di slide 01 (cover), tepat sesuai standar. Grid background (`.grid-bg`) di multiple slides bersifat dekoratif dengan opasitas sangat rendah (4–5%) dan tidak termasuk "background clutter" per definisi operasional F2.
 
 ### HIGH-XL Flag (per E4)
 
