@@ -36,12 +36,12 @@ MIT framework — every talk must open with an empowerment promise that
 tells the audience exactly what they will know by the end that they
 didn't know at the beginning.
 
-**Task:** Write a powerful opening that makes the audience immediately
+**Task:** Write a powerful opening for my presentation that makes the audience immediately
 understand why staying is worth every minute of their time.
 
 **Steps:**
-1. Ask for presentation topic, audience, and desired outcome before starting
-2. Identify the single most valuable thing the audience will walk away knowing
+1. Ask for my presentation topic, audience, and desired outcome before starting
+2. Identify the single most valuable thing my audience will walk away knowing
 3. Write the empowerment promise — specific, outcome-driven, impossible to ignore
 4. Design the first 60 seconds — promise, context, and why this matters now
 5. Flag everything that should be cut from the opening — jokes, thank yous, apologies
@@ -63,7 +63,7 @@ understand why staying is worth every minute of their time.
 Winston's MIT framework — every presentation crime that puts audiences
 to sleep gets identified, prosecuted, and eliminated.
 
-**Task:** Audit slides and eliminate every crime Winston identified that
+**Task:** Audit my presentation slides and eliminate every crime Winston identified that
 makes audiences disengage, sleep, or leave mentally.
 
 **The 10 Slide Crimes:**
@@ -79,7 +79,7 @@ makes audiences disengage, sleep, or leave mentally.
 10. "Thank you" or "Questions?" as final slide
 
 **Steps:**
-1. Ask to describe or share current slides before starting
+1. Ask me to describe or share my current slides before starting
 2. Check for the 10 Winston slide crimes
 3. Flag every crime with a specific fix
 4. Redesign the final slide as a contributions slide
@@ -104,16 +104,16 @@ makes audiences disengage, sleep, or leave mentally.
 framework — Symbol, Slogan, Surprise, Salient idea, Story — to make any
 idea impossible to forget.
 
-**Task:** Apply Winston's Star to the core idea so it sticks in every
+**Task:** Apply Winston's Star to my core idea so it sticks in every
 audience's mind long after the presentation ends.
 
 **Steps:**
-1. Ask for core idea, audience, and what to remember
+1. Ask for my core idea, audience, and what I want them to remember before starting
 2. Design the Symbol — a visual or object that represents the idea instantly
-3. Write the Slogan — a short phrase that becomes the handle people use
+3. Write the Slogan — a short phrase that becomes the handle people use to remember it
 4. Identify the Surprise — the counterintuitive truth that makes people stop and think
-5. Sharpen the Salient idea — the one idea that sticks above everything else
-6. Build the Story — how it works, why it matters, the journey that led here
+5. Sharpen the Salient idea — the one idea that sticks out above everything else
+6. Build the Story — how it works, why it matters, and the journey that led here
 
 **Rules:**
 - Symbol must be visual and specific — not abstract
@@ -134,14 +134,14 @@ audience's mind long after the presentation ends.
 framework — vision, proof of work, and contributions — to any presentation
 that needs to convince, convert, or close.
 
-**Task:** Structure the talk so the audience knows the vision, believes
-something significant has been done, and remembers exactly what was
-contributed — all within the first 5 minutes.
+**Task:** Structure my talk so the audience knows my vision, believes I've done
+something significant, and remembers exactly what I contributed — all within
+the first 5 minutes.
 
 **Steps:**
-1. Ask for goal, audience, and desired post-talk action
-2. Build the vision statement — the problem someone cares about and the new approach
-3. Design the proof of work — the steps taken that prove something real
+1. Ask for my presentation goal, audience, and what I want them to do after before starting
+2. Build the vision statement — the problem someone cares about and my new approach
+3. Design the proof of work — the steps taken that prove I've done something real
 4. Structure the 5-minute opening that establishes both vision and credibility
 5. Build the contributions close — the final slide that mirrors the opening promise
 
@@ -162,11 +162,11 @@ contributed — all within the first 5 minutes.
 prop and storytelling frameworks — the techniques that make ideas feel
 physical, memorable, and impossible to misunderstand.
 
-**Task:** Design a prop or story that makes the most complex idea feel as
+**Task:** Design a prop or story that makes my most complex idea feel as
 simple and physical as holding it in your hands.
 
 **Steps:**
-1. Ask for the complex idea to teach and audience
+1. Ask for the complex idea I need to teach and my audience before starting
 2. Identify the single most confusing aspect of the idea
 3. Design a physical prop or demonstration that makes the confusion disappear
 4. Build a story around the prop — tension, demonstration, resolution
@@ -174,7 +174,7 @@ simple and physical as holding it in your hands.
 
 **Rules:**
 - Prop must be physical and demonstrable — not a slide or diagram
-- Story must have genuine tension before resolution
+- Story must have genuine tension before the resolution
 - Script must guide attention — tell them where to look and what to notice
 - Demonstration must work even if it fails — the failure itself teaches
 - If no physical prop exists, design the closest verbal equivalent
