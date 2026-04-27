@@ -17,7 +17,7 @@
 | 01 | cut-first | — | — | 2026-04-27T08:50 | (see git log slide-01) |
 | 02 | cut-first | — | E1 (table 36px caption-tier) | 2026-04-27T08:55 | (see git log slide-02) |
 | 03 | split-first (override Hybrid) | 3 (03/04/05) | E1 SFAC table 36px caption-tier | 2026-04-27T09:05 | (see git log slide-03-split) |
-| 04 | (pending) | — | — | — | — |
+| 04 | split-first | 3 (06/07/08) | E1 evolution table 36px caption-tier; OB17 deferred | 2026-04-27T09:30 | (see git log slide-04-split) |
 | 05 | (pending) | — | — | — | — |
 | 06 | (pending) | — | — | — | — |
 | 07 | (pending) | — | — | — | — |
@@ -54,6 +54,7 @@
 ## Mid-Course Corrections
 
 - **Slide 03 (2026-04-27T09:05):** User-approved override Hybrid policy (cut-first → split-first) for slide 03 only. Reason: 3 distinct content elements (timeline, cards, SFAC table) with substantive value; cut-first would drop SFAC table entirely (potential E1 conflict). Result: slide 03 → 03 + 04 + 05. Deck count grows by 2. Subsequent slide chrome page-numbers will require cascade update — flagged in Out-of-Scope.
+- **Slide 04 (2026-04-27T09:30):** Split per audit T6 + Hybrid policy. v5 slide 04 → v6 slides 06 + 07 + 08. **OB17 (Basis Akrual) deferred:** the OB17 sub-callout in v5 slide 04 was content-cut (would not fit in slide 06 with Winston-compliant sizing); reintegrate at Pengakuan & Pengukuran section (target slide v5-14 to v5-17, v6 numbering TBD).
 
 ## Out-of-Scope Flags
 
