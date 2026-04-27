@@ -25,7 +25,7 @@
 | 09 | split-first | 3 (17/18/19) | E1 3-col components 36px caption-tier; description body 36px in slides 17/18 | 2026-04-27T11:10 | (see git log slide-09-split) |
 | 10 | split-first | 3 (20/21/22) | E1 2-col cards body 36px caption-tier; h4-tier 48px on card titles | 2026-04-27T11:30 | (see git log slide-10-split) |
 | 11 | split-first | 3 (23/24/25) | E1 table body 36px caption-tier; SFAC definitions condensed from v5 (formal-faithful) | 2026-04-27T11:50 | (see git log slide-11-split) |
-| 12 | split-first | 3 (12/13/14) | E1 asset table 36px caption-tier (Primasi row dropped — covered by BC4.7 on slide 13); E1 goodwill table 36px caption-tier; E1 BC4.7 body 36px caption-tier (3-line content); F5 active (INDF goodwill case Rp52,2T) | 2026-04-27T19:28 | (see git log slide-12-split) |
+| 12 | split-first | 3 (12/13/14) | E1 asset table 36px caption-tier (Primasi row dropped — covered by BC4.7 on slide 13); E1 goodwill table 36px caption-tier; E1 BC4.7 body 36px caption-tier (2-line content, tightened); E1 INDF resolution callout 36px caption-tier; E1 liability sub-note 36px caption-tier; F5 active (INDF goodwill case Rp52,2T); slack ≥159px (13) and ≥180px (14) post-tightening | 2026-04-27T19:55 | (see git log slide-12-split + tightening follow-up) |
 | 13 | (pending) | — | — | — | — |
 | 14 | (pending) | — | — | — | — |
 | 15 | (pending) | — | — | — | — |
@@ -49,7 +49,9 @@
 
 ## Exceptions
 
-(pending — populated as exceptions are flagged during Phase 2)
+- **Slide 12 (Aset table):** E1 caption-tier 36px on table body cells (3-col aspect/old/new comparison). Primasi row dropped — moved to BC4.7 callout on slide 13.
+- **Slide 13 (Liabilitas + BC4.7):** E1 caption-tier 36px on liability sub-note (`(1) present obligation; (2) transfer economic benefit — "Probable" & "past transaction" DIHAPUS.`). E1 caption-tier 36px on BC4.7 body. Quote line-height tightened 1.25 → 1.18; card padding tightened 32px 44px → 24px 36px; trailing "Memperkuat balance sheet approach." sentence dropped (BC4.7 primacy is the load-bearing claim — substance preserved). Final slack ~159px.
+- **Slide 14 (INDF Goodwill F5):** E1 caption-tier 36px on goodwill comparison table body (4-col karakteristik/old/new/status). E1 caption-tier 36px on resolution callout body. Table row padding 14px → 11px; row line-height 1.3 → 1.25. Callout padding 24×36 → 18×30; callout line-height 1.3 → 1.2; callout text condensed (`berdasarkan KEDUA definisi` → `di KEDUA versi`; final clause restructured to em-dash form). Final slack ~180px.
 
 ## Mid-Course Corrections
 
