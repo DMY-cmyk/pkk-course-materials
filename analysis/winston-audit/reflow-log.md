@@ -22,7 +22,7 @@
 | 06 | split-first | 2 (11/12) | E1 components+ancillary boxes 28-36px label/caption-tier; Constraints+Understandability dropped (verbal mention) | 2026-04-27T10:10 | (see git log slide-06-split) |
 | 07 | split-first | 2 (13/14) | E1 components+cards 28-36px caption-tier; Cost Constraint dropped (verbal) | 2026-04-27T10:30 | (see git log slide-07-split) |
 | 08 | split-first | 2 (15/16) | E1 3-col cards body 36px caption-tier; F5 active (slide kasus INDF) | 2026-04-27T10:50 | (see git log slide-08-split) |
-| 09 | (pending) | — | — | — | — |
+| 09 | split-first | 3 (17/18/19) | E1 3-col components 36px caption-tier; description body 36px in slides 17/18 | 2026-04-27T11:10 | (see git log slide-09-split) |
 | 10 | (pending) | — | — | — | — |
 | 11 | (pending) | — | — | — | — |
 | 12 | (pending) | — | — | — | — |
