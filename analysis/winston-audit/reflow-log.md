@@ -6,7 +6,7 @@
 
 ## Phase 1 — Token Substitution
 
-- **Commit SHA:** 99ef5c2157cb542861e52c287353399ffb20c496
+- **Commit SHA:** 5b15a6090f94678167ad506769529e9ffdfeea48
 - **Timestamp:** 2026-04-27T08:45
 - **Tokens replaced:** 12 (per `specs/typography-tokens.md`)
 
