@@ -18,7 +18,7 @@
 | 02 | cut-first | — | E1 (table 36px caption-tier) | 2026-04-27T08:55 | (see git log slide-02) |
 | 03 | split-first (override Hybrid) | 3 (03/04/05) | E1 SFAC table 36px caption-tier | 2026-04-27T09:05 | (see git log slide-03-split) |
 | 04 | split-first | 3 (06/07/08) | E1 evolution table 36px caption-tier; OB17 deferred | 2026-04-27T09:30 | (see git log slide-04-split) |
-| 05 | (pending) | — | — | — | — |
+| 05 | split-first | 2 (09/10) | E1 subsidiary cards 42px sub-Winston for 4-col grid | 2026-04-27T09:50 | (see git log slide-05-split) |
 | 06 | (pending) | — | — | — | — |
 | 07 | (pending) | — | — | — | — |
 | 08 | (pending) | — | — | — | — |
