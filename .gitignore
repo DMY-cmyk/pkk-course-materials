@@ -24,8 +24,10 @@ node_modules/
 # Logs
 *.log
 
-# Claude Code local settings (machine-specific)
-.claude/
+# Claude Code local settings (machine-specific) — ignore contents but
+# allow specific files (use .claude/* instead of .claude/ so negations
+# below work; git cannot re-include files inside an excluded directory)
+.claude/*
 # ...but track project-shared Winston framework reference
 !.claude/winston-framework.md
 
