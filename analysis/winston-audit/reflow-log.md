@@ -16,7 +16,7 @@
 |-------|----------|--------|-----------|----------|--------|
 | 01 | cut-first | — | — | 2026-04-27T08:50 | (see git log slide-01) |
 | 02 | cut-first | — | E1 (table 36px caption-tier) | 2026-04-27T08:55 | (see git log slide-02) |
-| 03 | (pending) | — | — | — | — |
+| 03 | split-first (override Hybrid) | 3 (03/04/05) | E1 SFAC table 36px caption-tier | 2026-04-27T09:05 | (see git log slide-03-split) |
 | 04 | (pending) | — | — | — | — |
 | 05 | (pending) | — | — | — | — |
 | 06 | (pending) | — | — | — | — |
@@ -53,8 +53,9 @@
 
 ## Mid-Course Corrections
 
-(pending — populated if strategy changes mid-loop per spec E5)
+- **Slide 03 (2026-04-27T09:05):** User-approved override Hybrid policy (cut-first → split-first) for slide 03 only. Reason: 3 distinct content elements (timeline, cards, SFAC table) with substantive value; cut-first would drop SFAC table entirely (potential E1 conflict). Result: slide 03 → 03 + 04 + 05. Deck count grows by 2. Subsequent slide chrome page-numbers will require cascade update — flagged in Out-of-Scope.
 
 ## Out-of-Scope Flags
 
-(pending — populated when CONTENT-DRIFT or block-structure-update items emerge)
+- **Chrome page-number cascade after slide 03 split (2026-04-27T09:05):** Original slides 04-32 chrome still display "/32" with their old slide numbers (04/32, 05/32, dst.). Slide 03 split adds 2 slides; chrome should cascade to "/34" with appropriate renumbering. Two options for handling: (a) update each downstream slide's chrome opportunistically as we reflow it (mid-stream catch-up); (b) defer to Task AI bulk update after all slides reflowed. Decision deferred — current state is acceptable transitional inconsistency per E6 (v6 is broken until Phase 2 completes).
+- **`presentation-design-spec.md` block structure update (pre-flagged from spec V4):** Block boundaries (Opening 1-3, Proof 4-29, Close 30-32) no longer match post-split deck count. Defer to separate brainstorming session.
