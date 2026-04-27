@@ -14,7 +14,7 @@
 
 | Slide | Strategy | Splits | Exception | Approved | Commit |
 |-------|----------|--------|-----------|----------|--------|
-| 01 | (pending) | — | — | — | — |
+| 01 | cut-first | — | — | 2026-04-27T08:50 | (see git log slide-01) |
 | 02 | (pending) | — | — | — | — |
 | 03 | (pending) | — | — | — | — |
 | 04 | (pending) | — | — | — | — |
