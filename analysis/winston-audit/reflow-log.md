@@ -25,7 +25,7 @@
 | 09 | split-first | 3 (17/18/19) | E1 3-col components 36px caption-tier; description body 36px in slides 17/18 | 2026-04-27T11:10 | (see git log slide-09-split) |
 | 10 | split-first | 3 (20/21/22) | E1 2-col cards body 36px caption-tier; h4-tier 48px on card titles | 2026-04-27T11:30 | (see git log slide-10-split) |
 | 11 | split-first | 3 (23/24/25) | E1 table body 36px caption-tier; SFAC definitions condensed from v5 (formal-faithful) | 2026-04-27T11:50 | (see git log slide-11-split) |
-| 12 | (pending) | — | — | — | — |
+| 12 | split-first | 3 (12/13/14) | E1 asset table 36px caption-tier (Primasi row dropped — covered by BC4.7 on slide 13); E1 goodwill table 36px caption-tier; E1 BC4.7 body 36px caption-tier (3-line content); F5 active (INDF goodwill case Rp52,2T) | 2026-04-27T19:28 | (see git log slide-12-split) |
 | 13 | (pending) | — | — | — | — |
 | 14 | (pending) | — | — | — | — |
 | 15 | (pending) | — | — | — | — |
