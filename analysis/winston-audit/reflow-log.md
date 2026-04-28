@@ -75,6 +75,27 @@
 - **Slide 31 (2026-04-28T05:10):** User-override Hybrid (split → cut-first 1-slide compact). Reason: user explicit request "Just make it 1 Slide, But Compact". Result: 2-col × 3-row grid keeping all 5 insights + Kesimpulan in single frame; E1 exception body 28px sub-Winston for 5-aggregate density; Goodwill figure data-corrected from v5 Rp12,8T → Rp52,2T verbatim AR.
 - **Slide 32 (2026-04-28T05:30):** User direction post-preview: REMOVE Slogan #4 (`Konstitusi yang hidup — terbukti dalam INDF 2024.`) AND Q&A pill (`Sesi Tanya Jawab...`). F4 mirror principle (opening slogan #1 slide 02 ↔ closing slogan #4 slide 32) intentionally NOT closed by user choice. Final closing slide is minimal: pill + Terima Kasih + THANK YOU + 6 anggota grid. Slack 385 (very airy). Slogans #1-#3 remain deployed (slides 02, 13, 29); slogan #4 indefinitely deferred / cancelled.
 
+## V3 Audit (2026-04-28T05:50)
+
+**Inline content-level font-size distribution** (756 inline occurrences after Phase 2 complete):
+- Winston tokens: 110 (1×) / 96 (6×) / 84 (2×) / 72 (2×) / 68 (1×) / 64 (2×) / 60 (32×) / 53 (38×)
+- Sub-system intermediate: 48 (16×) / 42 (57×)
+- Winston floor: 36 (297×) ✓
+- Caption-tier E1 exceptions: 32 (130×) — logged per-slide in Exceptions section above
+- Label-tier system reuse (= `.t-label`/`.t-meta` 28 token): 28 (138×)
+- Sub-floor table-density E1: 24 (103×) / 22 (31×) — logged per-slide (slides 21/23/24/28 chart bars + table thead labels)
+- Anomalous: 20/18/16/15/14/13/12 — **all in stylesheet block lines 28-93** (CSS rule definitions, NOT inline content)
+
+**CSS rule sub-floor follow-up (V3 cleanup commit):**
+- `.pill-ghost` 15px → 24px (label-tier compact; aligns with existing 9 inline overrides at 22-24; resolves 69 unstyled usages)
+- Visual verification: all 32 slides retain positive slack ≥30px hard floor; slide 53 (tightest) recovers from 43→48 (actually larger than logged because original pill rendered at 15 not 28).
+
+**Remaining Out-of-Scope (Phase 2.5 candidates):**
+- `.pill-amber/green/blue/red` 13px (table micro-pills; would force table column widening if upgraded)
+- `.card-head` 13px (legacy unused in v6 reflowed slides)
+- `.chrome .meta/.pagenum` 15px (footer chrome — aesthetic minimal, intentional small)
+- `.tbl th` 14px / `.tbl td` 18px / `.tbl.compact` 12-16px (replaced by hand-rolled tables in all reflowed v6 slides; legacy classes unused)
+
 ## Out-of-Scope Flags
 
 - **Chrome page-number cascade after slide 03 split (2026-04-27T09:05):** Original slides 04-32 chrome still display "/32" with their old slide numbers (04/32, 05/32, dst.). Slide 03 split adds 2 slides; chrome should cascade to "/34" with appropriate renumbering. Two options for handling: (a) update each downstream slide's chrome opportunistically as we reflow it (mid-stream catch-up); (b) defer to Task AI bulk update after all slides reflowed. Decision deferred — current state is acceptable transitional inconsistency per E6 (v6 is broken until Phase 2 completes).
