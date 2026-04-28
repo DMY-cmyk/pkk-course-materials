@@ -40,7 +40,7 @@
 | 24 | split-first | 2 (40/41) | E1 card body 36 caption-tier; F5 active (slide kasus INDF Representasi Tepat: 148 catatan/Goodwill DCF/Bilingual EN+ID; impairment risk balanced; pihak berelasi Rp10,11T; QC15 audit WTM EY; keterbatasan struktural goodwill DCF/WACC) | 2026-04-28T02:50 | (see git log slide-24-split) |
 | 25 | split-first | 2 (42/43) | E1 table cells 32 caption-tier (3-col compact); challenges body 36; F5 active (slide kasus INDF Goodwill Pinehill uji SFAC 6 + SFAC 8 Ch.4, proporsi 26% Total Aset, Level 3 DCF/WACC challenge) | 2026-04-28T03:10 | (see git log slide-25-split) |
 | 26 | split-first | 2 (44/45) | E1 table cells 32 caption-tier; slide 45 tightened (header 14 margin / table 12 padding / stat card 20-28 vs 28-36) for ≤904 frame; F5 active (slide kasus INDF Liabilitas Rp70,81T + IC 7,1× / Ekuitas Rp108,99T + NCI Rp43,08T + ROE 12,5%) | 2026-04-28T03:30 | (see git log slide-26-split) |
-| 27 | (pending) | — | — | — | — |
+| 27 | split-first | 2 (46/47) | E1 case table 32 caption-tier; PSAK 72 list 32 caption-tier; F5 active (slide kasus INDF Pengakuan: RD3 words+numbers banner, Goodwill 3-criteria ✓ ✓ ✓, Revenue PSAK 72 5-step, Related Party Rp10,11T = 8,73% pengakuan vs pengungkapan) | 2026-04-28T03:50 | (see git log slide-27-split) |
 | 28 | (pending) | — | — | — | — |
 | 29 | (pending) | — | — | — | — |
 | 30 | (pending) | — | — | — | — |
