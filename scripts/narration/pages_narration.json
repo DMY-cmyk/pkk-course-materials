@@ -1046,121 +1046,335 @@
   {
     "page": 55,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "QC15 Bebas dari Kesalahan + Catatan Keterbatasan Struktural",
+    "narration": "Slide ini menutup pembuktian faithful representation dengan komponen ketiga, free from error (bebas dari kesalahan — QC15). Buktinya kuat: KAP Purwantono, Sungkoro & Surja afiliasi EY Indonesia menerbitkan opini audit Wajar Tanpa Modifikasi atau WTM bernomor 00339/2.1032/AU.1/04/0701-2 tanggal 25 Maret 2025. Goodwill yang menjadi area paling berisiko diaudit khusus sebagai Key Audit Matter (KAM — hal audit utama yang membutuhkan perhatian signifikan), dan hasilnya tidak ditemukan salah saji material. Tidak ada modifikasi opini, tidak ada paragraf penekanan materi. Namun kami ingin jujur kepada audiens: free from error tidak berarti bebas estimasi. Goodwill Rp52,2 triliun diukur dengan asumsi DCF dan WACC (weighted average cost of capital — biaya modal rata-rata tertimbang) yang tidak dapat diverifikasi independen. EY sendiri menulis bahwa penilaian signifikan diperlukan. Inilah yang kami sebut keterbatasan struktural — bukan kegagalan INDF, melainkan keterbatasan inheren semua konglomerat global dengan akuisisi besar. Kerangka konseptual mengakui keterbatasan ini melalui konsep estimasi yang representasinya tepat sejauh proses dan asumsinya transparan.",
+    "key_terms": [
+      {
+        "en": "Unmodified Audit Opinion",
+        "id": "Opini Wajar Tanpa Modifikasi (WTM)",
+        "def": "Opini auditor independen tertinggi yang menyatakan laporan keuangan disajikan secara wajar tanpa pengecualian."
+      },
+      {
+        "en": "Key Audit Matter (KAM)",
+        "id": "Hal Audit Utama",
+        "def": "Area audit yang dinilai paling signifikan oleh auditor dan diungkap secara terpisah dalam laporan auditor."
+      },
+      {
+        "en": "Free from error",
+        "id": "Bebas dari kesalahan",
+        "def": "Komponen ketiga faithful representation menurut SFAC 8 QC15; tidak menuntut kesempurnaan, melainkan tidak ada kesalahan material dan deskripsi proses estimasi yang akurat."
+      }
+    ]
   },
   {
     "page": 56,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Goodwill Rp52,2T — Uji Definisi Aset SFAC 6 vs SFAC 8 Bab 4",
+    "narration": "Slide ini menerapkan dua versi definisi aset terhadap goodwill Pinehill INDF sebesar Rp52,2 triliun, sesuai catatan halaman 32 laporan tahunan. Di sisi kiri, uji definisi lama SFAC 6 tahun 1985 menuntut tiga karakteristik. Pertama, manfaat ekonomi masa depan — terpenuhi melalui merek Pinehill yang beroperasi di lebih dari tiga puluh negara. Kedua, dikendalikan entitas — terpenuhi karena INDF mengendalikan Pinehill via anak ICBP (Indofood CBP) dan PCL (Pinehill Company Limited). Ketiga, hasil transaksi masa lalu — terpenuhi karena akuisisi terdokumentasi penuh. Tiga centang hijau, definisi lama lulus. Di sisi kanan, uji SFAC 8 Bab 4 yang efektif Juli 2024 menggunakan formulasi present right (hak masa kini) atas economic benefit (manfaat ekonomi). Present right terpenuhi karena INDF saat ini memiliki hak atas manfaat Pinehill, dan economic benefit terpenuhi karena arus pendapatan operasi Pinehill aktif. Definisi baru lebih mudah dipenuhi karena tidak lagi menuntut kepastian probable, hanya keberadaan hak. Implikasinya: goodwill INDF lulus kedua definisi — bukti bahwa pengakuan goodwill berakar pada teori, bukan sekadar konvensi akuntansi.",
+    "key_terms": [
+      {
+        "en": "Goodwill",
+        "id": "Goodwill",
+        "def": "Selisih harga akuisisi di atas nilai wajar aset bersih teridentifikasi; merepresentasikan sinergi, merek, dan ekspektasi manfaat masa depan."
+      },
+      {
+        "en": "Present right",
+        "id": "Hak masa kini",
+        "def": "Formulasi SFAC 8 Bab 4 (2024) yang menggantikan kriteria probable lama; entitas hanya perlu memiliki hak atas manfaat ekonomi pada tanggal pelaporan."
+      },
+      {
+        "en": "Economic benefit",
+        "id": "Manfaat ekonomi",
+        "def": "Potensi arus kas masuk atau pengurangan arus kas keluar yang dapat dihasilkan suatu sumber daya bagi entitas."
+      }
+    ]
   },
   {
     "page": 57,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "chart",
+    "title": "Goodwill 26% dari Total Aset + Tantangan Pengukuran",
+    "narration": "Slide ini menampilkan magnitudo material goodwill INDF dan tantangan pengukurannya. Di sisi kiri, goodwill Rp52,2 triliun setara 26% dari total aset Rp201,71 triliun — bukan pos kecil melainkan seperempat neraca bertumpu pada satu kelompok aset tak berwujud. Skala inilah yang membuat goodwill menjadi pengujian terberat bagi karakteristik kualitatif. Di sisi kanan, kami daftar empat tantangan pengukuran. Pertama, tidak ada pasar aktif untuk goodwill, sehingga klasifikasinya wajib di Level 3 fair value (estimasi tanpa input pasar yang dapat diobservasi). Kedua, uji impairment menggunakan DCF (discounted cash flow), WACC, dan terminal growth — tiga asumsi yang setiap basis poin perubahannya menggeser nilai puluhan miliar. Ketiga, EY mencantumkan dalam Key Audit Matter bahwa penilaian signifikan diperlukan — bahasa standar audit untuk area dengan ketidakpastian estimasi tinggi. Keempat, PSAK 22 selaras IFRS 3 melarang amortisasi goodwill — INDF wajib uji penurunan nilai tahunan tanpa cushion penyusutan. Inilah laboratorium nyata trade-off relevansi versus verifikasi yang akan kami bedah pada slide berikutnya.",
+    "key_terms": [
+      {
+        "en": "Level 3 fair value",
+        "id": "Nilai wajar Level 3",
+        "def": "Hierarki nilai wajar PSAK 68/IFRS 13 untuk pengukuran berbasis input tidak teramati seperti DCF; paling banyak menuntut judgment manajemen."
+      },
+      {
+        "en": "Impairment test",
+        "id": "Uji penurunan nilai",
+        "def": "Pengujian apakah nilai tercatat aset masih dapat dipulihkan melalui arus kas masa depan; wajib tahunan untuk goodwill per PSAK 22."
+      },
+      {
+        "en": "WACC",
+        "id": "Biaya modal rata-rata tertimbang",
+        "def": "Tingkat diskonto gabungan antara biaya utang dan biaya ekuitas yang merefleksikan struktur permodalan entitas."
+      }
+    ]
   },
   {
     "page": 58,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Liabilitas INDF: Funded Debt Rp70,81T — Definisi SFAC 8 Bab 4",
+    "narration": "Slide ini menerapkan definisi liabilitas SFAC 8 Bab 4 — a present obligation of an entity to transfer an economic benefit, yaitu kewajiban masa kini entitas untuk mengalihkan manfaat ekonomi — pada laporan posisi keuangan INDF halaman 32 sampai 34. Tiga jenis liabilitas kami uji. Pertama, utang jangka panjang Rp70,81 triliun, kewajiban masa kini untuk mengalihkan pokok dan bunga kepada kreditur — definisi terpenuhi penuh. Kedua, obligasi USD ICBP yang merupakan bagian dari funded debt tersebut, didenominasi dolar Amerika sehingga membawa risiko foreign exchange (FX — fluktuasi nilai tukar) yang harus diungkap terpisah. Ketiga, liabilitas pajak tangguhan yang ada di neraca, lahir dari perbedaan temporer antara basis akuntansi dan basis fiskal — kewajiban masa kini meskipun jumlahnya akan diselesaikan baru di periode mendatang. Bukti empiris kemampuan transfer ditunjukkan rasio interest coverage 7,1 kali — INDF dapat membayar bunga 7,1 kali dari EBIT (earnings before interest and tax — laba sebelum bunga dan pajak). Ini bukti kuat kapasitas transfer ekonomi kepada kreditur, sekaligus menjawab kekhawatiran pemegang obligasi mengenai keberlanjutan pelunasan.",
+    "key_terms": [
+      {
+        "en": "Present obligation",
+        "id": "Kewajiban masa kini",
+        "def": "Inti definisi liabilitas SFAC 8 Bab 4: keharusan entitas pada tanggal pelaporan untuk mengalihkan sumber daya ekonomi di masa depan."
+      },
+      {
+        "en": "Interest coverage ratio",
+        "id": "Rasio cakupan bunga",
+        "def": "EBIT dibagi beban bunga; mengukur berapa kali laba operasi dapat menutup kewajiban bunga periodik."
+      },
+      {
+        "en": "Deferred tax liability",
+        "id": "Liabilitas pajak tangguhan",
+        "def": "Kewajiban pajak yang akan jatuh tempo di periode mendatang akibat perbedaan temporer antara nilai buku akuntansi dan basis pajak."
+      }
+    ]
   },
   {
     "page": 59,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Ekuitas INDF Rp108,99T — Residual Interest, NCI, dan ROE",
+    "narration": "Slide ini menerapkan definisi ekuitas SFAC 6 dan SFAC 8 — sisa kepentingan dalam aset setelah dikurangi liabilitas, yaitu residual interest. Total ekuitas INDF tahun 2024 sebesar Rp108,99 triliun, dipecah dua komponen. Pertama, ekuitas yang dapat diatribusikan ke pemilik induk Rp65,914 triliun atau sekitar 60,5%. Kedua, kepentingan non-pengendali atau NCI (non-controlling interest — porsi ekuitas anak perusahaan yang dimiliki pemegang saham minoritas) Rp43,077 triliun atau sekitar 39,5%. NCI yang sebesar ini bukan kebetulan — inilah konsekuensi struktural konglomerat: ICBP dan SIMP (Salim Ivomas Pratama) adalah anak listed yang publiknya tetap memegang saham minoritas, sehingga porsi laba mereka tidak penuh masuk ke induk. Implikasi RE8 sampai RE9 jelas: dari total laba bersih, induk hanya menerima Rp8,64 triliun versus NCI Rp4,44 triliun, atau induk mendapat 66% total laba. Kapasitas menghasilkan laba pemilik induk dirangkum dalam Return on Equity 12,5% tahun 2024 — investor menggunakan angka ini untuk membandingkan INDF dengan emiten konsumer lain dan pilihan investasi alternatif.",
+    "key_terms": [
+      {
+        "en": "Residual interest",
+        "id": "Sisa kepentingan",
+        "def": "Definisi ekuitas SFAC 6/8: nilai sisa setelah seluruh liabilitas dikurangkan dari aset; menunjukkan klaim pemilik."
+      },
+      {
+        "en": "Non-controlling interest (NCI)",
+        "id": "Kepentingan non-pengendali",
+        "def": "Porsi ekuitas dan laba anak perusahaan terkonsolidasi yang dimiliki pemegang saham minoritas di luar induk."
+      },
+      {
+        "en": "Return on Equity (ROE)",
+        "id": "Imbal hasil ekuitas",
+        "def": "Laba bersih dibagi total ekuitas; mengukur efisiensi penggunaan modal pemegang saham."
+      }
+    ]
   },
   {
     "page": 60,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Pengakuan INDF: Goodwill di Neraca + Pendapatan PSAK 72 Lima Langkah",
+    "narration": "Slide ini menerapkan SFAC 8 Bab 5 paragraf RD3 — recognition consists of capturing both a description (words) and a monetary amount (numbers) — pada dua kasus pengakuan INDF 2024. Kasus pertama, goodwill Rp52,2 triliun di laporan posisi keuangan. Tiga kriteria RD1 sampai RD14 terpenuhi: memenuhi definisi elemen aset, dapat diukur dan berguna untuk pengambilan keputusan, dan representasi tepat — yang divalidasi melalui audit DCF oleh EY sebagai Key Audit Matter. Kasus kedua, pendapatan Rp115,79 triliun di laporan laba rugi. Pengakuannya tidak otomatis melainkan mengikuti PSAK 72 selaras IFRS 15 dengan lima langkah berurutan: identifikasi kontrak dengan pelanggan, identifikasi kewajiban pelaksanaan (performance obligation — janji menyerahkan barang atau jasa), penentuan harga transaksi, alokasi harga ke setiap kewajiban, dan pengakuan pendapatan saat kewajiban terpenuhi. Untuk INDF yang menjual mi instan, tepung, dan minyak goreng, pemenuhan terjadi pada saat penyerahan barang (point-in-time recognition). Inilah contoh konkret bagaimana definisi konseptual SFAC 8 diterjemahkan menjadi prosedur operasional yang dapat diaudit.",
+    "key_terms": [
+      {
+        "en": "Recognition",
+        "id": "Pengakuan",
+        "def": "Proses memasukkan suatu pos ke laporan keuangan dengan deskripsi dan jumlah moneter; diatur SFAC 8 Bab 5."
+      },
+      {
+        "en": "Performance obligation",
+        "id": "Kewajiban pelaksanaan",
+        "def": "Janji dalam kontrak untuk menyerahkan barang atau jasa yang dapat dibedakan kepada pelanggan; konsep inti PSAK 72/IFRS 15."
+      },
+      {
+        "en": "Five-step model",
+        "id": "Model lima langkah",
+        "def": "Kerangka pengakuan pendapatan PSAK 72/IFRS 15: identifikasi kontrak, kewajiban pelaksanaan, harga transaksi, alokasi, dan pengakuan saat terpenuhi."
+      }
+    ]
   },
   {
     "page": 61,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Related Party Rp10,11T — Batas Pengakuan vs Pengungkapan",
+    "narration": "Slide ini menjawab pertanyaan klasik akuntansi: apakah transaksi pihak berelasi diakui atau hanya diungkap? Kasus ketiga kami: transaksi pihak berelasi INDF 2024 sebesar Rp10,11 triliun, setara 8,73% dari penjualan bersih. Jawaban kami tegas: keduanya. Pada sisi pengakuan, nilai Rp10,11 triliun sudah masuk dalam total penjualan bersih Rp115,79 triliun di laporan laba rugi, karena transaksi tersebut dilakukan pada harga pasar wajar (arm's length pricing) sehingga memenuhi kriteria pengakuan pendapatan biasa. Pada sisi pengungkapan, PSAK 7 selaras IAS 24 menuntut detail tambahan di Catatan atas Laporan Keuangan: nilai transaksi per pihak, sifat hubungan (induk, anak, asosiasi, atau kunci personil manajemen), serta dasar penentuan harga wajar. Ini contoh sempurna penerapan SFAC 8 Bab 5 RD3: pengakuan menangkap deskripsi dan jumlah moneter di laporan utama, sedangkan pengungkapan memperkaya konteks agar pengguna dapat menilai independensi transaksi. Pesan kami: pengungkapan tidak menggantikan pengakuan, melainkan melengkapinya — prinsip yang akan kembali kami tegaskan saat membahas struktur laporan keuangan pada slide selanjutnya.",
+    "key_terms": [
+      {
+        "en": "Related party transaction",
+        "id": "Transaksi pihak berelasi",
+        "def": "Pengalihan sumber daya atau kewajiban antara entitas pelapor dan pihak yang memiliki hubungan kendali, pengaruh signifikan, atau personil manajemen kunci."
+      },
+      {
+        "en": "Arm's length pricing",
+        "id": "Harga pasar wajar",
+        "def": "Penetapan harga seolah-olah pihak transaksi tidak berelasi; menjadi kriteria validitas pengakuan transaksi pihak berelasi."
+      },
+      {
+        "en": "Disclosure vs recognition",
+        "id": "Pengungkapan vs pengakuan",
+        "def": "Pengakuan memasukkan pos ke laporan utama; pengungkapan memberi konteks tambahan di catatan tanpa mengubah angka utama."
+      }
+    ]
   },
   {
     "page": 62,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Pengukuran INDF: Mixed-Attribute Model — Peta Aplikasi M30–M34",
+    "narration": "Slide ini memetakan dasar pengukuran enam jenis aset dan liabilitas INDF dengan kerangka SFAC 8 Bab 6 paragraf M30 sampai M34, yang membedakan entry price (harga masuk berbasis biaya perolehan) dan exit price (harga keluar berbasis nilai jual atau penyelesaian). Pertama, goodwill Rp52,2 triliun diukur dengan biaya historis ditambah uji impairment — entry price karena tidak ada pasar aktif sehingga aset bersifat unik. Kedua, aset tetap menggunakan biaya dikurangi akumulasi penyusutan — entry price karena pabrik bersifat spesifik untuk INDF. Ketiga, saham listed diukur dengan fair value Level 1 — exit price karena harga pasar tersedia setiap saat. Keempat, instrumen Level 3 menggunakan fair value DCF — exit price meskipun tanpa harga langsung. Kelima, persediaan diukur pada nilai terendah antara biaya dan NRV (net realizable value — nilai realisasi bersih) sesuai PSAK 14 selaras IAS 2. Keenam, obligasi USD ICBP diukur pada biaya amortisasi — entry price untuk utang jangka panjang. Pesan kunci: INDF menerapkan mixed-attribute model — empat basis pengukuran berdampingan dalam satu neraca, persis seperti yang diizinkan SFAC 5 paragraf 67 dan dikukuhkan SFAC 8 Bab 6.",
+    "key_terms": [
+      {
+        "en": "Entry price",
+        "id": "Harga masuk",
+        "def": "Dasar pengukuran berbasis nilai yang dibayar atau biaya perolehan; cocok untuk aset yang dimiliki untuk digunakan."
+      },
+      {
+        "en": "Exit price",
+        "id": "Harga keluar",
+        "def": "Dasar pengukuran berbasis nilai jual atau penyelesaian saat ini; cocok untuk aset yang dimiliki untuk dipertukarkan."
+      },
+      {
+        "en": "Mixed-attribute model",
+        "id": "Model atribut campuran",
+        "def": "Praktik menerapkan beberapa basis pengukuran berbeda untuk pos berbeda dalam satu set laporan keuangan; diakui SFAC 5 dan SFAC 8 Bab 6."
+      }
+    ]
   },
   {
     "page": 63,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Trade-off Relevansi vs Verifikasi — Matriks 2×2 Aplikasi INDF",
+    "narration": "Slide ini memvisualkan trade-off klasik kerangka konseptual — relevansi versus verifikasi — dalam matriks dua kali dua dengan contoh nyata INDF di setiap kuadran. Kuadran kiri atas, relevansi dan verifikasi sama-sama tinggi: fair value Level 1 untuk saham listed INDF, ideal karena harga pasar dapat dibandingkan dan diverifikasi independen. Kuadran kanan atas, verifikasi tinggi tetapi relevansi rendah: historical cost untuk aset tetap pabrik, sangat dapat diaudit namun tidak merefleksikan nilai ekonomi terkini. Kuadran kiri bawah, relevansi tinggi tetapi verifikasi rendah: fair value Level 3 untuk goodwill impairment, paling relevan untuk keputusan investor namun rentan judgment manajemen. Kuadran kanan bawah, keduanya rendah: tidak digunakan dalam praktik karena gagal pada kedua dimensi sekaligus. Inilah bukti trade-off pada kasus INDF: EY menulis dalam KAM bahwa penilaian signifikan diperlukan dalam menentukan proyeksi arus kas dan tingkat diskonto goodwill. Pernyataan ini bukan kritik melainkan deskripsi jujur karakter Level 3 fair value. Kerangka konseptual tidak menghapus trade-off, melainkan memberi kosa kata untuk membahasnya secara jujur dan terdokumentasi.",
+    "key_terms": [
+      {
+        "en": "Relevance-verifiability trade-off",
+        "id": "Trade-off relevansi-verifikasi",
+        "def": "Ketegangan inheren dalam pemilihan dasar pengukuran: pengukuran paling relevan sering paling sulit diverifikasi, dan sebaliknya."
+      },
+      {
+        "en": "Fair value hierarchy",
+        "id": "Hierarki nilai wajar",
+        "def": "Tiga tingkat input pengukuran fair value PSAK 68/IFRS 13: Level 1 harga pasar aktif, Level 2 input teramati, Level 3 input tidak teramati."
+      }
+    ]
   },
   {
     "page": 64,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Struktur Laporan Keuangan INDF (PSAK 1) + Prinsip PR12",
+    "narration": "Slide ini menampilkan kerangka penyajian laporan keuangan INDF sesuai PSAK 1 selaras IAS 1, sekaligus menegaskan prinsip SFAC 8 Bab 7 paragraf PR12. Lima komponen wajib laporan keuangan INDF: pertama Laporan Posisi Keuangan, kedua Laporan Laba Rugi dan Penghasilan Komprehensif Lain (other comprehensive income atau OCI), ketiga Laporan Perubahan Ekuitas, keempat Laporan Arus Kas, dan kelima Catatan atas Laporan Keuangan yang berjumlah 148 catatan pada AR 2024. Lima komponen ini merupakan satu kesatuan terintegrasi — bukan menu pilihan. Di sisi kanan, kami tegaskan prinsip PR12: catatan tidak dapat menggantikan pengakuan di laporan utama. Dua contoh kontras menjelaskan prinsip ini. Goodwill Rp52,2 triliun diakui di neraca sebagai pos aset, bukan hanya disebut di catatan — karena memenuhi seluruh kriteria pengakuan elemen. Sebaliknya, nilai wajar obligasi USD ICBP cukup diungkapkan di catatan karena pengukuran utama menggunakan biaya amortisasi; informasi nilai wajar bersifat melengkapi, bukan menggantikan. Inilah disiplin penyajian yang menjaga integritas laporan utama sebagai sumber primer keputusan investor.",
+    "key_terms": [
+      {
+        "en": "PR12 principle",
+        "id": "Prinsip PR12",
+        "def": "SFAC 8 Bab 7: pengungkapan di catatan tidak dapat menggantikan pengakuan di laporan utama; catatan melengkapi, bukan substitusi."
+      },
+      {
+        "en": "Statement of Financial Position",
+        "id": "Laporan Posisi Keuangan",
+        "def": "Laporan yang menampilkan aset, liabilitas, dan ekuitas pada tanggal pelaporan; juga dikenal sebagai neraca."
+      },
+      {
+        "en": "Notes to Financial Statements",
+        "id": "Catatan atas Laporan Keuangan",
+        "def": "Komponen kelima laporan keuangan PSAK 1 yang memuat kebijakan akuntansi, rincian pos, dan pengungkapan tambahan."
+      }
+    ]
   },
   {
     "page": 65,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "OCI INDF: Rekonsiliasi Laba ke Comprehensive Income + BC7.21",
+    "narration": "Slide ini menjelaskan keberadaan Other Comprehensive Income (OCI — penghasilan komprehensif lain) pada laporan INDF 2024 sekaligus mengakui kontroversi konseptualnya. Di sisi kiri, rekonsiliasi numerik: laba bersih Rp13.077,5 miliar di laporan laba rugi ditambah selisih kurs translasi Pinehill negatif Rp531,4 miliar yang masuk OCI, menghasilkan total penghasilan komprehensif sekitar Rp12.546,1 miliar. Selisih kurs ini lahir karena Pinehill beroperasi di luar negeri — laporannya harus ditranslasi ke rupiah dan selisihnya dipisahkan dari laba operasi agar tidak menimbulkan volatilitas. Di sisi kanan, kami sajikan honest disclosure: SFAC 8 Bab 7 paragraf BC7.21 secara eksplisit menyatakan FASB tidak memiliki dasar konseptual yang kuat untuk OCI sebagai kategori terpisah dari laba rugi. Mengapa OCI tetap ada? Tekanan industri menghindari volatilitas laba bersih akibat fluktuasi kurs, fair value, dan re-measurement pensiun. OCI adalah kompromi pragmatis, bukan prinsip kerangka konseptual. Sebagai pelengkap, INDF menyajikan AR dalam dua bahasa Indonesia dan Inggris — penerapan QC30 sampai QC34 understandability untuk 84,87% investor institusional asing.",
+    "key_terms": [
+      {
+        "en": "Other Comprehensive Income (OCI)",
+        "id": "Penghasilan komprehensif lain",
+        "def": "Pos pendapatan dan beban yang tidak diakui di laba rugi melainkan langsung di ekuitas; mencakup selisih translasi, re-measurement pensiun, dan perubahan fair value tertentu."
+      },
+      {
+        "en": "BC7.21",
+        "id": "Basis for Conclusions 7.21",
+        "def": "Paragraf SFAC 8 yang mengakui ketiadaan dasar konseptual kuat bagi pemisahan OCI dari laba rugi; menunjukkan kompromi pragmatis dalam standar."
+      },
+      {
+        "en": "Translation difference",
+        "id": "Selisih translasi",
+        "def": "Selisih kurs yang timbul dari penjabaran laporan keuangan entitas asing ke mata uang penyajian induk."
+      }
+    ]
   },
   {
     "page": 66,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Catatan INDF: Lima Area Substantif + Segmen Operasi PSAK 5",
+    "narration": "Slide ini membongkar isi 148 catatan atas laporan keuangan INDF ke dalam lima area substantif, sekaligus menerapkan PSAK 5 selaras IFRS 8 mengenai pelaporan segmen. Lima area struktural di sisi kiri: Kebijakan Akuntansi Signifikan yang menjelaskan basis pengukuran dan judgment material, Disaggregasi Pendapatan yang memecah Rp115,79 triliun penjualan, Transaksi Pihak Berelasi senilai Rp10,11 triliun yang sudah kami bahas di slide 61, Informasi Segmen Operasi yang memecah kinerja per divisi, dan Kontinjensi serta Komitmen yang memuat liabilitas potensial dan komitmen pengeluaran. Di sisi kanan, segmen operasi 2024 mengikuti pendekatan CODM (Chief Operating Decision Maker — pengambil keputusan operasi utama, biasanya direksi). Tiga segmen INDF: Produk Konsumen Bermerek Rp87,6 triliun atau 75,6% — divisi mi instan dan dairy ICBP yang menjadi mesin laba utama; Bogasari Rp26,3 triliun atau 22,7% — divisi tepung terigu yang merupakan mesin volume; dan Agribisnis serta Distribusi Rp2,0 triliun atau 1,7% — segmen pelengkap rantai pasok. Disaggregasi tiga segmen ini langsung mengangkat understandability bagi investor yang menilai diversifikasi pendapatan INDF.",
+    "key_terms": [
+      {
+        "en": "Operating segment",
+        "id": "Segmen operasi",
+        "def": "Komponen entitas yang aktivitas bisnisnya menghasilkan pendapatan dan beban serta hasilnya direviu berkala oleh CODM."
+      },
+      {
+        "en": "CODM approach",
+        "id": "Pendekatan CODM",
+        "def": "Metode identifikasi segmen pelaporan PSAK 5/IFRS 8 berdasarkan informasi yang sesungguhnya digunakan pengambil keputusan operasi utama."
+      },
+      {
+        "en": "Disaggregation",
+        "id": "Disaggregasi",
+        "def": "Penyajian terpisah kelompok pos yang berbeda sifat atau fungsinya agar pengguna dapat menilai komponen kinerja lebih spesifik."
+      }
+    ]
   },
   {
     "page": 67,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Related Party Rp10,11T + Dampak ke Tiga Enhancing QC",
+    "narration": "Slide ini menutup pembahasan pengungkapan dengan dampak related party terhadap tiga karakteristik kualitatif peningkat (enhancing QC). Di sisi kiri, breakdown Rp10,11 triliun transaksi pihak berelasi 2024 ke tiga sumber: Grup Salim sebagai induk Rp6,8 triliun, entitas asosiasi Rp2,1 triliun, dan joint venture serta afiliasi lain Rp1,21 triliun. Pemecahan ini bukan kosmetik — ia memungkinkan investor menilai konsentrasi ketergantungan pada Grup Salim dan independensi operasional INDF. Di sisi kanan, kami petakan dampak kualitatifnya pada tiga enhancing QC SFAC 8. Pertama, comparability (keterbandingan) — kebijakan transaksi pihak berelasi yang konsisten antar periode memungkinkan analis membandingkan tren tahun-ke-tahun. Kedua, verifiability (keterverifikasian) — estimasi harga wajar terdokumentasi melalui DCF, WACC, dan analisis sensitivitas, memberi auditor bukti yang dapat ditelusuri. Ketiga, understandability (kemudahan pahami) — disaggregasi tiga sumber dan tiga segmen mengikuti pendekatan CODM yang sudah biasa bagi pengguna profesional. Inilah peran catatan sebagai enabler kualitas — bukan pelengkap dekoratif, melainkan infrastruktur yang menjadikan empat karakteristik kualitatif fundamental dapat benar-benar bekerja.",
+    "key_terms": [
+      {
+        "en": "Comparability",
+        "id": "Keterbandingan",
+        "def": "Karakteristik kualitatif peningkat SFAC 8 QC20–QC25; kemampuan pengguna mengidentifikasi persamaan dan perbedaan antar pos atau antar periode."
+      },
+      {
+        "en": "Verifiability",
+        "id": "Keterverifikasian",
+        "def": "Karakteristik kualitatif peningkat SFAC 8 QC26–QC28; pengamat independen yang berbeda dapat mencapai konsensus bahwa deskripsi merepresentasikan secara tepat."
+      },
+      {
+        "en": "Understandability",
+        "id": "Kemudahan pahami",
+        "def": "Karakteristik kualitatif peningkat SFAC 8 QC30–QC34; informasi diklasifikasi, dikarakterisasi, dan disajikan secara jelas dan ringkas."
+      }
+    ]
   },
   {
     "page": 68,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Sintesis: Lima Insight Utama Kerangka Konseptual × INDF 2024",
+    "narration": "Slide ini merangkum seluruh studi kasus dalam lima insight utama. Pertama, karakteristik kualitatif terpenuhi: relevansi dengan ambang materialitas 5,45% dan representasi tepat tervalidasi opini WTM dari EY — konfirmasi bahwa AR INDF 2024 lulus QC1 sampai QC18 fundamental. Kedua, pengakuan diuji pada tiga kasus kompleks: goodwill Rp52,2 triliun, pendapatan Rp115,79 triliun via PSAK 72 lima langkah, dan transaksi pihak berelasi Rp10,11 triliun — semua memenuhi RD3. Ketiga, pengukuran menerapkan mixed-attribute model dengan empat basis berbeda — biaya historis, fair value, NRV (net realizable value), dan equity method — sesuai SFAC 5 paragraf 67 dan SFAC 8 Bab 6. Keempat, OCI dan disaggregasi penyajian: selisih translasi Pinehill negatif Rp531,4 miliar dipisahkan dari laba operasi, mengangkat relevansi comprehensive income sesuai BC7.21. Kelima, catatan berperan sebagai enabler tiga enhancing QC: 148 catatan ditambah segmen tiga divisi mengangkat comparability, verifiability, dan understandability. Kesimpulan overarching kami: FASB Conceptual Framework bukan dokumen normatif yang abstrak, melainkan peta jalan operasional yang nyata-nyata bekerja pada konglomerat multinasional dengan penjualan Rp115,79 triliun.",
+    "key_terms": [
+      {
+        "en": "Conceptual Framework as roadmap",
+        "id": "Kerangka konseptual sebagai peta jalan",
+        "def": "Cara pandang fungsional: CF bukan aturan paksaan melainkan struktur intelektual yang memandu standar dan praktik agar saling konsisten."
+      },
+      {
+        "en": "Materiality threshold",
+        "id": "Ambang materialitas",
+        "def": "Tingkat penyimpangan informasi yang dipandang dapat memengaruhi keputusan pengguna; pada INDF 2024 dijaga pada level 5,45%."
+      }
+    ]
   },
   {
     "page": 69,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
+    "role": "ending",
+    "title": "Terima Kasih — Kelompok 3 Pelaporan Keuangan Korporat",
+    "narration": "Demikian presentasi kami Kelompok 3 mengenai FASB Conceptual Framework dengan studi kasus PT Indofood Sukses Makmur Tbk tahun 2024. Kami mengucapkan terima kasih kepada Bapak/Ibu dosen pengampu mata kuliah Pelaporan Keuangan Korporat dan kepada rekan-rekan kelas atas perhatian dan diskusinya. Semoga bermanfaat. Terima kasih.",
     "key_terms": []
   }
 ]
