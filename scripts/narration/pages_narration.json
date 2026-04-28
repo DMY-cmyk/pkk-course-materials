@@ -689,146 +689,359 @@
   {
     "page": 37,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Entry Price vs Exit Price — SFAC 8 Bab 6 M30–M34",
+    "narration": "Slide ini membongkar dikotomi pengukuran fundamental SFAC 8 Bab 6 paragraf M30 hingga M34 yang terbit Juli 2024. FASB menyederhanakan pertanyaan pengukuran menjadi satu aksis: harga unik atau harga tidak unik. Entry price (harga pada saat perolehan) mencerminkan apa yang dibayar untuk mendapatkan aset atau diterima untuk menanggung liabilitas; basisnya adalah historical cost (biaya historis — harga perolehan awal) atau amortised cost (biaya teramortisasi). Entry price relevan ketika tidak ada pasar aktif atau transaksi bersifat unik, contohnya mesin produksi khusus yang tidak diperjualbelikan. Sebaliknya, exit price (harga keluar) mencerminkan harga yang akan diterima jika aset dijual atau dibayar jika liabilitas diselesaikan hari ini; basisnya adalah fair value (nilai wajar — harga pasar saat ini) Level 1 hingga Level 3 atau current value. Exit price relevan ketika ada pasar aktif yang menyediakan harga teramati, contohnya saham yang diperdagangkan di bursa atau obligasi pemerintah. Aturan operasional M30 hingga M34 jelas: harga unik mengarah ke Entry, harga tidak unik mengarah ke Exit. Inilah dasar konseptual untuk model campuran pengukuran INDF.",
+    "key_terms": [
+      {
+        "en": "entry price",
+        "id": "harga perolehan",
+        "def": "Harga yang dibayar untuk mendapatkan aset atau diterima untuk menanggung liabilitas pada saat transaksi awal."
+      },
+      {
+        "en": "exit price",
+        "id": "harga keluar",
+        "def": "Harga yang akan diterima jika aset dijual atau dibayar jika liabilitas diselesaikan pada tanggal pengukuran."
+      },
+      {
+        "en": "fair value",
+        "id": "nilai wajar",
+        "def": "Harga pasar saat ini untuk aset/liabilitas, diklasifikasi Level 1 (kuotasi pasar aktif) hingga Level 3 (model valuasi)."
+      }
+    ]
   },
   {
     "page": 38,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Aplikasi INDF 2024 — Model Campuran Pengukuran Lima Aset",
+    "narration": "Tabel ini menerapkan aturan M30 hingga M34 pada lima jenis aset dan liabilitas konkret di laporan INDF 2024 untuk menunjukkan bahwa INDF menjalankan mixed-measurement model (model campuran pengukuran) — bukan satu basis tunggal. Pertama, goodwill Rp52,2 triliun memakai Entry price dengan dasar biaya historis ditambah uji impairment, alasannya tidak ada pasar aktif untuk goodwill Pinehill sehingga harga bersifat unik. Kedua, aset tetap berupa pabrik memakai Entry price dengan dasar biaya historis dikurangi akumulasi penyusutan, alasannya aset produksi spesifik bersifat unik. Ketiga, saham investasi listed memakai Exit price dengan dasar fair value Level 1, alasannya harga pasar tersedia langsung sehingga harga tidak unik. Keempat, instrumen keuangan Level 3 memakai Exit price dengan dasar fair value Level 3 menggunakan DCF (discounted cash flow) atau model valuasi karena tidak ada harga langsung. Kelima, obligasi ICBP berdenominasi USD memakai Entry price dengan dasar biaya amortisasi sebagai utang jangka panjang, sedangkan nilai wajar diungkap di Catatan. Lima keputusan ini secara konsisten mengikuti uji unik versus tidak unik dari M30 hingga M34.",
+    "key_terms": [
+      {
+        "en": "mixed-measurement model",
+        "id": "model campuran pengukuran",
+        "def": "Pendekatan SFAC 8 Bab 6 di mana satu entitas menggunakan beberapa basis pengukuran sekaligus tergantung sifat aset/liabilitasnya."
+      },
+      {
+        "en": "Level 3 fair value",
+        "id": "nilai wajar Level 3",
+        "def": "Estimasi nilai wajar yang menggunakan input non-observable (model DCF, asumsi internal) ketika tidak ada harga pasar langsung."
+      }
+    ]
   },
   {
     "page": 39,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Penyajian PR12 — Hierarki LK + OCI INDF 2024",
+    "narration": "Slide ini menjelaskan SFAC 8 Bab 7 tentang Presentation (Penyajian) khususnya paragraf PR12, dipasangkan dengan rekonsiliasi OCI INDF 2024. Hierarki laporan keuangan menurut Exhibit 7.2 Wolk membagi dua tingkat: face of financial statements (laporan utama) — Position, Performance, dan Cash Flows — yang berisi pengakuan formal, dan Notes (catatan suplementer) yang berfungsi sebagai pelengkap. PR12 menetapkan aturan tegas: Notes to financial statements are not a substitute for recognition of financial statement elements — catatan tidak dapat menggantikan pengakuan elemen di laporan utama. Implikasi PR12 untuk INDF langsung terlihat pada rekonsiliasi total penghasilan komprehensif. Laba Bersih induk plus NCI (non-controlling interest — kepentingan non-pengendali) mencapai Rp13.077,5 miliar; OCI berupa selisih kurs translasi negatif Rp531,4 miliar muncul karena translasi entitas anak luar negeri seperti Pinehill; total Penghasilan Komprehensif menjadi sekitar Rp12.546,1 miliar. Selisih kurs translasi diakui di OCI bukan di catatan saja — sesuai PR12, eksposur valuta operasi luar negeri harus diakui di laporan utama, bukan disembunyikan di disclosure.",
+    "key_terms": [
+      {
+        "en": "face of financial statements",
+        "id": "laporan utama",
+        "def": "Laporan posisi, kinerja, dan arus kas tempat elemen keuangan diakui secara formal — berbeda dari catatan."
+      },
+      {
+        "en": "PR12",
+        "id": "PR12",
+        "def": "Paragraf SFAC 8 Bab 7 yang menegaskan catatan atas laporan keuangan tidak boleh menggantikan pengakuan di laporan utama."
+      },
+      {
+        "en": "OCI",
+        "id": "penghasilan komprehensif lain",
+        "def": "Komponen perubahan ekuitas selain laba rugi — pada INDF berisi selisih kurs translasi entitas luar negeri."
+      }
+    ]
   },
   {
     "page": 40,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "BC7.21 — OCI sebagai Kompromi Pragmatis",
+    "narration": "Slide ini mengangkat satu paragraf basis kesimpulan yang jujur secara intelektual: BC7.21 dari SFAC 8 Bab 7. FASB sendiri mengakui dalam Basis for Conclusions (dasar kesimpulan) bahwa tidak ada dasar konseptual yang kuat untuk OCI sebagai kategori terpisah dari laba rugi. OCI ada karena tekanan industri yang ingin menghindari volatilitas laba periodik akibat fluktuasi kurs, perubahan nilai instrumen tertentu, dan revaluasi — bukan karena prinsip konseptual. FASB menyebutnya kompromi pragmatis, bukan turunan logis dari Bab 1 hingga 4. Implikasi untuk INDF cukup tegas. OCI negatif Rp531,4 miliar dari translasi Pinehill (operasi luar negeri di Afrika dan Timur Tengah) adalah kerugian riil di luar laba rugi — penyajian terpisah ini sesuai PSAK 1 yang sejajar dengan IAS 1, namun tanpa landasan konseptual kuat di Conceptual Framework FASB. Meski begitu, kami tegaskan: OCI tetap relevan bagi investor INDF dengan eksposur operasi luar negeri besar, karena memisahkan dampak kurs dari kinerja operasi inti membantu nilai prediktif tanpa mendistorsi laba bersih induk.",
+    "key_terms": [
+      {
+        "en": "basis for conclusions",
+        "id": "dasar kesimpulan",
+        "def": "Bagian penjelas standar yang mendokumentasikan alasan dan trade-off keputusan FASB — bukan bagian otoritatif standar."
+      },
+      {
+        "en": "pragmatic compromise",
+        "id": "kompromi pragmatis",
+        "def": "Keputusan akuntansi yang diambil karena tekanan praktis (volatilitas, lobi industri) tanpa dasar konseptual deduktif kuat."
+      }
+    ]
   },
   {
     "page": 41,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Empat Keterbatasan Catatan LK — SFAC 8 Bab 8",
+    "narration": "Slide ini merangkum SFAC 8 Bab 8 paragraf D1 hingga D82 yang terbit Agustus 2023, khususnya empat alasan mengapa catatan atas laporan keuangan tidak cukup berdiri sendiri sebagai pengganti pengakuan di laporan utama. Pertama, catatan tidak berdampak langsung pada angka laporan keuangan utama — angka aset, liabilitas, ekuitas, pendapatan, dan beban di Position dan Performance tidak berubah hanya karena disclosure. Kedua, tidak semua pengguna membaca atau memahami catatan secara penuh; investor ritel sering hanya membaca highlight dan rasio utama. Ketiga, catatan tidak dapat mengoreksi salah saji di laporan utama — jika pengakuan keliru, pengungkapan tambahan tidak menyembuhkannya, sebagaimana doktrin disclosure is not a substitute for recognition. Keempat, terlalu banyak catatan menghasilkan information overload yang justru mengorbankan understandability (keterpahaman — salah satu enhancing qualitative characteristics). Empat keterbatasan ini menjelaskan mengapa FASB sengaja membatasi peran disclosure dalam hierarki SFAC 8: catatan adalah suplemen, bukan pengganti. Untuk INDF dengan 148 catatan atas LK, tantangannya nyata — mempertahankan kelengkapan tanpa overload.",
+    "key_terms": [
+      {
+        "en": "information overload",
+        "id": "kelebihan informasi",
+        "def": "Kondisi di mana volume disclosure terlalu besar sehingga pengguna kesulitan mengekstrak informasi material — mengorbankan understandability."
+      },
+      {
+        "en": "disclosure is not a substitute for recognition",
+        "id": "pengungkapan bukan pengganti pengakuan",
+        "def": "Prinsip bahwa pengungkapan di catatan tidak dapat menggantikan pengakuan formal elemen di laporan utama."
+      }
+    ]
   },
   {
     "page": 42,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Tiga Pandangan Kritis CF — Gaa, Archer, Wolk",
+    "narration": "Slide ini menyajikan tiga perspektif akademik yang dirangkum Wolk halaman 183 hingga 186 tentang di mana Conceptual Framework berhasil dan di mana ia gagal. Pertama, pandangan kodifikasional dari Gaa: CF melegitimasi proses penetapan standar yang rasional, bukan menurunkan standar secara deduktif. Kelemahannya, apakah CF benar-benar punya gigi untuk menolak standar yang buruk? Praktiknya jarang. Kedua, pandangan jurisprudensial dari Archer: CF berfungsi seperti preseden hukum common law — standar baru memperoleh otoritas dari rujukan ke CF. Risikonya self-referential: CF dan standar saling membenarkan tanpa ujian eksternal yang sebenarnya. Ketiga, penilaian akhir Wolk yang menjadi key document analisis kami. Sisi positif: CF memberi konsistensi, komparabilitas (perbandingan antar entitas), dan kosakata bersama bagi penyusun, auditor, dan pengguna. Sisi negatif: SFAC 5 adalah Achilles' heel CF karena membuka pintu tekanan politik dan industri ke isu pengukuran. Wolk menyimpulkan SFAC 8 sebagai puncak pencapaian CF saat ini, meski belum selesai. Tiga pandangan ini membingkai kritik kami terhadap kerangka konseptual sebelum sintesis akhir.",
+    "key_terms": [
+      {
+        "en": "self-referential",
+        "id": "swarujuk",
+        "def": "Kondisi di mana CF dan standar saling merujuk untuk justifikasi tanpa ujian empiris atau prinsip eksternal yang independen."
+      },
+      {
+        "en": "codificational view",
+        "id": "pandangan kodifikasional",
+        "def": "Pandangan Gaa bahwa CF berfungsi melegitimasi proses penetapan standar yang rasional, bukan sebagai sumber deduksi standar."
+      }
+    ]
   },
   {
     "page": 43,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Arsitektur SFAC 8 (1/2) — Fondasi Bab 1 hingga 4",
+    "narration": "Slide ini menyajikan setengah pertama arsitektur lengkap SFAC 8 sebagai konstitusi laporan keuangan modern. Bab 1 terbit 2010, paragraf OB1 hingga OB28, mendefinisikan tujuan pelaporan keuangan — pengguna utama adalah investor dan kreditur eksisting maupun potensial, dengan basis akrual sebagai metode pengukuran fundamental. Bab 2 terbit 2010, paragraf RE1 hingga RE14, mendefinisikan reporting entity (entitas pelapor) — konsolidasi wajib bagi entitas induk, NCI (non-controlling interest) disajikan dalam ekuitas, dan tiga jenis entitas pelapor diakui. Bab 3 terbit 2010, paragraf QC1 hingga QC39, menyajikan hierarki qualitative characteristics — fundamental yaitu relevansi dan faithful representation (representasi tepat — informasi lengkap, netral, bebas dari kesalahan), empat enhancing yaitu komparabilitas, verifiabilitas, ketepatwaktuan, keterpahaman, dengan kendala biaya. Bab 4 baru diperbarui Juli 2024, paragraf E1 hingga E90, mendefinisikan elemen — definisi aset diperbarui menjadi present right (hak kini) yang memberikan primasi konseptual pasangan aset dan liabilitas. Empat bab ini adalah fondasi yang tidak dapat dipisahkan dari pengukuran, penyajian, dan pengungkapan.",
+    "key_terms": [
+      {
+        "en": "reporting entity",
+        "id": "entitas pelapor",
+        "def": "Entitas yang diwajibkan menyusun laporan keuangan general purpose — bisa berupa entitas tunggal, entitas induk konsolidasian, atau bagian entitas."
+      },
+      {
+        "en": "present right",
+        "id": "hak kini",
+        "def": "Definisi aset baru SFAC 8 Bab 4 (Juli 2024) — aset adalah hak kini atas potensi manfaat ekonomi sebagai akibat peristiwa masa lalu."
+      }
+    ]
   },
   {
     "page": 44,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Arsitektur SFAC 8 (2/2) — Implementasi Bab 5 hingga 8 + Evolusi 46 Tahun",
+    "narration": "Slide ini melanjutkan arsitektur SFAC 8 ke setengah kedua — implementasi — dan menempatkannya pada garis waktu evolusi 46 tahun. Bab 5 terbit Juli 2024, paragraf RD1 hingga RD14, mengatur recognition (pengakuan): elemen diakui melalui kata-kata dan angka di laporan utama, dengan prinsip RD3 yang menegaskan disclosure bukan pengganti recognition. Bab 6 terbit Juli 2024, paragraf M1 hingga M49, mengatur measurement (pengukuran) — dikotomi Entry price versus Exit price dengan aturan harga unik mengarah ke Entry, harga tidak unik mengarah ke Exit. Bab 7 terbit Juli 2024, paragraf PR1 hingga PR54, mengatur presentation (penyajian): face of financial statements adalah primer, Notes adalah suplementer, dan BC7.21 mengakui OCI sebagai kompromi pragmatis. Bab 8 terbit Agustus 2023, paragraf D1 hingga D82, mengatur disclosure — suplemen bukan pengganti, dengan empat keterbatasan eksplisit. Evolusi 46 tahun menunjukkan kerja yang belum selesai: 1978 hingga 1985 fondasi awal SFAC 1 hingga 6; 2010 puncak SFAC 8 fondasi; 2023 hingga 2024 amendemen Bab 4, 5, 6, 7. CF adalah dokumen hidup, bukan tablet batu.",
+    "key_terms": [
+      {
+        "en": "recognition",
+        "id": "pengakuan",
+        "def": "Proses formal mencantumkan elemen di laporan utama melalui deskripsi kata dan jumlah moneter — diatur Bab 5 SFAC 8."
+      },
+      {
+        "en": "measurement",
+        "id": "pengukuran",
+        "def": "Penentuan jumlah moneter elemen — Bab 6 SFAC 8 menyajikan Entry vs Exit price sebagai aksis utama."
+      }
+    ]
   },
   {
     "page": 45,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Rantai Otoritas — FASB → IASB → PSAK → INDF",
+    "narration": "Slide ini menjawab pertanyaan kritis rantai otoritas: bagaimana SFAC 8 yang dirancang FASB Amerika sampai mengikat INDF di Indonesia? Wolk halaman 181 hingga 183 dan INDF AR halaman 135 mendokumentasikan jalurnya. Norwalk Agreement tahun 2002 antara FASB dan IASB menjadi jembatan — kesepakatan konvergensi yang membuat dua kerangka konseptual saling memengaruhi. FASB menerbitkan SFAC 8 pada 2010 dan menambah Bab 4 hingga 7 pada Juli 2024. IASB menerbitkan Conceptual Framework 2018 yang sebagian besar konvergen dengan SFAC 8. Sejak 2012 Ikatan Akuntan Indonesia mengadopsi IFRS sebagai dasar PSAK, sehingga PSAK Indonesia mengikuti IASB CF 2018 secara substansial. PT Indofood Sukses Makmur Tbk sebagai entitas yang menyusun laporan menurut PSAK karena itu terikat IASB CF 2018. Maka rantainya jelas: INDF mengikuti PSAK, PSAK mengadopsi IFRS, IFRS bersandar pada IASB CF 2018, dan IASB CF 2018 sebagian besar konvergen dengan SFAC 8 melalui Norwalk. INDF bukan di jalur FASB langsung — namun analisis Wolk dan SFAC 8 tetap relevan karena konvergensi konseptual yang substantif.",
+    "key_terms": [
+      {
+        "en": "Norwalk Agreement",
+        "id": "Perjanjian Norwalk",
+        "def": "Kesepakatan konvergensi 2002 antara FASB dan IASB untuk menyelaraskan standar dan kerangka konseptual."
+      },
+      {
+        "en": "PSAK",
+        "id": "Pernyataan Standar Akuntansi Keuangan",
+        "def": "Standar akuntansi Indonesia yang sejak 2012 diadopsi dari IFRS oleh IAI — basis legal pelaporan INDF."
+      }
+    ]
   },
   {
     "page": 46,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Yang Terkonvergensi — SFAC 8 ≡ IASB CF 2018",
+    "narration": "Slide ini mengidentifikasi empat area di mana SFAC 8 dan IASB CF 2018 secara substansial identik, sehingga analisis Wolk yang berbasis SFAC 8 dapat diterapkan pada INDF tanpa distorsi. Pertama, tujuan pelaporan keuangan — paragraf OB1 hingga OB21 SFAC 8 dan paragraf 1.2 hingga 1.23 IASB CF berbunyi nyaris identik: menyediakan informasi keuangan yang berguna bagi pengguna utama untuk keputusan ekonomi. Kedua, identifikasi pengguna utama — investor, lender, dan kreditur lain yang tidak dapat memperoleh informasi langsung dari entitas. Ketiga, hierarki qualitative characteristics — relevansi dan faithful representation sebagai fundamental, dengan empat enhancing yaitu komparabilitas, verifiabilitas, ketepatwaktuan, keterpahaman, dan kendala biaya — keduanya memakai struktur dua tingkat yang sama. Keempat, materialitas didefinisikan sebagai konsep entitas-spesifik — bukan ambang numerik universal melainkan judgment yang bergantung pada ukuran dan sifat entitas pelapor. Empat area konvergensi ini berarti ketika kami mendiskusikan QC INDF dan menerapkan kerangka Wolk, kami berdiri di atas tanah konseptual yang sama — tidak ada gap teoretis yang merusak validitas analisis.",
+    "key_terms": [
+      {
+        "en": "convergence",
+        "id": "konvergensi",
+        "def": "Proses penyelarasan standar dan kerangka FASB-IASB yang dimulai oleh Norwalk Agreement 2002."
+      },
+      {
+        "en": "materiality (entity-specific)",
+        "id": "materialitas entitas-spesifik",
+        "def": "Konsep bahwa ambang materialitas tidak universal, melainkan judgment yang ditetapkan auditor dan manajemen berdasarkan ukuran serta sifat entitas."
+      }
+    ]
   },
   {
     "page": 47,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Yang Belum Terkonvergensi — Tiga Perbedaan Kunci",
+    "narration": "Tabel ini mendokumentasikan tiga perbedaan kunci yang tersisa antara SFAC 8 FASB dan IASB CF 2018 yang relevan untuk analisis INDF. Pertama, prudence atau konservatisme. SFAC 8 FASB menghapus prudence sepenuhnya sejak 2010 — argumennya prudence bertentangan dengan netralitas, salah satu komponen faithful representation. Sebaliknya IASB CF 2018 mempertahankan prudence sebagai cautious neutrality (kehati-hatian netral) — judgment dalam ketidakpastian harus konservatif tanpa bias asimetri. Karena INDF mengikuti PSAK yang berbasis IASB CF, prudence tetap berlaku konseptual. Kedua, definisi aset versi Juli 2024. SFAC 8 Bab 4 sudah memperbarui definisi menjadi present right. IASB CF 2018 belum memperbarui — masih versi 2018 yang menggunakan economic resource. Ketiga, implikasi praktis untuk analisis INDF. Wolk dan SFAC 8 dapat diterapkan karena sebagian besar konvergen, namun kami harus eksplisit bahwa INDF IFRS-aligned bukan US GAAP — jadi setiap kali ada perbedaan SFAC 8 versus IASB CF, kami merujuk ke versi yang mengikat INDF, yaitu IASB CF 2018. Ketelitian ini menjaga validitas argumen kami tanpa mencampuradukkan kerangka.",
+    "key_terms": [
+      {
+        "en": "prudence",
+        "id": "prudence",
+        "def": "Sikap kehati-hatian dalam judgment di bawah ketidakpastian — dipertahankan IASB CF 2018, dihapus SFAC 8 demi netralitas."
+      },
+      {
+        "en": "cautious neutrality",
+        "id": "netralitas hati-hati",
+        "def": "Konsep IASB bahwa prudence tidak bertentangan dengan netralitas asalkan tidak menciptakan bias asimetri sistematis."
+      }
+    ]
   },
   {
     "page": 48,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "PT Indofood Sukses Makmur Tbk — Profil Konglomerat Pangan",
+    "narration": "Slide ini membuka studi kasus dengan profil PT Indofood Sukses Makmur Tbk, kode IDX INDF, didirikan 14 Agustus 1990 — konglomerat pangan terbesar Indonesia. Struktur INDF sebagai entitas induk konsolidasian memiliki empat lini bisnis utama yang masing-masing memiliki karakter operasional berbeda. Lini pertama, ICBP (Indofood CBP Sukses Makmur) memproduksi consumer branded products — Indomie sebagai merek mi instan terbesar dunia, Indomilk untuk dairy, dan Chitato untuk snack; ICBP listed terpisah di BEI sehingga laporannya terkonsolidasi sekaligus terlihat publik. Lini kedua, Bogasari memproduksi tepung terigu dan pasta — pabrik tepung terbesar nomor satu dunia berdasarkan volume. Lini ketiga, Agribisnis bergerak di kelapa sawit dan perkebunan, listed melalui SIMP (Salim Ivomas Pratama). Lini keempat, Distribusi melalui Indomarco Adi Prima — jaringan distribusi nasional yang menjangkau hampir seluruh kabupaten di Indonesia. Empat lini ini bukan sekadar diversifikasi — mereka membentuk integrasi vertikal dari bahan baku hingga distribusi konsumen. Profil multi-segmen ini menjadi konteks penting untuk membaca laporan konsolidasian: angka agregat menyembunyikan dinamika antar lini yang harus dipahami untuk analisis QC.",
+    "key_terms": [
+      {
+        "en": "vertical integration",
+        "id": "integrasi vertikal",
+        "def": "Struktur grup di mana entitas mengendalikan beberapa tahap rantai nilai — pada INDF dari sawit (Agri) hingga distribusi (Indomarco)."
+      },
+      {
+        "en": "consumer branded products",
+        "id": "produk konsumen bermerek",
+        "def": "Segmen ICBP yang memproduksi mi instan, dairy, snack, dan minuman dengan merek-merek dominan pasar Indonesia."
+      }
+    ]
   },
   {
     "page": 49,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "INDF 2024 — Sorotan Finansial 8 Metrik + Struktur Kepemilikan",
+    "narration": "Tabel ini menyajikan delapan metrik kunci INDF tahun 2024 dari Laporan Tahunan halaman 4, 8, dan 32 hingga 34, dipasangkan dengan struktur kepemilikan. Penjualan bersih Rp115,79 triliun menunjukkan skala omzet konsolidasian. Total aset Rp201,71 triliun menjadi denominator materialitas. Goodwill Pinehill Rp52,2 triliun setara 26% total aset — angka inilah yang menjadi titik fokus analisis kami sepanjang presentasi. EPS 2024 Rp984 menjadi metrik nilai prediktif bagi investor. Laba bersih Rp8,64 triliun — perlu dibedakan dari Rp13.077,5 miliar di slide OCI sebelumnya yang merupakan laba bersih konsolidasi induk plus NCI. Total ekuitas Rp108,99 triliun. ROE (return on equity — imbal hasil ekuitas) 12,5% mengukur efisiensi modal. Interest coverage 7,1 kali mengukur kemampuan bayar bunga. Opini audit WTM (wajar tanpa modifikasi) dari KAP Purwantono Sungkoro Surja afiliasi EY tertanggal 25 Maret 2025 — kredibilitas eksternal tertinggi. Struktur kepemilikan menunjukkan First Pacific Company di Hong Kong memegang 50,07% sebagai pengendali, sisa 49,93% publik di mana 84,87% berasal dari investor institusional asing. Profil kepemilikan ini langsung menentukan siapa primary users SFAC 8.",
+    "key_terms": [
+      {
+        "en": "return on equity",
+        "id": "imbal hasil ekuitas",
+        "def": "Rasio laba bersih dibagi total ekuitas — mengukur efisiensi penggunaan modal pemegang saham."
+      },
+      {
+        "en": "interest coverage",
+        "id": "rasio cakupan bunga",
+        "def": "EBIT dibagi beban bunga — mengukur kemampuan entitas membayar bunga utang dari laba operasi."
+      },
+      {
+        "en": "unqualified opinion",
+        "id": "opini wajar tanpa modifikasi",
+        "def": "Opini audit tertinggi yang menyatakan laporan keuangan disajikan wajar dalam semua aspek material."
+      }
+    ]
   },
   {
     "page": 50,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Pengguna Utama Laporan INDF — Diagram Dua Zona OB5–OB9",
+    "narration": "Slide ini menerapkan paragraf OB5 hingga OB9 SFAC 8 untuk mengidentifikasi pengguna utama laporan INDF dengan diagram dua zona. Zona dalam — primary users sesuai OB5 hingga OB8 — terdiri dari tiga kelompok yang tidak dapat memperoleh informasi langsung dari entitas. Pertama, First Pacific Company sebagai pengendali 50,07% — meski pengendali, sebagai entitas legal terpisah ia tetap pengguna eksternal yang memantau ROE 12,5% dan interest coverage 7,1 kali. Kedua, investor institusional asing 84,87% dari free float — fokus pada tren EPS lima tahun, risiko FX (foreign exchange — valuta asing), dan goodwill risk. Ketiga, kreditur dengan funded debt Rp70,81 triliun — fokus pada interest coverage 7,1 kali, obligasi USD ICBP, dan eksposur valuta. Zona luar — non-primary sesuai OB9 — mencakup tiga kelompok yang punya akses langsung. Manajemen INDF memiliki akses internal langsung sehingga bukan target laporan general purpose. OJK memiliki jalur regulasi formal untuk meminta data tambahan. Karyawan, meski stakeholder penting, secara konseptual SFAC 8 bukan resource providers utama. Pemisahan dua zona ini bukan formalitas — ia menentukan apa yang harus dilaporkan dan untuk kepentingan siapa.",
+    "key_terms": [
+      {
+        "en": "primary users",
+        "id": "pengguna utama",
+        "def": "Investor, lender, dan kreditur lain yang tidak dapat memperoleh informasi langsung dari entitas — target utama laporan general purpose menurut OB5."
+      },
+      {
+        "en": "resource providers",
+        "id": "penyedia sumber daya",
+        "def": "Pihak yang menyediakan modal atau pinjaman ke entitas — dalam SFAC 8 mereka adalah primary users."
+      }
+    ]
   },
   {
     "page": 51,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Kebutuhan vs Tersedia di AR INDF — Prinsip OB2",
+    "narration": "Tabel ini melakukan crosscheck empiris: apakah kebutuhan informasi tiap kelompok primary users INDF benar-benar terpenuhi oleh Laporan Tahunan 2024? Pertama, First Pacific membutuhkan informasi konsolidasi entitas anak, kebijakan dividen, dan ROE — semua tersedia dengan ROE 12,5% terhitung dari halaman 4. Kedua, investor asing membutuhkan tren EPS lima tahun, eksposur FX, dan AR bilingual untuk akses bahasa — semua tersedia, AR INDF disusun dwi-bahasa Indonesia dan Inggris. Ketiga, kreditur membutuhkan interest coverage dan total funded debt — semua tersedia dengan interest coverage 7,1 kali dan funded debt Rp70,81 triliun. Tiga checkmark ini menjadi bukti empiris bahwa AR INDF memenuhi standar OB SFAC 8 untuk primary users-nya. Prinsip OB2 yang membatasi cakupan menjadi penting: General purpose financial reports are directed to those who cannot obtain information they need directly from the entity — laporan general purpose ditujukan kepada pihak yang tidak dapat memperoleh informasi langsung. Manajemen INDF dan OJK punya akses langsung melalui jalur internal dan regulasi, sehingga sesuai OB9 mereka bukan primary users. Batas ini menjelaskan mengapa AR INDF tidak perlu menyajikan rincian operasional internal — karena audiens utamanya bukan pihak dengan akses langsung.",
+    "key_terms": [
+      {
+        "en": "general purpose financial report",
+        "id": "laporan keuangan tujuan umum",
+        "def": "Laporan yang ditujukan kepada pengguna eksternal yang tidak dapat meminta informasi khusus langsung dari entitas — fokus utama SFAC 8."
+      },
+      {
+        "en": "OB2",
+        "id": "OB2",
+        "def": "Paragraf SFAC 8 Bab 1 yang membatasi cakupan laporan general purpose hanya untuk pengguna tanpa akses langsung."
+      }
+    ]
   },
   {
     "page": 52,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "chart",
+    "title": "Relevansi INDF — Predictive + Confirmatory Value (QC6–QC11)",
+    "narration": "Bagan ini menerapkan komponen relevance SFAC 8 paragraf QC6 hingga QC11 pada data INDF untuk membuktikan dua sub-komponen: predictive value dan confirmatory value. Sisi kiri menampilkan nilai prediktif melalui tren EPS lima tahun: Rp735 pada 2020, Rp873 pada 2021, anjlok ke Rp724 pada 2022, pulih ke Rp928 pada 2023, mencapai Rp984 pada 2024. Anjlokan 2022 disebabkan anomali Pinehill via PCL (Pinehill Company Limited) — dan justru karena itu data ini memiliki nilai prediktif: investor bisa memodelkan recovery 2023 hingga 2024. Lima tahun data memungkinkan ekstrapolasi yang lebih kredibel daripada satu titik data tunggal. Sisi kanan menampilkan nilai konfirmatori melalui konfirmasi efisiensi biaya: gross margin naik dari 32,3% di 2023 menjadi 34,7% di 2024 — strategi efisiensi yang dijanjikan manajemen di MD&A (management discussion and analysis — diskusi dan analisis manajemen) tahun sebelumnya terbukti. Selain itu kemampuan bayar — interest coverage 7,1 kali — mengkonfirmasi prospektus obligasi yang diterbitkan kreditur sebelumnya. Predictive dan confirmatory bukan dua hal terpisah — mereka dua sisi koin yang sama: data yang sama dapat sekaligus memprediksi masa depan dan mengkonfirmasi ekspektasi masa lalu, itu inti relevansi.",
+    "key_terms": [
+      {
+        "en": "predictive value",
+        "id": "nilai prediktif",
+        "def": "Kapasitas informasi keuangan menjadi input bagi pengguna untuk membuat prediksi tentang hasil masa depan — QC7 SFAC 8."
+      },
+      {
+        "en": "confirmatory value",
+        "id": "nilai konfirmatori",
+        "def": "Kapasitas informasi memberi umpan balik untuk mengkonfirmasi atau mengoreksi ekspektasi sebelumnya — QC8 SFAC 8."
+      }
+    ]
   },
   {
     "page": 53,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Materialitas INDF — Goodwill Pinehill Rp52,2 Triliun = KAM EY",
+    "narration": "Slide ini menerapkan QC11 tentang materiality (materialitas — entitas-spesifik) pada kasus konkret goodwill Pinehill INDF. Goodwill Rp52,2 triliun setara 26% dari total aset Rp201,71 triliun — secara matematis dan konseptual melampaui ambang materialitas wajar. SFAC 8 QC11 mendefinisikan materialitas sebagai entitas-spesifik: tidak ada angka universal, melainkan judgment yang bergantung pada ukuran dan sifat entitas. Untuk INDF, ambang sekitar 5 hingga 10% total aset adalah benchmark wajar — goodwill Pinehill berlipat dua hingga lima kali lebih besar dari benchmark itu. Konfirmasi materialitas datang independen dari auditor: KAP Purwantono Sungkoro Surja afiliasi EY menetapkan goodwill sebagai Key Audit Matter (KAM — hal audit utama) dalam laporan auditor. Kenapa material? Pertama, goodwill di atas 25% total aset adalah high judgment area — penilaian impairment-nya rawan asumsi. Kedua, salah penghapusan goodwill akan menghasilkan bias laba yang signifikan: write-off Rp52 triliun akan langsung memukul ekuitas dan melanggar covenant utang. Maka materialitas goodwill INDF bukan masalah angka di atas kertas — ia adalah jantung risiko pelaporan keuangan 2024.",
+    "key_terms": [
+      {
+        "en": "materiality",
+        "id": "materialitas",
+        "def": "Konsep entitas-spesifik QC11 — informasi material jika omisi atau salah saji dapat memengaruhi keputusan pengguna utama."
+      },
+      {
+        "en": "Key Audit Matter",
+        "id": "hal audit utama",
+        "def": "Isu yang menurut auditor paling signifikan dalam audit periode berjalan — wajib diungkap di laporan auditor menurut ISA 701."
+      }
+    ]
   },
   {
     "page": 54,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Representasi Tepat INDF — Completeness + Neutrality (QC13+QC14)",
+    "narration": "Slide ini menyajikan bukti empiris dua dari tiga komponen faithful representation (representasi tepat) pada laporan INDF 2024: completeness (kelengkapan QC13) dan neutrality (netralitas QC14). Komponen ketiga, free from error, akan disinggung di slide selanjutnya. Bukti kelengkapan ditunjukkan tiga indikator. Pertama, 148 catatan atas laporan keuangan mencakup kebijakan akuntansi, rincian aset, transaksi pihak berelasi, dan instrumen keuangan — lengkap secara struktural. Kedua, goodwill Rp52,2 triliun diungkap dengan asumsi DCF (discounted cash flow), tingkat pertumbuhan, tingkat diskonto, dan analisis sensitivitas plus minus 1% — tingkat detail yang memungkinkan pengguna mereplikasi judgment manajemen. Ketiga, AR bilingual Indonesia-Inggris memberi akses kepada 84,87% investor institusional asing — kelengkapan tidak hanya soal isi melainkan juga aksesibilitas. Bukti netralitas ditunjukkan tiga indikator. Pertama, risiko impairment goodwill diungkap eksplisit meski jelas mengkhawatirkan investor — manajemen tidak menyembunyikan risiko negatif. Kedua, dampak kurs obligasi USD ICBP disajikan berimbang positif dan negatif — tidak hanya keuntungan yang diangkat. Ketiga, transaksi pihak berelasi Rp10,11 triliun setara 8,73% diungkap meski sensitif kompetitif. Kelengkapan dan netralitas terbukti.",
+    "key_terms": [
+      {
+        "en": "completeness",
+        "id": "kelengkapan",
+        "def": "QC13 — informasi memuat semua hal yang diperlukan pengguna untuk memahami fenomena yang dilaporkan, termasuk deskripsi dan penjelasan."
+      },
+      {
+        "en": "neutrality",
+        "id": "netralitas",
+        "def": "QC14 — penyajian tanpa bias dalam pemilihan atau presentasi informasi keuangan; tidak diwarnai untuk meningkatkan kemungkinan pengguna menerimanya secara menguntungkan."
+      }
+    ]
   },
   {
     "page": 55,
