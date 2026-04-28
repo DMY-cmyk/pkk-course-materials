@@ -337,146 +337,354 @@
   {
     "page": 19,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Konservatisme Dihapus dari SFAC 8 — Kontras dengan IASB",
+    "narration": "Slide ini membedah salah satu keputusan paling kontroversial dalam SFAC 8: penghapusan total konservatisme. Pada SFAC 2 tahun 1980, FASB masih menyebut konservatisme sebagai konvensi — preferensi memilih estimasi yang lebih pesimistis ketika ada keraguan, misalnya memilih nilai aset terendah dan beban tertinggi. SFAC 8 paragraf BC3.27 menghapus konsep ini sepenuhnya dengan argumentasi: konservatisme secara inheren bertentangan dengan netralitas — jika kami sengaja bias ke arah pesimistis, kami sudah tidak netral. Yang menarik bagi konteks Indonesia: IASB Conceptual Framework tahun 2018, yang menjadi rujukan PSAK, tetap mempertahankan prudence (kehati-hatian — sikap berhati-hati saat membuat pertimbangan dalam kondisi ketidakpastian). Inilah perbedaan fundamental antara SFAC 8 dan IASB CF 2018. Implikasinya praktis: emiten Indonesia seperti INDF tunduk pada PSAK yang masih mengakui prudence, sehingga pengakuan kerugian penurunan nilai goodwill atau cadangan piutang ragu-ragu di INDF mengandung jejak prudence yang justru ditolak FASB. Perdebatan ini belum selesai dan menjadi salah satu titik divergensi penting kerangka konseptual global.",
+    "key_terms": [
+      {
+        "en": "Prudence",
+        "id": "Kehati-hatian",
+        "def": "Sikap berhati-hati ketika membuat pertimbangan dalam kondisi ketidakpastian; dipertahankan IASB CF 2018 namun dihapus FASB di SFAC 8 paragraf BC3.27."
+      },
+      {
+        "en": "BC3.27",
+        "id": "Basis for Conclusions paragraf 3.27",
+        "def": "Paragraf SFAC 8 yang memuat alasan teknis penghapusan konservatisme; menyatakan konservatisme bertentangan dengan netralitas."
+      }
+    ]
   },
   {
     "page": 20,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Comparability dan Verifiability — Aplikasi INDF 2024",
+    "narration": "Slide ini membahas dua karakteristik kualitatif peningkat pertama menurut SFAC 8 paragraf QC19 hingga QC28. Comparability (komparabilitas — kemampuan informasi membantu pengguna mengidentifikasi persamaan dan perbedaan antar entitas atau antar periode) sering disalahpahami sebagai keseragaman; padahal komparabilitas berbeda dari uniformity. Konsistensi adalah alat untuk mencapai komparabilitas, bukan tujuan itu sendiri. Pada INDF, komparabilitas tercermin nyata pada tabel ikhtisar lima tahun di halaman 4 Laporan Tahunan 2024 yang memungkinkan pengguna membandingkan kinerja antar periode dengan format konsisten. Kedua, verifiability (keterverifikasian) — sebagaimana kami uraikan tadi pada slide tentang transformasi SFAC 2 ke SFAC 8, posisinya diturunkan dari komponen fundamental keandalan menjadi karakteristik peningkat. Logikanya: verifikasi saja tidak menjamin penyajian merepresentasikan realitas ekonomi. Pada INDF, verifiability dipenuhi melalui audit eksternal oleh Ernst and Young, yaitu KAP Purwantono, Sungkoro dan Surja — opini auditor independen menjadi sarana verifikasi pihak ketiga atas seluruh angka yang disajikan dalam laporan keuangan konsolidasian.",
+    "key_terms": [
+      {
+        "en": "Comparability",
+        "id": "Komparabilitas",
+        "def": "Karakteristik peningkat yang memungkinkan pengguna mengidentifikasi persamaan dan perbedaan antar pos, antar periode, atau antar entitas; berbeda dari keseragaman."
+      },
+      {
+        "en": "Consistency",
+        "id": "Konsistensi",
+        "def": "Penggunaan metode akuntansi yang sama dari periode ke periode dalam suatu entitas; alat untuk mencapai komparabilitas, bukan tujuan akhir."
+      }
+    ]
   },
   {
     "page": 21,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Timeliness dan Understandability — Aplikasi INDF 2024",
+    "narration": "Slide ini melanjutkan pembahasan dua karakteristik kualitatif peningkat lainnya pada SFAC 8 paragraf QC29 hingga QC34. Pertama, timeliness (ketepatan waktu — informasi tersedia bagi pengambil keputusan tepat waktu sebelum kehilangan kemampuan mempengaruhi keputusan). Otoritas Jasa Keuangan menetapkan batas penyampaian laporan tahunan 90 hari setelah tutup buku. INDF memenuhi syarat ini dengan sangat baik — Laporan Tahunan tahun buku 2024 ditandatangani 25 Maret 2025, masih dalam jendela 90 hari. Bukti empiris bahwa timeliness bukan hanya konsep teoretis, melainkan kewajiban regulasi yang dipatuhi. Kedua, understandability (keterpahaman — informasi diklasifikasikan, dikarakterisasi, dan disajikan secara jelas serta ringkas). SFAC 8 mengasumsikan pengguna memiliki pengetahuan reasonable tentang aktivitas bisnis dan ekonomi, jadi laporan tidak perlu disederhanakan ke tingkat awam. INDF memenuhi understandability melalui penyajian bilingual Indonesia dan Inggris dalam Laporan Tahunan 2024, melayani 84,87% basis investor asing INDF. Pilihan bilingual ini bukan kemewahan, melainkan respons konkret atas profil pengguna utama.",
+    "key_terms": [
+      {
+        "en": "Timeliness",
+        "id": "Ketepatan waktu",
+        "def": "Karakteristik peningkat yang menuntut informasi tersedia bagi pengambil keputusan sebelum kehilangan kemampuan mempengaruhi keputusan."
+      },
+      {
+        "en": "Understandability",
+        "id": "Keterpahaman",
+        "def": "Karakteristik peningkat yang menuntut klasifikasi, karakterisasi, dan penyajian informasi secara jelas dan ringkas, dengan asumsi pengguna memiliki pengetahuan bisnis yang wajar."
+      }
+    ]
   },
   {
     "page": 22,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Cost Constraint — Manfaat Lebih Besar dari Biaya",
+    "narration": "Slide ini membahas satu-satunya kendala pervasif dalam SFAC 8 paragraf QC35 hingga QC39, yaitu cost constraint atau kendala biaya. Prinsip fundamentalnya sederhana: informasi layak disajikan hanya jika manfaat bagi pengguna lebih besar daripada biaya penyajian. Kendala ini berlaku pervasif untuk setiap keputusan pengungkapan, bukan hanya satu jenis informasi. Di sisi manfaat, yang menjadi penerima adalah investor dan kreditur — keputusan mereka menjadi lebih baik dengan informasi tambahan. Di sisi biaya, ada tiga jenis: biaya pengumpulan data, biaya verifikasi, dan risiko kompetitif jika informasi sensitif diungkap kepada pesaing. Implikasi praktisnya signifikan. Auditor dan penyusun standar tidak dapat menuntut pengungkapan tanpa batas. Setiap kewajiban pengungkapan baru harus melewati uji manfaat versus biaya. Bagi INDF, hal ini menjelaskan mengapa beberapa segmen disajikan agregat dan tidak detail per produk, atau mengapa pengungkapan strategi tertentu sengaja umum — bukan karena kelalaian, melainkan kalibrasi sadar atas kendala biaya yang diizinkan SFAC 8.",
+    "key_terms": [
+      {
+        "en": "Cost constraint",
+        "id": "Kendala biaya",
+        "def": "Kendala pervasif dalam SFAC 8 yang menyatakan informasi layak disajikan hanya jika manfaat bagi pengguna melebihi biaya pengumpulan, verifikasi, dan risiko kompetitif."
+      },
+      {
+        "en": "Pervasive constraint",
+        "id": "Kendala pervasif",
+        "def": "Kendala yang berlaku menyeluruh terhadap setiap keputusan pengungkapan, bukan terbatas pada jenis informasi tertentu."
+      }
+    ]
   },
   {
     "page": 23,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "10 Elemen Laporan Keuangan SFAC 6 — Posisi dan Ekuitas",
+    "narration": "Slide ini menampilkan lima dari sepuluh elemen laporan keuangan menurut SFAC 6 tahun 1985 sebagaimana dirangkum Wolk halaman 177 hingga 179. Lima elemen pertama berkaitan dengan Laporan Posisi Keuangan dan transaksi pemilik. Pertama, aset — manfaat ekonomi masa depan yang diperoleh atau dikendalikan entitas dari transaksi atau kejadian masa lalu. Kedua, liabilitas — pengorbanan manfaat ekonomi masa depan akibat kewajiban masa kini untuk mengalihkan aset atau jasa kepada pihak lain. Ketiga, ekuitas — sisa kepentingan dalam aset entitas setelah dikurangi liabilitas; bersifat residual, sehingga ekuitas hanya bisa diukur setelah aset dan liabilitas terdefinisi. Keempat, investasi oleh pemilik — penambahan ekuitas yang berasal dari transfer nilai untuk memperoleh atau menambah kepemilikan. Kelima, distribusi kepada pemilik — penurunan ekuitas yang berasal dari pengalihan aset kepada pemilik, contoh paling lazim adalah dividen. Lima elemen ini adalah fondasi struktur Laporan Posisi Keuangan dan Laporan Perubahan Ekuitas. Catatan penting: definisi ini adalah versi sebelum revisi SFAC 8 Bab 4 Juli 2024 yang akan kami bahas pada slide-slide berikutnya.",
+    "key_terms": [
+      {
+        "en": "Asset (SFAC 6)",
+        "id": "Aset versi SFAC 6",
+        "def": "Manfaat ekonomi masa depan yang diperoleh atau dikendalikan entitas tertentu sebagai hasil transaksi atau kejadian masa lalu."
+      },
+      {
+        "en": "Equity",
+        "id": "Ekuitas",
+        "def": "Sisa kepentingan dalam aset entitas setelah dikurangi liabilitas; bersifat residual."
+      },
+      {
+        "en": "Distribution to owners",
+        "id": "Distribusi kepada pemilik",
+        "def": "Penurunan ekuitas yang berasal dari pengalihan aset, jasa, atau penanggungan liabilitas oleh entitas kepada pemilik; bentuk paling umum adalah dividen."
+      }
+    ]
   },
   {
     "page": 24,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "10 Elemen Laporan Keuangan SFAC 6 — Kinerja",
+    "narration": "Slide ini menampilkan lima elemen sisanya dari SFAC 6 yang berkaitan dengan kinerja, yaitu Laporan Laba Rugi Komprehensif. Keenam, comprehensive income atau penghasilan komprehensif — perubahan ekuitas yang berasal dari sumber bukan pemilik; rumusnya CI sama dengan Net Income ditambah Other Comprehensive Income atau OCI. Ketujuh, pendapatan atau revenues — arus masuk yang berasal dari operasi utama atau sentral bisnis dan bersifat berulang. Kedelapan, beban atau expenses — arus keluar dari operasi utama atau sentral bisnis. Kesembilan, keuntungan atau gains — penambahan ekuitas yang berasal dari transaksi periferal atau insidental dan tidak berulang. Kesepuluh, kerugian atau losses — penurunan ekuitas yang berasal dari transaksi periferal atau insidental. Kuncinya ada pada dikotomi sentral versus periferal. Pendapatan dan beban berasal dari aktivitas inti yang berulang dan prediktabel; keuntungan dan kerugian berasal dari aktivitas pinggiran yang tidak berulang. Pemisahan ini krusial bagi analis investasi karena hanya pendapatan dan beban yang dapat diekstrapolasi sebagai dasar proyeksi kinerja masa depan, sedangkan keuntungan dan kerugian harus disesuaikan agar tidak mendistorsi proyeksi.",
+    "key_terms": [
+      {
+        "en": "Comprehensive Income (CI)",
+        "id": "Penghasilan Komprehensif",
+        "def": "Perubahan ekuitas dari sumber bukan pemilik; sama dengan Net Income ditambah Other Comprehensive Income."
+      },
+      {
+        "en": "Revenues vs Gains",
+        "id": "Pendapatan vs Keuntungan",
+        "def": "Pendapatan berasal dari operasi sentral yang berulang; keuntungan berasal dari transaksi periferal atau insidental yang tidak berulang."
+      }
+    ]
   },
   {
     "page": 25,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Definisi Elemen — Perlu Tetapi Tidak Cukup",
+    "narration": "Slide ini menyajikan catatan kritis pertama dari Bagian III: definisi elemen adalah kondisi yang perlu tetapi tidak cukup. Argumen ini diangkat oleh Dopuch dan Sunder dalam kritik akademik klasik mereka. Maknanya: suatu item bisa memenuhi definisi aset namun belum tentu boleh diakui dalam laporan keuangan — masih dibutuhkan kriteria pengakuan yang diatur SFAC 5 atau SFAC 8 Chapter 5. Contoh konkret: merek dagang yang dikembangkan internal mungkin memenuhi definisi aset karena memberi manfaat ekonomi masa depan, tetapi tidak diakui di Laporan Posisi Keuangan karena gagal di kriteria pengukuran yang andal. Inilah alasan struktural mengapa SFAC 5 muncul dengan empat kriteria pengakuan yang akan kami bahas dua slide ke depan. Catatan penting kami: definisi SFAC 6 yang baru saja kami paparkan adalah versi sebelum revisi 2024. SFAC 8 Bab 4 yang dirilis Juli 2024 melakukan revisi fundamental terhadap definisi aset dan liabilitas. Slide selanjutnya akan menunjukkan revolusi konseptual tersebut, sehingga kami tetap menyajikan SFAC 6 lebih dulu sebagai baseline pembanding.",
+    "key_terms": [
+      {
+        "en": "Necessary but not sufficient",
+        "id": "Perlu tetapi tidak cukup",
+        "def": "Konsep logis bahwa memenuhi definisi elemen adalah syarat awal namun belum cukup; pengakuan menuntut kriteria tambahan dari SFAC 5 atau SFAC 8 Bab 5."
+      },
+      {
+        "en": "Dopuch & Sunder",
+        "id": "Kritikus Dopuch dan Sunder",
+        "def": "Akademisi yang mengangkat kritik klasik bahwa definisi elemen SFAC 6 tidak cukup beroperasi sebagai panduan pengakuan tanpa kriteria tambahan."
+      }
+    ]
   },
   {
     "page": 26,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "SFAC 8 Bab 4 (Juli 2024) — Definisi Aset Baru",
+    "narration": "Slide ini menampilkan revolusi konseptual SFAC 8 Bab 4 paragraf E1 hingga E90 yang dirilis Juli 2024 dengan latar Basis for Conclusions BC4.7. Definisi inti aset berubah fundamental. Versi lama SFAC 6 tahun 1985: probable future economic benefits obtained or controlled, dengan tiga karakteristik — manfaat masa depan, dikendalikan, dan transaksi masa lalu. Versi baru SFAC 8 Bab 4: present right to an economic benefit, dengan hanya dua karakteristik — present right dan economic benefit. Tiga kata kunci dihapus. Pertama, probable dihapus — tidak lagi perlu probabilitas tinggi untuk memenuhi definisi. Kedua, future dihapus dan diganti present — fokus bergeser dari potensi masa depan ke hak yang dimiliki saat ini. Ketiga, control dihapus — diganti konsep present right yang lebih luas. Implikasi praktisnya besar: ambang masuk definisi aset menjadi lebih rendah, lebih banyak item berpotensi memenuhi definisi. Misalnya hak kontraktual yang dulu dipertanyakan karena ambiguitas control kini lebih jelas masuk sebagai aset selama present right tegak. Inilah pergeseran paradigma dari probabilistic-future menuju rights-based-present yang akan kami uji empiris pada kasus goodwill INDF.",
+    "key_terms": [
+      {
+        "en": "Present right",
+        "id": "Hak kini",
+        "def": "Komponen baru definisi aset SFAC 8 Bab 4 Juli 2024 yang mengganti control; hak yang dimiliki entitas saat ini terhadap manfaat ekonomi."
+      },
+      {
+        "en": "SFAC 8 Bab 4",
+        "id": "SFAC 8 Chapter 4",
+        "def": "Bab elemen laporan keuangan SFAC 8 yang dirilis Juli 2024, melakukan revisi fundamental definisi aset dan liabilitas dibanding SFAC 6 tahun 1985."
+      }
+    ]
   },
   {
     "page": 27,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Definisi Liabilitas Baru dan Conceptual Primacy Aset/Liabilitas",
+    "narration": "Slide ini melanjutkan revolusi SFAC 8 Bab 4 dengan dua poin: definisi liabilitas baru dan doktrin conceptual primacy. Definisi liabilitas SFAC 8 Bab 4 berbunyi: a present obligation of an entity to transfer an economic benefit. Hanya dua komponen yang tersisa — present obligation atau kewajiban kini, dan transfer economic benefit atau pengalihan manfaat ekonomi. Sama seperti definisi aset, dua kata kunci dihapus: probable dihilangkan dan past transaction tidak lagi disebut eksplisit. Konsekuensinya simetris dengan definisi aset baru: ambang masuk liabilitas juga menurun. Poin kedua, BC4.7 menegaskan doktrin conceptual primacy of assets and liabilities — aset dan liabilitas memiliki keutamaan konseptual, sedangkan pendapatan, beban, keuntungan, dan kerugian bersifat derivatif. Artinya: pendapatan didefinisikan sebagai kenaikan aset atau penurunan liabilitas, bukan sebagai konsep mandiri. Pendekatan ini disebut balance-sheet approach atau pendekatan neraca, lawannya pendekatan revenue-expense yang menempatkan kinerja sebagai utama. Pemilihan FASB pada balance-sheet approach memiliki implikasi besar: pengakuan pendapatan dan pengakuan beban harus selalu konsisten dengan definisi dan pengakuan aset/liabilitas, bukan sebaliknya.",
+    "key_terms": [
+      {
+        "en": "Conceptual primacy",
+        "id": "Primasi konseptual",
+        "def": "Doktrin SFAC 8 BC4.7 yang menempatkan aset dan liabilitas sebagai elemen utama; pendapatan, beban, keuntungan, dan kerugian bersifat derivatif."
+      },
+      {
+        "en": "Present obligation",
+        "id": "Kewajiban kini",
+        "def": "Komponen utama definisi liabilitas SFAC 8 Bab 4; kewajiban yang dimiliki entitas saat ini, bukan sekadar potensi di masa depan."
+      },
+      {
+        "en": "Balance-sheet approach",
+        "id": "Pendekatan neraca",
+        "def": "Pendekatan konseptual yang menempatkan aset dan liabilitas sebagai konstruk utama; pendapatan dan beban diturunkan dari perubahan aset atau liabilitas."
+      }
+    ]
   },
   {
     "page": 28,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Aplikasi: Goodwill INDF Rp52,2 Triliun — Uji Definisi Aset SFAC 6 vs SFAC 8 Bab 4",
+    "narration": "Slide ini menerapkan dua versi definisi aset pada kasus goodwill Pinehill INDF sebesar Rp52,2 triliun, yaitu sekitar 26% total aset INDF tahun 2024. Pertanyaan empirisnya: apakah goodwill ini memenuhi definisi aset di kedua versi? Kami uji tiga karakteristik. Pertama, manfaat ekonomi. Versi SFAC 6: terpenuhi karena merek Pinehill memberi akses pasar Afrika dan Timur Tengah. Versi SFAC 8 Bab 4: terpenuhi sebagai present right atas merek Pinehill yang sudah dikuasai INDF. Kedua, kendali atau hak. Versi SFAC 6: terpenuhi karena INDF mengendalikan Pinehill via PCL atau Pinehill Company Limited yang menjadi entitas akuisisi. Versi SFAC 8 Bab 4: terpenuhi sebagai present right via PCL — meski control sudah dihapus dari definisi, fakta penguasaan tetap kuat. Ketiga, transaksi masa lalu. Versi SFAC 6: terpenuhi karena akuisisi Pinehill tercatat formal. Versi SFAC 8 Bab 4: tidak diperlukan lagi di definisi baru. Kesimpulan kami: goodwill Pinehill memenuhi definisi aset di kedua versi, namun definisi baru lebih mudah dipenuhi karena probable dan control telah dihapus. Inilah bukti empiris mengapa revolusi SFAC 8 Bab 4 bukan sekadar perubahan kosmetik.",
+    "key_terms": [
+      {
+        "en": "Pinehill Company Limited (PCL)",
+        "id": "PCL",
+        "def": "Entitas akuisisi yang menjadi kendaraan INDF mengakuisisi bisnis mi instan Pinehill di Afrika dan Timur Tengah; menghasilkan goodwill Rp52,2 triliun di neraca konsolidasian."
+      }
+    ]
   },
   {
     "page": 29,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Pendapatan vs Keuntungan SFAC 6 — INDF 2024",
+    "narration": "Slide ini menerapkan dikotomi sentral versus periferal SFAC 6 pada Laporan Laba Rugi INDF 2024 sebagaimana terbaca pada Laporan Tahunan halaman 31 hingga 32. Sisi pendapatan atau revenues mewakili operasi utama dan sentral yang bersifat berulang dan prediktabel. INDF mencatatkan penjualan bersih Rp115,79 triliun pada 2024, berasal dari empat lini sentral: Indomie melalui ICBP, tepung Bogasari, CPO via SIMP, dan distribusi via Indomarco. Inilah jantung mesin pendapatan INDF yang dapat diekstrapolasi sebagai dasar proyeksi tahun-tahun berikutnya. Sisi keuntungan atau gains mewakili transaksi periferal dan insidental yang tidak berulang. INDF mencatatkan dua jenis utama: keuntungan dari penjualan aset tetap dan keuntungan kurs terealisasi dari transaksi mata uang asing. Kedua pos ini bersifat insidental — penjualan aset tetap tidak terjadi setiap tahun dengan magnitudo sama, dan keuntungan kurs bergantung volatilitas pasar valuta asing. Implikasi analitis: investor yang ingin memproyeksikan kinerja masa depan harus memisahkan Rp115,79 triliun pendapatan operasi dari pos-pos keuntungan agar proyeksi tidak terdistorsi oleh komponen non-recurring.",
+    "key_terms": [
+      {
+        "en": "Recurring vs non-recurring",
+        "id": "Berulang vs tidak berulang",
+        "def": "Klasifikasi yang membedakan arus dari operasi sentral yang stabil dari peristiwa insidental satu kali; krusial untuk proyeksi kinerja."
+      }
+    ]
   },
   {
     "page": 30,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Beban vs Kerugian SFAC 6 — INDF 2024",
+    "narration": "Slide ini melengkapi dikotomi pendapatan dan keuntungan dengan sisi beban dan kerugian SFAC 6 pada Laporan Laba Rugi INDF 2024 di halaman 31 hingga 32 Laporan Tahunan. Beban atau expenses mewakili biaya yang muncul dari operasi utama dan berulang setiap periode. Pada INDF, beban terdiri dari tiga komponen utama: HPP atau harga pokok penjualan yang merupakan biaya bahan baku dan produksi, biaya penjualan untuk distribusi dan pemasaran, serta biaya administrasi untuk fungsi korporat. Ketiganya berkorelasi dengan volume penjualan dan dapat diproyeksikan dengan model elastisitas. Kerugian atau losses mewakili penurunan ekuitas dari transaksi periferal atau insidental. Pada INDF, kerugian utama terdiri dari rugi penjualan aset tetap yang sifatnya satu kali serta rugi kurs tidak terealisasi yang berasal dari translasi pos moneter mata uang asing pada tanggal neraca. Pemisahan beban versus kerugian penting karena dua alasan analitis. Pertama, hanya beban yang masuk perhitungan margin operasi yang menjadi indikator kesehatan bisnis inti. Kedua, kerugian non-recurring tidak boleh diekstrapolasi ke proyeksi masa depan karena bisa mendistorsi penilaian bisnis fundamental.",
+    "key_terms": [
+      {
+        "en": "Cost of Goods Sold (COGS)",
+        "id": "Harga Pokok Penjualan (HPP)",
+        "def": "Biaya bahan baku, tenaga kerja langsung, dan overhead produksi yang melekat pada produk yang dijual; komponen beban operasi terbesar bagi perusahaan manufaktur."
+      },
+      {
+        "en": "Unrealized FX loss",
+        "id": "Rugi kurs tidak terealisasi",
+        "def": "Kerugian translasi pos moneter mata uang asing pada tanggal neraca; belum direalisasi melalui penyelesaian transaksi, namun diakui sesuai standar."
+      }
+    ]
   },
   {
     "page": 31,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "chart",
+    "title": "CI INDF 2024 = NI + OCI — Waterfall Penghasilan Komprehensif",
+    "narration": "Diagram waterfall ini memvisualisasikan struktur Penghasilan Komprehensif INDF 2024 sesuai SFAC 6 dengan rumus CI sama dengan NI ditambah OCI, sumber Laporan Tahunan halaman 31 hingga 32. Lapisan atas menampilkan Laba Bersih total Rp13.077,5 miliar — angka headline yang sering menjadi fokus media dan analis. Lapisan tengah menampilkan komponen OCI atau Other Comprehensive Income yaitu selisih kurs translasi entitas asing sebesar negatif Rp531,4 miliar. Mengapa OCI negatif? Karena INDF memiliki operasi luar negeri signifikan di Afrika, Timur Tengah, dan Asia Tenggara melalui Pinehill, sehingga depresiasi mata uang asing terhadap rupiah pada saat translasi menghasilkan kerugian translasi yang dicatat di OCI, bukan di Laba Bersih. Lapisan bawah menampilkan Total Penghasilan Komprehensif sekitar Rp12.546,1 miliar. Inilah pesan kunci kami: Laba Rp13,08 triliun yang sering dikutip sebenarnya tidak mencerminkan total perubahan kekayaan pemegang saham. Pengguna yang hanya membaca laba bersih akan kehilangan informasi kerugian translasi setengah triliun rupiah yang sah secara konseptual masuk ekuitas. Inilah alasan SFAC 6 menetapkan CI sebagai pengukur perubahan ekuitas dari sumber bukan pemilik secara komprehensif.",
+    "key_terms": [
+      {
+        "en": "Other Comprehensive Income (OCI)",
+        "id": "Penghasilan Komprehensif Lain",
+        "def": "Komponen Penghasilan Komprehensif yang tidak masuk Laba Rugi, mencakup selisih kurs translasi entitas asing, perubahan nilai wajar instrumen tertentu, dan revaluasi aset."
+      },
+      {
+        "en": "Foreign currency translation",
+        "id": "Translasi mata uang asing",
+        "def": "Proses mengonversi laporan keuangan entitas anak luar negeri ke mata uang pelaporan induk; selisih kurs masuk OCI sebagai cumulative translation adjustment."
+      }
+    ]
   },
   {
     "page": 32,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "SFAC 5 (1984) — Empat Kriteria Pengakuan",
+    "narration": "Slide ini memperkenalkan SFAC 5 paragraf 63 yang merumuskan empat kriteria pengakuan klasik — disebut Wolk sebagai Achilles' Heel framework karena menjadi titik lemah teoretis kerangka konseptual. Versi sebelum revisi 2024 menetapkan suatu item diakui dalam laporan keuangan jika memenuhi keempat kriteria sekaligus. Pertama, memenuhi definisi elemen — yaitu definisi aset, liabilitas, ekuitas, pendapatan, beban, keuntungan, atau kerugian sesuai SFAC 6. Kedua, memiliki atribut pengukuran relevan — dapat dikuantifikasi secara andal dengan salah satu basis pengukuran yang diizinkan, seperti biaya historis atau nilai wajar. Ketiga, relevan — informasi mampu membuat perbedaan dalam keputusan pengguna sesuai karakteristik fundamental SFAC 8 yang sudah kami bahas. Keempat, andal — representasi wajar, dapat diverifikasi, dan netral. Mengapa empat kriteria ini disebut Achilles' Heel? Karena dalam praktik, kriteria pengukuran dan keandalan sering bertabrakan dengan relevansi — misalnya nilai wajar yang relevan tetapi sulit diverifikasi. SFAC 5 tidak memberi panduan hierarki ketika kriteria saling bersaing, sehingga keputusan pengakuan menjadi diskresioner. Inilah celah konseptual yang akan diperbaiki SFAC 8 Bab 5 Juli 2024.",
+    "key_terms": [
+      {
+        "en": "Recognition criteria (SFAC 5)",
+        "id": "Kriteria Pengakuan SFAC 5",
+        "def": "Empat syarat klasik pengakuan: memenuhi definisi elemen, memiliki atribut pengukuran relevan, relevan, dan andal."
+      },
+      {
+        "en": "Achilles' Heel framework",
+        "id": "Kerangka titik lemah",
+        "def": "Istilah Wolk untuk SFAC 5; menggambarkan kerentanan teoretis karena empat kriteria pengakuan tidak dilengkapi panduan hierarki saat saling bertabrakan."
+      }
+    ]
   },
   {
     "page": 33,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "SFAC 8 Bab 5 (Juli 2024) — Tiga Kriteria + RD3",
+    "narration": "Slide ini menampilkan penyederhanaan radikal yang dilakukan SFAC 8 Bab 5 Juli 2024 paragraf RD1 hingga RD14: empat kriteria SFAC 5 dipadatkan menjadi tiga kriteria dengan logika lebih jernih. Pertama, memenuhi definisi elemen sesuai Bab 4 Juli 2024 — definisi aset dan liabilitas baru yang sudah kami bahas. Kedua, dapat diukur dengan cara yang menyediakan useful information — kriteria pengukuran disatukan dengan kriteria relevansi, tidak lagi terpisah. Ketiga, memberikan representasi tepat tentang aset atau liabilitas — menggantikan kriteria reliability lama dengan bahasa SFAC 8 yang lebih konsisten. Yang menjadi insight kunci adalah RD3 yang menyatakan: recognition consists of capturing both a description (words) and a monetary amount (numbers). Pengakuan terdiri dari kata-kata dan angka di laporan utama. Kalimat ini secara tegas membedakan pengakuan dari pengungkapan: pengakuan mensyaratkan dua-duanya — deskripsi tekstual dan jumlah moneter — yang masuk ke neraca atau laba rugi. Pengungkapan di catatan atas laporan keuangan tanpa dibawa ke neraca bukan pengakuan. Konsekuensi logisnya akan kami bahas pada slide selanjutnya: pengakuan berbeda fundamental dari pengungkapan dalam dampaknya terhadap rasio keuangan.",
+    "key_terms": [
+      {
+        "en": "RD3 — Recognition",
+        "id": "RD3 paragraf SFAC 8 Bab 5",
+        "def": "Paragraf yang menegaskan pengakuan sebagai capturing kata-kata dan angka di laporan keuangan utama, bukan sekadar pengungkapan di catatan."
+      },
+      {
+        "en": "Useful information",
+        "id": "Informasi yang berguna",
+        "def": "Standar baru SFAC 8 Bab 5 untuk kriteria pengukuran; menggantikan dua kriteria terpisah SFAC 5 yaitu atribut pengukuran relevan dan relevansi."
+      }
+    ]
   },
   {
     "page": 34,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Pengakuan vs Pengungkapan — Konsekuensi Praktis",
+    "narration": "Slide ini menjabarkan konsekuensi praktis dari prinsip RD3 SFAC 8 Bab 5 yang sudah kami uraikan: pengakuan dan pengungkapan berbeda fundamental, bukan sekadar lokasi penyajian. Tabel kami membandingkan tiga dimensi kritis. Pertama, lokasi penyajian. Pengakuan terjadi di laporan keuangan utama yaitu Laporan Posisi Keuangan dan Laporan Laba Rugi. Pengungkapan terjadi di catatan atas laporan keuangan yang sifatnya pelengkap. Kedua, format. Pengakuan menampilkan angka plus deskripsi sebagai pos resmi. Pengungkapan menampilkan deskripsi naratif dengan angka suplementer yang sifatnya mendukung. Ketiga, dampak terhadap rasio keuangan. Pengakuan langsung mempengaruhi neraca dan laba rugi sehingga ikut dalam perhitungan rasio likuiditas, solvabilitas, profitabilitas, dan rasio pasar. Pengungkapan tidak berdampak langsung terhadap rasio karena tidak mengubah angka pos resmi. Pesan kunci kami: pengakuan tidak sama dengan pengungkapan. Recognition mempengaruhi rasio keuangan dan keputusan investor; disclosure tidak. Itulah sebabnya pertarungan akademik tentang sewa operasi, off-balance-sheet financing, dan instrumen derivatif selalu berputar pada satu pertanyaan: diakui atau hanya diungkap? Jawabannya menentukan struktur neraca dan persepsi solvabilitas perusahaan.",
+    "key_terms": [
+      {
+        "en": "Recognition vs Disclosure",
+        "id": "Pengakuan vs Pengungkapan",
+        "def": "Pembedaan kritis: pengakuan masuk laporan utama dan mempengaruhi rasio; pengungkapan hanya di catatan dan tidak mengubah pos resmi."
+      },
+      {
+        "en": "Off-balance-sheet financing",
+        "id": "Pembiayaan luar neraca",
+        "def": "Mekanisme pembiayaan yang sengaja diatur agar tidak diakui sebagai liabilitas di neraca; menjadi kritik utama yang mendorong revisi standar sewa dan instrumen keuangan."
+      }
+    ]
   },
   {
     "page": 35,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Lima Atribut Pengukuran SFAC 5 — Mixed-Attribute Model",
+    "narration": "Tabel ini menampilkan lima dasar pengukuran menurut SFAC 5 paragraf 67 sebagaimana dirangkum Wolk halaman 177 hingga 180. SFAC 5 mengakui mixed-attribute model — model campuran lima atribut pengukuran yang masing-masing memiliki trade-off antara relevansi dan verifiabilitas. Pertama, biaya historis — kas yang dibayar saat perolehan; kelebihannya dapat diverifikasi sempurna, kelemahannya tidak mencerminkan nilai kini. Kedua, biaya kini atau replacement cost — kas yang harus dibayar hari ini untuk aset yang sama; kelebihannya relevan untuk keputusan operasional, kelemahannya sulit diukur tanpa pasar aktif. Ketiga, nilai pasar kini atau exit value yang setara fair value — kas yang akan diterima jika aset dijual sekarang; sangat relevan tetapi volatil dan bisa tidak ada pasar untuk aset spesifik. Keempat, NRV atau Net Realizable Value — harga jual dikurangi biaya penyelesaian; relevan untuk persediaan, kelemahannya memerlukan estimasi. Kelima, nilai kini arus kas atau present value of future cash flows — arus kas masa depan didiskon; mencerminkan nilai ekonomis paling baik, kelemahannya sangat bergantung pada asumsi diskonto. Lima atribut inilah yang membuat SFAC 5 disebut menu pilihan tanpa hierarki — kritik yang akan kami bahas slide berikutnya.",
+    "key_terms": [
+      {
+        "en": "Mixed-attribute model",
+        "id": "Model campuran atribut",
+        "def": "Model pengukuran SFAC 5 yang mengakui lima dasar pengukuran berbeda sekaligus; trade-off relevansi versus verifiabilitas tidak dipandu hierarki."
+      },
+      {
+        "en": "Net Realizable Value (NRV)",
+        "id": "Nilai Realisasi Bersih",
+        "def": "Harga jual diestimasi dikurangi biaya penyelesaian dan biaya penjualan; basis pengukuran utama untuk persediaan menurut prinsip lower of cost or NRV."
+      },
+      {
+        "en": "Replacement cost",
+        "id": "Biaya pengganti / biaya kini",
+        "def": "Kas yang harus dibayar saat ini untuk memperoleh aset yang setara; relevan untuk keputusan operasional namun sulit diukur tanpa pasar aktif."
+      }
+    ]
   },
   {
     "page": 36,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Kritik SFAC 5 — Empat Perspektif Akademik",
+    "narration": "Slide ini menyajikan empat kritik akademik utama terhadap SFAC 5 yang membuat Wolk pada Bab 7 menyebutnya Achilles' heel kerangka konseptual. Pertama, Solomons tahun 1986 menyebut SFAC 5 sebagai cop-out — istilah keras yang berarti SFAC 5 hanya mengkodifikasi praktik yang sudah ada tanpa memberi panduan teoretis baru. SFAC 5 menyajikan menu pilihan lima dasar pengukuran tanpa panduan hierarki kapan masing-masing harus digunakan. Kedua, Sterling mengkritik SFAC 5 sebagai cart before the horse — kereta sebelum kuda — karena mendahulukan kriteria pengakuan sebelum menyelesaikan persoalan pengukuran. Logikanya terbalik menurut Sterling: pengukuran seharusnya menentukan apa yang diakui, bukan sebaliknya. Ketiga, kritik datang dari teks SFAC 5 paragraf 2 sendiri yang secara eksplisit menyatakan SFAC 5 tidak dimaksudkan menyebabkan perubahan signifikan dalam praktik saat ini. Pernyataan ini self-defeating bagi sebuah dokumen kerangka konseptual yang seharusnya memandu evolusi standar. Keempat, Miller menyebut SFAC 5 sebagai counterreformation — memberi legitimasi historical cost justru pada saat arus intelektual akademik bergeser ke current value. Empat kritik ini menjelaskan mengapa SFAC 8 Bab 5 Juli 2024 melakukan revisi mendasar.",
+    "key_terms": [
+      {
+        "en": "Cop-out (Solomons)",
+        "id": "Lari dari tanggung jawab",
+        "def": "Kritik Solomons 1986 bahwa SFAC 5 hanya mengkodifikasi praktik yang ada tanpa memberi panduan hierarki pengukuran baru."
+      },
+      {
+        "en": "Cart before the horse (Sterling)",
+        "id": "Kereta sebelum kuda",
+        "def": "Kritik Sterling bahwa SFAC 5 keliru mendahulukan pengakuan sebelum pengukuran; pengukuran seharusnya menjadi penentu apa yang diakui."
+      },
+      {
+        "en": "Counterreformation (Miller)",
+        "id": "Kontra-reformasi",
+        "def": "Kritik Miller bahwa SFAC 5 memberi legitimasi pada historical cost justru saat arus intelektual akademik bergeser ke current value."
+      }
+    ]
   },
   {
     "page": 37,
