@@ -36,7 +36,7 @@
 | 20 | split-first | 3 (31/32/33) | E1 differences table body 36px caption-tier; Analisis INDF row 32px sub-Winston (colspan); convergence ✓ items body 53px Winston-compliant (substansi utama) | 2026-04-28T01:30 | (see git log slide-20-split) |
 | 21 | split-first | 2 (34/35) | E1 secondary stats 36px caption-tier (8 metrics compact); F5 active (slide kasus INDF profil + sorotan keuangan AR 2024) | 2026-04-28T01:50 | (see git log slide-21-split) |
 | 22 | split-first | 2 (36/37) | E1 zona inner card body 32px caption-tier; table cells 36px caption-tier; OB2 quote 36px italic; F5 active (slide kasus INDF Primary Users mapping) | 2026-04-28T02:10 | (see git log slide-22-split) |
-| 23 | (pending) | — | — | — | — |
+| 23 | split-first | 2 (38/39) | E1 chart bar values 24-28 sub-Winston (5-col compactness); card body 32 caption-tier; F5 active (slide kasus INDF Relevansi 3 dimensi: Predictive EPS/Confirmatory margin+coverage/Materiality goodwill 26%) | 2026-04-28T02:30 | (see git log slide-23-split) |
 | 24 | (pending) | — | — | — | — |
 | 25 | (pending) | — | — | — | — |
 | 26 | (pending) | — | — | — | — |
