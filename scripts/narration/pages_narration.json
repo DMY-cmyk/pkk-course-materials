@@ -3,145 +3,336 @@
     "page": 1,
     "total": 69,
     "role": "cover",
-    "title": "",
-    "narration": "",
+    "title": "Kerangka Konseptual FASB: Fondasi Standar Pelaporan Keuangan",
+    "narration": "Selamat pagi, Bapak/Ibu dosen dan rekan-rekan sekalian. Kami Kelompok 3 Magister Akuntansi STIE YKPN tahun ajaran 2025/2026. Pada kesempatan ini kami akan membahas Kerangka Konseptual FASB sebagai fondasi standar pelaporan keuangan, mulai SFAC 1 hingga SFAC 8, dengan PT Indofood Sukses Makmur Tbk sebagai studi kasus.",
     "key_terms": []
   },
   {
     "page": 2,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
+    "role": "agenda",
+    "title": "Agenda Presentasi",
+    "narration": "Presentasi kami terbagi menjadi lima bagian. Bagian I konteks dan karakteristik kualitatif, Bagian II elemen, pengakuan dan pengukuran, Bagian III catatan kritis dan sintesis, Bagian IV studi kasus INDF 2024, dan terakhir Bagian V penutup serta kontribusi kelompok.",
     "key_terms": []
   },
   {
     "page": 3,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Dari CAP ke SFAC 8 — Sejarah 71 Tahun",
+    "narration": "Pada slide ini kami memetakan tujuh puluh satu tahun perjalanan standar pelaporan keuangan Amerika Serikat, dari aturan ad hoc menuju fondasi teoretis. Tahun 1939 Committee on Accounting Procedure atau CAP berdiri sebagai badan penyusun standar pertama, namun bekerja tanpa kerangka teoretis. Tahun 1973 FASB didirikan sebagai badan independen purna waktu menggantikan APB. Tahun 1984 FASB menerbitkan SFAC 5 tentang recognition (pengakuan — proses memasukkan suatu pos ke laporan keuangan) dan measurement (pengukuran — penentuan jumlah moneter pos tersebut), namun konsep ini banyak dikritik karena tidak menyelesaikan perdebatan historical cost versus fair value. Tahun 2000 SFAC 7 menambahkan panduan cash flow dan present value untuk pengukuran. Puncaknya tahun 2010, FASB dan IASB bersama-sama menerbitkan SFAC 8 yang menyatukan tujuan pelaporan dan karakteristik kualitatif dalam satu kerangka koheren. Pesan kami sederhana: setiap milestone menandai pergeseran dari standar yang lahir kasus per kasus menuju kerangka konseptual yang utuh dan dapat dipertanggungjawabkan secara akademik.",
+    "key_terms": [
+      {
+        "en": "Conceptual Framework",
+        "id": "Kerangka Konseptual",
+        "def": "Sistem tujuan dan konsep fundamental yang saling terkait yang menjadi dasar penyusunan standar akuntansi yang konsisten."
+      },
+      {
+        "en": "SFAC (Statement of Financial Accounting Concepts)",
+        "id": "Pernyataan Konsep Akuntansi Keuangan",
+        "def": "Dokumen FASB yang memuat konsep dasar pelaporan keuangan; berbeda dari SFAS, SFAC tidak mengikat secara teknis namun menjadi rujukan penyusunan standar."
+      },
+      {
+        "en": "Ad hoc standards",
+        "id": "Standar ad hoc",
+        "def": "Standar yang disusun kasus per kasus tanpa kerangka teoretis pemersatu, menyebabkan inkonsistensi antar standar."
+      }
+    ]
   },
   {
     "page": 4,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Era Pra-CF vs Pendahulu Intelektual",
+    "narration": "Slide ini membandingkan dua kekuatan yang membentuk lahirnya kerangka konseptual. Di sisi kiri, era pra-CF tahun 1939 hingga 1973: CAP menerbitkan Accounting Research Bulletins yang ad hoc dan tidak terhubung satu sama lain, kemudian APB menerbitkan Opinions di bawah tekanan industri yang kuat — terbukti ARS 1 dan ARS 3 ditolak karena dianggap terlalu radikal oleh praktisi. Tanpa fondasi teoretis yang utuh, standar yang dihasilkan tidak dapat dipertahankan ketika dipertanyakan publik. Di sisi kanan, pendahulu intelektual yang menyiapkan kelahiran CF: ASOBAT tahun 1966 yang menjadi upaya sistematis pertama memadukan tujuan dan standar dalam satu dokumen; Trueblood Report tahun 1973 yang menjadi landasan langsung SFAC 1; dan pendirian FASB tahun 1973 sebagai badan purna waktu yang independen dari profesi akuntan publik. Inilah jawaban kelembagaan atas kegagalan APB. Pesan kunci kami: kerangka konseptual bukan lahir dari ruang hampa, melainkan dari kegagalan praktik dan kematangan akademik yang berlangsung selama tiga dekade.",
+    "key_terms": [
+      {
+        "en": "ARB (Accounting Research Bulletin)",
+        "id": "Buletin Riset Akuntansi",
+        "def": "Pernyataan standar yang diterbitkan CAP era 1939–1959, bersifat ad hoc tanpa basis teoretis."
+      },
+      {
+        "en": "ASOBAT",
+        "id": "A Statement of Basic Accounting Theory",
+        "def": "Publikasi AAA tahun 1966 yang menjadi upaya sistematis pertama merumuskan tujuan dan standar akuntansi berbasis teori."
+      },
+      {
+        "en": "Trueblood Report",
+        "id": "Laporan Trueblood",
+        "def": "Laporan AICPA 1973 yang merumuskan tujuan pelaporan keuangan dan menjadi landasan langsung SFAC 1."
+      }
+    ]
   },
   {
     "page": 5,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Delapan SFAC — Peta Kronologis",
+    "narration": "Tabel ini meringkas delapan SFAC yang diterbitkan FASB beserta status terkininya. SFAC 1 tahun 1978 tentang objectives untuk entitas bisnis, SFAC 2 tahun 1980 tentang qualitative characteristics — keduanya kini digantikan SFAC 8. SFAC 3 tahun 1980 tentang elements untuk bisnis digantikan SFAC 6. SFAC 4 tahun 1980 mengenai entitas nonbisnis masih aktif. SFAC 5 tahun 1984 tentang recognition and measurement tetap aktif namun banyak dikritik karena lemah dalam memandu pemilihan basis pengukuran. SFAC 6 tahun 1985 mengenai elements untuk semua entitas, dan SFAC 7 tahun 2000 tentang cash flow dan present value, keduanya masih berlaku. Yang menjadi kunci presentasi kami adalah SFAC 8 tahun 2010 — Conceptual Framework hasil konvergensi FASB-IASB yang menyatukan tujuan pelaporan dan karakteristik kualitatif. SFAC 8 inilah yang akan kami bedah secara mendalam, karena perubahan paling fundamental dalam kerangka konseptual modern terjadi pada level dokumen ini.",
+    "key_terms": [
+      {
+        "en": "Recognition & Measurement",
+        "id": "Pengakuan dan Pengukuran",
+        "def": "Pengakuan adalah proses mencatat suatu pos dalam laporan keuangan; pengukuran adalah penentuan jumlah moneter yang dilekatkan pada pos tersebut."
+      },
+      {
+        "en": "Elements",
+        "id": "Elemen laporan keuangan",
+        "def": "Komponen dasar penyusun laporan keuangan: aset, liabilitas, ekuitas, pendapatan, beban, keuntungan, dan kerugian."
+      }
+    ]
   },
   {
     "page": 6,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Tujuan Pelaporan Keuangan — SFAC 8 OB2",
+    "narration": "Slide ini menampilkan tujuan resmi pelaporan keuangan menurut SFAC 8 paragraf OB2: menyediakan informasi keuangan yang berguna bagi investor, pemberi pinjaman, dan kreditur lainnya dalam keputusan penyediaan sumber daya. Kalimat ini tampak sederhana, namun mengandung tiga keputusan konseptual yang fundamental. Pertama, kata kuncinya adalah decision-usefulness (kegunaan untuk pengambilan keputusan — kriteria utama yang menjadikan informasi keuangan bernilai bagi pengguna eksternal). Kedua, pengguna dipersempit secara eksplisit ke investor dan kreditur, bukan lagi semua pihak eksternal seperti pada SFAC 1. Ketiga, fokus keputusannya spesifik: penyediaan sumber daya — yaitu keputusan membeli, menjual, atau menahan instrumen ekuitas dan instrumen utang, serta memberi atau menarik pinjaman. Implikasinya signifikan bagi INDF: laporan tahunan INDF tahun 2024 dirancang untuk menjawab pertanyaan investor BEI dan pemegang obligasi, bukan untuk kepentingan internal manajemen atau regulasi pajak. Inilah yang akan kami buktikan secara empiris pada bagian studi kasus.",
+    "key_terms": [
+      {
+        "en": "Decision-usefulness",
+        "id": "Kegunaan untuk pengambilan keputusan",
+        "def": "Kriteria utama dalam SFAC 8 yang menyatakan informasi keuangan bernilai sejauh membantu pengguna eksternal mengambil keputusan ekonomi rasional."
+      },
+      {
+        "en": "Resource provision decisions",
+        "id": "Keputusan penyediaan sumber daya",
+        "def": "Keputusan investor dan kreditur untuk membeli, menjual, atau menahan ekuitas/utang, serta memberi atau menarik pembiayaan."
+      }
+    ]
   },
   {
     "page": 7,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Pengguna Utama Pelaporan — SFAC 8 OB5–OB9",
+    "narration": "Slide ini menjawab pertanyaan: siapa sebenarnya yang berhak disebut pengguna utama laporan keuangan menurut SFAC 8? Jawabannya tegas dan sempit. Yang termasuk pengguna utama hanyalah investor — baik yang sudah ada maupun calon — dan kreditur, termasuk pemberi pinjaman dan pemasok yang menjual secara kredit. Sebaliknya, manajemen secara eksplisit dikeluarkan pada paragraf OB9 karena memiliki akses internal terhadap informasi entitas dan tidak bergantung pada laporan publik. Regulator seperti OJK dan Direktorat Jenderal Pajak juga bukan pengguna utama, karena mereka memiliki jalur regulasi tersendiri untuk meminta data spesifik. Demikian pula karyawan dan publik umum — mereka mungkin tertarik, tetapi bukan resource providers (penyedia sumber daya) sehingga tidak menjadi target kerangka konseptual. Penyempitan ini bukan diskriminasi, melainkan disiplin desain: dengan target jelas, FASB dan IASB dapat memprioritaskan informasi mana yang harus diutamakan ketika trade-off antar karakteristik kualitatif tidak terhindarkan.",
+    "key_terms": [
+      {
+        "en": "Primary users",
+        "id": "Pengguna utama",
+        "def": "Investor yang sudah ada dan calon, pemberi pinjaman, dan kreditur lain yang menggunakan laporan keuangan untuk keputusan penyediaan sumber daya."
+      },
+      {
+        "en": "Resource providers",
+        "id": "Penyedia sumber daya",
+        "def": "Pihak yang memberikan modal atau pembiayaan kepada entitas — investor ekuitas dan kreditur — yang menjadi prioritas utama pelaporan."
+      }
+    ]
   },
   {
     "page": 8,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "table",
+    "title": "Evolusi 32 Tahun: SFAC 1 (1978) → SFAC 8 (2010)",
+    "narration": "Tabel ini memetakan lima dimensi pergeseran fundamental dari SFAC 1 ke SFAC 8 selama tiga dekade. Pertama, dimensi pengguna: SFAC 1 menyebut semua pihak eksternal, sedangkan SFAC 8 menyempit ke investor dan kreditur. Kedua, prioritas: SFAC 1 tidak memiliki hierarki pengguna, sementara SFAC 8 secara eksplisit menetapkan primary users. Ketiga, status manajemen: SFAC 1 masih membuka kemungkinan manajemen sebagai pengguna, SFAC 8 dengan tegas menyatakan manajemen bukan pengguna utama. Keempat, regulator: dari potensi pengguna pada SFAC 1 menjadi bukan pengguna utama pada SFAC 8. Kelima, fokus keputusan: SFAC 1 tidak menentukan jenis keputusan, SFAC 8 menetapkan secara spesifik bahwa fokusnya adalah keputusan penyediaan sumber daya. Ringkasnya, SFAC 8 jauh lebih disiplin dan terfokus dibanding pendahulunya. Penyempitan ini menjadi landasan logis bagi seluruh karakteristik kualitatif yang akan kami bahas pada Bagian II — karena kualitas informasi hanya bisa dinilai jika pengguna dan keputusannya sudah jelas.",
+    "key_terms": [
+      {
+        "en": "Stewardship",
+        "id": "Pertanggungjawaban manajemen",
+        "def": "Konsep akuntansi tentang pelaporan bagaimana manajemen menggunakan sumber daya yang dipercayakan; pada SFAC 8 dianggap bagian dari decision-usefulness, bukan tujuan terpisah."
+      }
+    ]
   },
   {
     "page": 9,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Entitas Pelapor (Reporting Entity) — SFAC 8 RE1–RE14",
+    "narration": "Bab kedua SFAC 8 mengatur konsep reporting entity (entitas pelapor — entitas yang dipilih untuk direpresentasikan dalam laporan keuangan, tidak harus berupa entitas hukum). Definisi ini penting karena membuka ruang konsolidasi yang tidak terbatas pada bentuk hukum semata, melainkan pada kontrol ekonomi. SFAC 8 mengakui tiga bentuk entitas pelapor. Pertama, entitas tunggal — satu perusahaan mandiri yang berdiri sendiri. Kedua, entitas terkonsolidasi pada paragraf RE8 hingga RE9 — kombinasi induk dan anak ketika induk memiliki kontrol; bentuk inilah yang relevan bagi PT Indofood Sukses Makmur. Ketiga, entitas gabungan — gabungan beberapa entitas tanpa hubungan induk-anak, biasanya untuk kepentingan analisis tertentu. Konsekuensi langsungnya: bagi grup multi-segmen seperti INDF dengan ICBP, Bogasari, SIMP, dan distribusi, konsolidasi bukan pilihan teknis, melainkan kewajiban konseptual. Tanpa konsolidasi, gambaran ekonomi grup menjadi terdistorsi dan melanggar prinsip faithful representation yang akan kami bahas pada slide-slide berikutnya.",
+    "key_terms": [
+      {
+        "en": "Reporting Entity",
+        "id": "Entitas Pelapor",
+        "def": "Entitas yang dipilih untuk direpresentasikan dalam laporan keuangan; tidak harus berupa entitas hukum, melainkan ditentukan oleh batas kontrol ekonomi."
+      },
+      {
+        "en": "Consolidated entity",
+        "id": "Entitas terkonsolidasi",
+        "def": "Entitas pelapor yang terdiri dari induk dan satu atau lebih anak perusahaan yang dikontrol oleh induk, disajikan sebagai satu kesatuan ekonomi."
+      }
+    ]
   },
   {
     "page": 10,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "INDF: Satu Entitas Pelapor Konsolidasian",
+    "narration": "Slide ini menerapkan konsep entitas pelapor pada PT Indofood Sukses Makmur Tbk berdasarkan Laporan Tahunan 2024 halaman 8 hingga 9. INDF berperan sebagai entitas induk konsolidasian dengan empat lini bisnis utama: ICBP yang memproduksi consumer branded products seperti Indomie dan sudah listed terpisah di BEI; Bogasari yang memproduksi tepung dengan merek Segitiga Biru; SIMP yang bergerak di sawit dan CPO dan juga listed; serta lini distribusi melalui Indomarco Adi Prima. Dari Laporan Tahunan 2024 kami membaca tiga angka kunci yang memperlihatkan skala konsolidasi: total aset Rp201,71 triliun, kepentingan non-pengendali atau NCI di sisi ekuitas Rp43,08 triliun, serta goodwill Pinehill Rp52,2 triliun. Angka NCI yang besar membuktikan bahwa INDF benar-benar mengonsolidasi entitas yang sebagian sahamnya dimiliki pihak luar, sementara goodwill yang signifikan menandakan kompleksitas akuisisi yang masuk dalam batas konsolidasi. Inilah ilustrasi konkret bagaimana definisi reporting entity SFAC 8 RE8 hingga RE9 mengikat praktik pelaporan emiten Indonesia.",
+    "key_terms": [
+      {
+        "en": "Non-Controlling Interest (NCI)",
+        "id": "Kepentingan Non-Pengendali",
+        "def": "Bagian ekuitas anak perusahaan yang tidak dimiliki induk; disajikan terpisah dalam ekuitas konsolidasian sebagai bukti adanya pemilik minoritas."
+      },
+      {
+        "en": "Goodwill",
+        "id": "Goodwill",
+        "def": "Selisih lebih harga akuisisi dibanding nilai wajar aset bersih teridentifikasi yang diperoleh; muncul ketika induk membeli anak dengan premi atas nilai bukunya."
+      }
+    ]
   },
   {
     "page": 11,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "chart",
+    "title": "QC SFAC 2 (1980) — Hierarki Asli",
+    "narration": "Slide ini menampilkan hierarki asli karakteristik kualitatif menurut SFAC 2 tahun 1980, mengikuti Exhibit 7.1 buku Wolk. Di puncak adalah decision usefulness sebagai kriteria pengambilan keputusan. Di bawahnya berdiri dua karakteristik fundamental yang setara: relevance (relevansi — kemampuan informasi mempengaruhi keputusan pengguna) dan reliability (keandalan — informasi yang bebas bias dan dapat diverifikasi). Relevansi dijabarkan ke dalam predictive value, feedback value, dan timeliness. Reliability terdiri atas verifiability (keterverifikasian — kemampuan pengamat independen mencapai kesimpulan serupa), representational faithfulness, dan neutrality. Di lapisan interaktif terdapat comparability, dan di paling bawah ada materiality sebagai threshold. Yang perlu kami garis bawahi: pada SFAC 2, verifiability merupakan komponen fundamental keandalan — posisi yang akan berubah secara dramatis ketika SFAC 8 terbit. Memahami hierarki asli ini wajib, karena tanpa baseline ini perubahan SFAC 8 tidak akan terasa signifikan. Slide ini adalah peta tahun 1980 yang menjadi titik tolak seluruh diskusi Bagian II.",
+    "key_terms": [
+      {
+        "en": "Reliability",
+        "id": "Keandalan",
+        "def": "Karakteristik fundamental dalam SFAC 2 yang menyatakan informasi andal jika bebas bias dan kesalahan, serta dapat diverifikasi secara independen."
+      },
+      {
+        "en": "Verifiability",
+        "id": "Keterverifikasian",
+        "def": "Kemampuan pengamat-pengamat independen yang berbeda untuk mencapai kesimpulan serupa atas suatu pengukuran atau penyajian — pada SFAC 2 komponen fundamental, pada SFAC 8 turun menjadi enhancing."
+      },
+      {
+        "en": "Materiality",
+        "id": "Materialitas",
+        "def": "Ambang batas yang menentukan apakah informasi cukup signifikan untuk mempengaruhi keputusan pengguna; dalam SFAC 2 ditempatkan sebagai threshold umum."
+      }
+    ]
   },
   {
     "page": 12,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "Mengapa Hierarki Ini Penting? Transisi SFAC 2 ke SFAC 8",
+    "narration": "Slide ini menjelaskan pesan kunci Bagian II: tanpa memahami SFAC 2, perubahan di SFAC 8 tidak akan terasa signifikan. Inilah alasan kami membahas SFAC 2 secara mendalam terlebih dulu. Pada SFAC 2 tahun 1980, verifiability menjadi komponen fundamental dari reliability — sejajar dengan representational faithfulness dan neutrality. Kedudukan ini akan berubah secara dramatis di SFAC 8. Tiga pergeseran akan kami buktikan pada slide-slide berikutnya. Pertama, reliability digantikan istilah faithful representation (representasi yang setia — penyajian yang mencerminkan substansi ekonomi transaksi, bukan sekadar bentuk legalnya) yang memiliki tiga komponen baru. Kedua, verifiability turun pangkat menjadi enhancing qualitative characteristic, bukan lagi komponen fundamental. Ketiga, materiality didefinisikan ulang sebagai entity-specific — bergantung pada konteks entitas tertentu, bukan threshold umum. Tiga perubahan ini bukan kosmetik, melainkan pergeseran filosofis dari paradigma verifikasi menuju paradigma representasi realitas ekonomi. Itulah inti perdebatan akademik yang akan kami bedah.",
+    "key_terms": [
+      {
+        "en": "Faithful representation",
+        "id": "Representasi yang setia",
+        "def": "Karakteristik fundamental SFAC 8 yang menggantikan reliability; menuntut penyajian mencerminkan substansi ekonomi transaksi melalui kelengkapan, netralitas, dan bebas dari kesalahan."
+      },
+      {
+        "en": "Enhancing qualitative characteristics",
+        "id": "Karakteristik kualitatif peningkat",
+        "def": "Karakteristik yang meningkatkan kegunaan informasi yang sudah relevan dan disajikan secara setia: comparability, verifiability, timeliness, dan understandability."
+      }
+    ]
   },
   {
     "page": 13,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "chart",
+    "title": "QC SFAC 8 (2010) — Hierarki Baru",
+    "narration": "Slide ini menampilkan hierarki SFAC 8 tahun 2010 mengikuti Exhibit 7.5 buku Wolk. Di puncak tetap decision usefulness pada paragraf QC1 hingga QC5. Di bawahnya terdapat dua karakteristik fundamental: relevance pada QC6 hingga QC11 dan faithful representation pada QC12 hingga QC16. Relevansi kini terdiri atas predictive value, confirmatory value (nilai konfirmatif — kemampuan informasi mengonfirmasi atau mengoreksi ekspektasi sebelumnya — istilah baru menggantikan feedback value SFAC 2), dan materiality. Faithful representation memiliki tiga komponen baru: completeness (kelengkapan — semua informasi yang diperlukan untuk memahami fenomena disajikan), neutrality, dan free from error (bebas dari kesalahan — tidak ada kesalahan atau kelalaian dalam deskripsi dan proses estimasi). Di lapisan paling bawah berdiri enhancing qualitative characteristics pada QC19 hingga QC34: comparability, verifiability yang turun pangkat, timeliness (ketepatan waktu — informasi tersedia tepat waktu untuk mempengaruhi keputusan), dan understandability. Inilah peta SFAC 8 yang akan kami gunakan untuk menilai kualitas pelaporan INDF.",
+    "key_terms": [
+      {
+        "en": "Relevance",
+        "id": "Relevansi",
+        "def": "Karakteristik fundamental yang menyatakan informasi mampu mempengaruhi keputusan pengguna melalui nilai prediktif, nilai konfirmatif, atau keduanya, dengan mempertimbangkan materialitas."
+      },
+      {
+        "en": "Confirmatory value",
+        "id": "Nilai konfirmatif",
+        "def": "Kemampuan informasi untuk mengonfirmasi atau mengubah evaluasi pengguna atas hasil dari prediksi sebelumnya; istilah SFAC 8 yang menggantikan feedback value SFAC 2."
+      },
+      {
+        "en": "Free from error",
+        "id": "Bebas dari kesalahan",
+        "def": "Komponen faithful representation yang menuntut tidak adanya kesalahan atau kelalaian dalam deskripsi fenomena dan dalam pemilihan serta penerapan proses penyusunan estimasi."
+      }
+    ]
   },
   {
     "page": 14,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "SFAC 2 → SFAC 8: Lima Transformasi",
+    "narration": "Slide ini meringkas lima transformasi konseptual dari SFAC 2 ke SFAC 8. Pertama, perubahan istilah Reliability menjadi Faithful Representation — perubahan paling dalam karena bergeser dari paradigma verifikasi ke paradigma penggambaran realitas ekonomi. Kedua, dan ini yang paling dramatis: verifiability diturunkan dari komponen fundamental keandalan menjadi enhancing qualitative characteristic. Pergeseran ini membuka jalan bagi penggunaan fair value (nilai wajar — harga yang akan diterima untuk menjual aset dalam transaksi teratur antar pelaku pasar pada tanggal pengukuran) yang sulit diverifikasi tetapi dianggap mencerminkan realitas ekonomi. Ketiga, faithful representation memperkenalkan dua komponen baru: completeness dan free from error, menggantikan posisi verifiability. Keempat, feedback value diganti istilah confirmatory value dengan penekanan aktif pada peran mengonfirmasi ekspektasi. Kelima, konservatisme dihapus sepenuhnya pada paragraf BC3.27 SFAC 8 karena dianggap bertentangan dengan netralitas — keduanya tidak bisa berdampingan. Lima transformasi inilah yang membuat SFAC 8 secara filosofis berbeda dari pendahulunya, bukan sekadar revisi editorial.",
+    "key_terms": [
+      {
+        "en": "Conservatism / Prudence",
+        "id": "Konservatisme / Kehati-hatian",
+        "def": "Prinsip lama yang menganjurkan kehati-hatian dengan kecenderungan mengakui beban dan rugi lebih cepat daripada pendapatan dan keuntungan; dihapus SFAC 8 paragraf BC3.27 karena bertentangan dengan netralitas."
+      },
+      {
+        "en": "Completeness",
+        "id": "Kelengkapan",
+        "def": "Komponen faithful representation yang menuntut semua informasi yang diperlukan pengguna untuk memahami fenomena ekonomi disajikan, termasuk deskripsi dan penjelasan yang relevan."
+      },
+      {
+        "en": "Fair value",
+        "id": "Nilai wajar",
+        "def": "Harga yang akan diterima untuk menjual aset atau dibayar untuk mengalihkan liabilitas dalam transaksi teratur antar pelaku pasar pada tanggal pengukuran."
+      }
+    ]
   },
   {
     "page": 15,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "case",
+    "title": "Relevansi: Tiga Dimensi — Aplikasi INDF 2024",
+    "narration": "Slide ini mengaplikasikan tiga dimensi relevansi SFAC 8 paragraf QC6 hingga QC11 pada Laporan Tahunan INDF 2024. Dimensi pertama, predictive value (nilai prediktif — informasi memiliki nilai prediktif jika dapat digunakan sebagai input untuk memprediksi hasil masa depan entitas). Pada INDF, nilai prediktif tercermin pada tabel EPS lima tahun 2020 hingga 2024 di halaman 4 Laporan Tahunan, yang menjadi input proyeksi pengguna untuk EPS 2025. Dimensi kedua, confirmatory value — informasi yang mengonfirmasi atau mengoreksi ekspektasi sebelumnya. Pada INDF, margin kotor naik dari 32,3% menjadi 34,7% pada 2024, mengonfirmasi efisiensi biaya yang sebelumnya diekspektasikan investor pasca normalisasi harga komoditas. Dimensi ketiga, materiality — informasi material jika dapat mempengaruhi keputusan pengguna entitas. Pada INDF, goodwill Pinehill sebesar Rp52,2 triliun setara 26% total aset merupakan pos sangat material, sehingga auditor EY mengangkatnya menjadi Key Audit Matter atau KAM. Tiga dimensi ini bukan teori abstrak — ketiganya hadir konkret dalam laporan INDF dan dapat dibaca langsung.",
+    "key_terms": [
+      {
+        "en": "Predictive value",
+        "id": "Nilai prediktif",
+        "def": "Karakteristik informasi yang memungkinkan pengguna menggunakannya sebagai input untuk memproyeksikan hasil masa depan; tidak harus berupa prediksi eksplisit."
+      },
+      {
+        "en": "Key Audit Matter (KAM)",
+        "id": "Hal Audit Utama",
+        "def": "Hal-hal yang menurut pertimbangan profesional auditor paling signifikan dalam audit laporan keuangan periode berjalan; diungkapkan dalam laporan auditor independen."
+      }
+    ]
   },
   {
     "page": 16,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "chart",
+    "title": "Tren EPS INDF 2020–2024 — Aplikasi Predictive Value",
+    "narration": "Grafik batang ini memvisualisasikan tren laba per saham atau EPS INDF dalam rupiah per saham selama lima tahun, sumber Laporan Tahunan INDF 2024 halaman 4. Tahun 2020 EPS Rp735, naik ke Rp873 pada 2021. Tahun 2022 terjadi anomali — EPS turun menjadi Rp724 akibat pencatatan akuisisi Pinehill yang menambah goodwill besar dan beban amortisasi terkait. Mulai 2023 terjadi pemulihan ke Rp928, dan puncaknya tahun 2024 EPS mencapai Rp984 — angka tertinggi dalam lima tahun. Inilah yang kami sebut F5 Story Arc: anomali Pinehill 2022 yang menjadi titik balik, recovery 2023, dan peak Rp984 pada 2024. Bagaimana ini menjelaskan predictive value? Tren naik yang berkelanjutan setelah recovery memberikan dasar empiris bagi pengguna untuk memprediksi EPS 2025 akan melanjutkan pola positif. Catatan penting: kami tidak memprediksi angka spesifik 2025, melainkan menunjukkan bagaimana data historis lima tahun memenuhi kriteria predictive value SFAC 8 — yaitu menjadi input proyeksi, bukan ramalan itu sendiri.",
+    "key_terms": [
+      {
+        "en": "Earnings Per Share (EPS)",
+        "id": "Laba Per Saham",
+        "def": "Laba bersih yang dialokasikan kepada setiap saham biasa beredar; indikator utama profitabilitas per unit kepemilikan yang sering dipakai investor."
+      }
+    ]
   },
   {
     "page": 17,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "SFAC 2 (1980): Reliability — Definisi Baseline",
+    "narration": "Sebelum kita masuk ke faithful representation versi SFAC 8, slide ini memaparkan definisi baseline reliability menurut SFAC 2 tahun 1980. Reliability didefinisikan sebagai informasi yang andal — bebas bias dan kesalahan, serta dapat diverifikasi secara independen. Definisi ini disokong tiga komponen yang saling melengkapi. Pertama, representational faithfulness — kesesuaian antara angka atau deskripsi yang disajikan dengan fenomena ekonomi yang ingin direpresentasikan. Kedua, verifiability — kemampuan pengamat-pengamat independen untuk mencapai kesimpulan serupa atas suatu pengukuran. Ketiga, neutrality (netralitas — bebas dari bias yang dirancang untuk mempengaruhi keputusan tertentu). Yang perlu kami garis bawahi: verifiability di SFAC 2 berdiri sejajar dengan dua komponen lainnya sebagai fondasi keandalan. Posisi inilah yang akan diturunkan dramatis pada SFAC 8 menjadi enhancing characteristic. Perubahan posisi ini memiliki implikasi praktis besar terhadap penerimaan estimasi akuntansi dan fair value yang sulit diverifikasi tetapi dianggap mencerminkan realitas ekonomi. Slide berikutnya akan menampilkan pengganti SFAC 8.",
+    "key_terms": [
+      {
+        "en": "Representational Faithfulness",
+        "id": "Kesesuaian Representasional",
+        "def": "Kesesuaian antara ukuran atau deskripsi yang disajikan dengan fenomena ekonomi yang direpresentasikan; cikal bakal konsep faithful representation di SFAC 8."
+      },
+      {
+        "en": "Neutrality",
+        "id": "Netralitas",
+        "def": "Komponen kualitas informasi yang menuntut pelaporan bebas dari bias yang dirancang untuk mempengaruhi keputusan atau perilaku pengguna ke arah tertentu."
+      }
+    ]
   },
   {
     "page": 18,
     "total": 69,
-    "role": "cover",
-    "title": "",
-    "narration": "",
-    "key_terms": []
+    "role": "content",
+    "title": "SFAC 8 (2010): Faithful Representation",
+    "narration": "Slide ini menampilkan pengganti reliability pada SFAC 8 tahun 2010, yaitu faithful representation pada paragraf QC12 hingga QC16. Esensinya adalah substance over form — mencerminkan realitas ekonomi transaksi, bukan sekadar bentuk legalnya. Faithful representation memiliki tiga komponen, dua di antaranya sama sekali baru dibanding SFAC 2. Pertama, completeness — komponen baru yang menuntut semua informasi yang diperlukan pengguna untuk memahami fenomena disajikan, termasuk deskripsi dan penjelasan yang relevan. Kedua, neutrality — satu-satunya komponen yang dipertahankan tanpa perubahan dari SFAC 2. Ketiga, free from error — komponen baru yang menuntut tidak ada kesalahan atau kelalaian dalam deskripsi fenomena dan dalam pemilihan serta penerapan proses estimasi. Yang sangat penting: verifiability tidak lagi menjadi komponen fundamental — ia diturunkan ke enhancing qualitative characteristic. Penurunan ini bukan kebetulan; ia membuka jalan bagi pengukuran berbasis estimasi seperti fair value dan present value yang sulit diverifikasi pihak ketiga tetapi dianggap lebih relevan secara ekonomi. Inilah pergeseran filosofis terpenting kerangka konseptual modern.",
+    "key_terms": [
+      {
+        "en": "Substance over form",
+        "id": "Substansi mengungguli bentuk",
+        "def": "Prinsip pelaporan yang menuntut transaksi disajikan sesuai realitas ekonominya, meskipun bentuk legal-formalnya berbeda; landasan operasional faithful representation."
+      },
+      {
+        "en": "Faithful representation (3 komponen)",
+        "id": "Representasi yang setia",
+        "def": "Karakteristik fundamental SFAC 8 yang menuntut tiga komponen — completeness, neutrality, dan free from error — agar penyajian mencerminkan substansi ekonomi fenomena yang dilaporkan."
+      }
+    ]
   },
   {
     "page": 19,
