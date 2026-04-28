@@ -42,7 +42,7 @@
 | 26 | split-first | 2 (44/45) | E1 table cells 32 caption-tier; slide 45 tightened (header 14 margin / table 12 padding / stat card 20-28 vs 28-36) for ≤904 frame; F5 active (slide kasus INDF Liabilitas Rp70,81T + IC 7,1× / Ekuitas Rp108,99T + NCI Rp43,08T + ROE 12,5%) | 2026-04-28T03:30 | (see git log slide-26-split) |
 | 27 | split-first | 2 (46/47) | E1 case table 32 caption-tier; PSAK 72 list 32 caption-tier; F5 active (slide kasus INDF Pengakuan: RD3 words+numbers banner, Goodwill 3-criteria ✓ ✓ ✓, Revenue PSAK 72 5-step, Related Party Rp10,11T = 8,73% pengakuan vs pengungkapan) | 2026-04-28T03:50 | (see git log slide-27-split) |
 | 28 | split-first | 2 (48/49) | E1 table cells 28 caption-tier (4-col 6-row); matrix labels 28-36; quadrant titles 28; F5 active (slide kasus INDF Pengukuran Model Campuran Entry/Exit M30-M34, Goodwill Level 3 trade-off Relevansi vs Verifikasi) | 2026-04-28T04:10 | (see git log slide-28-split) |
-| 29 | (pending) | — | — | — | — |
+| 29 | split-first | 2 (50/51) | E1 FS list 32 caption-tier; OCI waterfall hero numbers 60px Winston; BC7.21 quote 32 italic; F5 active (slide kasus INDF Penyajian: PR12 Goodwill diakui vs Obligasi USD diungkap, OCI Rp(531,4)M translasi Pinehill, BC7.21 OCI tidak ada dasar konseptual kuat — kompromi industri, bilingual ID+EN untuk 84,87% asing) | 2026-04-28T04:30 | (see git log slide-29-split) |
 | 30 | (pending) | — | — | — | — |
 | 31 | (pending) | — | — | — | — |
 | 32 | (pending) | — | — | — | — |
