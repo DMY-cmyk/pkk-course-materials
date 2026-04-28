@@ -34,7 +34,7 @@
 | 18 | split-first | 2 (27/28) | E1 4-box body 36px caption-tier slide 27; E1 perspective body 32px + critique callouts 28px label-tier slide 28 | 2026-04-28T00:50 | (see git log slide-18-split) |
 | 19 | split-first | 2 (29/30) + Slogan #3 | E1 chapter card body 32px caption-tier (8 cards in 2×2 layout per slide); Slogan #3 deployed slide 29 italic 60 lead-tier border-left blue | 2026-04-28T01:10 | (see git log slide-19-split) |
 | 20 | split-first | 3 (31/32/33) | E1 differences table body 36px caption-tier; Analisis INDF row 32px sub-Winston (colspan); convergence ✓ items body 53px Winston-compliant (substansi utama) | 2026-04-28T01:30 | (see git log slide-20-split) |
-| 21 | (pending) | — | — | — | — |
+| 21 | split-first | 2 (34/35) | E1 secondary stats 36px caption-tier (8 metrics compact); F5 active (slide kasus INDF profil + sorotan keuangan AR 2024) | 2026-04-28T01:50 | (see git log slide-21-split) |
 | 22 | (pending) | — | — | — | — |
 | 23 | (pending) | — | — | — | — |
 | 24 | (pending) | — | — | — | — |
