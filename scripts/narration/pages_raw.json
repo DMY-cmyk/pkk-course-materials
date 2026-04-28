@@ -1,0 +1,485 @@
+[
+  {
+    "page": 1,
+    "total": 69,
+    "text": "Magister Akuntansi — Pascasarjana\nSTIE YKPN · 2025/2026\nStudi Kasus\nIDX: INDF\nMNK202 · Pelaporan Keuangan Korporat\nKerangka KonseptualFASB:\nFondasi Standar Pelaporan Keuangan\nPT Indofood Sukses Makmur Tbk (IDX: INDF) sebagai Studi Kasus\nSFAC 1 hingga SFAC 8 · Konvergensi IASB · Laporan Tahunan 2024\nDisusun oleh\nKelompok 3\nEfri Nurmalinda · Dzaki M. Yusfian · Nuradila · Achmad Dimas Wibawa · Adinda Putri Dewi · Setiabudi Y.\nPratama",
+    "word_count": 69,
+    "role_hint": "cover"
+  },
+  {
+    "page": 2,
+    "total": 69,
+    "text": "Agenda Presentasi.\n\"Conceptual Framework: konstitusi laporan keuangan.\"\n# BAGIAN SLIDE\nI Konteks & Karakteristik Kualitatif 3–10\nII Elemen, Pengakuan & Pengukuran 11–17\nIII Catatan Kritis & Sintesis 18–20\nIV Studi Kasus INDF 2024 21–30\nV Penutup & Kontribusi 31–32\nKelompok 3 · FASB CF x INDF 2024 02 / 69",
+    "word_count": 50,
+    "role_hint": "cover"
+  },
+  {
+    "page": 3,
+    "total": 69,
+    "text": "BAGIAN I · KONTEKS\nDari CAP ke SFAC 8\n71 tahun: dari aturan ad hoc ke fondasi teoretis Wolk Ch. 7\npp. 163–166\nSetiap milestone menandai pergeseran dari standar ad-hoc menuju\nkerangka koheren.\n1939\nCAP\n1973\nFASB Berdiri\n1984\nSFAC 5 ⚠\n2000\nSFAC 7\n2010\nSFAC 8 ✓\nKelompok 3 · Bagian I · Sejarah CF 03 / 69",
+    "word_count": 60,
+    "role_hint": "cover"
+  },
+  {
+    "page": 4,
+    "total": 69,
+    "text": "BAGIAN I · KONTEKS\nEra Pra-CF vs Pendahulu Intelektual Wolk Ch. 7\npp. 163–166\nERA PRA-CF (1939–1973)\nCAP — ARBs ad hoc, tanpa fondasi\nteoretis.\nAPB — Opinions; tekanan industri kuat;\nARS 1 & 3 ditolak.\nMasalah: tanpa fondasi, standar tidak\ndapat dipertahankan.\nPENDAHULU INTELEKTUAL\nASOBAT (1966) — tujuan + standar\nsistematis pertama.\nTrueblood (1973) — landasan SFAC 1.\nFASB 1973 — purna-waktu,\nindependen.\nKelompok 3 · Bagian I · Sejarah CF 04 / 69",
+    "word_count": 75,
+    "role_hint": "cover"
+  },
+  {
+    "page": 5,
+    "total": 69,
+    "text": "BAGIAN I · KONTEKS\nDelapan SFAC — Peta Kronologis Wolk\nExhibit 7.1/7.5\nSFAC TAHUN TOPIK STATUS\n1 1978 Objectives — Business Digantikan SFAC 8\n2 1980 Qualitative Characteristics Digantikan SFAC 8\n3 1980 Elements — Business Digantikan SFAC 6\n4 1980 Objectives — Nonbusiness\n Aktif\n5 1984 Recognition & Measurement\n Aktif — dikritik\n6 1985 Elements — All Entities\n Aktif\n7 2000 Cash Flow & Present Value\n Aktif\n8 2010 Conceptual Framework Kunci ✓\nKelompok 3 · Bagian I · Sejarah CF 05 / 69",
+    "word_count": 85,
+    "role_hint": "cover"
+  },
+  {
+    "page": 6,
+    "total": 69,
+    "text": "BAGIAN I · SFAC 1 VS SFAC 8\nTujuan Pelaporan Keuangan\nOB2–OB21: pengguna utama yang spesifik Wolk pp.165–170\nSFAC 8 OB1–OB21\nSFAC 8 OB2 — TUJUAN RESMI\n\"Menyediakan informasi keuangan yang berguna bagi investor,\npemberi pinjaman, dan kreditur lainnya dalam keputusan\npenyediaan sumber daya.\"\nKelompok 3 · Bagian I · Tujuan Pelaporan 06 / 69",
+    "word_count": 55,
+    "role_hint": "cover"
+  },
+  {
+    "page": 7,
+    "total": 69,
+    "text": "BAGIAN I · SFAC 8 OB5–OB9\nPengguna Utama Pelaporan SFAC 8\nOB5–OB9\n✓  Investor — yang sudah ada & calon investor\n✓  Kreditur — pemberi pinjaman, pemasok\n✗  Manajemen — punya akses internal (OB9)\n✗  Regulator/OJK/DJP — jalur regulasi tersendiri\n✗  Karyawan, publik umum — bukan resource providers\nKelompok 3 · Bagian I · Pengguna Utama 07 / 69",
+    "word_count": 59,
+    "role_hint": "cover"
+  },
+  {
+    "page": 8,
+    "total": 69,
+    "text": "BAGIAN I · EVOLUSI 32 TAHUN\nSFAC 1 (1978) →  SFAC 8 (2010)\nLima dimensi pergeseran fundamental SFAC 8\nBasis for Conclusions\nDIMENSI SFAC 1 (1978) SFAC 8 (2010)\nPengguna Semua pihak eksternal Investor & kreditur\nPrioritas Tidak ada hierarki Primary users eksplisit\nManajemen Bisa jadi pengguna BUKAN pengguna utama\nRegulator Bisa jadi pengguna BUKAN pengguna utama\nFokus keputusan Tidak ditentukan Penyediaan sumber daya\nKelompok 3 · Bagian I · Evolusi SFAC 08 / 69",
+    "word_count": 75,
+    "role_hint": "cover"
+  },
+  {
+    "page": 9,
+    "total": 69,
+    "text": "BAGIAN I · SFAC 8 CH.2\nEntitas Pelapor (Reporting Entity)\nRE1–RE14: konsolidasi wajib SFAC 8\nRE1–RE14\nDEFINISI ENTITAS PELAPOR (RE1)\nEntitas yang dipilih untuk direpresentasikan dalam laporan\nkeuangan — tidak harus berupa entitas hukum.\n1. Entitas tunggal — satu perusahaan mandiri\n2. Entitas terkonsolidasi — induk + anak (RE8–9) →  INDF\n3. Entitas gabungan — tanpa hubungan induk–anak\nKelompok 3 · Bagian I · Entitas Pelapor 09 / 69",
+    "word_count": 69,
+    "role_hint": "cover"
+  },
+  {
+    "page": 10,
+    "total": 69,
+    "text": "BAGIAN I · APLIKASI INDF\nINDF: Satu Entitas PelaporKonsolidasian\nINDF AR\n2024\npp. 8–9\nPT Indofood Sukses Makmur Tbk\nEntitas Induk Konsolidasian · IDX: INDF\nICBP\nCBP\n(Indomie)\nLISTED\nBogasari\nTepung\n(Segitiga Biru)\nSIMP\nSawit / CPO\nLISTED\nDistribusi\nIndomarco\nAdi Prima\nTotal Aset\nRp201,71T\nNCI (ekuitas)\nRp43,08T\nGoodwill Pinehill\nRp52,2T\nKelompok 3 · Bagian I · Entitas Pelapor 10 / 69",
+    "word_count": 62,
+    "role_hint": "cover"
+  },
+  {
+    "page": 11,
+    "total": 69,
+    "text": "BAGIAN II · EXHIBIT 7.1 WOLK\nQC SFAC 2 (1980) — Hierarki Asli Wolk pp.166–170\nFASB SFAC 2\nDECISION-SPECIFIC\nDecision Usefulness\nRELEVANCE RELIABILITY\nPredictive Feedback Timeliness Verifiability ⚠ Rep. Faithful Neutrality\nINTERACTIVE\nComparability\nTHRESHOLD\nMateriality\nKelompok 3 · Bagian II · Exhibit 7.1 Wolk 11 / 69",
+    "word_count": 47,
+    "role_hint": "cover"
+  },
+  {
+    "page": 12,
+    "total": 69,
+    "text": "BAGIAN II · TRANSISI KE SFAC 8\nMengapa Hierarki Ini Penting? SFAC 8 (2010)\nQC1–QC39\nPESAN KUNCI\nTanpa memahami SFAC 2, perubahan di SFAC 8 tidak akan terasa signifikan.\nVerifiability di SFAC 2 = komponen fundamental Keandalan. Posisi ini akan berubah\ndramatis di SFAC 8.\nYANG AKAN BERUBAH DI SFAC 8\nReliability →  Faithful Representation; Verifiability turun jadi Enhancing QC;\nMateriality didefinisikan ulang sebagai entity-specific.\nKelompok 3 · Bagian II · Transisi SFAC 2 →  8 12 / 69",
+    "word_count": 79,
+    "role_hint": "cover"
+  },
+  {
+    "page": 13,
+    "total": 69,
+    "text": "BAGIAN II · EXHIBIT 7.5\nQC SFAC 8 (2010)\n\"Conceptual Framework: konstitusi\nlaporan keuangan.\" Wolk pp.166–175\nSFAC 8 QC1–QC39\nDECISION-SPECIFIC QC1–QC5\nDecision Usefulness\nRELEVANCE FAITHFUL REPRESENTATION\nPredictive Confirmatory↑ Materiality Completeness* Neutrality Free from\nError*\nENHANCING QCS (QC19–QC34)\nComparability · Verifiability↓ · Timeliness · Understandability\nQ C 6 – Q C 1 1\nQ C 1 2 – Q C 1 6\nKelompok 3 · Bagian II · Exhibit 7.5 13 / 69",
+    "word_count": 72,
+    "role_hint": "cover"
+  },
+  {
+    "page": 14,
+    "total": 69,
+    "text": "BAGIAN II · 5 TRANSFORMASI\nSFAC 2 →  SFAC 8: Apa yang Berubah? SFAC 8\nBC3.27, QC12–QC16\n① \"Reliability\" →  \"Faithful Representation\"\nPerubahan konseptual terdalam — dari verifikasi ke gambaran realitas ekonomi\n② Verifiability DITURUNKAN ke Enhancing QC ↓\nPaling dramatis: dahulu komponen fundamental Keandalan\n③ Komponen Baru FR: Kelengkapan + Bebas dari Kesalahan\nMenggantikan Verifiability sebagai komponen Faithful Representation\n④ \"Feedback Value\" →  \"Confirmatory Value\"\nPenekanan aktif pada peran mengkonfirmasi ekspektasi\n⑤ Konservatisme DIHAPUS sepenuhnya (BC3.27)\nBertentangan dengan Netralitas — tidak bisa berdampingan\nKelompok 3 · Bagian II · 5 Transformasi 14 / 69",
+    "word_count": 95,
+    "role_hint": "cover"
+  },
+  {
+    "page": 15,
+    "total": 69,
+    "text": "BAGIAN II · QC FUNDAMENTAL 1\nRelevansi: Tiga Dimensi\nSFAC 8 QC6–QC11 · aplikasi INDF 2024 Wolk p.170\nINDF AR p.4\nQC7 · PREDICTIVE\nNilai Prediktif\nMemprediksi hasil masa\ndepan entitas.\nINDF: Tabel EPS 5-tahun\n(2020–2024) AR p.4 untuk\nprediksi 2025.\nQC8 · CONFIRMATORY\nNilai Konfirmatif\nMengkonfirmasi/mengoreksi\nekspektasi sebelumnya.\nINDF: Margin kotor 32,3%\n→  34,7% mengkonfirmasi\nefisiensi biaya.\nQC11 · MATERIALITY\nMaterialitas\nMaterial jika dapat\nmempengaruhi keputusan\npengguna entitas.\nINDF: Goodwill Rp52,2T =\n26% aset →  KAM EY.\nKelompok 3 · Bagian II · Relevansi 15 / 69",
+    "word_count": 88,
+    "role_hint": "cover"
+  },
+  {
+    "page": 16,
+    "total": 69,
+    "text": "BAGIAN II · APLIKASI PREDICTIVE VALUE\nTren EPS INDF 2020–2024\nAnomali 2022 (Pinehill) — recovery 2023–2024 INDF AR 2024\np.4 · Rp/saham\nEPS 5-TAHUN · RP PER SAHAM EPS 2024: Rp984\n735 873 724 ⚠ 928 984 ✓\n2020 2021 2022\nPinehill 2023 2024\nF5 Story Arc: 2022 anomali (Pinehill akuisisi) →  recovery 2023 →  peak Rp984 di 2024. Nilai\nprediktif: tren naik berkelanjutan untuk EPS 2025.\nKelompok 3 · Bagian II · Predictive Value INDF 16 / 69",
+    "word_count": 79,
+    "role_hint": "cover"
+  },
+  {
+    "page": 17,
+    "total": 69,
+    "text": "BAGIAN II · QC FUNDAMENTAL 2 · BASELINE\nSFAC 2 (1980): RELIABILITY\nDefinisi keandalan sebelum SFAC 8 mengubahnya Wolk pp.170–175\nSFAC 2\nSFAC 2 · 1980\nRELIABILITY\nInformasi andal = bebas bias dan kesalahan, dapat diverifikasi secara independen.\n3 KOMPONEN\nRepresentational\nFaithfulness\nVerifiability ←  akan\nditurunkan\nNeutrality\nKelompok 3 · Bagian II · SFAC 2 Reliability 17 / 69",
+    "word_count": 59,
+    "role_hint": "cover"
+  },
+  {
+    "page": 18,
+    "total": 69,
+    "text": "BAGIAN II · QC FUNDAMENTAL 2 · PENGGANTI\nSFAC 8 (2010): FAITHFULREPRESENTATION\n\"Substance over form\" — mencerminkan realitas ekonomi\nSFAC 8\nQC12–\nQC16\nSFAC 8 · 2010\nFAITHFUL REPRESENTATION\n3 KOMPONEN BARU\nCompleteness — baru Neutrality — tidak berubah Free from Error — baru\nVerifiability →  diturunkan ke Enhancing QC (bukan komponen fundamental lagi)\nKelompok 3 · Bagian II · SFAC 8 Faithful Representation 18 / 69",
+    "word_count": 67,
+    "role_hint": "cover"
+  },
+  {
+    "page": 19,
+    "total": 69,
+    "text": "BAGIAN II · BC3.27\nKonservatisme: Dihapus dari SFAC 8\nPerbedaan kunci SFAC 8 (FASB) vs. IASB CF 2018 SFAC 8\nBC3.27\nBC3.27 · KONSERVATISME DIHAPUS\nSFAC 2 menyebut konservatisme sebagai \"konvensi\" — preferensi estimasi lebih\npesimistis.\nSFAC 8 menghapus sepenuhnya — bertentangan dengan Netralitas.\nKONTRAS IASB\nIASB CF 2018 (PSAK) masih mempertahankan prudence — ini perbedaan\nfundamental SFAC 8 vs. IASB.\nKelompok 3 · Bagian II · BC3.27 19 / 69",
+    "word_count": 71,
+    "role_hint": "cover"
+  },
+  {
+    "page": 20,
+    "total": 69,
+    "text": "BAGIAN II · QC PENINGKAT\nComparability & Verifiability↓\nQC21–28 · Aplikasi INDF 2024 SFAC 8\nQC19–QC28\nQC21–26 · KOMPARABILITAS\nComparability\nKonsistensi = alat. Komparabilitas ≠\nkeseragaman.\nINDF: Tabel 5-tahun AR p.4\nQC26–28 · VERIFIABILITY ⚠\nVerifiability ↓\nDiturunkan dari Reliability ke Enhancing —\nverifikasi saja tidak menjamin realitas\nekonomi.\nINDF: Audit EY (KAP Purwantono, Sungkoro\n& Surja)\nKelompok 3 · Bagian II · Enhancing QC #1 20 / 69",
+    "word_count": 69,
+    "role_hint": "cover"
+  },
+  {
+    "page": 21,
+    "total": 69,
+    "text": "BAGIAN II · QC PENINGKAT\nTimeliness & Understandability\nQC29–34 · Aplikasi INDF 2024 SFAC 8\nQC29–QC34\nQC29–30 · KETEPATWAKTUAN\nTimeliness\nTersedia sebelum kehilangan kemampuan\nmempengaruhi keputusan. OJK: 90 hari.\nINDF: FY2024 ditandatangani 25 Maret\n2025 — dalam 90 hari ✓\nQC30–34 · KETERPAHAMAN\nUnderstandability\nKlasifikasi, karakterisasi, penyajian jelas.\nPengguna diasumsikan punya pengetahuan\nreasonable.\nINDF: Bilingual ID+EN — melayani 84,87%\ninvestor asing\nKelompok 3 · Bagian II · Enhancing QC #2 21 / 69",
+    "word_count": 73,
+    "role_hint": "cover"
+  },
+  {
+    "page": 22,
+    "total": 69,
+    "text": "BAGIAN II · KENDALA BIAYA\nCost Constraint: Manfaat > Biaya\nQC35–39 — berlaku pervasif untuk setiap keputusan\npengungkapan\nSFAC 8\nQC35–\nQC39\nPRINSIP FUNDAMENTAL\nInformasi layak disajikan HANYA JIKA manfaat bagi pengguna >\nbiaya penyajian.\nMANFAAT\nKeputusan lebih baik bagi pengguna —\ninvestor & kreditur\nBIAYA\nPengumpulan, verifikasi, risiko kompetitif\nKelompok 3 · Bagian II · Cost Constraint 22 / 69",
+    "word_count": 61,
+    "role_hint": "cover"
+  },
+  {
+    "page": 23,
+    "total": 69,
+    "text": "BAGIAN III · SFAC 6 (1985)\n10 Elemen LK: Posisi + Ekuitas\n5 dari 10 elemen — neraca dan transaksi pemilik Wolk pp.177–179\nSFAC 6\n# ELEMEN DEFINISI RINGKAS\n1 Aset Manfaat ekonomi masa depan dari transaksi/kejadian masa lalu\n2 Liabilitas Pengorbanan manfaat ekonomi masa depan akibat kewajiban masa kini\n3 Ekuitas Sisa kepentingan dalam aset setelah dikurangi liabilitas (residual)\n4 Investasi oleh\nPemilik Penambahan ekuitas dari transfer nilai untuk kepemilikan\n5 Distribusi kpd\nPemilik Penurunan ekuitas dari pengalihan aset kepada pemilik (dividen)\nKelompok 3 · Bagian III · SFAC 6 Posisi+Ekuitas 23 / 69",
+    "word_count": 95,
+    "role_hint": "cover"
+  },
+  {
+    "page": 24,
+    "total": 69,
+    "text": "BAGIAN III · SFAC 6 (1985)\n10 Elemen LK: Kinerja\n5 dari 10 elemen — laporan laba rugi komprehensif Wolk pp.177–179\nSFAC 6\n# ELEMEN DEFINISI RINGKAS\n6 Comprehensive\nIncome Perubahan ekuitas dari sumber bukan-pemilik (CI = Net Income + OCI)\n7 Pendapatan Arus masuk dari operasi utama/sentral bisnis (berulang)\n8 Beban Arus keluar dari operasi utama/sentral bisnis\n9 Keuntungan Penambahan ekuitas dari transaksi periferal/insidental (tidak berulang)\n10 Kerugian Penurunan ekuitas dari transaksi periferal/insidental\nKelompok 3 · Bagian III · SFAC 6 Kinerja 24 / 69",
+    "word_count": 86,
+    "role_hint": "cover"
+  },
+  {
+    "page": 25,
+    "total": 69,
+    "text": "BAGIAN III · CATATAN KRITIS\nDefinisi: Perlu, Tetapi Tidak Cukup\nKritik Dopuch & Sunder + revisi 2024 SFAC 8 Ch.4 Wolk Ch.7\nSFAC 8 Ch.4 (Jul 2024)\nKRITIK DOPUCH & SUNDER\nDefinisi adalah kondisi yang perlu tetapi tidak cukup. Item bisa memenuhi definisi aset tanpa\nharus diakui — masih butuh kriteria pengakuan (SFAC 5/SFAC 8 Ch.5).\nCATATAN: REVISI 2024\nSFAC 8 Ch.4 (Juli 2024) merevisi definisi aset dan liabilitas secara fundamental — lihat slide\nselanjutnya. Definisi SFAC 6 di atas adalah versi sebelum revisi 2024.\nKelompok 3 · Bagian III · Caveats SFAC 6 25 / 69",
+    "word_count": 97,
+    "role_hint": "cover"
+  },
+  {
+    "page": 26,
+    "total": 69,
+    "text": "BAGIAN III · REVOLUSI JULI 2024\nSFAC 8 Bab 4: Definisi Aset Baru\n\"Present right to an economic benefit\" — control &\nprobable dihapus\nSFAC 8 Ch.4 E1–\nE90\nBC4.7 · Juli\n2024\nASPEK SFAC 6 (1985) — LAMA SFAC 8 CH.4 (JULI 2024) — BARU\nDefinisi inti \"probable future economic benefits obtained or\ncontrolled…\"\n\"present right to an economic\nbenefit\"\nKarakteristik 3: manfaat masa depan; dikendalikan; transaksi\nmasa lalu\n2: present right; economic\nbenefit\n\"Probable\" ✓  diperlukan DIHAPUS\n\"Future\" ✓  masa depan DIHAPUS (diganti \"present\")\n\"Control\" ✓  dikendalikan DIHAPUS\nKelompok 3 · Bagian III · SFAC 8 Ch.4 Aset 26 / 69",
+    "word_count": 103,
+    "role_hint": "cover"
+  },
+  {
+    "page": 27,
+    "total": 69,
+    "text": "BAGIAN III · REVOLUSI JULI 2024\nLiabilitas + Primasi Konseptual\nDefinisi liabilitas baru & conceptual primacy\naset/liabilitas\nSFAC 8 Ch.4\nBC4.7 · Juli\n2024\nDEFINISI LIABILITAS — SFAC 8 CH.4\n\"A present obligation of an entity to transfer an economic benefit\"\n(1) present obligation; (2) transfer economic benefit — \"Probable\" & \"past transaction\" DIHAPUS.\nBC4.7 — PRIMASI KONSEPTUAL\nAset dan liabilitas memiliki \"conceptual primacy\" — pendapatan, beban, keuntungan, dan\nkerugian adalah derivatif.\nKelompok 3 · Bagian III · SFAC 8 Ch.4 Liabilitas+BC4.7 27 / 69",
+    "word_count": 85,
+    "role_hint": "cover"
+  },
+  {
+    "page": 28,
+    "total": 69,
+    "text": "BAGIAN III · APLIKASI INDF\nAplikasi: Goodwill INDF Rp52,2T\nUji definisi aset SFAC 6 vs SFAC 8 Ch.4 pada 26%\ntotal aset\nINDF AR 2024\nSFAC 8 Ch.4 ·\nPinehill\nKARAKTERISTIK SFAC 6 (LAMA) SFAC 8 CH.4 (BARU) STATUS\nManfaat\nekonomi\n✓  Merek Pinehill; pasar Afrika/Timur\nTengah\n✓  \"Present right\" dari merek\nPinehill\nTERPENUHI\nKendali / Hak ✓  INDF kendalikan via PCL ✓  \"Present right\" via PCL\n TERPENUHI\nTransaksi\nmasa lalu ✓  Akuisisi Pinehill tercatat Tidak diperlukan di definisi\nbaru\nTERPENUHI\n➡  Goodwill Pinehill memenuhi definisi aset di KEDUA versi — definisi baru lebih mudah dipenuhi\n(\"probable\" & \"control\" dihapus).\nKelompok 3 · Bagian III · INDF Goodwill 28 / 69",
+    "word_count": 111,
+    "role_hint": "cover"
+  },
+  {
+    "page": 29,
+    "total": 69,
+    "text": "BAGIAN III · ELEMEN KINERJA\nPendapatan vs. Keuntungan (SFAC6)\nOperasi sentral vs. transaksi periferal — INDF 2024\nWolk pp.177–179 / SFAC\n6\nINDF AR pp.31–32\nPENDAPATAN (REVENUE)\nOperasi UTAMA/SENTRAL — berulang,\nprediktabel.\nINDF: Penjualan bersih Rp115,79T (Indomie,\nBogasari, CPO, distribusi).\nKEUNTUNGAN (GAINS)\nTransaksi PERIFERAL/INSIDENTAL — tidak\nberulang.\nINDF: Keuntungan penjualan aset tetap;\nkeuntungan kurs terealisasi.\nKelompok 3 · Bagian III · Pendapatan vs Keuntungan 29 / 69",
+    "word_count": 67,
+    "role_hint": "cover"
+  },
+  {
+    "page": 30,
+    "total": 69,
+    "text": "BAGIAN III · ELEMEN KINERJA\nBeban vs. Kerugian (SFAC 6)\nBiaya operasi utama vs. penurunan periferal — INDF\n2024\nWolk pp.177–179 /\nSFAC 6\nINDF AR pp.31–32\nBEBAN (EXPENSES)\nBiaya dari operasi utama.\nINDF: HPP, biaya penjualan, biaya administrasi.\nKERUGIAN (LOSSES)\nPenurunan dari transaksi periferal.\nINDF: Rugi penjualan aset; rugi kurs tidak\nterealisasi.\nKelompok 3 · Bagian III · Beban vs Kerugian 30 / 69",
+    "word_count": 65,
+    "role_hint": "cover"
+  },
+  {
+    "page": 31,
+    "total": 69,
+    "text": "BAGIAN III · APLIKASI INDF\nCI INDF 2024 = NI + OCI\nWaterfall: NI →  OCI →  CI SFAC 6\nINDF AR pp.31–32\nLaba Bersih (Total)\nRp13.077,5 M\nOCI: Selisih kurs translasi entitas asing\n(Rp531,4 M)\nTotal Penghasilan Komprehensif\n≈  Rp12.546,1 M\nMengapa OCI negatif? Operasi luar negeri INDF (Pinehill: Afrika, Timur Tengah, Asia Tenggara) —\ndepresiasi mata uang asing menghasilkan kerugian translasi. Implikasi: Laba Rp13,08T tidak\nmencerminkan total perubahan kekayaan.\nKelompok 3 · Bagian III · CI Waterfall INDF 31 / 69",
+    "word_count": 83,
+    "role_hint": "cover"
+  },
+  {
+    "page": 32,
+    "total": 69,
+    "text": "BAGIAN IV · RECOGNITION\nSFAC 5 (1984): Empat KriteriaPengakuan\n\"Achilles' Heel\" Framework — par. 63 (sebelum revisi\n2024)\nWolk pp.175–\n177\nSFAC 5 par. 63\nSFAC 5 (1984) — \"ACHILLES' HEEL\"\nEmpat Kriteria — Item diakui jika memenuhi SEMUA:\n1 Memenuhi definisi elemen (aset, liabilitas, dll.)\n2 Punya atribut pengukuran relevan — dapat dikuantifikasi secara andal\n3 Relevan — mampu membuat perbedaan dalam keputusan pengguna\n4 Andal — representasi wajar, dapat diverifikasi, netral\nKelompok 3 · Bagian IV · SFAC 5 Recognition 32 / 69",
+    "word_count": 85,
+    "role_hint": "cover"
+  },
+  {
+    "page": 33,
+    "total": 69,
+    "text": "BAGIAN IV · RECOGNITION\nSFAC 8 Ch.5 (Juli 2024): Tiga Kriteria +RD3\nDisederhanakan: dari 4 ke 3 kriteria — RD3 menegaskan\n\"words AND numbers\"\nSFAC 8\nCh.5\nRD1–14\nSFAC 8 CH.5 (JULI 2024) — DIPERBARUI\nTiga Kriteria — Item diakui jika:\n1 Memenuhi definisi elemen (sesuai Ch.4 Juli\n2024 — definisi baru)\n2 Dapat diukur dengan cara yang\nmenyediakan useful information\n3 Memberikan representasi tepat tentang\naset/liabilitas\nRD3 — INSIGHT KUNCI\n\"Recognition consists of capturing... both a\ndescription (words) and a monetary amount\n(numbers).\"\nPengakuan = kata-kata DAN angka di laporan\nutama. Pengungkapan ≠  Pengakuan.\nKelompok 3 · Bagian IV · SFAC 8 Ch.5 Recognition 33 / 69",
+    "word_count": 108,
+    "role_hint": "cover"
+  },
+  {
+    "page": 34,
+    "total": 69,
+    "text": "BAGIAN IV · RECOGNITION\nRecognition vs. Disclosure:Konsekuensi\nRD3: \"words AND numbers\" — di mana, bagaimana,\ndengan dampak apa?\nSFAC 8 Ch.5\nRD3\nWolk pp.175–\n177\nPENGAKUAN VS. PENGUNGKAPAN — PERBEDAAN KRITIS\nPENGAKUAN PENGUNGKAPAN\nLokasi Laporan keuangan utama (neraca, laba rugi) Catatan atas laporan keuangan\nFormat Angka + deskripsi Deskripsi + angka suplementer\nDampak pada\nrasio Ya — mempengaruhi neraca & laba rugi Tidak langsung\nPengakuan ≠  Pengungkapan — Recognition memengaruhi rasio keuangan; Disclosure tidak.\nKelompok 3 · Bagian IV · Recognition vs Disclosure 34 / 69",
+    "word_count": 86,
+    "role_hint": "cover"
+  },
+  {
+    "page": 35,
+    "total": 69,
+    "text": "BAGIAN IV · SFAC 5 PAR. 67\nLima Atribut Pengukuran SFAC 5\nMixed-attribute model: 5 dasar pengukuran dengan trade-\noff relevansi vs verifiabilitas\nWolk\npp.177–180\nSFAC 5\npar. 67\n# DASAR PENGUKURAN DEFINISI KELEBIHAN KELEMAHAN\n1 Biaya Historis Kas dibayar saat perolehan Dapat diverifikasi sempurna Tidak mencerminkan nilai\nkini\n2 Biaya Kini (Replacement)Kas yang harus dibayar hari ini untuk\naset yang sama\nRelevan untuk keputusan\noperasional\nSulit diukur tanpa pasar\naktif\n3 Nilai Pasar Kini (Exit/Fair\nValue)\nKas yang diterima jika aset dijual\nsekarang Sangat relevan Volatil; mungkin tidak ada\npasar\n4 NRV Harga jual − biaya penyelesaian Relevan untuk persediaan Memerlukan estimasi\n5 Nilai Kini Arus Kas Arus kas masa depan didiskon ke nilai\nsaat ini\nMencerminkan nilai\nekonomis\nSangat bergantung\nasumsi\nKelompok 3 · Bagian IV · Lima Atribut SFAC 5 35 / 69",
+    "word_count": 136,
+    "role_hint": "cover"
+  },
+  {
+    "page": 36,
+    "total": 69,
+    "text": "BAGIAN IV · KRITIK SFAC 5\nKritik SFAC 5: 4 Perspektif Akademik\n\"Achilles' heel\" CF — menu pilihan tanpa hierarki Wolk Ch. 7\nSFAC 5 par. 2\nSOLOMONS (1986)\n\"Cop-out\" — hanya mengkodifikasi praktik\nyang sudah ada. \"Menu pilihan\" tanpa panduan\nhierarki kapan masing-masing digunakan.\nSTERLING\n\"Cart before the horse\" — mendahulukan\npengakuan sebelum pengukuran. Logika\nterbalik; pengukuran seharusnya menentukan\napa yang diakui.\nSFAC 5 PAR. 2\nSecara eksplisit menyatakan \"tidak\ndimaksudkan menyebabkan perubahan\nsignifikan dalam praktik saat ini\" — self-\ndefeating.\nMILLER\n\"Counterreformation\" — memberi legitimasi\nhistorical cost justru saat arus intelektual\nbergeser ke current value.\nKelompok 3 · Bagian IV · Kritik SFAC 5 36 / 69",
+    "word_count": 109,
+    "role_hint": "cover"
+  },
+  {
+    "page": 37,
+    "total": 69,
+    "text": "BAGIAN IV · SFAC 8 CH.6 JULI 2024\nEntry Price vs. Exit Price (M30–M34)\nM30–M34: harga unik →  Entry; harga tidak unik →\nExit\nSFAC 8 Ch.6 M1–\nM49\nM30–34; Juli 2024\nENTRY PRICE\nHarga pada Saat Perolehan\nMencerminkan apa yang dibayar/diterima untuk mendapatkan\naset/menanggung liabilitas. Relevan ketika tidak ada pasar\naktif atau transaksi bersifat unik.\nDasar: Historical cost, amortised cost\nM30–34: HARGA UNIK →  ENTRY\nTransaksi tidak akan terjadi lagi di pasar. Contoh: mesin\nproduksi khusus yang tidak diperjualbelikan.\nEXIT PRICE\nHarga Saat Ini (Fair Value)\nMencerminkan harga yang diterima/dibayar jika aset\ndijual/liabilitas diselesaikan hari ini. Relevan ketika ada pasar\naktif.\nDasar: Fair value (Level 1–3), current value\nM30–34: HARGA TIDAK UNIK →  EXIT\nTersedia harga pasar yang dapat diamati. Contoh: saham\nyang diperdagangkan di bursa, obligasi pemerintah.\nKelompok 3 · Bagian IV · Entry vs Exit Price 37 / 69",
+    "word_count": 142,
+    "role_hint": "cover"
+  },
+  {
+    "page": 38,
+    "total": 69,
+    "text": "BAGIAN IV · APLIKASI INDF\nAplikasi INDF 2024: Model CampuranPengukuran\n5 jenis aset/liabilitas — kapan Entry, kapan Exit per M30–\nM34?\nINDF AR\n2024\nSFAC 8\nCh.6\nASET/LIABILITAS ENTRY/EXIT? DASAR PENGUKURAN ALASAN (M30–M34)\nGoodwill Rp52,2T\n ENTRY Biaya historis + uji impairment Tidak ada pasar aktif →  harga unik\nAset tetap (pabrik)\n ENTRY Biaya historis − akumulasi penyusutan Aset produksi spesifik →  harga unik\nSaham investasi listed\n EXIT Fair value Level 1 Harga pasar tersedia langsung →  tidak unik\nInstrumen keuangan Level 3\n EXIT Fair value Level 3 (DCF/model) Tidak ada harga langsung; model valuation\nObligasi ICBP (USD)\n ENTRY Biaya amortisasi Utang jangka panjang; nilai wajar di Catatan\nKelompok 3 · Bagian IV · Aplikasi INDF Pengukuran 38 / 69",
+    "word_count": 119,
+    "role_hint": "cover"
+  },
+  {
+    "page": 39,
+    "total": 69,
+    "text": "BAGIAN IV · SFAC 8 CH.7 JULI 2024\nPenyajian (Presentation) PR12\nHierarki LK + OCI INDF rekonsiliasi SFAC 8 Ch.7 PR1–PR54\nPR12; INDF AR 2024\nHIERARKI LK (EXHIBIT 7.2 WOLK)\nFACE OF FINANCIAL STATEMENTS (LAPORAN\nUTAMA)\n●  Position   ●  Performance   ●  Cash Flows\nNotes (Suplementer) — tidak dapat\nmenggantikan pengakuan di laporan utama\nPR12: \"Notes to financial statements are not\na substitute for recognition of financial\nstatement elements.\"\nOCI INDF 2024 — REKONSILIASI\nLaba Bersih (induk +\nNCI) Rp13.077,5 M\nOCI: Selisih kurs translasi(Rp531,4 M)\nTotal Pengh.\nKomprehensif ≈  Rp12.546,1 M\nKelompok 3 · Bagian IV · Penyajian PR12 + OCI INDF 39 / 69",
+    "word_count": 105,
+    "role_hint": "cover"
+  },
+  {
+    "page": 40,
+    "total": 69,
+    "text": "BAGIAN IV · BC7.21 JULI 2024\nBC7.21: OCI sebagai KompromiPragmatis\nKompromi pragmatis — tetap relevan bagi INDF\nSFAC 8 Ch.7\nBC7.21\nINDF AR 2024\nBC7.21 — OCI: TIDAK ADA DASAR KONSEPTUAL\nFASB dalam basis for conclusions SFAC 8 Ch.7: tidak ada dasar konseptual yang kuat untuk OCI\nsebagai kategori terpisah — OCI ada karena tekanan industri menghindari volatilitas laba:\nkompromi pragmatis, bukan prinsip konseptual.\nIMPLIKASI UNTUK INDF\nOCI (Rp531,4 M) dari translasi Pinehill (operasi luar negeri) adalah \"kerugian\" di luar laba rugi —\nsesuai PSAK 1/IAS 1, namun tanpa dasar konseptual kuat di CF FASB.\nNamun OCI tetap relevan bagi investor INDF dengan eksposur operasi luar negeri besar.\nKelompok 3 · Bagian IV · BC7.21 + Implikasi INDF 40 / 69",
+    "word_count": 121,
+    "role_hint": "cover"
+  },
+  {
+    "page": 41,
+    "total": 69,
+    "text": "CATATAN & PERSPEKTIF KRITIS\nEmpat Keterbatasan Catatan LK\nSFAC 8 Ch.8 D1–D82 — mengapa catatan tidak cukup\nsendiri\nSFAC 8\nCh.8 D1–\nD82\n1Tidak berdampak langsung pada angka\nlaporan keuangan utama 2Tidak semua pengguna membaca atau\nmemahami catatan secara penuh\n3Catatan tidak dapat mengoreksi salah saji\ndi laporan utama 4Terlalu banyak catatan = information\noverload →  mengorbankan keterpahaman\nKelompok 3 · Catatan SFAC 8 Ch.8 41 / 69",
+    "word_count": 68,
+    "role_hint": "cover"
+  },
+  {
+    "page": 42,
+    "total": 69,
+    "text": "PANDANGAN KRITIS TENTANG CF\nTiga Pandangan: Gaa · Archer · Wolk\nWolk pp.183–186 — CF berhasil di mana, gagal di mana Wolk Ch.7\npp.183–186\nKODIFIKASIONAL\nGaa\nCF melegitimasi proses\npenetapan standar yang rasional\n— bukan menurunkan standar\ndeduktif.\nKelemahan: punya \"gigi\" untuk\nmenolak standar buruk?\nJURISPRUDENSIAL\nArcher\nCF seperti preseden hukum\ncommon law — standar dapat\notoritas dari rujukan ke CF.\nRisiko: self-referential — CF dan\nstandar saling membenarkan.\nPENILAIAN AKHIR KEY DOC\nWolk\n✓  Konsistensi + komparabilitas +\nkosakata bersama.\n× SFAC 5 = \"Achilles' heel\" —\ntekanan politik.\nSFAC 8 = puncak pencapaian\nCF saat ini.\nKelompok 3 · Tiga Perspektif Kritis 42 / 69",
+    "word_count": 107,
+    "role_hint": "cover"
+  },
+  {
+    "page": 43,
+    "total": 69,
+    "text": "SINTESIS TEORI · ARSITEKTUR LENGKAP\nArsitektur SFAC 8 (1/2):Fondasi\n\"Conceptual Framework: konstitusi\nlaporan keuangan.\" SFAC 8 Ch.1–4\nWolk Ch.7\nCh.1 2010\nTUJUAN — OB1–OB28\nPengguna utama: investor & kreditur. Basis akrual.\nCh.2 2010\nENTITAS — RE1–RE14\nKonsolidasi wajib. NCI dalam ekuitas. Tiga jenis.\nCh.3 2010\nQC — QC1–QC39\nFundamental: Relevansi + Faithful Rep. 4 enhancing +\nCost.\nCh.4\n JULI 2024\nELEMEN — E1–E90\nAset = \"present right\". Primasi konseptual\naset/liabilitas.\nKelompok 3 · Sintesis Teori · SFAC 8 Ch.1-4 43 / 69",
+    "word_count": 82,
+    "role_hint": "cover"
+  },
+  {
+    "page": 44,
+    "total": 69,
+    "text": "SINTESIS TEORI · ARSITEKTUR LENGKAP\nArsitektur SFAC 8 (2/2): Implementasi\nRecognition · Measurement · Presentation · Disclosure +\nevolusi 1978–2024\nSFAC 8\nCh.5–8\nWolk Ch.7\nCh.5\n JULI 2024\nRECOGNITION — RD1–RD14\nKata-kata + angka (RD3). Disclosure ≠  Recognition.\nCh.6\n JULI 2024\nMEASUREMENT — M1–M49\nEntry vs Exit price. Unik →  Entry; tidak unik →  Exit.\nCh.7\n JULI 2024\nPRESENTATION — PR1–PR54\nFace of FS. Notes ≠  pengganti. BC7.21 OCI compromise.\nCh.8\n AGS 2023\nDISCLOSURE — D1–D82\nSuplemen, bukan pengganti. 4 keterbatasan.\nEVOLUSI 46 TAHUN (BELUM SELESAI)\n1978–85: SFAC 1–6 fondasi awal →  2010: SFAC 8 puncak →  2023–24: Ch.4/5/6/7 amendemen\nKelompok 3 · Sintesis Teori · SFAC 8 Ch.5-8 44 / 69",
+    "word_count": 112,
+    "role_hint": "cover"
+  },
+  {
+    "page": 45,
+    "total": 69,
+    "text": "SINTESIS · KONVERGENSI FASB–IASB\nRantai Otoritas: FASB →  IASB →  PSAK →INDF\nNorwalk Agreement 2002 sebagai jembatan\nWolk pp.181–\n183\nINDF AR p.135\nFASB\nSFAC 8 2010/2024 Norwalk 2002\nIASB\nCF 2018\nPSAK (sejak 2012) — IAI adopsi IFRS\nPT Indofood Sukses Makmur Tbk (INDF 2024)\nINDF bukan di jalur FASB langsung — INDF →  PSAK →  IASB CF 2018\nKelompok 3 · Konvergensi · Rantai Otoritas 45 / 69",
+    "word_count": 70,
+    "role_hint": "cover"
+  },
+  {
+    "page": 46,
+    "total": 69,
+    "text": "SINTESIS · KONVERGENSI\nYang Terkonvergensi: SFAC 8 ≡  IASBCF 2018\nEmpat area di mana Wolk dapat diterapkan untuk\nINDF\nWolk Ch.7\nSFAC 8 ≡  IASB CF\n2018\nEMPAT AREA TERKONVERGENSI (IDENTIK)\n✓Tujuan pelaporan keuangan (OB1–OB21)\n✓Pengguna utama (primary users)\n✓Hierarki QC (Relevansi + Faithful Rep.)\n✓Materialitas sebagai entitas-spesifik\nKelompok 3 · Konvergensi · Yang Identik 46 / 69",
+    "word_count": 58,
+    "role_hint": "cover"
+  },
+  {
+    "page": 47,
+    "total": 69,
+    "text": "SINTESIS · YANG BERBEDA\nYang Belum Terkonvergensi\nTiga perbedaan kunci yang relevan untuk INDF Wolk pp.181–183\nINDF AR p.135\nPERBEDAAN KUNCI SFAC 8 VS IASB CF 2018\nASPEK SFAC 8 (FASB) IASB CF 2018 (PSAK)\nPrudence/Konservatisme DIHAPUS sepenuhnya Prudence dipertahankan\nDefinisi Aset (Juli 2024) Update \"present right\" Belum update\nAnalisis INDF Wolk DAPAT diterapkan (sebagian besar konvergen) — INDF IFRS-aligned,\nbukan US GAAP\nKelompok 3 · Konvergensi · Yang Berbeda 47 / 69",
+    "word_count": 73,
+    "role_hint": "cover"
+  },
+  {
+    "page": 48,
+    "total": 69,
+    "text": "STUDI KASUS INDF 2024\nPT Indofood Sukses Makmur Tbk\nKonglomerat pangan terbesar Indonesia IDX: INDF\nEst. 14 Aug 1990\nINDF\nPT Indofood Sukses Makmur Tbk\nCBP\nIndomie, Indomilk\nChitato\nListed: ICBP\nBOGASARI\nTepung terigu\nPasta\n№ 1 Dunia\nAGRI\nCPO/Sawit\nPerkebunan\nListed: SIMP\nDIST.\nIndomarco\nAdi Prima\nJaringan Nasional\nKelompok 3 · Studi Kasus INDF · Profil 48 / 69",
+    "word_count": 60,
+    "role_hint": "cover"
+  },
+  {
+    "page": 49,
+    "total": 69,
+    "text": "STUDI KASUS · SOROTAN KEUANGAN\nINDF 2024: Sorotan Finansial\n8 metrik kunci + struktur kepemilikan INDF AR 2024\npp. 4, 8, 32-34\nSOROTAN KEUANGAN 2024\nPENJUALAN BERSIH\nRp115,79T\nTOTAL ASET\nRp201,71T\nGOODWILL PINEHILL\nRp52,2T\n= 26% Total Aset\nEPS 2024\nRp984\nLABA BERSIH\nRp8,64T\nTOTAL EKUITAS\nRp108,99T\nROE\n12,5%\nINTEREST COV.\n7,1×\n✓Opini Audit WTM — KAP Purwantono, Sungkoro & Surja (EY) · 25 Maret 2025\n50,07%\nFirst Pacific\nSTRUKTUR KEPEMILIKAN AR 2024 P.8\n50,07%First Pacific (HK)\n49,93%Publik · 84,87% institusi asing\nKelompok 3 · Studi Kasus INDF · Sorotan Keuangan 49 / 69",
+    "word_count": 94,
+    "role_hint": "cover"
+  },
+  {
+    "page": 50,
+    "total": 69,
+    "text": "SFAC 8 OB2–OB9\nPengguna Utama Laporan INDF\nDiagram dua zona — OB5–OB9 INDF AR 2024\npp. 4, 8, 32-34\nManajemen INDF\nAkses internal langsung\nOJK\nJalur regulasi\nKaryawan\nBukan resource providers\nPRIMARY USERS (OB5–OB8)\nFirst Pacific Company (50,07%)\nROE 12,5% · Interest coverage 7,1×\nInvestor Institusional Asing (84,87%)\nTren EPS 5-tahun · Risiko FX · Goodwill risk\nKreditur (Funded debt Rp70,81T)\nInterest cov 7,1× · Obligasi USD · FX exposure\nNON-PRIMARY (OB9)\nKelompok 3 · Primary Users INDF 50 / 69",
+    "word_count": 81,
+    "role_hint": "cover"
+  },
+  {
+    "page": 51,
+    "total": 69,
+    "text": "SFAC 8 OB2 · PRINSIP\nKebutuhan vs. Tersedia di AR INDF\nSemua kebutuhan primary users terpenuhi ( ✓ ) SFAC 8\nOB2 · OB9\nKEBUTUHAN VS TERSEDIA DI AR INDF\nPENGGUNA KEBUTUHAN INFORMASI TERSEDIA?\nFirst Pacific Konsolidasi, dividen, ROE 12,5% ✓\nInvestor asing Tren EPS 5-tahun, FX, bilingual AR ✓\nKreditur Interest cov 7,1×, debt Rp70,81T ✓\nPRINSIP OB2 — MENGAPA BATAS INI PENTING\n\"General purpose financial reports are directed to those who cannot obtain information they need directly from the entity.\"\nManajemen & OJK punya akses langsung →  bukan primary users (OB9)\nKelompok 3 · OB2 Prinsip + Kebutuhan 51 / 69",
+    "word_count": 103,
+    "role_hint": "cover"
+  },
+  {
+    "page": 52,
+    "total": 69,
+    "text": "SFAC 8 QC6–QC11\nRelevansi INDF: Predictive +Confirmatory\nTren EPS 5-tahun & konfirmasi efisiensi\nINDF AR\n2024\npp.4-5\nQC7 — PREDICTIVE VALUE\nNilai Prediktif\nData 5-tahun memprediksi EPS masa depan735\n2020\n873\n2021\n724\n2022 ⚠\n928\n2023\n984\n2024\n⚠  2022 turun anomali Pinehill via PCL; recovery 2023–2024\nQC8 — CONFIRMATORY VALUE\nNilai Konfirmatif\nData aktual mengkonfirmasi ekspektasi\nKONFIRMASI EFISIENSI BIAYA\n32,3%\nMargin 2023→ 34,7%\nMargin 2024\n✓  Strategi efisiensi MD&A terbukti\nKEMAMPUAN BAYAR\n7,1×\nInterest coverage konfirmasi prospektus obligasi kreditur\nKelompok 3 · Relevansi INDF · Predictive + Confirmatory 52 / 69",
+    "word_count": 93,
+    "role_hint": "cover"
+  },
+  {
+    "page": 53,
+    "total": 69,
+    "text": "SFAC 8 QC11 · MATERIALITAS\nMaterialitas: Goodwill Pinehill\nRp52,2T = 26% Total Aset →  KAM oleh EY INDF AR 2024\nAuditor p.iii\nQC11 — MATERIALITY (ENTITAS-SPESIFIK)\nMaterialitas Goodwill\nRp52,2T\n= 26% Total Aset\nGoodwill Pinehill melampaui ambang materialitas\nGoodwill Aset lainnya\n26% 74%\nEY KEY AUDIT MATTER\nGoodwill ditetapkan sebagai\nKAM\nKonfirmasi materialitas secara independen\noleh auditor — KAP Purwantono, Sungkoro\n& Surja (EY).\nMengapa Material?\nGoodwill > 25% aset = high judgment area;\nsalah penghapusan = laba bias signifikan.\nKelompok 3 · Relevansi INDF · Materialitas 53 / 69",
+    "word_count": 90,
+    "role_hint": "cover"
+  },
+  {
+    "page": 54,
+    "total": 69,
+    "text": "SFAC 8 QC12–QC16\nRepresentasi Tepat: Completeness +Neutrality\nBukti empiris dari laporan INDF\nINDF AR\n2024\npp.32-34\n1\nQC13\nKelengkapan ✓\n148 catatan atas LK — kebijakan, aset, pihak\nberelasi, instrumen keuangan\nGoodwill Rp52,2T: DCF, growth, diskonto,\nsensitivitas ±1%\nBilingual ID+EN →  akses 84,87% investor\nasing\n2\nQC14\nNetralitas ✓\nRisiko goodwill impairment diungkap eksplisit\n— meski mengkhawatirkan investor\nObligasi USD ICBP: dampak positif & negatif\nkurs disajikan berimbang\nPihak berelasi Rp10,11T (8,73%) diungkap\nmeski sensitif kompetitif\nKelompok 3 · Representasi Tepat INDF · QC13+QC14 54 / 69",
+    "word_count": 87,
+    "role_hint": "cover"
+  },
+  {
+    "page": 55,
+    "total": 69,
+    "text": "SFAC 8 QC15\nBebas dari Kesalahan + Keterbatasan\nAudit EY WTM + catatan struktural goodwill INDF AR 2024\nAuditor p.iii\n3\nQC15\nBebas dari Kesalahan ✓\nOpini Audit Wajar Tanpa Modifikasi\nKAP Purwantono, Sungkoro & Surja (EY Indonesia)\nNo. 00339/2.1032/AU.1/04/0701-2 · 25 Maret 2025\nKAM goodwill: EY audit khusus, tidak ada salah\nsaji material\nTidak ada modifikasi opini atau paragraf\npenekanan materi\n⚠ CATATAN KETERBATASAN — BUKAN KEGAGALAN INDF\nGoodwill Rp52,2T diukur dengan asumsi tidak dapat diverifikasi independen (DCF/WACC). EY: \"penilaian\nsignifikan diperlukan.\" Ini keterbatasan struktural semua konglomerat global dengan akuisisi besar.\nKelompok 3 · QC15 + Keterbatasan Struktural 55 / 69",
+    "word_count": 102,
+    "role_hint": "cover"
+  },
+  {
+    "page": 56,
+    "total": 69,
+    "text": "SFAC 6 + SFAC 8 CH.4\nGoodwill Rp52,2T: Uji Definisi Aset\nLulus uji lama (1985) dan baru (Juli 2024) INDF AR p.32\nAuditor p.iii\nUJI SFAC 6 — DEFINISI LAMA (3 KARAKTERISTIK)\nManfaat\nekonomi masa\ndepan\nMerek Pinehill, 30+ negara ✓\nDikendalikan\nentitas INDF kendali via CBP/PCL ✓\nHasil transaksi\nmasa lalu\nAkuisisi Pinehill\nterdokumentasi ✓\n✓  Memenuhi definisi aset SFAC 6\nUJI SFAC 8 CH.4 (JULI 2024) — \"PRESENT\nRIGHT\"\nPresent right INDF saat ini memiliki hak atas\nmanfaat Pinehill ✓\nEconomic\nbenefit\nArus pendapatan operasi\nPinehill aktif ✓\n✓  Memenuhi definisi aset SFAC 8 Ch.4\nImplikasi: definisi baru lebih mudah dipenuhi\nGoodwill memenuhi KEDUA definisi.\nKelompok 3 · Goodwill Uji Aset SFAC 6+8 56 / 69",
+    "word_count": 118,
+    "role_hint": "cover"
+  },
+  {
+    "page": 57,
+    "total": 69,
+    "text": "PROPORSI · TANTANGAN PENGUKURAN\nGoodwill 26% Aset + Challenge\nMaterial berat — Level 3 fair value, KAM EY INDF AR p.32\nPSAK 22\nPROPORSI TERHADAP TOTAL ASET\nRp52,2T\n= 26%\ndari total aset Rp201,71T\nGW 26% Lainnya 74%\n⚠  TANTANGAN PENGUKURAN\nTidak ada pasar aktif →  Level 3 fair value\nUji impairment: DCF, WACC, terminal growth\nEY KAM: \"penilaian signifikan diperlukan\"\nPSAK 22 (IFRS 3): tidak ada amortisasi\nKelompok 3 · Goodwill Proporsi + Challenge 57 / 69",
+    "word_count": 78,
+    "role_hint": "cover"
+  },
+  {
+    "page": 58,
+    "total": 69,
+    "text": "SFAC 8 CH.4 — LIABILITAS\nLiabilitas INDF: Funded Debt Rp70,81T\nDefinisi present obligation + interest coverage 7,1× INDF AR p.32-34\nSFAC 8 Ch.4\nSFAC 8 CH.4 — DEFINISI LIABILITAS\n\"A present obligation of an entity to transfer an economic benefit\"\nJENIS LIABILITAS NILAI RELEVANSI CF\nUtang jangka panjang Rp70,81T Kewajiban masa kini →  transfer pokok+bunga\nObligasi USD ICBP bagian\nRp70,81T Denominasi USD →  risiko FX\nLiab. pajak tangguhan Ada di neraca Perbedaan temporer pajak\n7,1×\nInterest Coverage\nINDF dapat membayar bunga 7,1× dari EBIT — bukti kuat kemampuan transfer\nekonomi kepada kreditur.\nKelompok 3 · Liabilitas INDF · SFAC 8 Ch.4 58 / 69",
+    "word_count": 104,
+    "role_hint": "cover"
+  },
+  {
+    "page": 59,
+    "total": 69,
+    "text": "SFAC 6 / SFAC 8 — EKUITAS\nEkuitas INDF: Total Rp108,99T\nResidual interest + NCI Rp43,08T + ROE 12,5% INDF AR p.32-34\nRE8-RE9\nSFAC 6 / SFAC 8 — DEFINISI EKUITAS\nSisa kepentingan dalam aset setelah dikurangi liabilitas (residual)\nKOMPONEN RP T PORSI\nEkuitas ke pemilik induk 65,914 ~60,5%\nNon-pengendali (NCI) 43,077 ~39,5%\nTotal Ekuitas 108,991 100%\n12,5%\nROE 2024\nNCI Rp43,08T — Implikasi RE8-RE9\nNCI = minoritas di anak listed (ICBP, SIMP). Laba ke NCI Rp4,44T vs induk Rp8,64T →  induk dapat 66% total\nlaba bersih.\nKelompok 3 · Ekuitas INDF · NCI + ROE 59 / 69",
+    "word_count": 99,
+    "role_hint": "cover"
+  },
+  {
+    "page": 60,
+    "total": 69,
+    "text": "SFAC 8 CH.5 RD1–RD14\nPengakuan INDF: Goodwill +Pendapatan\nPSAK 72 / IFRS\n15\nINDF AR pp.32-\n34\nSFAC 8 CH.5 RD3 \"Recognition consists of capturing both a description (words) and a monetary amount\n(numbers).\"\nKASUS 1\nGoodwill Rp52,2T\n→  di Neraca\nMemenuhi definisi elemen ✓\nDapat diukur (useful) ✓\nRepresentasi tepat ✓\n✓  EY KAM memvalidasi DCF\nKASUS 2\nPendapatan Rp115,79T\n→  di Laporan Laba Rugi\nPSAK 72 (IFRS 15) — 5 LANGKAH\n1.Identifikasi kontrak\n2.Kewajiban pelaksanaan\n3.Tentukan harga\n4.Alokasikan harga\n5.Akui saat terpenuhi ✓\nKelompok 3 · Pengakuan INDF · Goodwill+Revenue 60 / 69",
+    "word_count": 95,
+    "role_hint": "cover"
+  },
+  {
+    "page": 61,
+    "total": 69,
+    "text": "SFAC 8 CH.5 + PSAK 7\nRelated Party Rp10,11T\nBatas Pengakuan vs Pengungkapan PSAK 7\nINDF AR p.34\nKASUS 3\nTransaksi Pihak Berelasi\nRp10,11T\n= 8,73% dari penjualan bersih\nPENGAKUAN\nMasuk dalam penjualan bersih Rp115,79T (harga pasar wajar)\nPENGUNGKAPAN (PSAK 7)\nDetail di Catatan: nilai, sifat hubungan, harga wajar\nContoh RD3: words AND numbers bekerja bersama\nKelompok 3 · Related Party · RD3 Application 61 / 69",
+    "word_count": 67,
+    "role_hint": "cover"
+  },
+  {
+    "page": 62,
+    "total": 69,
+    "text": "SFAC 8 CH.6 M30–M34\nPengukuran INDF: Model Campuran\nEntry vs Exit Price — peta aplikasi M30–M34 SFAC 8 Ch.6\nM1–M49\nPETA PENGUKURAN INDF 2024 — APLIKASI M30–M34\nASET/LIABILITAS TIPE DASAR ALASAN M30–M34\nGoodwill Rp52,2T\n Entry Biaya historis + impairment Tidak ada pasar aktif →  unik\nAset tetap\n Entry Biaya − akum. penyusutan Aset spesifik →  unik\nSaham listed\n Exit Fair value Level 1 Pasar tersedia →  tidak unik\nInstrumen Level 3\n Exit Fair value Level 3 (DCF) Tidak ada harga langsung\nPersediaan\n Entry Min(biaya, NRV) PSAK 14 / IAS 2\nObligasi USD ICBP\n Entry Biaya amortisasi Utang jangka panjang\nKelompok 3 · Pengukuran INDF · Peta Aplikasi M30-M34 62 / 69",
+    "word_count": 111,
+    "role_hint": "cover"
+  },
+  {
+    "page": 63,
+    "total": 69,
+    "text": "TRADE-OFF PENGUKURAN\nRelevansi vs. Verifikasi: 2×2 Matrix\nPilihan dasar pengukuran INDF di empat kuadran SFAC 8 Ch.6\nM30-M34\nMATRIKS RELEVANSI VS VERIFIKASI\nRELEVANSI ↑\nVERIFIKASI ↑\nFair value Level 1\nSaham listed INDF\nRELEVANSI ↓\nVERIFIKASI ↑\nHistorical cost\nAset tetap pabrik\nRELEVANSI ↑\nVERIFIKASI ↓\nFair value Level 3\nGoodwill impairment\n⚠  KETERBATASAN GOODWILL LEVEL 3\nEY KAM: \"penilaian signifikan diperlukan dalam menentukan proyeksi arus kas dan tingkat diskonto.\" Bukti trade-off relevansi vs\nverifikasi.\nR E L E V A N S I ↓\nV E R IF IK A S I ↓\nT id a k  d ig u n a k a n\nKelompok 3 · Trade-off Relevansi vs Verifikasi 63 / 69",
+    "word_count": 116,
+    "role_hint": "cover"
+  },
+  {
+    "page": 64,
+    "total": 69,
+    "text": "SFAC 8 CH.7 PR12\nStruktur FS INDF (PSAK 1)\n5 komponen LK + PR12: catatan bukan pengganti PSAK 1\nSFAC 8 Ch.7 PR12\nSTRUKTUR FS INDF\n1.Laporan Posisi Keuangan\n2.Laporan Laba Rugi & OCI\n3.Laporan Perubahan Ekuitas\n4.Laporan Arus Kas\n5.Catatan atas LK (148 catatan)\nPR12 — CATATAN BUKAN PENGGANTI\nCatatan tidak dapat menggantikan pengakuan\ndi laporan utama.\nDIAKUI DI NERACA\nGoodwill Rp52,2T →  masuk laporan utama\nDIUNGKAPKAN DI CATATAN\nNilai wajar obligasi USD ICBP →  di catatan\nKelompok 3 · Struktur FS PSAK 1 · PR12 64 / 69",
+    "word_count": 90,
+    "role_hint": "cover"
+  },
+  {
+    "page": 65,
+    "total": 69,
+    "text": "SFAC 8 CH.7 BC7.21\nOCI INDF: Rekonsiliasi + BC7.21\nSelisih translasi Pinehill (Rp531,4M) — kompromi\nkonseptual\nINDF AR pp.31-\n32\nPSAK 1/IAS 1\nOCI 2024 — REKONSILIASI LABA KE CI\nLABA BERSIH\nRp13.077,5M\nLaporan Laba Rugi\nOCI: Selisih kurs translasi\n(Rp531,4M)\nPinehill di luar negeri\nTOTAL PENGHASILAN KOMPREHENSIF\n≈ Rp12.546,1M\n⚠  BC7.21 — OCI KONTROVERSI\nFASB: tidak ada dasar konseptual kuat untuk OCI\nsebagai kategori terpisah dari laba rugi.\nMengapa OCI tetap ada?\nTekanan industri menghindari volatilitas. Kompromi\npragmatis, bukan prinsip CF.\nPENYAJIAN BILINGUAL\nLaporan INDF disajikan 2 bahasa (ID+EN) →  QC30-\nQC34 untuk 84,87% investor asing.\nKelompok 3 · OCI Waterfall · BC7.21 + Bilingual 65 / 69",
+    "word_count": 109,
+    "role_hint": "cover"
+  },
+  {
+    "page": 66,
+    "total": 69,
+    "text": "PENYAJIAN & PENGUNGKAPAN\nCatatan INDF: Struktur + Segmen\n5 area substantif + segmen operasi PSAK 5 SFAC 8 Ch.7\nPSAK 5 / IFRS 8\nSTRUKTUR CATATAN INDF\n1 Kebijakan Akuntansi Signifikan\n2 Disaggregasi Pendapatan\n3 Transaksi Pihak Berelasi\n4 Informasi Segmen Operasi\n5 Kontinjensi & Komitmen\nSEGMEN OPERASI 2024\nSEGMEN REVENUE %\nProduk Konsumen Bermerek Rp87,6T 75,6%\nBogasari (Tepung) Rp26,3T 22,7%\nAgribisnis & Distribusi Rp2,0T 1,7%\nSTANDAR PELAPORAN SEGMEN\nPSAK 5 / IFRS 8 — CODM approach\nKelompok 3 · Catatan + Segmen INDF 66 / 69",
+    "word_count": 87,
+    "role_hint": "cover"
+  },
+  {
+    "page": 67,
+    "total": 69,
+    "text": "PENGUNGKAPAN · ENHANCING QC\nRelated Party Rp10,11T + Enhancing QC\nBreakdown 3 sumber + dampak\nComparability/Verifiability/Understandability\nPSAK\n7\nSFAC\n8\nTRANSAKSI PIHAK BERELASI 2024\nRp10,11T\nTotal transaksi pihak berelasi 2024\nGrup Salim (induk) Rp6,8T\nEntitas asosiasi Rp2,1T\nJV & afiliasi lain Rp1,21T\nSFAC 8 — ENHANCING QC\nCatatan meningkatkan tiga QC peningkat:\nCOMPARABILITY\nKebijakan konsisten across periode\nVERIFIABILITY\nEstimasi terdokumentasi (DCF, WACC,\nsensitivitas)\nUNDERSTANDABILITY\nDisaggregasi segmen (CODM approach)\nKelompok 3 · Related Party · Enhancing QC 67 / 69",
+    "word_count": 79,
+    "role_hint": "cover"
+  },
+  {
+    "page": 68,
+    "total": 69,
+    "text": "SINTESIS SFAC 8 · INDF AR 2024\nLima Insight Utama\nFASB Conceptual Framework terapan pada PT Indofood Sukses Makmur Tbk 2024\n1Karakteristik Kualitatif Terpenuhi\nRelevansi (PM = 5,45%) + representasi tepat (opini WTP\nBDO) terverifikasi dalam AR 2024.\n4 OCI & Disaggregasi Penyajian\nOCI (Rp531,4M) translasi Pinehill dipisah dari laba\noperasi — relevansi CI per BC7.21.\n2 Pengakuan: Tiga Kasus Kompleks\nGoodwill Rp52,2T, PSAK 72 lima-langkah, related party\nRp10,11T — semua memenuhi RD3.\n5 Catatan sebagai Enabler QC\n148 catatan + segmen 3 divisi mengangkat\nComparability, Verifiability, Understandability.\n3 Pengukuran: Mixed-Attribute Model\n4 basis: Cost, Fair Value, NRV, Equity Method — sesuai\nSFAC 5 par. 67 & SFAC 8 Ch.6.\nKESIMPULAN OVERARCHING\nFASB CF bukan dokumen normatif — melainkan peta jalan\noperasional yang bekerja di multinasional Rp115,79T.\nKelompok 3 · Sintesis Lima Insight 68 / 69",
+    "word_count": 136,
+    "role_hint": "cover"
+  },
+  {
+    "page": 69,
+    "total": 69,
+    "text": "PELAPORAN KEUANGAN KORPORAT · KELOMPOK 3\nTerima Kasih\nTHANK YOU\nEfri Nurmalinda\n1225 01049\nDzaki M. Yusfian\n1225 01079\nNuradila\n1225 01080\nAchmad Dimas W.\n1225 01083\nAdinda Putri Dewi\n1225 01086\nSetiabudi Y. Pratama\n1225 01098\nKelompok 3 · Pelaporan Keuangan Korporat 69 / 69",
+    "word_count": 46,
+    "role_hint": "cover"
+  }
+]
