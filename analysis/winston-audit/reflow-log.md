@@ -32,7 +32,7 @@
 | 16 | split-first | 2 (23/24) | E1 card body 36px caption-tier on slide 23; E1 table body 36px caption-tier on slide 24; F5 active (konsep sulit Entry vs Exit + INDF mixed-attribute application; Goodwill Rp52,2T verbatim) | 2026-04-27T23:45 | (see git log slide-16-split) |
 | 17 | split-first | 2 (25/26) | E1 sub-card body 36px caption-tier on slides 25/26 (FS hierarchy bullets, Notes one-liner, PR12 callout, OCI rekonsiliasi labels, BC7.21 navy body, Implikasi INDF body + blue sub-line); F5 active (konsep sulit penyajian + BC7.21 OCI compromise; Rp13.077,5M / Rp531,4M / Rp12.546,1M verbatim) | 2026-04-28T00:30 | (see git log slide-17-split) |
 | 18 | split-first | 2 (27/28) | E1 4-box body 36px caption-tier slide 27; E1 perspective body 32px + critique callouts 28px label-tier slide 28 | 2026-04-28T00:50 | (see git log slide-18-split) |
-| 19 | (pending) | — | — | — | — |
+| 19 | split-first | 2 (29/30) + Slogan #3 | E1 chapter card body 32px caption-tier (8 cards in 2×2 layout per slide); Slogan #3 deployed slide 29 italic 60 lead-tier border-left blue | 2026-04-28T01:10 | (see git log slide-19-split) |
 | 20 | (pending) | — | — | — | — |
 | 21 | (pending) | — | — | — | — |
 | 22 | (pending) | — | — | — | — |
