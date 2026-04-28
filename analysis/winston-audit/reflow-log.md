@@ -98,5 +98,5 @@
 
 ## Out-of-Scope Flags
 
-- **Chrome page-number cascade after slide 03 split (2026-04-27T09:05):** Original slides 04-32 chrome still display "/32" with their old slide numbers (04/32, 05/32, dst.). Slide 03 split adds 2 slides; chrome should cascade to "/34" with appropriate renumbering. Two options for handling: (a) update each downstream slide's chrome opportunistically as we reflow it (mid-stream catch-up); (b) defer to Task AI bulk update after all slides reflowed. Decision deferred — current state is acceptable transitional inconsistency per E6 (v6 is broken until Phase 2 completes).
-- **`presentation-design-spec.md` block structure update (pre-flagged from spec V4):** Block boundaries (Opening 1-3, Proof 4-29, Close 30-32) no longer match post-split deck count. Defer to separate brainstorming session.
+- ~~**Chrome page-number cascade after slide 03 split (2026-04-27T09:05):**~~ **RESOLVED 2026-04-28T06:00.** All 68 pagenum tags re-numbered sequentially `02/69`..`69/69` via Python script (cover slide 01 has no pagenum tag, so pagenums start at 02). Total deck = 69 v6 sections (1 cover + 68 content/penutup). Final verification: no duplicate pagenum values, sequential ordering preserved.
+- **`presentation-design-spec.md` block structure update (pre-flagged from spec V4):** Block boundaries (Opening 1-3, Proof 4-29, Close 30-32) no longer match post-split deck count (1 cover + 68 = 69 total). Defer to separate brainstorming session — purely documentation, does not affect deck rendering.
