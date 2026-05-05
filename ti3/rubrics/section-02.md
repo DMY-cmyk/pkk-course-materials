@@ -2,7 +2,7 @@
 section: 02
 title: Kualitas Informasi Akuntansi menurut SFAC No. 2 (1980)
 brief_requirements_addressed: ["R1 — present SFAC 2 side of comparison"]
-required_citations: ["FASB (1980). SFAC No. 2", "Wolk et al. (2019)"]
+required_citations: ["FASB (1980). SFAC No. 2", "Wolk, H. I., Dodd, J. L., & Rozycki, J. J. (2019). Accounting Theory (9th ed.). SAGE Publications."]
 voice_check:
   - Framework presented analytically, not as a list of definitions
   - Each characteristic tied to its theoretical purpose

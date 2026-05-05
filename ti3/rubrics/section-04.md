@@ -6,7 +6,7 @@ required_citations:
   - "FASB (1980). SFAC No. 2"
   - "FASB (2010). SFAC No. 8"
   - "Watts (2003). Conservatism in Accounting"
-  - "Wolk et al. (2019)"
+  - "Wolk, H. I., Dodd, J. L., & Rozycki, J. J. (2019). Accounting Theory (9th ed.). SAGE Publications."
 voice_check:
   - Each subsection surfaces a THEORETICAL tension, not just "A changed to B"
   - At least one critical move per subsection (the conservatism counter-argument via Watts is mandatory)

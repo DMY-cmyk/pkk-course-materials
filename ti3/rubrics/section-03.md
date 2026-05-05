@@ -9,7 +9,7 @@ voice_check:
 depth_check:
   - "Confirmatory value" identified as renamed "feedback value" from SFAC 2
   - Materiality repositioned as aspect of relevance (not threshold)
-  - Conservatism's explicit exclusion noted (cite SFAC 8 BC3.27)
+  - Conservatism's explicit exclusion noted — cite SFAC No. 8, Basis for Conclusions paragraph BC3.27 (verified: this paragraph states "including prudence or conservatism in the description of faithful representation would be incompatible with neutrality")
 format_check:
   - Section head: "III. Kualitas Informasi Akuntansi menurut SFAC No. 8 (2010)"
   - Subsections: A, B, C
