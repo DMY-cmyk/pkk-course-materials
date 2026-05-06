@@ -178,7 +178,7 @@ def build():
     add_body_para(doc,
         'Kegunaan tidak identik dengan akurasi. Informasi yang akurat secara pengukuran tetapi terlambat tersedia — setelah jendela keputusan tertutup — gagal memenuhi kriteria usefulness meskipun secara teknis benar. Inilah mengapa Kerangka Konseptual IASB (2018) menempatkan ketepatan waktu (timeliness) sebagai karakteristik enhancing, bukan sekadar fitur tambahan. Dua karakteristik fundamental — relevansi (predictive value + confirmatory value + materiality) dan representasi tepat (complete, neutral, free from error) — keduanya harus terpenuhi; empat karakteristik enhancing (comparability, verifiability, timeliness, understandability) meningkatkan kegunaan yang sudah memenuhi fondasi fundamental. Satu constraint membatasi seluruh hierarki: manfaat informasi harus melebihi biaya penyediaannya.')
     add_body_para(doc,
-        'Bahwa laporan keuangan benar-benar digunakan pasar — bukan sekadar diterbitkan dan diabaikan — dibuktikan secara empiris oleh Ball dan Brown (1968) dalam studi perintis mereka. Menggunakan sampel 261 perusahaan NYSE (1957–1965), mereka mengklasifikasikan pengumuman laba sebagai Good News (laba di atas ekspektasi) atau Bad News (di bawah ekspektasi) dan mengukur Cumulative Average Abnormal Return (CAAR) dalam jendela ±12 bulan. Temuan: perusahaan GN menghasilkan CAAR positif, perusahaan BN menghasilkan CAAR negatif. Meski 80–90% informasi sudah diantisipasi pasar sebelum pengumuman resmi — melalui laporan kuartalan, guidance manajemen, dan analisis analis — reaksi residual yang signifikan pada bulan pengumuman membuktikan bahwa laporan keuangan memiliki information content yang independen dan tidak dapat digantikan sepenuhnya oleh sumber lain.')
+        'Bahwa laporan keuangan benar-benar digunakan pasar — bukan sekadar diterbitkan dan diabaikan — dibuktikan secara empiris oleh Ball dan Brown (1968) dalam studi perintis mereka. Menggunakan sampel 261 perusahaan NYSE (1957–1965), mereka mengklasifikasikan pengumuman laba sebagai Good News (laba di atas ekspektasi) atau Bad News (di bawah ekspektasi) dan mengukur Cumulative Average Abnormal Return (CAAR) dalam jendela ±12 bulan. Temuan: perusahaan GN menghasilkan CAAR positif, perusahaan BN menghasilkan CAAR negatif. Meski 80–90% informasi sudah diantisipasi pasar sebelum pengumuman resmi — melalui laporan kuartalan, guidance manajemen, dan analisis analis — reaksi residual yang signifikan pada bulan pengumuman membuktikan bahwa laporan keuangan memiliki information content yang independen dan tidak dapat digantikan sepenuhnya oleh sumber lain. Perlu dicatat bahwa laba tidak terduga hanya menjelaskan sekitar 5% dari variasi total harga sekuritas (Scott, 2015) — bukan karena laporan keuangan kurang berguna, melainkan karena harga saham merespons banyak faktor makroekonomi, sentimen, dan informasi non-akuntansi secara simultan. Temuan ini justru memotivasi analisis yang lebih mendalam: investor yang mampu mengekstrak sinyal dari komponen laporan keuangan di luar headline earnings berpotensi memperoleh keunggulan informasional yang bermakna.')
 
     # ------------------------------------------------------------------
     # SECTION III — Investor
@@ -196,6 +196,8 @@ def build():
     add_subsection_heading(doc, "Bukti Empiris: Ball & Brown, ERC, dan Model Ohlson", "B.")
     add_body_para(doc,
         'Bukti empiris paling langsung tentang kegunaan laporan keuangan bagi investor datang dari penelitian pasar modal. Ball dan Brown (1968) membuktikan bahwa pengumuman laba menghasilkan abnormal return yang signifikan — implikasinya bagi investor bukan sekadar bahwa "laporan berguna", melainkan bahwa angka laba merupakan sinyal yang diproses oleh pasar dan diterjemahkan ke dalam harga aset. Sensitivitas harga terhadap laba kejutan ini diukur oleh Earnings Response Coefficient (ERC): CARⱼj = α + β × UEⱼj + εⱼj, di mana CAR adalah cumulative abnormal return, UE adalah unexpected earnings (realisasi dikurangi ekspektasi), dan β adalah ERC. ERC tinggi ditemukan pada perusahaan dengan: (a) laba yang persisten, (b) beta pasar yang rendah, (c) leverage yang rendah, dan (d) peluang pertumbuhan yang tinggi (Collins & Kothari, 1989).')
+    add_body_para(doc,
+        'Melengkapi temuan Ball dan Brown, penelitian Lintner (1956) tentang kebijakan dividen mengungkap mekanisme transmisi penting bagi investor. Lintner menemukan bahwa manajer menetapkan target payout ratio jangka panjang dan melakukan penyesuaian bertahap menuju target tersebut — dengan konsekuensi kritis: manajer hanya menaikkan dividen ketika mereka meyakini bahwa peningkatan laba bersifat permanen, bukan transitory. Kebijakan dividen dengan demikian berfungsi sebagai sinyal kualitas laba kepada pasar: kenaikan dividen merupakan pernyataan implisit manajemen tentang keyakinan mereka atas keberlanjutan laba tinggi. Rantai ini — laba akuntansi → sinyal dividen → ekspektasi permanensi → harga saham — menegaskan mengapa investor membutuhkan informasi yang dapat membedakan komponen laba persisten dari komponen transitory. Dalam konteks model valuasi, laba yang persisten menghasilkan earnings response coefficient (ERC) yang lebih tinggi dan parameter ω mendekati 1 dalam model Ohlson. Bernard dan Thomas (1989) menemukan bahwa pasar sering gagal memproses perbedaan ini secara instan: harga saham cenderung terus bergerak ke arah yang sama dengan kejutan laba selama beberapa bulan pasca pengumuman — post-earnings-announcement drift — sebuah anomali yang menciptakan peluang bagi investor yang melakukan analisis laporan keuangan secara lebih mendalam melampaui angka laba utama.')
     add_body_para(doc,
         'Model Ohlson (1995) menyatukan pendekatan balance sheet dan income statement dalam satu kerangka koheren. Nilai intrinsik ekuitas diekspresikan sebagai: Vₜ = BVₜ + Σ Eₜ[xᵃₜ₊τ] / (1+r)ᵗ, di mana xᵃₜ = earningsₜ − r × BVₜ₋₁ adalah laba abnormal — selisih antara laba aktual dan required return atas nilai buku. Syarat clean surplus mengharuskan semua perubahan ekuitas (selain transaksi dengan pemilik) melewati laporan laba rugi: BVₜ = BVₜ₋₁ + earningsₜ − dividendsₜ. Parameter ω ∈ [0,1) mengukur persistensi laba abnormal: nilai ω mendekati 1 berarti keunggulan kompetitif perusahaan bertahan lama; mendekati 0 berarti laba abnormal bersifat transitory. Model Ohlson menjadikan laporan keuangan — khususnya nilai buku dan laba — sebagai input langsung dalam valuasi ekuitas.')
 
@@ -223,6 +225,8 @@ def build():
     add_subsection_heading(doc, "Instrumen Analisis Kreditur", "B.")
     add_body_para(doc,
         'Kreditur menggunakan seperangkat instrumen analisis yang berbeda dari investor. Tiga yang paling umum adalah: (1) Altman Z-score, yang mengagregatkan rasio-rasio keuangan ke dalam skor probabilitas kebangkrutan; (2) stress testing, yang mensimulasikan kinerja perusahaan di bawah skenario makroekonomi yang buruk (resesi, kenaikan suku bunga, depresiasi rupiah); dan (3) covenant monitoring, yang memantau apakah perusahaan mendekati atau melampaui ambang batas perjanjian utang — seperti rasio debt-to-equity atau interest coverage ratio. Ketiga instrumen ini membutuhkan informasi yang lengkap, verifiable, dan konsisten antar periode.')
+    add_body_para(doc,
+        'Relevansi instrumen-instrumen ini didukung oleh bukti empiris yang kuat. Penelitian tentang kebangkrutan mengkonfirmasi kemampuan prediktif model Altman Z-score terhadap financial distress — profitabilitas rendah, arus kas lemah, dan likuiditas terbatas merupakan indikator awal yang terdeteksi melalui data akuntansi jauh sebelum default terjadi. Penelitian tentang peringkat kredit menunjukkan bahwa lembaga seperti Moody\’s Corporation dan Standard & Poor\’s mengandalkan rasio akuntansi — profitabilitas, arus kas operasi, leverage, dan likuiditas — sebagai input primer dalam penentuan peringkat obligasi dan biaya pinjaman perusahaan (Scott, 2015; Wolk et al., 2017). Kualitas informasi akuntansi yang dapat diverifikasi secara langsung memengaruhi biaya modal perusahaan: perusahaan dengan laporan yang lebih transparan dan andal cenderung memperoleh peringkat lebih tinggi, sehingga membayar bunga lebih rendah — konsekuensi ekonomi nyata dari pemenuhan standar verifikabilitas dan kelengkapan. Konsisten dengan temuan ini, obligasi subordinasi BBCA memperoleh peringkat idAA dari Pefindo (BBCA, 2025, hal. 17) — peringkat yang mencerminkan kualitas informasi akuntansi BBCA yang dapat diverifikasi melalui audit Big-4 dan pengawasan prudensial OJK.')
 
     add_subsection_heading(doc, "Aplikasi: Rasio Prudensial BBCA", "C.")
     add_body_para(doc,
@@ -255,6 +259,11 @@ def build():
         (", 6(2), 159–178.", False),
     ])
     add_daftar_pustaka_entry(doc, [
+        ("Bernard, V. L., & Thomas, J. K. (1989). Post-earnings-announcement drift: Delayed price response or risk premium? ", False),
+        ("Journal of Accounting Research", True),
+        (", 27(Supplement), 1–36.", False),
+    ])
+    add_daftar_pustaka_entry(doc, [
         ("IASB. (2018). ", False),
         ("Conceptual framework for financial reporting", True),
         (". IFRS Foundation.", False),
@@ -263,6 +272,11 @@ def build():
         ("Ikatan Akuntan Indonesia. (2020). ", False),
         ("PSAK 71: Instrumen keuangan", True),
         (". Dewan Standar Akuntansi Keuangan IAI.", False),
+    ])
+    add_daftar_pustaka_entry(doc, [
+        ("Lintner, J. (1956). Distribution of incomes of corporations among dividends, retained earnings, and taxes. ", False),
+        ("American Economic Review", True),
+        (", 46(2), 97–113.", False),
     ])
     add_daftar_pustaka_entry(doc, [
         ("Ohlson, J. A. (1995). Earnings, book values, and dividends in equity valuation. ", False),
