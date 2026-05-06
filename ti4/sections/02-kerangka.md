@@ -1,0 +1,11 @@
+---
+section: 02
+title: Kerangka Decision Usefulness
+rubric: ti4/rubrics/section-02.md
+---
+
+Wolk, Dodd dan Rozycki (2017) mendefinisikan decision usefulness sebagai tujuan tunggal pelaporan keuangan bertujuan umum: menyediakan informasi yang memungkinkan penyedia modal — investor, pemberi pinjaman, dan kreditur lain — membuat keputusan alokasi sumber daya secara lebih rasional. Proposisi ini bukan sekadar pernyataan normatif tentang apa yang "seharusnya" dilakukan laporan keuangan; ia adalah standar evaluasi: setiap PSAK, setiap pengungkapan, setiap kebijakan akuntansi harus diuji dengan pertanyaan "apakah ini membuat laporan lebih berguna bagi pemakai primer?"
+
+Kegunaan tidak identik dengan akurasi. Informasi yang akurat secara pengukuran tetapi terlambat tersedia — setelah jendela keputusan tertutup — gagal memenuhi kriteria usefulness meskipun secara teknis benar. Inilah mengapa Kerangka Konseptual IASB (2018) menempatkan ketepatan waktu (timeliness) sebagai karakteristik enhancing, bukan sekadar fitur tambahan. Dua karakteristik fundamental — relevansi (predictive value + confirmatory value + materiality) dan representasi tepat (complete, neutral, free from error) — keduanya harus terpenuhi; empat karakteristik enhancing (comparability, verifiability, timeliness, understandability) meningkatkan kegunaan yang sudah memenuhi fondasi fundamental. Satu constraint membatasi seluruh hierarki: manfaat informasi harus melebihi biaya penyediaannya.
+
+Bahwa laporan keuangan benar-benar digunakan pasar — bukan sekadar diterbitkan dan diabaikan — dibuktikan secara empiris oleh Ball dan Brown (1968) dalam studi perintis mereka. Menggunakan sampel 261 perusahaan NYSE (1957–1965), mereka mengklasifikasikan pengumuman laba sebagai Good News (laba di atas ekspektasi) atau Bad News (di bawah ekspektasi) dan mengukur Cumulative Average Abnormal Return (CAAR) dalam jendela ±12 bulan. Temuan: perusahaan GN menghasilkan CAAR positif, perusahaan BN menghasilkan CAAR negatif. Meski 80–90% informasi sudah diantisipasi pasar sebelum pengumuman resmi — melalui laporan kuartalan, guidance manajemen, dan analisis analis — reaksi residual yang signifikan pada bulan pengumuman membuktikan bahwa laporan keuangan memiliki information content yang independen dan tidak dapat digantikan sepenuhnya oleh sumber lain.
