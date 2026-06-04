@@ -26,19 +26,19 @@
 - id: exhibit-13-04
   caption: "Exhibit 13.4 — Comparison of Balance Sheet Changes and Working Capital Adjustments for 3M Company ($000,000) (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 10, box_pct: [0.04, 0.285, 0.96, 0.465] }]
+  segments: [{ page: 10, box_pct: [0.04, 0.316, 0.96, 0.441] }]
   target_width_in: 6.25
   anchor_section: 06-nonarticulation
 - id: exhibit-13-05
   caption: "Exhibit 13.5 — Premium Allocation Between Operating and Financing Cash Flows (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 13, box_pct: [0.04, 0.055, 0.96, 0.45] }]
+  segments: [{ page: 13, box_pct: [0.04, 0.075, 0.96, 0.45] }]
   target_width_in: 6.25
   anchor_section: 07-classification-problems
 - id: exhibit-13-06
   caption: "Exhibit 13.6 — Selected Items From WorldCom's Statement of Cash Flows ($000,000) (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 16, box_pct: [0.04, 0.055, 0.96, 0.25] }]
+  segments: [{ page: 16, box_pct: [0.04, 0.07, 0.96, 0.25] }]
   target_width_in: 6.25
   anchor_section: 10-scf-more-than-cfo
 - id: eq-13-2
@@ -51,7 +51,7 @@
 - id: exhibit-13-07
   caption: "Exhibit 13.7 — Income Statement and Balance Sheet for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 18, box_pct: [0.04, 0.09, 0.96, 0.575] }]
+  segments: [{ page: 18, box_pct: [0.04, 0.113, 0.96, 0.595] }]
   target_width_in: 6.25
   anchor_section: 12-free-cash-flow
 - id: exhibit-13-08
@@ -63,18 +63,18 @@
 - id: exhibit-13-09
   caption: "Exhibit 13.9 — Statement of Free Cash Flows for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 20, box_pct: [0.04, 0.05, 0.96, 0.715] }]
+  segments: [{ page: 20, box_pct: [0.04, 0.075, 0.96, 0.715] }]
   target_width_in: 6.25
   anchor_section: 12-free-cash-flow
 - id: exhibit-13-10
   caption: "Exhibit 13.10 — Computing Free Cash Flow From the SCF for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 20, box_pct: [0.04, 0.737, 0.96, 0.90] }]
+  segments: [{ page: 20, box_pct: [0.04, 0.759, 0.96, 0.90] }]
   target_width_in: 6.25
   anchor_section: 12-free-cash-flow
 - id: exhibit-13-11
   caption: "Exhibit 13.11 — A Comparison of Performance Measures for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
   render_type: crop
-  segments: [{ page: 21, box_pct: [0.04, 0.095, 0.96, 0.26] }]
+  segments: [{ page: 21, box_pct: [0.04, 0.119, 0.96, 0.26] }]
   target_width_in: 6.25
   anchor_section: 12-free-cash-flow
