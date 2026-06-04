@@ -1,0 +1,80 @@
+- id: eq-13-1
+  caption: ""
+  render_type: reset-equation
+  target_width_in: 6.25
+  anchor_section: 01-scfp-funds-flow
+  reset_text: "transaction credits = transaction debits"
+  label: "(13.1)"
+- id: exhibit-13-01
+  caption: "Exhibit 13.1 — Standard Format of the Statement of Changes in Financial Position (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: reset-table
+  target_width_in: 6.25
+  anchor_section: 01-scfp-funds-flow
+  reset_table: content/figures/tables/exhibit-13-01.md
+- id: exhibit-13-02
+  caption: "Exhibit 13.2 — Illustration of the SCF in Accordance With SFAS No. 95 (Direct Method), Company M, FY 2000 (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: reset-table
+  target_width_in: 6.25
+  anchor_section: 05-direct-vs-indirect
+  reset_table: content/figures/tables/exhibit-13-02.md
+- id: exhibit-13-03
+  caption: "Exhibit 13.3 — Indirect or Reconciliation Method of Presenting Net Cash Flows From Operating Activities (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: reset-table
+  target_width_in: 6.25
+  anchor_section: 05-direct-vs-indirect
+  reset_table: content/figures/tables/exhibit-13-03.md
+- id: exhibit-13-04
+  caption: "Exhibit 13.4 — Comparison of Balance Sheet Changes and Working Capital Adjustments for 3M Company ($000,000) (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 10, box_pct: [0.04, 0.285, 0.96, 0.465] }]
+  target_width_in: 6.25
+  anchor_section: 06-nonarticulation
+- id: exhibit-13-05
+  caption: "Exhibit 13.5 — Premium Allocation Between Operating and Financing Cash Flows (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 13, box_pct: [0.04, 0.055, 0.96, 0.45] }]
+  target_width_in: 6.25
+  anchor_section: 07-classification-problems
+- id: exhibit-13-06
+  caption: "Exhibit 13.6 — Selected Items From WorldCom's Statement of Cash Flows ($000,000) (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 16, box_pct: [0.04, 0.055, 0.96, 0.25] }]
+  target_width_in: 6.25
+  anchor_section: 10-scf-more-than-cfo
+- id: eq-13-2
+  caption: ""
+  render_type: reset-equation
+  target_width_in: 6.25
+  anchor_section: 12-free-cash-flow
+  reset_text: "FCF = NOPLAT − investment in operating invested capital"
+  label: "(13.2)"
+- id: exhibit-13-07
+  caption: "Exhibit 13.7 — Income Statement and Balance Sheet for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 18, box_pct: [0.04, 0.09, 0.96, 0.575] }]
+  target_width_in: 6.25
+  anchor_section: 12-free-cash-flow
+- id: exhibit-13-08
+  caption: "Exhibit 13.8 — Statement of Cash Flows for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 19, box_pct: [0.04, 0.06, 0.96, 0.505] }]
+  target_width_in: 6.25
+  anchor_section: 12-free-cash-flow
+- id: exhibit-13-09
+  caption: "Exhibit 13.9 — Statement of Free Cash Flows for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 20, box_pct: [0.04, 0.05, 0.96, 0.715] }]
+  target_width_in: 6.25
+  anchor_section: 12-free-cash-flow
+- id: exhibit-13-10
+  caption: "Exhibit 13.10 — Computing Free Cash Flow From the SCF for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 20, box_pct: [0.04, 0.737, 0.96, 0.90] }]
+  target_width_in: 6.25
+  anchor_section: 12-free-cash-flow
+- id: exhibit-13-11
+  caption: "Exhibit 13.11 — A Comparison of Performance Measures for ABC Company (Wolk, Dodd & Rozycki, 2017, Ch. 13)"
+  render_type: crop
+  segments: [{ page: 21, box_pct: [0.04, 0.095, 0.96, 0.26] }]
+  target_width_in: 6.25
+  anchor_section: 12-free-cash-flow

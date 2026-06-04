@@ -47,6 +47,15 @@ pub struct Exhibit {
     pub target_width_in: f64,
     /// e.g. "06-nonarticulation"
     pub anchor_section: String,
+    /// For RenderType::ResetEquation: the literal equation text.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub reset_text: Option<String>,
+    /// For RenderType::ResetTable: path (workspace-relative) to the markdown table.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub reset_table: Option<String>,
+    /// Display label for equations, e.g. "(13.1)".
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub label: Option<String>,
 }
 
 /// A content section (content/sections/*.md front matter).
@@ -77,6 +86,9 @@ pub struct Rubric {
     pub format_rules: Vec<String>,
     #[serde(default)]
     pub depth_check: Vec<String>,
+    /// Literal substrings (case-insensitive) that MUST appear in the section body.
+    #[serde(default)]
+    pub required_keywords: Vec<String>,
 }
 
 /// One of the lecturer's five hard format gates (plus the identity rule).
@@ -133,6 +145,9 @@ mod tests {
             }],
             target_width_in: 6.25,
             anchor_section: "06-nonarticulation".to_string(),
+            reset_text: None,
+            reset_table: None,
+            label: None,
         };
         let yaml = serde_yaml::to_string(&exhibit).expect("serialize");
         let back: Exhibit = serde_yaml::from_str(&yaml).expect("deserialize");
