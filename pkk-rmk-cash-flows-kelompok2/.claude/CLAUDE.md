@@ -10,8 +10,8 @@ Every figure/table/exhibit from the chapter must be cropped from the PDF and emb
 inline beside the explanation it illustrates.
 
 ## Final Deliverable
-`output/RMK Chap. 13_Kelompok 2_ALK.docx`
-(⚠ filename says "_ALK" although the course is PKK/MNK202 — preserve verbatim, but flag in Phase 1.)
+`output/RMK Chap. 13_Kelompok 2_PKK.docx`
+(Phase 1 decision D1: the originally requested "_ALK" label was confirmed as a course-label error and corrected to "_PKK".)
 
 ## THE FIVE FORMAT GATES (lecturer's rules — HARD validation gates)
 1. Paper size **A4**
@@ -22,8 +22,11 @@ inline beside the explanation it illustrates.
 
 ## EXHIBIT-EMBEDDING REQUIREMENT (first-class, non-negotiable)
 All of **Exhibit 13.1 – 13.11** plus equation displays (13.1 SCFP identity, 13.2 FCF definition)
-must be: cropped from the PDF (pdftoppm + image crate), captioned, sized to the A4 text column,
-and placed adjacent to the text that explains them. Missing/detached/mis-sized = failure.
+must be embedded, captioned, sized to the A4 text column (6.25″ — D4), and placed adjacent to
+the text that explains them. Missing/detached/mis-sized = failure. Treatment (D5/D7):
+**13.4–13.11 cropped** from the PDF at 240 dpi (pdftoppm + image crate); **13.1–13.3 re-set as
+native Word tables** (their source text layout is broken in the SAGE PDF — verified in Phase 1);
+**equations re-set** as centered bold text labeled (13.1)/(13.2).
 
 | Exhibit | Content |
 |---|---|
@@ -89,8 +92,8 @@ and placed adjacent to the text that explains them. Missing/detached/mis-sized =
 - [x] Toolchain verified (with the two documented substitutions)
 - [x] `.claude/CLAUDE.md` created
 - [x] Phase 0: Ingestion Audit — COMPLETE (62 concepts inventoried; 11 exhibits + 2 equations mapped to exact pages/regions; 5 format rules re-confirmed by vision OCR; roster + W-13 syllabus mapping confirmed; synthesis in `analysis/rmk-build-input.md`)
-- [ ] Phase 1: Brainstorming + Visual Companion
-- [ ] Phase 2: Workspace scaffold (git worktree + Cargo workspace)
+- [x] Phase 1: Brainstorming + Visual Companion — COMPLETE (D1–D8 in `specs/design-decisions.md`; spec approved: `specs/rmk-spec.md`. Calibri 12, Indonesian, full-column 6.25″, `_PKK` filename, prose + synthesis tables)
+- [x] Phase 2: Workspace scaffold — COMPLETE (worktree `feat/rmk-cash-flows-kelompok2`; Cargo workspace: shared types + 4 CLI crates; python-docx bridge `tools/build_docx.py` with green `--smoke`; cargo test/clippy/fmt all green)
 - [ ] Phase 3: Content plan
 - [ ] Phase 3.5: Exhibit extraction & crop
 - [ ] Phase 4: Author sections

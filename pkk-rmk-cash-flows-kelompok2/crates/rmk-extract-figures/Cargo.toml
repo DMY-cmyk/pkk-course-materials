@@ -1,0 +1,12 @@
+[package]
+name = "rmk-extract-figures"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared = { path = "../shared" }
+serde = { workspace = true }
+serde_yaml = { workspace = true }
+anyhow = { workspace = true }
+image = { workspace = true }
+clap = { workspace = true }

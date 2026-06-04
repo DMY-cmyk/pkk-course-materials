@@ -1,0 +1,11 @@
+[package]
+name = "rmk-audit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shared = { path = "../shared" }
+serde = { workspace = true }
+serde_yaml = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
