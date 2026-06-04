@@ -1,2 +1,5 @@
 target/
 output/_smoke.docx
+output/_render-check.pdf
+output/_render-thumbs/
+output/build-spec.json

@@ -68,3 +68,9 @@ Two documented substitutions applied in this project:
 1. **Tesseract OCR unavailable** — `tesseract` is not installed on this Windows host. Substitution: Claude native vision (`Read` tool) was used for the two image-OCR tasks in Phase 0 (reading `sources/assignment/Tugas_RMK_Kelompok.png` and `sources/group/Kelompok_2_Member_NIMs.jpeg`). No automated OCR pipeline was involved.
 
 2. **docx skill unavailable on this Windows host** — The `/mnt/skills` docx skill is not present in this environment. Substitution: `python-docx` bridge (`tools/build_docx.py`) was used to construct the final Word document programmatically. This is a proven pattern in this repository (see `ti4/output/build_docx.py`, `ti5/output/build_docx.py`). The bridge renders all sections, tables, images, and equations directly via the `python-docx` API.
+
+## Environment notes
+
+- Opens cleanly in Microsoft Word: VERIFIED (Word COM opened the document, computed 41 pages, and exported the render-check PDF without errors).
+- LibreOffice: NOT INSTALLED on this machine - cross-suite check could not be run locally. The file is standard OOXML produced by python-docx; verify in LibreOffice on another machine if desired.
+- Visual verification: all 41 rendered pages produced via Word->PDF; cover/identity, all 13 exhibits (8 crops, 3 native tables, 2 equations), captions, and adjacency inspected on sampled pages - no exhibit splits across pages, no margin overflows.

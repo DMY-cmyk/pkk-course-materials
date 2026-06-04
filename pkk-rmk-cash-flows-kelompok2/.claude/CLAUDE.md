@@ -94,7 +94,7 @@ native Word tables** (their source text layout is broken in the SAGE PDF — ver
 - [x] Phase 0: Ingestion Audit — COMPLETE (62 concepts inventoried; 11 exhibits + 2 equations mapped to exact pages/regions; 5 format rules re-confirmed by vision OCR; roster + W-13 syllabus mapping confirmed; synthesis in `analysis/rmk-build-input.md`)
 - [x] Phase 1: Brainstorming + Visual Companion — COMPLETE (D1–D8 in `specs/design-decisions.md`; spec approved: `specs/rmk-spec.md`. Calibri 12, Indonesian, full-column 6.25″, `_PKK` filename, prose + synthesis tables)
 - [x] Phase 2: Workspace scaffold — COMPLETE (worktree `feat/rmk-cash-flows-kelompok2`; Cargo workspace: shared types + 4 CLI crates; python-docx bridge `tools/build_docx.py` with green `--smoke`; cargo test/clippy/fmt all green)
-- [ ] Phase 3: Content plan
-- [ ] Phase 3.5: Exhibit extraction & crop
-- [ ] Phase 4: Author sections
-- [ ] Phase 5: Validate & deliver
+- [x] Phase 3: Content plan — COMPLETE (`plans/rmk-plan.md`, 24 tasks, approved)
+- [x] Phase 3.5: Exhibit extraction & crop — COMPLETE (8 crops @240 dpi, visually verified through 3 refinement rounds)
+- [x] Phase 4: Author sections — COMPLETE (15 sections, 62/62 concepts; subagent-driven with two-stage review per batch; 4 critical faithfulness fixes caught by review; rmk-build 139 blocks → docx via bridge)
+- [x] Phase 5: Validate — COMPLETE (rmk-validate ALL GATES PASS: A4 ✓ 1.5 ✓ Calibri 12 ✓ **41 pages** ✓ .docx ✓ identities 6/6 ✓; 13/13 exhibits embedded+captioned+adjacent; Word render visually verified; LibreOffice not installed — noted). Deliverable: `output/RMK Chap. 13_Kelompok 2_PKK.docx` + `output/VALIDATION-REPORT.md`. Awaiting delivery decision.
