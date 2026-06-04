@@ -1,0 +1,51 @@
+---
+id: 12-free-cash-flow
+title: "13. Free Cash Flow dan Ilustrasi ABC Company"
+covers_concepts: ["C-51", "C-52", "C-53", "C-54", "C-55"]
+embeds_exhibits: ["eq-13-2", "exhibit-13-07", "exhibit-13-08", "exhibit-13-09", "exhibit-13-10", "exhibit-13-11"]
+rubric: rubrics/12-free-cash-flow.md
+---
+
+Bagian sebelumnya menutup dengan pertanyaan yang wajar: arus kas apa yang digunakan untuk menentukan nilai intrinsik sebuah firma? Dalam penganggaran modal (*capital budgeting*), analis mendiskontokan arus kas inkremental suatu proyek pada biaya modal yang relevan untuk menguji apakah proyek itu layak diterima. Logika yang sama berlaku di tingkat firma, tetapi arus kas yang dimaksud kini diberi nama khusus: *free cash flows* (FCF). Mulford dan Comiskey memberikan penjelasan paling ringkas yang ada: kata "free" merujuk pada **tiadanya klaim yang lebih senior** (*absence of a superior claim*). FCF adalah kas yang tersedia untuk digunakan tanpa ikatan; membelanjakannya tidak mengganggu kemampuan firma menghasilkan lebih banyak kas di masa depan. Mulford dan Comiskey mendokumentasikan perhatian yang terus meningkat pada FCF di pers keuangan — sebagian besar dipahami sebagai reaksi atas berbagai masalah akuntansi yang terpublikasi luas dan contoh-contoh mencolok dari manajemen laba (*earnings management*) yang marak dalam beberapa tahun terakhir. Mereka memandang popularitas itu dengan positif: meningkatnya perhatian pada FCF merupakan bukti bahwa investor dan kreditor menekankan apa yang benar-benar penting bagi analisis dan valuasi.
+
+Namun Mulford dan Comiskey juga mencatat bahwa ada beberapa definisi FCF yang beredar di kalangan perusahaan maupun pers keuangan. Mengikuti *entity theory* — perspektif yang menempatkan firma sebagai entitas terpisah yang berhutang budi kepada semua penyedia modal, bukan hanya pemegang saham biasa — fokus bab ini tertuju pada *cash flow to the firm*. Sayangnya, FCF tidak dapat diperoleh secara langsung dari Laporan Arus Kas (*Statement of Cash Flows*, SCF) karena SCF disusun berdasarkan definisi yang berbeda. Definisi FCF yang digunakan dalam bab ini adalah sebagai berikut:
+
+{{exhibit:eq-13-2}}
+
+Persamaan (13.2) perlu dibaca komponen demi komponen. *NOPLAT* — *net operating profit less adjusted taxes* — dalam kasus sederhana adalah laba operasi setelah pajak, yaitu ukuran profitabilitas operasi yang bersih dari efek pendanaan. Investasi pada *operating invested capital* lazimnya dipecah lebih lanjut menjadi investasi pada *net operating working capital* (modal kerja operasi neto: perubahan kas operasi, piutang, persediaan, dan kewajiban operasi jangka pendek yang semuanya terkait langsung dengan siklus operasi) dan investasi pada aset tak lancar. Dua hal krusial perlu dicatat: pertama, FCF **tidak memuat beban bunga** karena beban bunga adalah beban pendanaan, bukan beban operasi, dan memasukkannya akan mengotori ukuran murni operasi; kedua, kas operasi diperlakukan sebagai bagian dari *net operating working capital* — setara dengan piutang dan persediaan — bukan sebagai saldo bebas, karena konsisten dengan gagasan firma yang berkelanjutan (*ongoing firm*) yang membutuhkan sejumlah kas minimal untuk operasinya.
+
+Untuk menjembatani konsep dengan praktik, Wolk, Dodd, dan Rozycki membangun ilustrasi lengkap dengan ABC Company, sebuah firma fiktif yang data keuangannya tersedia untuk empat tahun (2004–2007). Konstruksi dimulai dari bahan baku: laporan laba rugi dan neraca. Exhibit 13.7 menyajikan kedua laporan tersebut.
+
+{{exhibit:exhibit-13-07}}
+
+Beberapa angka kunci layak dibaca secara eksplisit sebagai titik acuan: pada tahun 2005 penjualan ABC Company sebesar $6.100, laba operasi $578, beban bunga $(44), dan laba bersih $320; pada 2006 penjualan $6.446, laba operasi $555, dan laba bersih $312; pada 2007 penjualan $6.789, laba operasi $587, dan laba bersih $331. Total aset bergerak dari $4.740 pada 2004 menjadi $5.294 pada 2007 — mencerminkan firma yang tumbuh moderat namun konsisten. Dari dua laporan itulah SCF dan laporan FCF dikonstruksi secara mekanis.
+
+{{exhibit:exhibit-13-08}}
+
+Exhibit 13.8 menampilkan SCF yang dibangun dari Exhibit 13.7. Untuk tahun 2005 CFO tercatat $527, CFI $(277), dan CFF $(306), menghasilkan penurunan kas neto $(56) sehingga saldo kas akhir menjadi $244. Pada 2006 CFO turun menjadi $466 sementara CFI meningkat menjadi $(309), dan karena CFF hanya $(78) — jauh lebih kecil dari tahun sebelumnya — kas justru meningkat $79 menjadi $323. Pada 2007 CFO $434, CFI $(360), CFF $(58), dan kas akhir $339. SCF ini adalah titik awal yang akan digunakan untuk menghitung FCF, tetapi seperti yang segera akan terlihat, perlu beberapa penyesuaian karena SCF "terkontaminasi" oleh efek keputusan pendanaan.
+
+{{exhibit:exhibit-13-09}}
+
+Exhibit 13.9 merupakan laporan FCF yang dikonstruksi langsung dari konsep Persamaan (13.2). Alur untuk tahun 2005 dapat diikuti baris demi baris: NOPLAT $346 ditambah penyusutan dan amortisasi menghasilkan *gross cash flow* $561; dari situ dikurangi total investasi $(229) menghasilkan *free cash flows from operating assets* sebesar $332. Di sisi klaim, FCF $332 ini didistribusikan kepada dua pihak: arus kas setelah pajak kepada kreditur (utang berbunga) sebesar $174 dan arus kas kepada pemegang saham biasa sebesar $158 — keduanya berjumlah tepat $332. Pada 2006 FCF turun drastis menjadi hanya $99 (NOPLAT $333, *gross cash flow* $553, total investasi $(454)); dan pada 2007 menjadi $80 (NOPLAT $353, *gross cash flow* $581, total investasi $(501)). Penurunan tajam ini bukan cermin memburuknya operasi, melainkan mencerminkan investasi yang semakin agresif — firma mengorbankan FCF jangka pendek demi pertumbuhan aset jangka panjang.
+
+Langkah berikutnya adalah membuktikan bahwa angka FCF yang sama bisa diperoleh dari SCF yang sudah ada, sehingga pengguna yang hanya memiliki laporan standar tetap bisa menghitung FCF tanpa harus menyusun ulang laporan FCF dari awal.
+
+{{exhibit:exhibit-13-10}}
+
+Exhibit 13.10 menunjukkan jembatan itu secara rinci. Untuk tahun 2005: mulai dari CFO $527, **tambahkan kembali** beban bunga setelah pajak $26 — ini membalikkan "kontaminasi pendanaan" yang telah dihisap CFO karena standar SCF memasukkan bunga sebagai arus operasi; karena kas operasi 2005 justru **turun** $56 (konsisten dengan penurunan kas neto $(56) yang tercatat pada Exhibit 13.8), baris "Less: Increase in operating cash" bernilai negatif dan efeknya **menambah** FCF, bukan mengurangi — firma tidak menanamkan kas tambahan ke dalam *invested capital*, sebaliknya melepaskan sebagian; kemudian **kurangkan** arus investasi neto $277 — sehingga FCF = $527 + $26 + $56 − $277 = **$332**, angka yang persis sama dengan Exhibit 13.9. Baris "Less: Increase in operating cash" membawa tandanya sendiri: nilai positif (kenaikan kas operasi sungguhan) dikurangkan karena menambah *invested capital*; nilai negatif (penurunan kas operasi) justru ditambahkan. Pada 2006 nilainya $(79) — kas operasi *naik* $79, sehingga dikurangkan: $466 + $21 − $79 − $309 = $99; pada 2007 $(16) dengan logika yang sama: $434 + $22 − $16 − $360 = $80. Koreksi penyesuaian ini sederhana tetapi kritis: tanpanya, CFO akan secara sistematik melebihkan atau mengurangi estimasi FCF.
+
+Dengan FCF untuk tiga tahun telah dikonstruksi melalui dua jalur yang konsisten, Exhibit 13.11 menempatkan FCF dalam konteks empat ukuran kinerja yang lebih luas.
+
+{{exhibit:exhibit-13-11}}
+
+Exhibit 13.11 merangkum empat ukuran valuasi/kinerja ABC Company untuk 2005–2007 beserta nilai numeriknya: laba bersih $320 / $312 / $331; CFO $527 / $466 / $434; CFI $(277) / $(309) / $(360); CFO − CFI $250 / $157 / $74; FCF $332 / $99 / $80. Wolk, Dodd, dan Rozycki menegaskan bahwa pilihan di antara keempat ukuran ini **bergantung pada waktu, sumber daya, dan tujuan spesifik** pengguna. Bagi yang hanya memiliki sedikit waktu atau akses, laba bersih ($320 pada 2005) adalah titik awal yang cepat. Untuk mendapatkan pemahaman yang lebih dalam tentang operasi sekaligus menilai kualitas laba — apakah laba bersih didukung oleh arus kas nyata atau hanya artefak akrual — pengguna dapat beralih ke CFO ($527). Untuk menghindari potensi masalah klasifikasi (biaya operasi yang dikapitalisasi sebagai aset, sehingga berpindah dari CFO ke CFI) sekaligus menangkap kemampuan kas neto firma secara keseluruhan, CFO − CFI ($250) menjadi ukuran yang lebih konservatif. Akhirnya, karena CFO "terkontaminasi" beban bunga yang merupakan beban pendanaan bukan operasi, dan karena kas operasi harus diperlakukan sebagai bagian dari *invested capital*, FCF ($332) adalah ukuran yang paling murni untuk menangkap kinerja operasi yang sesungguhnya. Investor dapat mengestimasi nilai intrinsik firma dengan mendiskontokan prakiraan FCF pada *weighted average cost of capital* (*WACC*) — biaya modal rata-rata tertimbang yang merefleksikan biaya ekuitas dan utang setelah pajak, tertimbang sesuai proporsi struktur modal. Namun Wolk, Dodd, dan Rozycki menutup diskusi ini dengan catatan yang jujur: "the real world is never simple." Kini tersedia empat ukuran kinerja yang berpotensi memberikan pandangan berbeda tentang firma yang sama — dan tidak ada satu pun yang sepenuhnya sempurna.
+
+Tabel di bawah ini merangkum keempat ukuran dalam tiga dimensi evaluatif sebagai panduan praktis dalam memilih ukuran yang tepat sesuai konteks analisis.
+
+| Ukuran | Apa yang ditangkap | Keterbatasan utama |
+|---|---|---|
+| Laba bersih | Profitabilitas akuntansi setelah semua beban termasuk bunga dan pajak; dasar EPS dan dividen | Rentan terhadap akrual dan pilihan kebijakan akuntansi; tidak mencerminkan arus kas nyata |
+| CFO | Arus kas aktual dari operasi; lebih sulit dimanipulasi daripada laba bersih | "Terkontaminasi" beban bunga (pendanaan) yang diklasifikasikan sebagai aktivitas operasi per standar SCF |
+| CFO − CFI | Arus kas neto setelah keputusan investasi; menangkap kemampuan kas neto keseluruhan | Rentan terhadap salah klasifikasi beban operasi sebagai investasi (*earnings management* melalui kapitalisasi) |
+| *Free cash flow* (FCF) | Arus kas murni operasi setelah investasi, bersih dari pendanaan; dasar DCF dengan WACC | Tidak tersedia langsung dari SCF; memerlukan penyesuaian dan lebih banyak informasi tambahan |
+
