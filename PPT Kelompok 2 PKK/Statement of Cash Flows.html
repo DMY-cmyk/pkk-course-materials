@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statement of Cash Flows — Kelompok 2</title>
+<link rel="stylesheet" href="deck.css">
+<style>
+  html,body{ margin:0; background:#0d141d; }
+</style>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+
+  <!-- ============ SLIDE 1 — TITLE ============ -->
+  <section data-label="Judul">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-blue-d b2"></div>
+      <div class="blob b-blue b3"></div>
+      <div class="blob b-warm b4"></div>
+    </div>
+    <div class="pill">
+      <span>STIE YKPN</span><span class="dot"></span>
+      <span>PKK</span><span class="dot"></span>
+      <span>2026</span>
+    </div>
+    <img class="logo" src="assets/stie-logo.png" alt="STIE YKPN">
+    <div class="slide" style="justify-content:center; padding-top:120px;">
+      <h1 class="display h-xl anim" style="font-size:150px; max-width:1300px;">Statement<br>of Cash Flows</h1>
+      <div class="accent-bar anim d1" style="margin:46px 0 34px;"></div>
+      <p class="subhead anim d2" style="font-size:34px; color:var(--blue-900); letter-spacing:.02em;">“Kas adalah fakta, laba adalah opini.”</p>
+      <div class="anim d3" style="margin-top:64px; display:flex; gap:34px; align-items:flex-start; max-width:1300px;">
+        <span class="kicker" style="font-size:25px; color:var(--ink); white-space:nowrap; padding-top:2px;">Kelompok&nbsp;2</span>
+        <p class="body" style="font-size:24px; max-width:1080px; margin:0; line-height:1.6;">
+          Satriyo Nugroho (122501039) · Mario Da Costa (122501048) · Amelda Putri Zhany Wiguna (122501067) · Ahmad Ramadhan (122501078) · Nida Nur Cahyati (122501084) · Priska Putri Parungky (122501094)<br>
+          <span style="color:var(--ink-faint); font-size:20px;">Sumber: Wolk, Dodd &amp; Rozycki (2017), <em>Accounting Theory</em>, Bab 13</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 2 — JANJI PEMBUKA ============ -->
+  <section data-label="Janji Pembuka">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm b4"></div>
+      <div class="blob b-blue-d" style="width:760px;height:640px;right:-220px;bottom:-260px;opacity:.8;"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="ghost br" style="bottom:-120px;">02</div>
+    <div class="slide" style="justify-content:center;">
+      <h2 class="display h-l anim" style="max-width:1100px;">Apa yang akan<br>Anda kuasai</h2>
+      <p class="subhead anim d1" style="margin:38px 0 26px; max-width:980px;">Janji pembuka —<br>30 menit dari sekarang</p>
+      <p class="body anim d2" style="max-width:880px;">Di akhir presentasi ini, Anda mampu membaca <strong>Statement of Cash Flows</strong> secara utuh — cukup tajam untuk mendeteksi lubang kas <strong>$12 miliar WorldCom</strong> empat tahun sebelum kebangkrutannya.</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 3 — VISI: SCFP -> SCF ============ -->
+  <section data-label="Visi SCFP ke SCF">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm" style="width:380px;height:320px;left:-120px;top:120px;opacity:.4;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="ghost tr blue" style="font-size:360px;">03</div>
+    <div class="slide" style="flex-direction:row; align-items:center; gap:90px; justify-content:space-between;">
+      <div style="max-width:640px;">
+        <h2 class="display h-m anim">Laba menyesatkan,<br>kas tidak</h2>
+        <p class="subhead sm anim d1" style="margin:46px 0 22px; color:var(--ink);">Visi: dari SCFP ke SCF</p>
+        <p class="body anim d2">1971 — <strong>APB Opinion No. 19</strong> mewajibkan SCFP (“funds flow”) sebagai laporan perubahan posisi keuangan.</p>
+      </div>
+      <div class="gcards anim d2">
+        <div class="gcard"><span class="gn">01</span><span class="gt"><strong>1987 — SFAS No. 95</strong>: SCF menggantikan SCFP</span></div>
+        <div class="gcard"><span class="gn">02</span><span class="gt">Pelaporan kas <strong>melengkapi</strong> laba akrual</span></div>
+        <div class="gcard"><span class="gn">03</span><span class="gt">“Cash is cash is cash” — kas tak bisa direkayasa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 4 — SCFP SOURCES & USES ============ -->
+  <section data-label="SCFP Sources & Uses">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:-130px;top:-120px;opacity:.5;"></div>
+      <div class="blob b-blue b1" style="left:60px;"></div>
+      <div class="blob b-blue-d" style="width:720px;height:600px;right:-240px;bottom:-240px;opacity:.75;"></div>
+    </div>
+    <div class="ghost br" style="bottom:-110px;">04</div>
+    <div class="slide" style="flex-direction:row; gap:80px; justify-content:space-between; align-items:center;">
+      <div style="max-width:620px;">
+        <h2 class="display h-m anim">SCFP:<br>Sources &amp; Uses</h2>
+        <p class="kicker anim d1" style="margin:30px 0 28px; font-size:22px;">Cikal bakal Statement of Cash Flows</p>
+        <ul class="bul anim d2">
+          <li><strong>Sources</strong> = transaction credits: kenaikan ekuitas, penurunan aset</li>
+          <li><strong>Uses</strong> = transaction debits: penurunan ekuitas, kenaikan aset</li>
+          <li>All-inclusive: semua perubahan posisi keuangan (APB No. 19)</li>
+          <li>Laporan derivatif — turunan income statement &amp; balance sheet</li>
+        </ul>
+      </div>
+      <div class="exhibit anim d3" style="width:560px;">
+        <div class="ex-title">Exhibit 13.1 — Standard Format of the Statement of Changes in Financial Position</div>
+        <div style="font-size:15px; color:var(--ink); line-height:1.5;">
+          <p style="font-weight:700; margin:4px 0 6px; color:var(--blue-700);">Sources of Resources <span style="font-weight:400;color:var(--ink-faint)">(transaction credits)</span></p>
+          <ol style="margin:0 0 14px; padding-left:22px; color:var(--ink-soft);">
+            <li>Increases to the “fund balance” accounts
+              <div style="padding-left:8px;">a. From net income<br>b. From other sources</div></li>
+            <li>Other sources of resources</li>
+            <li>Decrease, if any, in the fund balance for the period</li>
+          </ol>
+          <p style="font-weight:700; margin:4px 0 6px; color:var(--blue-700);">Uses of Resources <span style="font-weight:400;color:var(--ink-faint)">(transaction debits)</span></p>
+          <ol style="margin:0; padding-left:22px; color:var(--ink-soft);">
+            <li>Decreases to the “fund balance” accounts
+              <div style="padding-left:8px;">a. From net losses<br>b. From other sources</div></li>
+            <li>Other uses of resources</li>
+            <li>Increase, if any, in the fund balance for the period</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 5 — MOTIVASI & TUJUAN (section) ============ -->
+  <section data-label="Motivasi & Tujuan SCF">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b3"></div>
+      <div class="blob b-warm" style="width:360px;height:300px;left:120px;top:-100px;opacity:.4;"></div>
+    </div>
+    <div class="sidepanel left" style="width:300px;">
+      <div class="pnum" style="top:-30px; left:30px; font-size:300px;">05</div>
+      <div class="capsule" style="left:64px; top:330px; width:64px; height:430px;"></div>
+    </div>
+    <div class="slide" style="padding-left:420px; justify-content:center;">
+      <div class="statgrid anim" style="margin-bottom:70px;">
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">01</span><span class="txt">Modal kerja lemah: deferred items, konversi lambat, biaya historis</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">02</span><span class="txt">SFAC No. 1: menilai arus kas masa depan</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">03</span><span class="txt">SFAC No. 5: likuiditas, fleksibilitas, profitabilitas, risiko</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">04</span><span class="txt">Manfaat: umpan balik kas, kualitas laba, komparabilitas</span></div></div>
+      </div>
+      <h2 class="display h-m anim d2" style="max-width:760px;">Mengapa kas,<br>bukan modal kerja?</h2>
+      <p class="subhead sm anim d3" style="margin-top:30px; color:var(--ink-soft);">Motivasi &amp; tujuan SCF (SFAC No. 1 &amp; 5)</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 6 — STRUKTUR / TIGA AKTIVITAS (section) ============ -->
+  <section data-label="Tiga Aktivitas">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b3"></div>
+      <div class="blob b-warm" style="width:360px;height:300px;left:140px;top:-110px;opacity:.4;"></div>
+    </div>
+    <div class="sidepanel left" style="width:300px;">
+      <div class="pnum" style="top:-30px; left:18px; font-size:300px;">06</div>
+      <div class="capsule" style="left:64px; top:330px; width:64px; height:430px;"></div>
+    </div>
+    <div class="slide" style="padding-left:420px; justify-content:center;">
+      <div class="statgrid anim" style="margin-bottom:70px;">
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">01</span><span class="txt"><strong style="color:var(--ink)">Operasi</strong> — kas dari bisnis inti</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">02</span><span class="txt"><strong style="color:var(--ink)">Investasi</strong> — perolehan &amp; pelepasan aset jangka panjang</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">03</span><span class="txt"><strong style="color:var(--ink)">Pendanaan</strong> — utang dan ekuitas</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">04</span><span class="txt">Kas = kas + cash equivalents; transaksi nonkas diungkap terpisah</span></div></div>
+      </div>
+      <h2 class="display h-m anim d2" style="max-width:760px;">Tiga aktivitas,<br>satu cerita</h2>
+      <p class="subhead sm anim d3" style="margin-top:30px; color:var(--ink-soft);">Struktur Statement of Cash Flows</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 7 — DIRECT METHOD ============ -->
+  <section data-label="Direct Method">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:-140px;top:-130px;opacity:.5;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="ghost br" style="bottom:-100px;">07</div>
+    <div class="slide" style="flex-direction:row; gap:70px; justify-content:space-between; align-items:center;">
+      <div style="max-width:600px;">
+        <h2 class="display h-l anim" style="font-size:96px; line-height:.9;">Direct<br>Method</h2>
+        <p class="kicker anim d1" style="margin:26px 0 24px; font-size:21px;">Kas literal — per klasifikasi income statement</p>
+        <ul class="bul anim d2" style="max-width:560px;">
+          <li>Penerimaan pelanggan, pembayaran pemasok, pajak</li>
+          <li>Disukai FASB — lebih informatif, namun lebih mahal disusun</li>
+          <li>Wajib disertai <strong>rekonsiliasi ke net income</strong></li>
+        </ul>
+      </div>
+      <div class="exhibit anim d3" style="width:600px;">
+        <div class="ex-title">Exhibit 13.2 — SCF Metode Langsung · Company M (SFAS No. 95)</div>
+        <table class="fin">
+          <tr class="sec"><td colspan="2">Cash flows from operating activities</td></tr>
+          <tr><td>Cash received from customers</td><td>$13,850</td></tr>
+          <tr><td>Cash paid to suppliers and employees</td><td class="neg">(12,000)</td></tr>
+          <tr><td>Dividend received from affiliate</td><td>20</td></tr>
+          <tr><td>Interest received</td><td>55</td></tr>
+          <tr><td>Interest paid (net of amount capitalized)</td><td class="neg">(220)</td></tr>
+          <tr><td>Income taxes paid</td><td class="neg">(325)</td></tr>
+          <tr><td>Insurance proceeds received</td><td>15</td></tr>
+          <tr><td>Cash paid to settle patent lawsuit</td><td class="neg">(30)</td></tr>
+          <tr class="tot"><td>Net cash provided by operating activities</td><td>$1,365</td></tr>
+          <tr class="sec"><td colspan="2">Cash flows from investing activities</td></tr>
+          <tr><td>Proceeds from sale of facility</td><td>$6,001</td></tr>
+          <tr><td>Payment received on note for sale of plant</td><td>150</td></tr>
+          <tr><td>Capital expenditures</td><td class="neg">(1,000)</td></tr>
+          <tr><td>Purchase of Company S, net of cash acquired</td><td class="neg">(925)</td></tr>
+          <tr class="tot"><td>Net cash used in investing activities</td><td class="neg">$(1,175)</td></tr>
+          <tr class="sec"><td colspan="2">Cash flows from financing activities</td></tr>
+          <tr><td>Net borrowings under line-of-credit</td><td>$300</td></tr>
+          <tr><td>Principal payments under capital lease</td><td class="neg">(125)</td></tr>
+          <tr><td>Issuance of long-term debt</td><td>400</td></tr>
+          <tr><td>Issuance of common stock</td><td>500</td></tr>
+          <tr><td>Dividends paid</td><td class="neg">(200)</td></tr>
+          <tr class="tot"><td>Net cash provided by financing activities</td><td>$875</td></tr>
+          <tr class="grand"><td>Net increase in cash &amp; equivalents</td><td>$1,665</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 8 — INDIRECT METHOD ============ -->
+  <section data-label="Indirect Method">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:-140px;top:-130px;opacity:.5;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="ghost br" style="bottom:-100px;">08</div>
+    <div class="slide" style="flex-direction:row; gap:70px; justify-content:space-between; align-items:center;">
+      <div style="max-width:600px;">
+        <h2 class="display h-l anim" style="font-size:96px; line-height:.9;">Indirect<br>Method</h2>
+        <p class="kicker anim d1" style="margin:26px 0 24px; font-size:21px;">Mudah dibuat, sulit dibaca</p>
+        <ul class="bul anim d2" style="max-width:560px;">
+          <li>Mulai dari <strong>net income</strong>, disesuaikan item nonkas</li>
+          <li>Dipilih mayoritas besar perusahaan AS — alasan biaya</li>
+          <li>McEnroe: <strong>56%</strong> pengguna justru memilih direct method</li>
+        </ul>
+      </div>
+      <div class="exhibit anim d3" style="width:600px;">
+        <div class="ex-title">Exhibit 13.3 — Rekonsiliasi Net Income ke Kas Operasi (Indirect)</div>
+        <table class="fin">
+          <tr class="sec"><td>Net income</td><td>$760</td></tr>
+          <tr class="sec"><td colspan="2" style="font-weight:700;">Penyesuaian item nonkas:</td></tr>
+          <tr><td>Depreciation and amortization</td><td>$445</td></tr>
+          <tr><td>Provision for losses on receivables</td><td>200</td></tr>
+          <tr><td>Gain on sale of facility</td><td class="neg">(80)</td></tr>
+          <tr><td>Undistributed earnings of affiliate</td><td class="neg">(25)</td></tr>
+          <tr><td>Installment note received — sale of inventory</td><td>100</td></tr>
+          <tr class="sec"><td colspan="2" style="font-weight:700;">Perubahan aset &amp; liabilitas operasi:</td></tr>
+          <tr><td>Increase in accounts receivable</td><td class="neg">(215)</td></tr>
+          <tr><td>Decrease in inventory</td><td>205</td></tr>
+          <tr><td>Increase in prepaid expenses</td><td class="neg">(25)</td></tr>
+          <tr><td>Decrease in AP &amp; accrued expenses</td><td class="neg">(250)</td></tr>
+          <tr><td>Increase in interest &amp; taxes payable</td><td>50</td></tr>
+          <tr><td>Increase in deferred taxes</td><td>150</td></tr>
+          <tr><td>Increase in other liabilities</td><td>50</td></tr>
+          <tr class="tot"><td>Total adjustments</td><td>$605</td></tr>
+          <tr class="grand"><td>Net cash provided by operating activities</td><td>$1,365</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 9 — NONARTIKULASI / 3M ============ -->
+  <section data-label="Nonartikulasi 3M">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm b4"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="ghost br" style="bottom:-120px;">09</div>
+    <div class="slide" style="justify-content:center;">
+      <h2 class="display h-l anim" style="font-size:104px;">Nonartikulasi</h2>
+      <p class="subhead anim d1" style="margin:24px 0 24px; font-size:36px; max-width:1000px;">Ketika SCF tak cocok dengan neraca — kasus 3M</p>
+      <ul class="bul anim d2" style="max-width:1040px; margin-bottom:34px;">
+        <li>Penyesuaian modal kerja di SCF ≠ perubahan neraca — <strong>75%</strong> sampel (Bahnson, Miller &amp; Budge)</li>
+        <li>3M: piutang selisih <strong>300%</strong> — bahkan tandanya berbeda</li>
+        <li>Sebab: akuisisi tengah tahun, transaksi nonkas, reklasifikasi</li>
+      </ul>
+      <div class="exhibit anim d3" style="width:1040px;">
+        <div class="ex-title">Exhibit 13.4 — Comparison of Balance Sheet Changes &amp; Working Capital Adjustments for 3M Company ($000,000)</div>
+        <table class="fin">
+          <thead><tr><th></th><th>2005</th><th>2004</th><th>Change in Balance<br>Sheet Account</th><th>Working Capital<br>Adjustment in SCF</th><th>Percentage<br>Difference</th></tr></thead>
+          <tbody>
+            <tr><td>Accounts receivable</td><td>$2,838</td><td>$2,792</td><td class="neg">$(46)</td><td class="neg">$(184)</td><td><strong>300.0%</strong></td></tr>
+            <tr><td>Inventories</td><td>$2,162</td><td>$1,897</td><td class="neg">$(265)</td><td class="neg">$(294)</td><td>10.9%</td></tr>
+            <tr><td>Accounts payable</td><td>$1,256</td><td>$1,168</td><td>$88</td><td>$113</td><td>28.4%</td></tr>
+          </tbody>
+        </table>
+        <p class="ex-src">Source: 3M Company 10-K annual report for fiscal year December 31, 2005, pp. 38, 40.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 10 — BUNGA & DIVIDEN (section) ============ -->
+  <section data-label="Bunga & Dividen">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b3"></div>
+      <div class="blob b-warm" style="width:360px;height:300px;left:140px;top:-110px;opacity:.4;"></div>
+    </div>
+    <div class="sidepanel left" style="width:300px;">
+      <div class="pnum" style="top:-20px; left:6px; font-size:300px;">10</div>
+      <div class="capsule" style="left:64px; top:330px; width:64px; height:430px;"></div>
+    </div>
+    <div class="slide" style="padding-left:420px; justify-content:center;">
+      <div class="statgrid anim" style="margin-bottom:66px;">
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">01</span><span class="txt">SFAS 95: bunga &amp; dividen <strong style="color:var(--ink)">diterima</strong> = operasi; finance: investasi</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">02</span><span class="txt">Bunga <strong style="color:var(--ink)">dibayar</strong> = operasi; 3 anggota FASB dissent: pendanaan</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">03</span><span class="txt">Proprietary (ikut income statement) vs entity theory</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num">04</span><span class="txt">IAS 7: fleksibel, asalkan konsisten</span></div></div>
+      </div>
+      <h2 class="display h-m anim d2" style="max-width:820px;">Bunga &amp; dividen<br>di mana?</h2>
+      <p class="subhead sm anim d3" style="margin-top:30px; color:var(--ink-soft);">Masalah klasifikasi SFAS No. 95 vs IAS 7</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 11 — SATU PREMIUM, EMPAT CARA ============ -->
+  <section data-label="Premium Obligasi">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:-140px;top:-130px;opacity:.5;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="ghost br" style="bottom:-110px;">11</div>
+    <div class="slide" style="justify-content:center;">
+      <h2 class="display h-l anim" style="font-size:92px;">Satu premium, empat cara</h2>
+      <p class="kicker anim d1" style="margin:26px 0 30px; font-size:22px;">Premium obligasi &amp; fleksibilitas SFAS No. 104</p>
+      <p class="body anim d2" style="max-width:1080px; margin-bottom:34px;">Obligasi 8% par <strong>$10.000</strong> terjual <strong>$11.000</strong> — premium <strong>$1.000</strong> dilaporkan ke mana? Vent dkk. menemukan empat metode dalam praktik.</p>
+      <div class="anim d3" style="display:grid; grid-template-columns:repeat(4,1fr); gap:22px; max-width:1320px;">
+        <div class="gcard" style="flex-direction:column; align-items:flex-start; min-height:200px; gap:14px;">
+          <span class="gn">01</span><span class="gt">Premium → <strong>Pendanaan</strong>. Operasi murni bunga kas.<br><em style="opacity:.85">Dipilih penulis ✓</em></span>
+        </div>
+        <div class="gcard" style="flex-direction:column; align-items:flex-start; min-height:200px; gap:14px;">
+          <span class="gn">02</span><span class="gt">Seluruh penerimaan obligasi → Pendanaan; beban bunga penuh di operasi.</span>
+        </div>
+        <div class="gcard" style="flex-direction:column; align-items:flex-start; min-height:200px; gap:14px;">
+          <span class="gn">03</span><span class="gt">Amortisasi premium mengurangi bunga kas di <strong>operasi</strong>.</span>
+        </div>
+        <div class="gcard" style="flex-direction:column; align-items:flex-start; min-height:200px; gap:14px;">
+          <span class="gn">04</span><span class="gt">Premium disebar — campuran operasi &amp; pendanaan.</span>
+        </div>
+      </div>
+      <p class="body anim d4" style="max-width:1080px; margin-top:30px; font-size:22px;">SFAS 104: fleksibilitas hedging — trade-off <strong>“fineness”</strong> vs komparabilitas. <span style="color:var(--ink-faint)">(Exhibit 13.5)</span></p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 12 — SURPRISE: INGRAM & LEE ============ -->
+  <section data-label="Surprise Ingram & Lee">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm" style="width:380px;height:320px;left:-120px;top:160px;opacity:.45;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="ghost tr blue" style="font-size:340px;">12</div>
+    <div class="slide" style="flex-direction:row; gap:80px; justify-content:space-between; align-items:center;">
+      <div style="max-width:640px;">
+        <h2 class="display h-m anim" style="font-size:72px;">Surprise:<br>Ingram &amp; Lee</h2>
+        <p class="subhead sm anim d1" style="margin:34px 0 22px; color:var(--ink);">Firma bertumbuh, kas operasi justru menurun</p>
+        <p class="body anim d2">Ingram &amp; Lee (±1.000 firma): laba naik, <strong>CFO turun</strong> — piutang &amp; inventori membengkak. Pergeseran klasifikasi pun marak:</p>
+      </div>
+      <div class="gcards anim d2">
+        <div class="gcard"><span class="gn">01</span><span class="gt"><strong>Tyco</strong>: kontrak dealer dicatat sebagai “akuisisi”</span></div>
+        <div class="gcard"><span class="gn">02</span><span class="gt"><strong>GM</strong>: CFO $7,6 M vs $3,5 M jika notes receivable direklasifikasi</span></div>
+        <div class="gcard"><span class="gn">03</span><span class="gt"><strong>Navistar</strong>: justru reklasifikasi ke operasi — aturan fleksibel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 13 — WORLDCOM TERLIHAT SEHAT ============ -->
+  <section data-label="WorldCom Terlihat Sehat">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm b4"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="ghost br" style="bottom:-120px;">13</div>
+    <div class="slide" style="justify-content:center;">
+      <h2 class="display h-l anim" style="font-size:96px;">WorldCom terlihat sehat</h2>
+      <p class="subhead anim d1" style="margin:24px 0 24px; font-size:36px; max-width:1020px;">Ketegangan: laba positif, kas tersembunyi</p>
+      <ul class="bul anim d2" style="max-width:1040px; margin-bottom:34px;">
+        <li>Laba bersih positif <strong>tiga tahun beruntun</strong> sebelum bangkrut</li>
+        <li>Beban operasi dikapitalisasi → CFO tampak kuat</li>
+        <li>21 Juli 2002: petisi <strong>Chapter 11</strong></li>
+      </ul>
+      <div class="exhibit anim d3" style="width:1100px;">
+        <div class="ex-title">Exhibit 13.6 — Item terpilih SCF WorldCom ($000,000)</div>
+        <table class="fin">
+          <thead><tr><th>As Reported</th><th>12/31/98</th><th>12/31/99</th><th>12/31/00</th><th>12/31/01</th></tr></thead>
+          <tbody>
+            <tr><td>Net income (loss)</td><td class="neg">$(2,669)</td><td>$4,013</td><td>$4,153</td><td>$1,501</td></tr>
+            <tr><td>Cash flow from operating activities (CFO)</td><td>$4,085</td><td>$11,005</td><td>$7,666</td><td>$7,994</td></tr>
+            <tr><td>Cash used in investing activities (CFI)</td><td class="neg">(9,433)</td><td class="neg">(9,555)</td><td class="neg">(14,385)</td><td class="neg">(9,690)</td></tr>
+            <tr class="tot"><td>CFO − CFI</td><td class="neg">$(5,348)</td><td>$1,450</td><td class="neg">$(6,719)</td><td class="neg">$(1,696)</td></tr>
+            <tr class="grand"><td>Cumulative CFO − CFI</td><td class="neg">$(5,348)</td><td class="neg">$(3,898)</td><td class="neg">$(10,617)</td><td class="neg">$(12,313)</td></tr>
+          </tbody>
+        </table>
+        <p class="ex-src">Source: Mergent Online (http://www.mergentonline.com), accessed November 23, 2006.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 14 — -$12,3 MILIAR (big stat) ============ -->
+  <section data-label="Minus 12,3 Miliar">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm" style="width:380px;height:320px;right:340px;top:-120px;opacity:.5;"></div>
+    </div>
+    <div class="sidepanel right" style="width:360px;">
+      <div class="pnum" style="bottom:-70px; left:30px; font-size:340px;">14</div>
+      <div class="capsule" style="right:70px; top:60px; width:64px; height:430px;"></div>
+    </div>
+    <div class="slide" style="padding-right:440px; justify-content:center;">
+      <div class="anim" style="display:flex; align-items:baseline; gap:24px;">
+        <span class="bigstat" style="font-size:210px;">−$12,3</span>
+        <span class="display" style="font-size:78px; color:var(--blue-700);">Miliar</span>
+      </div>
+      <p class="body anim d1" style="margin:18px 0 56px; font-size:22px;">Kumulatif CFO − CFI WorldCom per 31 Desember 2001 (Exhibit 13.6)</p>
+      <h2 class="display h-m anim d2" style="font-size:50px;">SCF utuh memperingatkan</h2>
+      <p class="subhead sm anim d3" style="margin:36px 0 18px; color:var(--ink);">Resolusi: baca tiga bagian sebagai satu kesatuan</p>
+      <ul class="bul anim d4" style="max-width:860px;">
+        <li>CFO − CFI negatif pada <strong>3 dari 4</strong> tahun terakhir</li>
+        <li>Pelajaran: jangan baca CFO saja — tiga bagian SCF satu kesatuan</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 15 — FREE CASH FLOW ============ -->
+  <section data-label="Free Cash Flow">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:-140px;top:-130px;opacity:.5;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="ghost br" style="bottom:-100px;">15</div>
+    <div class="slide" style="flex-direction:row; gap:80px; justify-content:space-between; align-items:center;">
+      <div style="max-width:620px;">
+        <h2 class="display h-l anim" style="font-size:100px; line-height:.9;">Free<br>Cash Flow</h2>
+        <p class="kicker anim d1" style="margin:28px 0 26px; font-size:20px; max-width:560px;">FCF = NOPLAT − investasi pada operating invested capital</p>
+        <ul class="bul anim d2" style="max-width:560px;">
+          <li><strong>Buffett</strong>: berapa nilainya? mampukah membayar kewajiban? seberapa baik manajemennya?</li>
+          <li>“Free” = bebas digunakan; beban bunga tidak termasuk</li>
+        </ul>
+      </div>
+      <div class="exhibit anim d3" style="width:560px; padding:34px 38px;">
+        <div class="ex-title" style="border:none; padding:0; margin-bottom:24px; font-size:19px;">Anatomi Free Cash Flow</div>
+        <div style="display:flex; flex-direction:column; gap:0;">
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid var(--line);">
+            <span style="font-size:19px; font-weight:700; color:var(--ink);">NOPLAT</span>
+            <span style="font-size:15px; color:var(--ink-soft); text-align:right; max-width:300px;">Laba operasi setelah pajak — sebelum beban bunga</span>
+          </div>
+          <div style="display:flex; justify-content:center; padding:8px 0;"><span style="font-family:var(--font-mono); font-size:30px; color:var(--blue-700);">−</span></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0; border-bottom:1px solid var(--line);">
+            <span style="font-size:19px; font-weight:700; color:var(--ink);">Investasi pada<br>Operating Capital</span>
+            <span style="font-size:15px; color:var(--ink-soft); text-align:right; max-width:300px;">Belanja modal + tambahan modal kerja operasi</span>
+          </div>
+          <div style="display:flex; justify-content:center; padding:8px 0;"><span style="font-family:var(--font-mono); font-size:30px; color:var(--blue-700);">=</span></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:18px 24px; border-radius:6px; background:var(--grad); color:#fff;">
+            <span style="font-size:21px; font-weight:800;">FREE CASH FLOW</span>
+            <span style="font-size:14px; max-width:230px; text-align:right; opacity:.92;">Kas bebas untuk kreditur &amp; pemegang saham</span>
+          </div>
+        </div>
+        <p class="ex-src" style="margin-top:18px;">Konteks: Exhibit 13.7 — Income statement &amp; balance sheet ABC Company.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 16 — ABC: DARI SCF KE FCF ============ -->
+  <section data-label="ABC SCF ke FCF">
+    <div class="bg bg-soft">
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-warm b4"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="slide" style="flex-direction:row; gap:80px; justify-content:space-between; align-items:center;">
+      <div style="max-width:640px;">
+        <h2 class="display h-m anim" style="font-size:62px;">ABC: dari SCF ke FCF</h2>
+        <p class="subhead sm anim d1" style="margin:30px 0 26px; color:var(--ink);">CFO turun, FCF anjlok — di balik laba yang stabil</p>
+        <ul class="bul anim d2">
+          <li>CFO: <strong>$527 → $466 → $434</strong> (2005–2007)</li>
+          <li>FCF: <strong>$332 → $99 → $80</strong> — cerita berbeda dari laba yang stabil</li>
+        </ul>
+      </div>
+      <div class="exhibit anim d3" style="width:620px;">
+        <div class="ex-title">Exhibit 13.8 / 13.9 — SCF &amp; Free Cash Flow ABC Company ($)</div>
+        <table class="fin">
+          <thead><tr><th>ABC Company</th><th>2005</th><th>2006</th><th>2007</th></tr></thead>
+          <tbody>
+            <tr><td>Net income</td><td>$320</td><td>$312</td><td>$331</td></tr>
+            <tr class="tot"><td>Cash flow from operating activities (CFO)</td><td>$527</td><td>$466</td><td>$434</td></tr>
+            <tr><td>Cash flow from investing activities (CFI)</td><td class="neg">(277)</td><td class="neg">(309)</td><td class="neg">(360)</td></tr>
+            <tr class="grand"><td>Free cash flow</td><td>$332</td><td>$99</td><td>$80</td></tr>
+          </tbody>
+        </table>
+        <p class="ex-src">Laba bersih nyaris datar, namun FCF turun <strong>76%</strong> dalam tiga tahun.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 17 — EMPAT UKURAN, EMPAT CERITA ============ -->
+  <section data-label="Empat Ukuran">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:-140px;top:-130px;opacity:.45;"></div>
+      <div class="blob b-blue b1"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="pill"></div>
+    <div class="ghost br" style="bottom:-120px;">17</div>
+    <div class="slide" style="justify-content:center;">
+      <h2 class="display h-l anim" style="font-size:84px;">Empat ukuran, empat cerita</h2>
+      <p class="subhead anim d1" style="margin:22px 0 22px; font-size:34px; max-width:1040px;">Menghitung FCF dari SCF — dan membandingkannya</p>
+      <ul class="bul anim d2" style="max-width:1180px; margin-bottom:30px;">
+        <li>FCF = CFO + bunga setelah pajak − kenaikan kas operasi − CFI</li>
+        <li>Net income stabil (<strong>$320 → $331</strong>); FCF anjlok (<strong>$332 → $80</strong>)</li>
+        <li>Pilihan ukuran bergantung waktu, sumber daya, dan tujuan valuasi</li>
+      </ul>
+      <div class="anim d3" style="display:flex; gap:28px;">
+        <div class="exhibit" style="width:560px;">
+          <div class="ex-title">Exhibit 13.10 — Computing FCF from the SCF (ABC)</div>
+          <table class="fin">
+            <thead><tr><th></th><th>2005</th><th>2006</th><th>2007</th></tr></thead>
+            <tbody>
+              <tr><td>Cash flow from operating activities (CFO)</td><td>$527</td><td>$466</td><td>$434</td></tr>
+              <tr><td>Add: After-tax interest expense</td><td>26</td><td>21</td><td>22</td></tr>
+              <tr><td>Less: Increase in operating cash</td><td>56</td><td class="neg">(79)</td><td class="neg">(16)</td></tr>
+              <tr><td>Net cash flow from investing activities</td><td class="neg">(277)</td><td class="neg">(309)</td><td class="neg">(360)</td></tr>
+              <tr class="grand"><td>Free cash flow</td><td>$332</td><td>$99</td><td>$80</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="exhibit" style="width:560px;">
+          <div class="ex-title">Exhibit 13.11 — Comparison of Performance Measures (ABC)</div>
+          <table class="fin">
+            <thead><tr><th>Performance measure</th><th>2005</th><th>2006</th><th>2007</th></tr></thead>
+            <tbody>
+              <tr><td>Net income</td><td>$320</td><td>$312</td><td>$331</td></tr>
+              <tr><td>Cash flow from operating activities (CFO)</td><td>$527</td><td>$466</td><td>$434</td></tr>
+              <tr><td>Cash flow from investing activities (CFI)</td><td class="neg">(277)</td><td class="neg">(309)</td><td class="neg">(360)</td></tr>
+              <tr class="tot"><td>CFO − CFI</td><td>$250</td><td>$157</td><td>$74</td></tr>
+              <tr class="grand"><td>Free cash flow</td><td>$332</td><td>$99</td><td>$80</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 18 — MEMPERBAIKI SCF (section) ============ -->
+  <section data-label="Memperbaiki SCF">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:380px;height:320px;right:200px;top:-110px;opacity:.4;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="sidepanel left" style="width:330px;">
+      <div class="pnum" style="top:-20px; left:0; font-size:300px;">18</div>
+      <div class="capsule" style="left:74px; top:320px; width:64px; height:470px;"></div>
+    </div>
+    <div class="slide" style="padding-left:460px; justify-content:center;">
+      <h2 class="display h-m anim" style="font-size:56px;">Memperbaiki SCF</h2>
+      <p class="subhead sm anim d1" style="margin:30px 0 30px; color:var(--ink);">Rekomendasi Broome &amp; penulis · ringkasan</p>
+      <ul class="bul anim d2" style="max-width:900px;">
+        <li><strong>Broome</strong>: wajibkan direct method + rekonsiliasi; perjelas klasifikasi; balik arah rekonsiliasi</li>
+        <li><strong>Penulis</strong>: jadwal transaksi nonkas modal kerja; jelaskan sumber nonartikulasi</li>
+        <li>SCFP → SCF: konsistensi dan daya prediksi lebih baik</li>
+      </ul>
+      <p class="body anim d3" style="margin-top:40px; font-size:20px; color:var(--ink-faint);">Sumber: Wolk, Dodd &amp; Rozycki (2017), <em>Accounting Theory</em>, Bab 13</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 19 — KONTRIBUSI ============ -->
+  <section data-label="Kontribusi">
+    <div class="bg bg-soft">
+      <div class="blob b-warm" style="width:420px;height:340px;left:120px;top:-120px;opacity:.4;"></div>
+      <div class="blob b-blue b3"></div>
+    </div>
+    <div class="sidepanel left" style="width:300px;">
+      <div class="vtext" style="left:96px; top:50%; transform:translateY(-50%) rotate(180deg);">Kontribusi</div>
+    </div>
+    <div class="ghost tr blue" style="font-size:300px; right:30px; top:-40px;">9</div>
+    <div class="pill" style="left:calc(50% + 150px);"></div>
+    <div class="slide" style="padding-left:420px; justify-content:center;">
+      <h2 class="subhead anim" style="font-size:46px; color:var(--ink); margin-bottom:60px;">Yang kini Anda kuasai</h2>
+      <div class="statgrid anim d1" style="gap:50px 90px; max-width:1000px;">
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num" style="font-size:24px; font-weight:800;">Membaca SCF</span><span class="txt">Tiga aktivitas; direct &amp; indirect method</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num" style="font-size:24px; font-weight:800;">Mewaspadai distorsi</span><span class="txt">Nonartikulasi dan pergeseran klasifikasi</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num" style="font-size:24px; font-weight:800;">Membaca SCF utuh</span><span class="txt">Deteksi dini ala WorldCom — lubang $12,3 miliar</span></div></div>
+        <div class="stat"><div class="sq"></div><div class="col"><span class="num" style="font-size:24px; font-weight:800;">Menghitung FCF</span><span class="txt">Free cash flow dari SCF untuk valuasi</span></div></div>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+<script src="deck-stage.js"></script>
+</body>
+</html>
