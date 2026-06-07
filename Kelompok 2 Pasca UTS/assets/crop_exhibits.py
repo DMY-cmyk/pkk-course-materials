@@ -1,0 +1,106 @@
+"""
+crop_exhibits.py
+Crops Exhibits 13.2/13.3/13.4/13.5/13.6/13.9 from "Sage Chapter 13.pdf"
+into 300-DPI PNGs for the RMK docx.
+
+Usage:
+  python crop_exhibits.py --pages    # render full pages 7,8,9,10,13,16,20 to tmp/ for inspection
+  python crop_exhibits.py            # crop using the EXHIBITS table below
+"""
+
+import os
+import sys
+
+import fitz  # pymupdf
+from PIL import Image
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+PDF = os.path.join(HERE, "..", "Sage Chapter 13.pdf")
+ZOOM = 300 / 72  # 300 DPI
+MAT = fitz.Matrix(ZOOM, ZOOM)
+
+SURVEY_PAGES = [7, 8, 9, 10, 13, 16, 20]  # PDF page numbers (1-based)
+
+# name -> list of (pdf_page_1based, fitz.Rect in PDF points).
+# Multiple entries are stitched vertically (for an exhibit spanning pages).
+# Rectangles are set from visual survey (step 2); placeholders = full page.
+# Page size is A4 (595 x 842 pt). Content column spans x ~50..545.
+# SAGE convention: the "Exhibit 13.x" caption line sits ABOVE its table; the
+# table may flow onto / live on the next page, so several exhibits are stitched
+# from two page-clips ([caption page] + [table page]).
+EXHIBITS = {
+    # caption + COMPANY M header + table start on p7, table body on p8 (stop
+    # before the 13.3 caption at y=601).
+    "exhibit-13-2": [
+        (7, fitz.Rect(48, 696, 550, 770)),
+        (8, fitz.Rect(48, 66, 550, 594)),
+    ],
+    # caption + reconciliation table on p8, tail rows on p9 (ends "Liabilities
+    # assumed $630" at y=411).
+    "exhibit-13-3": [
+        (8, fitz.Rect(48, 596, 550, 770)),
+        (9, fitz.Rect(48, 66, 550, 420)),
+    ],
+    # caption (y=242) + "Company ($000,000)" + embedded table image (y 266..367).
+    "exhibit-13-4": [(10, fitz.Rect(48, 237, 550, 372))],
+    # caption on p12 (y=465) + embedded table image on p13 (y 70..374.5).
+    "exhibit-13-5": [
+        (12, fitz.Rect(48, 459, 550, 478)),
+        (13, fitz.Rect(48, 66, 550, 380)),
+    ],
+    # caption on p15 (y=656) + embedded table image on p16 (y 70..209).
+    "exhibit-13-6": [
+        (15, fitz.Rect(48, 650, 550, 670)),
+        (16, fitz.Rect(48, 66, 550, 214)),
+    ],
+    # caption on p19 (y=487) + embedded table image on p20 (y 70..610).
+    "exhibit-13-9": [
+        (19, fitz.Rect(48, 481, 550, 500)),
+        (20, fitz.Rect(48, 66, 550, 615)),
+    ],
+}
+
+
+def render_clip(doc, page_1based, rect):
+    page = doc[page_1based - 1]
+    pix = page.get_pixmap(matrix=MAT, clip=rect)
+    return Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+
+
+def survey(doc):
+    out_dir = os.path.join(HERE, "tmp")
+    os.makedirs(out_dir, exist_ok=True)
+    for p in SURVEY_PAGES:
+        page = doc[p - 1]
+        img = render_clip(doc, p, page.rect)
+        path = os.path.join(out_dir, f"page-{p:02d}.png")
+        img.save(path)
+        print(f"page {p}: {page.rect}  -> {path}")
+
+
+def crop(doc):
+    for name, parts in EXHIBITS.items():
+        images = [render_clip(doc, p, r) for p, r in parts]
+        if len(images) == 1:
+            combined = images[0]
+        else:
+            width = max(im.width for im in images)
+            images = [im if im.width == width
+                      else im.resize((width, int(im.height * width / im.width)))
+                      for im in images]
+            combined = Image.new("RGB", (width, sum(im.height for im in images)), "white")
+            y = 0
+            for im in images:
+                combined.paste(im, (0, y))
+                y += im.height
+        out = os.path.join(HERE, f"{name}.png")
+        combined.save(out)
+        print(f"{name}: {combined.width}x{combined.height} -> {out}")
+
+
+if __name__ == "__main__":
+    document = fitz.open(PDF)
+    if "--pages" in sys.argv:
+        survey(document)
+    else:
+        crop(document)
