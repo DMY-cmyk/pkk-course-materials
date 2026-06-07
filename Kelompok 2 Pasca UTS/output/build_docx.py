@@ -51,6 +51,17 @@ def parse_inline_runs(text):
     return [r for r in runs if r[0]]
 
 
+IMAGE_RE = re.compile(r'^!\[(.+?)\]\((.+?)\)$')
+
+
+def split_caption(caption):
+    """Split 'Title | Sumber: ...' into (title, source). Source is None if absent."""
+    if " | " in caption:
+        title, source = caption.split(" | ", 1)
+        return title.strip(), source.strip()
+    return caption.strip(), None
+
+
 def parse_blocks(md_text):
     """Parse markdown into ('heading'|'para'|'bullet'|'ref', text) blocks.
 
@@ -79,6 +90,13 @@ def parse_blocks(md_text):
             in_refs = "daftar pustaka" in text.lower()
         elif line.startswith("# "):
             flush()
+        elif line.startswith("!["):
+            m = IMAGE_RE.match(line.strip())
+            if m:
+                flush()
+                blocks.append(("image", (m.group(1), m.group(2))))
+            else:
+                buf.append(line.strip())
         elif line.startswith("- "):
             flush()
             blocks.append(("bullet", line[2:].strip()))
@@ -141,6 +159,29 @@ def add_blank(doc):
     return _add_para(doc, [("", False, False)], space_after_pt=0)
 
 
+def add_image_with_caption(doc, img_path, caption):
+    """Insert a centered picture (14.5 cm wide) + 2-line caption below."""
+    doc.add_picture(img_path, width=Cm(14.5))
+    pic_para = doc.paragraphs[-1]
+    pic_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    pic_para.paragraph_format.space_before = Pt(6)
+    pic_para.paragraph_format.space_after = Pt(6)
+
+    title, source = split_caption(caption)
+    m = re.match(r'^(Gambar \d+\.)\s*(.*)$', title)
+    if m:
+        runs = [(m.group(1) + " ", True, False), (m.group(2), False, False)]
+    else:
+        runs = [(title, False, False)]
+    _add_para(doc, runs, font_size=11,
+              alignment=WD_ALIGN_PARAGRAPH.CENTER,
+              space_before_pt=0, space_after_pt=0 if source else 12)
+    if source:
+        _add_para(doc, [(source, False, True)], font_size=11,
+                  alignment=WD_ALIGN_PARAGRAPH.CENTER,
+                  space_before_pt=0, space_after_pt=12)
+
+
 # ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------
@@ -189,6 +230,11 @@ def build():
 
     # Content from markdown
     for kind, text in parse_blocks(md_text):
+        if kind == "image":
+            caption, rel_path = text
+            img_path = os.path.normpath(os.path.join(here, "..", "content", rel_path))
+            add_image_with_caption(doc, img_path, caption)
+            continue
         runs = parse_inline_runs(text)
         if kind == "heading":
             _add_para(doc, runs, font_size=13, bold=True,

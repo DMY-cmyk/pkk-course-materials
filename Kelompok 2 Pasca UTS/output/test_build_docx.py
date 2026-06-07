@@ -1,5 +1,5 @@
 """Tests for the markdown parsing layer of build_docx.py."""
-from build_docx import parse_inline_runs, parse_blocks
+from build_docx import parse_inline_runs, parse_blocks, split_caption
 
 
 def test_plain_text_single_run():
@@ -36,3 +36,28 @@ def test_blocks_daftar_pustaka_switches_to_ref():
         ("heading", "Daftar Pustaka"),
         ("ref", "Wolk, H. I. (2017). *Accounting theory*. SAGE."),
     ]
+
+
+def test_image_block():
+    md = "![Gambar 1. Judul Diagram | Sumber: Wolk (2017)](../assets/x.png)\n"
+    assert parse_blocks(md) == [
+        ("image", ("Gambar 1. Judul Diagram | Sumber: Wolk (2017)", "../assets/x.png")),
+    ]
+
+
+def test_image_block_between_paragraphs():
+    md = "Paragraf satu.\n\n![Gambar 2. Judul](../assets/y.png)\n\nParagraf dua.\n"
+    assert parse_blocks(md) == [
+        ("para", "Paragraf satu."),
+        ("image", ("Gambar 2. Judul", "../assets/y.png")),
+        ("para", "Paragraf dua."),
+    ]
+
+
+def test_split_caption_with_source():
+    assert split_caption("Gambar 1. Judul | Sumber: Wolk (2017)") == (
+        "Gambar 1. Judul", "Sumber: Wolk (2017)")
+
+
+def test_split_caption_without_source():
+    assert split_caption("Gambar 2. Judul saja") == ("Gambar 2. Judul saja", None)
