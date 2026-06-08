@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1712" height="520" viewBox="0 0 1712 520">
+  <rect width="1712" height="520" fill="white"/>
+  <line x1="80" y1="260" x2="1640" y2="260" stroke="black" stroke-width="5"/>
+  <polygon points="1640,260 1610,246 1610,274" fill="black"/>
+  <g font-family="Times New Roman" fill="black" text-anchor="middle">
+    <g font-size="40" font-weight="bold">
+      <text x="200" y="190">1972</text><text x="480" y="380">1993</text>
+      <text x="760" y="190">1994</text><text x="1030" y="380">1995</text>
+      <text x="1300" y="190">2004</text><text x="1560" y="380">2004+</text>
+    </g>
+    <g font-size="30" font-style="italic">
+      <text x="200" y="120">APB Op. 25: intrinsic value</text>
+      <text x="480" y="440">Exposure Draft: Black-Scholes</text>
+      <text x="760" y="120">ED ditarik (5&#8211;2)</text>
+      <text x="1030" y="440">SFAS 123: footnote disclosure</text>
+      <text x="1300" y="120">SFAS 123R: beban wajib</text>
+      <text x="1560" y="440">konvergensi IFRS 2</text>
+    </g>
+    <g fill="white" stroke="black" stroke-width="5">
+      <circle cx="200" cy="260" r="14"/><circle cx="480" cy="260" r="14"/>
+      <circle cx="760" cy="260" r="14"/><circle cx="1030" cy="260" r="14"/>
+      <circle cx="1300" cy="260" r="14"/><circle cx="1560" cy="260" r="14"/>
+    </g>
+  </g>
+</svg>

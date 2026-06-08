@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1712" height="520" viewBox="0 0 1712 520">
+  <rect width="1712" height="520" fill="white"/>
+  <line x1="80" y1="260" x2="1640" y2="260" stroke="black" stroke-width="5"/>
+  <polygon points="1640,260 1610,246 1610,274" fill="black"/>
+  <g font-family="Times New Roman" fill="black" text-anchor="middle">
+    <g font-size="40" font-weight="bold">
+      <text x="180" y="190">1936</text><text x="410" y="380">1947</text>
+      <text x="640" y="190">1966</text><text x="870" y="380">1973</text>
+      <text x="1100" y="190">1985</text><text x="1330" y="380">1997</text>
+      <text x="1540" y="190">2011</text>
+    </g>
+    <g font-size="30" font-style="italic">
+      <text x="180" y="120">AAA: all-inclusive</text>
+      <text x="410" y="440">ARB 32/43: current operating</text>
+      <text x="640" y="120">APB Op. 9: all-inclusive mod.</text>
+      <text x="870" y="440">APB Op. 30: rigid uniformity</text>
+      <text x="1100" y="120">SFAC 5: comprehensive income</text>
+      <text x="1330" y="440">SFAS 130: pelaporan CI</text>
+      <text x="1540" y="120">ASU: 1/2 laporan</text>
+    </g>
+    <g fill="white" stroke="black" stroke-width="5">
+      <circle cx="180" cy="260" r="14"/><circle cx="410" cy="260" r="14"/>
+      <circle cx="640" cy="260" r="14"/><circle cx="870" cy="260" r="14"/>
+      <circle cx="1100" cy="260" r="14"/><circle cx="1330" cy="260" r="14"/>
+      <circle cx="1540" cy="260" r="14"/>
+    </g>
+  </g>
+</svg>
