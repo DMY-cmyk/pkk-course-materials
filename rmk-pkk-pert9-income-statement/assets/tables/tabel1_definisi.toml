@@ -1,0 +1,11 @@
+caption = "Tabel 1. Evolusi definisi elemen laba lintas badan penyusun standar | Sumber: diolah dari Wolk et al. (2017), PDF hlm. 2–7"
+header = ["Sumber", "Inti definisi", "Orientasi"]
+widths_cm = [3.2, 8.0, 3.8]
+[[rows]]
+cells = ["ATB 2 / ATB 4 (AICPA)", "Income: hasil pengurangan revenues oleh COGS, beban lain, dan losses. Revenue: hasil penjualan barang/jasa, diukur dari harga yang dibebankan ke pelanggan. Expense: semua expired costs yang dapat dikurangkan dari revenues.", "Revenue–expense"]
+[[rows]]
+cells = ["APB Statement 4", "Net income: selisih revenues atas expenses satu periode. Revenue: kenaikan bruto aset / penurunan bruto liabilitas dari aktivitas berorientasi laba, diukur sesuai GAAP. Expense: penurunan bruto aset / kenaikan bruto liabilitas dari aktivitas berorientasi laba.", "Transisi: bentuk asset–liability, pengukuran masih revenue–expense"]
+[[rows]]
+cells = ["SFAC No. 6", "Comprehensive income: perubahan ekuitas (aset bersih) dari transaksi dan peristiwa non-pemilik. Revenue: arus masuk / peningkatan aset atau penyelesaian liabilitas dari operasi utama berkelanjutan. Expense: arus keluar / pemakaian aset atau timbulnya liabilitas dari operasi utama.", "Asset–liability"]
+[[rows]]
+cells = ["FASB Codification", "Tujuan pelaporan comprehensive income: mengukur seluruh perubahan ekuitas dari transaksi non-pemilik yang diakui pada periode itu.", "Asset–liability (penegasan)"]

@@ -1,0 +1,9 @@
+caption = "Tabel 3. Tiga jenis perubahan akuntansi dan perlakuannya | Sumber: diolah dari Wolk et al. (2017), PDF hlm. 15–16"
+header = ["Jenis perubahan", "APB Opinion No. 20", "SFAS No. 154"]
+widths_cm = [4.2, 5.4, 5.4]
+[[rows]]
+cells = ["Change in accounting principle (prinsip GAAP lama → GAAP lain)", "Cumulative effect disajikan di laporan laba rugi berjalan, tepat di bawah extraordinary items", "Retrospektif ke semua laporan laba rugi terdampak, kecuali impraktis; saldo neraca disesuaikan ke awal periode pertama yang disajikan"]
+[[rows]]
+cells = ["Change in accounting estimate (informasi baru atas estimasi)", "Prospektif: periode berjalan dan/atau periode mendatang", "Sama (prospektif); perubahan depresiasi/deplesi/amortisasi akibat perubahan prinsip diperlakukan sebagai perubahan estimasi"]
+[[rows]]
+cells = ["Change in reporting entity (komposisi entitas pelapor berubah)", "Restate seluruh laporan periode sebelumnya; ungkap sifat, alasan, dan efeknya", "Tidak diubah oleh SFAS 154"]

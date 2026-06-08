@@ -1,0 +1,11 @@
+caption = "Tabel 4. Pergeseran APB Opinion No. 15 ke SFAS No. 128 dalam pelaporan EPS | Sumber: diolah dari Wolk et al. (2017), PDF hlm. 17–18"
+header = ["Aspek", "APB Opinion No. 15", "SFAS No. 128"]
+widths_cm = [3.6, 5.7, 5.7]
+[[rows]]
+cells = ["Kategori EPS", "Primary EPS (PEPS) dan fully diluted EPS", "Basic EPS (tanpa dilusi) dan diluted EPS (dilusi maksimum)"]
+[[rows]]
+cells = ["PEPS", "Wajib: memasukkan convertible securities bila effective rate ≤ 2/3 Aa bond rate saat terbit", "Dieliminasi — perhitungan artifisial yang sulit dipahami pengguna"]
+[[rows]]
+cells = ["Aturan 3%", "Bila dilusi penuh ≤ 3% dari simple EPS, cukup simple EPS", "Dieliminasi — basic dan diluted selalu disajikan"]
+[[rows]]
+cells = ["Rekonsiliasi", "Tidak diwajibkan", "Wajib: rekonsiliasi pembilang dan penyebut basic ↔ diluted"]

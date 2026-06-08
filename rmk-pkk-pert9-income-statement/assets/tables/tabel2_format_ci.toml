@@ -1,0 +1,9 @@
+caption = "Tabel 2. Tiga format pelaporan comprehensive income menurut SFAS No. 130 | Sumber: diolah dari Wolk et al. (2017), PDF hlm. 13"
+header = ["Format", "Deskripsi", "Catatan"]
+widths_cm = [4.2, 6.6, 4.2]
+[[rows]]
+cells = ["(1) Combined statement of financial performance", "Satu laporan: elemen comprehensive income dan totalnya tampil di bawah net income", "Preferensi Board"]
+[[rows]]
+cells = ["(2) Separate statement of comprehensive income", "Laporan terpisah yang dimulai dari net income", "Visibilitas CI tetap terjaga"]
+[[rows]]
+cells = ["(3) Dalam statement of changes in equity", "CI dilaporkan di dalam laporan perubahan ekuitas", "Diprediksi dua anggota dissenting paling banyak dipakai — menurunkan visibilitas CI"]
