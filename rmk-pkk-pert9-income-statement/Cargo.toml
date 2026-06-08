@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "src/rust/chapter_locator",
+    "src/rust/text_extract",
+    "src/rust/visual_gen",
+]

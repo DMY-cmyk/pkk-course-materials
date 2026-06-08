@@ -1,0 +1,5 @@
+input/
+extraction/
+target/
+__pycache__/
+assets/diagrams/*.png
