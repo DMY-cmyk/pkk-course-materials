@@ -1,15 +1,33 @@
 ## III. Pengakuan Pendapatan
 
-Secara ideal, **pendapatan** diidentifikasikan dengan periode saat aktivitas ekonomi utama menciptakan dan melepas barang serta jasa dirampungkan, namun penyelesaian itu dan kemampuan mengukurnya secara objektif kerap terjadi pada periode berbeda (Wolk et al., 2017, PDF hlm. 4). Di sinilah cita-cita teoretis berbenturan dengan **kendala keterukuran objektif** (*objective measurement*): selama pengukuran terverifikasi belum dapat dilakukan, pendapatan tidak boleh diakui. SFAC No. 5 yang mengatur pengakuan dinilai Wolk hanya mengulang konsep terdahulu secara *ad hoc*. Ketegangan relevansi versus reliabilitas inilah yang menstrukturkan praktiknya.
+Idealnya pendapatan diakui saat aktivitas ekonomi utama rampung — tapi penyelesaian dan kemampuan mengukurnya kerap jatuh di periode berbeda (Wolk et al., 2017, PDF hlm. 4).
 
-Literatur mengenal empat titik waktu alternatif: **selama produksi** (*during production*), **produksi selesai** (*completion of production*), **penjualan** (*point of sale*), dan **kas terkumpul** (*cash collection*) (Wolk et al., 2017, PDF hlm. 4).
+### Ideal vs Kendala Keterukuran
+- **Cita-cita teoretis**: pendapatan melekat pada periode saat barang/jasa diciptakan dan dilepas.
+- **Kendala keterukuran objektif** (*objective measurement*): selama belum dapat diukur terverifikasi, pendapatan tidak boleh diakui.
+- **SFAC No. 5**: dinilai Wolk hanya mengulang konsep terdahulu secara *ad hoc*; inti soalnya tetap ketegangan relevansi vs reliabilitas (Wolk et al., 2017, PDF hlm. 4).
+
+### Empat Titik Waktu Pengakuan
+- **Selama produksi** (*during production*): kontrak jangka panjang/konstruksi (ARB 45 & SOP 81-1), syaratnya estimasi andal atas kemajuan dan biaya.
+- **Produksi selesai** (*completion of production*): sebagian operasi pertanian/pertambangan (ARB 43, Bab 4) bila produk berpasar segera pada harga terkutip.
+- **Penjualan** (*point of sale*): **norma umum** sejak salah satu dari enam aturan AICPA 1934, saat hak hukum berpindah — kecuali ketertagihan tak wajar.
+- **Kas terkumpul** (*cash collection*): lewat **metode angsuran** (*installment*) atau *cost recovery*; diizinkan SFAS No. 66 untuk real estat yang ketertagihannya tak terestimasi wajar (Wolk et al., 2017, PDF hlm. 4).
 
 ![Gambar 1. Empat titik waktu alternatif pengakuan pendapatan | Sumber: diolah dari Wolk et al. (2017), PDF hlm. 4–5](../assets/diagrams/gambar1_titik_pengakuan.png)
 
-Masing-masing disahkan selektif. Pengakuan selama produksi diterapkan pada kontrak jangka panjang seperti konstruksi (ARB 45 dan SOP 81-1), bersyarat estimasi andal atas kemajuan dan biaya. Pengakuan saat produksi selesai diizinkan bagi sebagian operasi pertanian dan pertambangan (ARB 43, Bab 4) ketika produk berpasar segera pada harga terkutip. Pengakuan saat penjualan, ketika hak hukum berpindah, adalah **norma umum** sejak menjadi salah satu dari enam aturan AICPA 1934—kecuali ketertagihan tak wajar diasumsikan. Pengakuan saat kas terkumpul, melalui **metode angsuran** (*installment method*) maupun *cost recovery*, diizinkan SFAS No. 66 untuk real estat yang ketertagihannya tak terestimasi wajar (Wolk et al., 2017, PDF hlm. 4).
+### Evolusi Pengecualian dan Basis yang Dilarang
+- **Asal-usul**: AICPA mengembangkan standar via *Accounting Guides* dan *Statements of Position* (SOP), tapi karena tak wajib, praktiknya tidak konsisten.
+- **Program ekstraksi**: lewat SFAS No. 32 (1979) FASB mengekstraksi standar dari *Guides*/SOP, memodifikasinya agar konsisten, lalu menerbitkan sebagai SFAS — contoh real estat (No. 66).
+- **Dilarang**: basis **akresi** (*accretion*) pada kayu hutan dan basis **penemuan** (*discovery*) pada minyak/gas tidak diizinkan literatur otoritatif (Wolk et al., 2017, PDF hlm. 5).
 
-Pengecualian terhadap norma penjualan berevolusi karena transaksi baru khas industri. AICPA mengembangkan standarnya melalui *Accounting Guides* dan *Statements of Position* (SOP), namun karena tidak wajib dipatuhi, praktiknya tidak konsisten. Melalui SFAS No. 32 (1979) FASB meluncurkan program *extraction*: mengekstraksi standar dari *Guides* dan SOP, memodifikasinya agar konsisten, lalu menerbitkannya sebagai SFAS—antara lain real estat (No. 66). Di luar empat titik resmi, literatur otoritatif **tidak mengizinkan** basis **akresi** (*accretion*) pada kayu hutan maupun basis **penemuan** (*discovery*) pada minyak dan gas (Wolk et al., 2017, PDF hlm. 5).
+### Kriteria Sesungguhnya dan Celah Earnings Management
+- **Penyelesaian proses perolehan laba** (*completion of the earnings process*): pendapatan diakui saat peristiwa pemuncaknya terjadi.
+- **Tiga atribut harus terukur andal**: (a) harga jual, (b) penerimaan kas, (c) biaya masa depan — bila terestimasi memadai diakui, jika tidak ditunda.
+- **"Achilles' heel"** *earnings management*: pada *swap* kapasitas serat optik, **Qwest** membukukan seluruh "pendapatan" seketika sementara serat diperoleh dikapitalisasi bertahun — padahal sekadar pertukaran aset (Wolk et al., 2017, PDF hlm. 5).
 
-Meski penjualan adalah norma, kriteria sesungguhnya adalah **penyelesaian proses perolehan laba** (*completion of the earnings process*): pendapatan diakui ketika peristiwa yang memuncakinya terjadi. Namun pengukuran harus dituntaskan dahulu—tiga atribut harus terukur andal: (a) harga jual, (b) penerimaan kas, dan (c) biaya masa depan; bila dapat diestimasi memadai pendapatan diakui, jika tidak ditunda. Di titik inilah pengakuan menjadi **"Achilles' heel"** bagi *earnings management*: pada *swap* kapasitas serat optik telekomunikasi, **Qwest** membukukan seluruh "pendapatan" seketika sementara serat diperoleh dikapitalisasi bertahun-tahun—padahal sekadar pertukaran aset (Wolk et al., 2017, PDF hlm. 5).
+### Konvergensi dan Ketegangan FASB–SEC
+- **Standar tunggal**: konvergensi FASB–IASB melahirkan **ASU 2014-09** dan **IFRS 15**.
+- **SAB 101**: SEC menerbitkannya menanggapi pelanggaran aturan pengakuan; FASB mengkritiknya terlalu mengekang sehingga laporan kurang berguna memprediksi arus kas.
+- **Potensi *showdown***: ketegangan institusional FASB–SEC bisa memuncak bila FASB mengarahkan pengakuan ke valuasi neraca (Wolk et al., 2017, PDF hlm. 6).
 
-Upaya konvergensi melahirkan standar pendapatan tunggal bersama FASB–IASB, yakni **ASU 2014-09** dan **IFRS 15**. Sebelumnya, menanggapi pelanggaran aturan pengakuan, SEC menerbitkan *Staff Accounting Bulletin* (SAB) 101; FASB justru mengkritiknya terlalu mengekang sehingga laporan laba rugi kurang berguna memprediksi arus kas—ketegangan institusional FASB–SEC yang berpotensi menjadi *showdown* bila FASB mengarahkan pengakuan ke valuasi neraca (Wolk et al., 2017, PDF hlm. 6). Ketegangan reliabilitas versus *decision usefulness* inilah latar pengakuan beban dan penandingan pada Bagian IV.
+Ketegangan reliabilitas vs *decision usefulness* inilah latar pengakuan beban dan penandingan pada Bagian IV.
