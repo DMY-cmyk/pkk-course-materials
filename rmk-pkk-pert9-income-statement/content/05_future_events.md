@@ -1,11 +1,31 @@
 ## V. Future Events dan Pengakuan Akuntansi
 
-Pelaporan akuntansi berpijak pada pencatatan peristiwa yang telah terjadi, namun pencatatan itu sangat bergantung pada penafsiran kita atas **peristiwa masa depan** (*future events*). Setiap **akrual** (*accrual*) dan **penangguhan** (*deferral*) bergantung padanya dalam derajat berbeda-beda; perhitungan penyusutan, misalnya, bergantung pada taksiran umur ekonomis dan nilai sisa aset (Wolk et al., 2017, PDF hlm. 8). Titik tolak yang baik adalah definisi dalam **SFAC No. 6**: aset adalah pengendalian dari transaksi masa lalu yang menghasilkan manfaat ekonomi masa depan, sedangkan liabilitas adalah kewajiban dari transaksi masa lalu yang menuntut pengorbanan sumber daya masa depan. Kedua definisi itu praktis berimbang antara masa lalu dan masa depan, sebagaimana pula definisi IASB serta badan penyusun standar di Inggris, Australia, dan Kanada. Karena perlakuan atas peristiwa masa depan belum tersistematisasi, badan-badan penyusun standar mulai mengkajinya serius pada **konferensi 1994** (Wolk et al., 2017, PDF hlm. 8–9).
+Akuntansi mencatat peristiwa yang sudah terjadi, tetapi pencatatan itu selalu bergantung pada tafsiran kita atas **peristiwa masa depan** (*future events*) (Wolk et al., 2017, PDF hlm. 8).
 
-Salah satu titik perdebatan adalah dianutnya **pandangan satu peristiwa** (*one-event view*) atau **pandangan dua peristiwa** (*two-event view*). Pada penawaran insentif pensiun dini, penganut pandangan satu peristiwa mengakui transaksi saat penawaran dibuat dan sangat bergantung pada estimasi probabilistik, sedangkan penganut pandangan dua peristiwa baru mengakui liabilitas ketika karyawan menerima tawaran. Keduanya konsisten dengan SFAC No. 6 (Wolk et al., 2017, PDF hlm. 9).
+### Mengapa Masa Depan Selalu Ikut Dihitung
+- **Akrual & deferral**: setiap *accrual* dan *deferral* bergantung pada peristiwa masa depan dalam derajat berbeda.
+- **Contoh depresiasi**: perhitungannya bergantung pada taksiran umur ekonomis dan nilai sisa aset (Wolk et al., 2017, PDF hlm. 8).
+- **Definisi SFAC No. 6**: aset = pengendalian dari transaksi masa lalu yang memberi manfaat ekonomi masa depan; liabilitas = kewajiban dari transaksi masa lalu yang menuntut pengorbanan sumber daya masa depan — keduanya seimbang antara masa lalu dan masa depan.
+- **Konsensus global**: definisi serupa dipakai IASB serta penyusun standar di Inggris, Australia, dan Kanada.
+- **Konferensi 1994**: karena perlakuannya belum tersistematisasi, badan penyusun standar mulai mengkajinya serius (Wolk et al., 2017, PDF hlm. 8–9).
+
+### One-Event vs Two-Event View
+- **One-event view**: transaksi diakui saat peristiwa awal terjadi (mis. saat tawaran pensiun dini dibuat), sangat bergantung pada estimasi probabilistik.
+- **Two-event view**: liabilitas baru diakui saat peristiwa kedua terjadi (mis. saat karyawan menerima tawaran).
+- **Keduanya** konsisten dengan SFAC No. 6 (Wolk et al., 2017, PDF hlm. 9).
 
 ![Gambar 3. Peta isu future events dalam pengakuan akuntansi | Sumber: diolah dari Wolk et al. (2017), PDF hlm. 8–11](../assets/diagrams/gambar3_future_events.png)
 
-Persoalan intinya adalah **sifat probabilistik** peristiwa masa depan. **SFAS No. 5** atas *loss contingencies* menggambarkannya dengan gradasi *probable* (di atas 50%), *reasonably possible*, dan *remote*. Konferensi menelaah tiga pendekatan pengakuan: **pendekatan modal** (peristiwa tunggal paling mungkin), **pendekatan probabilitas tertimbang** (jumlah hasil dikalikan probabilitasnya), dan **pendekatan probabilitas kumulatif** yang menggabungkan seluruh hasil sukses lalu memilih jika kombinasi melampaui 50%. **Maksud manajemen** (*management intent*) ditolak sebagai basis pengakuan: maksud dapat berubah dan rawan pertimbangan **teori keagenan**, sehingga membukanya akan menurunkan **keterbandingan** (*comparability*) (Wolk et al., 2017, PDF hlm. 9–10).
+### Sifat Probabilistik dan Tiga Pendekatan
+- **SFAS No. 5** (*loss contingencies*) memakai gradasi: *probable* (di atas 50%), *reasonably possible*, dan *remote*.
+- **Pendekatan modal**: pakai peristiwa tunggal yang paling mungkin.
+- **Pendekatan probabilitas tertimbang**: jumlahkan tiap hasil dikalikan probabilitasnya.
+- **Pendekatan probabilitas kumulatif**: gabungkan seluruh hasil sukses, akui jika kombinasinya melampaui 50% (Wolk et al., 2017, PDF hlm. 9–10).
 
-Beaver mengajukan dua observasi. Pertama, **nilai pasar** (*market values*) adalah gudang informasi kaya tentang peristiwa masa depan, meski sekuritas yang diperdagangkan tipis memunculkan persoalan **representasi tepat** (*representational faithfulness*). Kedua, **konservatisme** (*conservatism*) mungkin memberi keunggulan komparatif dalam menyebarkan "berita buruk", penyeimbang atas bias optimistik pada sumber lain (Wolk et al., 2017, PDF hlm. 10). Terhadap kondisi ekonomi dan persyaratan hukum masa depan, konsensus konferensi adalah tidak meramalkan perubahan kecuali telah disahkan menjadi undang-undang—sebagaimana **SFAS No. 109** mengasumsikan tarif pajak masa depan sama dengan tarif kini selama perubahan belum diberlakukan secara hukum (Wolk et al., 2017, PDF hlm. 10). Setelah ini, kita beralih ke perdebatan *current operating versus all-inclusive income* pada Bagian VI.
+### Yang Ditolak dan Yang Dianjurkan
+- **Tolak *management intent***: maksud manajemen bisa berubah dan rawan **teori keagenan**, sehingga menurunkan **keterbandingan** (*comparability*) (Wolk et al., 2017, PDF hlm. 9–10).
+- **Beaver — nilai pasar**: *market values* kaya informasi peristiwa masa depan, walau sekuritas tipis memunculkan masalah **representasi tepat** (*representational faithfulness*).
+- **Beaver — konservatisme**: *conservatism* unggul menyebarkan "berita buruk", penyeimbang bias optimistik sumber lain (Wolk et al., 2017, PDF hlm. 10).
+- **Hanya hukum yang disahkan**: jangan ramalkan perubahan kondisi ekonomi/hukum kecuali sudah jadi undang-undang — seperti **SFAS No. 109** yang mengasumsikan tarif pajak masa depan sama dengan tarif kini sampai perubahan diberlakukan secara hukum (Wolk et al., 2017, PDF hlm. 10).
+
+Berikutnya kita masuk ke perdebatan *current operating versus all-inclusive income* pada Bagian VI.
