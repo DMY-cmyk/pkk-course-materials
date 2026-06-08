@@ -21,7 +21,7 @@ from docx.shared import Cm, Pt
 FONT = "Times New Roman"
 # Body line spacing (exact, in points). Reduced from 18pt (~1.5) to single-ish
 # to bring the trimmed document to ~15 pages without touching content or visuals.
-BODY_LINE_PT = 12
+BODY_LINE_PT = 11.5
 STUDENT = "Dzaki Muhammad Yusfian"
 NIM = "1225 01079"
 OUT_NAME = "01079_Dzaki Muhammad Yusfian_RMK Pert. 9.docx"
@@ -189,7 +189,7 @@ def _add_caption(doc, caption, space_after_pt=6):
 
 
 def add_image_with_caption(doc, img_path, caption):
-    doc.add_picture(img_path, width=Cm(14.5))
+    doc.add_picture(img_path, width=Cm(12))
     pic = doc.paragraphs[-1]
     pic.alignment = WD_ALIGN_PARAGRAPH.CENTER
     pic.paragraph_format.space_before = Pt(2)
