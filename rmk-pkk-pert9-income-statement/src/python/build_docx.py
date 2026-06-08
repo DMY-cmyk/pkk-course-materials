@@ -19,6 +19,9 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
 
 FONT = "Times New Roman"
+# Body line spacing (exact, in points). Reduced from 18pt (~1.5) to single-ish
+# to bring the trimmed document to ~15 pages without touching content or visuals.
+BODY_LINE_PT = 13
 STUDENT = "Dzaki Muhammad Yusfian"
 NIM = "1225 01079"
 OUT_NAME = "01079_Dzaki Muhammad Yusfian_RMK Pert. 9.docx"
@@ -119,13 +122,13 @@ def _style_run(run, font_size=12, bold=False, italic=False):
 
 def _add_para(doc, runs, font_size=12, bold=False,
               alignment=WD_ALIGN_PARAGRAPH.JUSTIFY,
-              space_before_pt=0, space_after_pt=6,
+              space_before_pt=0, space_after_pt=4,
               left_indent_cm=None, hanging=False, italic_all=False):
     para = doc.add_paragraph()
     pf = para.paragraph_format
     pf.alignment = alignment
     pf.line_spacing_rule = WD_LINE_SPACING.EXACTLY
-    pf.line_spacing = Pt(18)
+    pf.line_spacing = Pt(BODY_LINE_PT)
     pf.space_before = Pt(space_before_pt)
     pf.space_after = Pt(space_after_pt)
     if left_indent_cm is not None:
@@ -172,7 +175,7 @@ def add_page_number_footer(section):
 CAPTION_PREFIX_RE = re.compile(r'^((?:Gambar|Tabel) \d+\.)\s*(.*)$')
 
 
-def _add_caption(doc, caption, space_after_pt=12):
+def _add_caption(doc, caption, space_after_pt=6):
     title, source = split_caption(caption)
     m = CAPTION_PREFIX_RE.match(title)
     runs = ([(m.group(1) + " ", True, False), (m.group(2), False, False)]
@@ -189,8 +192,8 @@ def add_image_with_caption(doc, img_path, caption):
     doc.add_picture(img_path, width=Cm(14.5))
     pic = doc.paragraphs[-1]
     pic.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    pic.paragraph_format.space_before = Pt(6)
-    pic.paragraph_format.space_after = Pt(6)
+    pic.paragraph_format.space_before = Pt(2)
+    pic.paragraph_format.space_after = Pt(2)
     _add_caption(doc, caption)
 
 
@@ -213,13 +216,12 @@ def add_table_from_toml(doc, toml_path):
             cell.text = ""
             para = cell.paragraphs[0]
             para.paragraph_format.line_spacing_rule = WD_LINE_SPACING.EXACTLY
-            para.paragraph_format.line_spacing = Pt(14)
+            para.paragraph_format.line_spacing = Pt(12)
             for text, b, it in parse_inline_runs(val):
                 _style_run(para.add_run(text), font_size=11, bold=b, italic=it)
     for j, w in enumerate(spec.get("widths_cm", [])):
         for row in table.rows:
             row.cells[j].width = Cm(w)
-    add_blank(doc)
 
 # --- build -------------------------------------------------------------------
 
@@ -268,11 +270,11 @@ def build():
             elif kind == "heading":
                 _add_para(doc, parse_inline_runs(payload), font_size=13, bold=True,
                           alignment=WD_ALIGN_PARAGRAPH.LEFT,
-                          space_before_pt=12, space_after_pt=6)
+                          space_before_pt=6, space_after_pt=4)
             elif kind == "subheading":
                 _add_para(doc, parse_inline_runs(payload), font_size=12, bold=True,
                           italic_all=True, alignment=WD_ALIGN_PARAGRAPH.LEFT,
-                          space_before_pt=8, space_after_pt=4)
+                          space_before_pt=4, space_after_pt=2)
             elif kind == "bullet":
                 _add_para(doc, [("• ", False, False)] + parse_inline_runs(payload),
                           left_indent_cm=0.75)
