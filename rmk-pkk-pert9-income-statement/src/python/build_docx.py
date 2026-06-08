@@ -255,8 +255,8 @@ def build():
     # Body: every content/*.md except 00, sorted by filename
     files = sorted(glob.glob(os.path.join(content_dir, "*.md")))
     for path in files:
-        if os.path.basename(path).startswith("00_"):
-            continue
+        if os.path.basename(path).startswith(("00_", "14_")):
+            continue  # 00 = front matter (handled above); 14 = references (omitted per spec)
         with open(path, encoding="utf-8") as f:
             md = f.read()
         for kind, payload in parse_blocks(md):

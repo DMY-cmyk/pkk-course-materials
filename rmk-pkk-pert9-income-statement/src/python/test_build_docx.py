@@ -53,9 +53,16 @@ def test_front_matter_first_line(built):
     assert "RINGKASAN MATERI KULIAH" in first and "PERTEMUAN 9" in first.upper()
 
 
-def test_six_images_and_four_tables(built):
-    assert len(built.inline_shapes) == 6
-    assert len(built.tables) == 4
+def test_four_kept_visuals(built):
+    # After 10-page curation: keep Tabel 1 (1 table) + Gambar 1/4/6 (3 images).
+    assert len(built.inline_shapes) == 3
+    assert len(built.tables) == 1
+
+
+def test_no_references_section(built):
+    text = "\n".join(p.text for p in built.paragraphs)
+    assert "XIV." not in text
+    assert "Referensi" not in text
 
 
 def test_identity_present(built):
