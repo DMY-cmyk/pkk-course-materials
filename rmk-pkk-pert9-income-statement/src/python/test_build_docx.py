@@ -38,9 +38,14 @@ def test_output_exists_with_exact_name(built):
 
 
 def test_page_setup(built):
+    # A4 + 3 cm margins. python-docx stores page size in twips, so an exact
+    # EMU match to Cm(21.0) is impossible (round-trips to 11906 twips); compare
+    # at 0.1 cm precision instead.
     s = built.sections[0]
-    from docx.shared import Cm
-    assert s.page_width == Cm(21.0) and s.left_margin == Cm(3)
+    assert round(s.page_width.cm, 1) == 21.0
+    assert round(s.page_height.cm, 1) == 29.7
+    assert round(s.left_margin.cm, 1) == 3.0
+    assert round(s.right_margin.cm, 1) == 3.0
 
 
 def test_front_matter_first_line(built):
