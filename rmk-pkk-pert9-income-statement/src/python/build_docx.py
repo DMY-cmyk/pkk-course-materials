@@ -21,7 +21,7 @@ from docx.shared import Cm, Pt
 FONT = "Times New Roman"
 # Body line spacing (exact, in points). Reduced from 18pt (~1.5) to single-ish
 # to bring the trimmed document to ~15 pages without touching content or visuals.
-BODY_LINE_PT = 13
+BODY_LINE_PT = 12
 STUDENT = "Dzaki Muhammad Yusfian"
 NIM = "1225 01079"
 OUT_NAME = "01079_Dzaki Muhammad Yusfian_RMK Pert. 9.docx"
@@ -270,14 +270,14 @@ def build():
             elif kind == "heading":
                 _add_para(doc, parse_inline_runs(payload), font_size=13, bold=True,
                           alignment=WD_ALIGN_PARAGRAPH.LEFT,
-                          space_before_pt=6, space_after_pt=4)
+                          space_before_pt=4, space_after_pt=2)
             elif kind == "subheading":
                 _add_para(doc, parse_inline_runs(payload), font_size=12, bold=True,
                           italic_all=True, alignment=WD_ALIGN_PARAGRAPH.LEFT,
-                          space_before_pt=4, space_after_pt=2)
+                          space_before_pt=2, space_after_pt=1)
             elif kind == "bullet":
                 _add_para(doc, [("• ", False, False)] + parse_inline_runs(payload),
-                          left_indent_cm=0.75)
+                          left_indent_cm=0.75, space_after_pt=1)
             elif kind == "ref":
                 _add_para(doc, parse_inline_runs(payload), hanging=True)
             else:
