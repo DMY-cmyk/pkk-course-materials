@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1712" height="480" viewBox="0 0 1712 480">
+  <rect width="1712" height="480" fill="white"/>
+  <line x1="100" y1="220" x2="1620" y2="220" stroke="black" stroke-width="5"/>
+  <polygon points="1620,220 1590,206 1590,234" fill="black"/>
+  <g font-family="Times New Roman" font-size="38" text-anchor="middle" fill="black">
+    <!-- Node 1: Selama produksi -->
+    <circle cx="260" cy="220" r="14" fill="white" stroke="black" stroke-width="5"/>
+    <text x="260" y="150" font-size="38">1. Selama produksi</text>
+    <text x="260" y="300" font-style="italic" font-size="30">kontrak jangka panjang</text>
+    <text x="260" y="336" font-style="italic" font-size="30">(ARB 45)</text>
+    <!-- Node 2: Akhir produksi -->
+    <circle cx="620" cy="220" r="14" fill="white" stroke="black" stroke-width="5"/>
+    <text x="620" y="150" font-size="38">2. Akhir produksi</text>
+    <text x="620" y="300" font-style="italic" font-size="30">agrikultur &amp; pertambangan</text>
+    <text x="620" y="336" font-style="italic" font-size="30">(ARB 43)</text>
+    <!-- Node 3: Titik penjualan (emphasized) -->
+    <circle cx="1020" cy="220" r="22" fill="black"/>
+    <text x="1020" y="140" font-weight="bold" font-size="42">3. Titik penjualan</text>
+    <text x="1020" y="300" font-style="italic" font-size="30">norma umum</text>
+    <text x="1020" y="336" font-style="italic" font-size="30">sejak 1934</text>
+    <!-- Node 4: Penagihan kas -->
+    <circle cx="1400" cy="220" r="14" fill="white" stroke="black" stroke-width="5"/>
+    <text x="1400" y="150" font-size="38">4. Penagihan kas</text>
+    <text x="1400" y="300" font-style="italic" font-size="30">metode installment</text>
+    <text x="1400" y="336" font-style="italic" font-size="30">(SFAS 66)</text>
+    <!-- Bottom label -->
+    <text x="856" y="430" font-size="34">arah penyelesaian earnings process &#8594;</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "src/rust/chapter_locator",
+    # text_extract is Python (src/python/extract_text.py) — lopdf cannot read this PDF
+    "src/rust/visual_gen",
+]

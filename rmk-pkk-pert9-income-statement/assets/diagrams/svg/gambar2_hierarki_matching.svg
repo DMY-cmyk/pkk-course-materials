@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1712" height="460" viewBox="0 0 1712 460">
+  <rect width="1712" height="460" fill="white"/>
+  <g font-family="Times New Roman" font-size="40" fill="black">
+    <rect x="60" y="60" width="480" height="150" fill="white" stroke="black" stroke-width="5"/>
+    <text x="300" y="118" text-anchor="middle" font-weight="bold">1. Asosiasi langsung</text>
+    <text x="300" y="165" text-anchor="middle" font-style="italic" font-size="30">cause and effect (mis. COGS)</text>
+    <rect x="616" y="60" width="480" height="150" fill="white" stroke="black" stroke-width="5"/>
+    <text x="856" y="118" text-anchor="middle" font-weight="bold">2. Alokasi sistematis</text>
+    <text x="856" y="165" text-anchor="middle" font-style="italic" font-size="30">systematic &amp; rational (depresiasi)</text>
+    <rect x="1172" y="60" width="480" height="150" fill="white" stroke="black" stroke-width="5"/>
+    <text x="1412" y="118" text-anchor="middle" font-weight="bold">3. Pembebanan segera</text>
+    <text x="1412" y="165" text-anchor="middle" font-style="italic" font-size="30">period expense; tiada manfaat</text>
+    <polygon points="540,135 600,135 600,118 640,135 600,152 600,135" fill="black"/>
+    <polygon points="1096,135 1156,135 1156,118 1196,135 1156,152 1156,135" fill="black"/>
+    <text x="856" y="300" text-anchor="middle" font-size="38">jika asosiasi langsung tidak mungkin &#8594; turun ke tingkat berikutnya</text>
+    <text x="856" y="390" text-anchor="middle" font-style="italic" font-size="34">Thomas: semua alokasi pada akhirnya arbitrer &#8212; tak dapat diverifikasi maupun direfutasi</text>
+  </g>
+</svg>

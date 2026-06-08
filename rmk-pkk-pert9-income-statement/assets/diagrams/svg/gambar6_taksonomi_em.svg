@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1712" height="640" viewBox="0 0 1712 640">
+  <rect width="1712" height="640" fill="white"/>
+  <g font-family="Times New Roman" fill="black">
+    <rect x="456" y="40" width="800" height="120" fill="white" stroke="black" stroke-width="6"/>
+    <text x="856" y="90" text-anchor="middle" font-weight="bold" font-size="42">Earnings management (Schipper):</text>
+    <text x="856" y="138" text-anchor="middle" font-style="italic" font-size="36">intervensi bertujuan demi keuntungan privat</text>
+    <line x1="856" y1="160" x2="856" y2="220" stroke="black" stroke-width="4"/>
+    <line x1="300" y1="220" x2="1412" y2="220" stroke="black" stroke-width="4"/>
+    <line x1="300" y1="220" x2="300" y2="270" stroke="black" stroke-width="4"/>
+    <line x1="856" y1="220" x2="856" y2="270" stroke="black" stroke-width="4"/>
+    <line x1="1412" y1="220" x2="1412" y2="270" stroke="black" stroke-width="4"/>
+    <rect x="60" y="270" width="480" height="150" fill="white" stroke="black" stroke-width="4"/>
+    <text x="300" y="330" text-anchor="middle" font-weight="bold" font-size="38">Kompensasi manajemen</text>
+    <text x="300" y="378" text-anchor="middle" font-style="italic" font-size="30">bonus ceiling/floor (Healy);</text>
+    <text x="300" y="408" text-anchor="middle" font-style="italic" font-size="30">discretionary accruals</text>
+    <rect x="616" y="270" width="480" height="150" fill="white" stroke="black" stroke-width="4"/>
+    <text x="856" y="330" text-anchor="middle" font-weight="bold" font-size="38">Classification shifting</text>
+    <text x="856" y="378" text-anchor="middle" font-style="italic" font-size="30">geser core expenses ke</text>
+    <text x="856" y="408" text-anchor="middle" font-style="italic" font-size="30">special items (McVay)</text>
+    <rect x="1172" y="270" width="480" height="150" fill="white" stroke="black" stroke-width="4"/>
+    <text x="1412" y="330" text-anchor="middle" font-weight="bold" font-size="38">Income smoothing</text>
+    <text x="1412" y="378" text-anchor="middle" font-style="italic" font-size="30">ratakan varians laba</text>
+    <text x="1412" y="408" text-anchor="middle" font-style="italic" font-size="30">antartahun</text>
+    <line x1="1412" y1="420" x2="1412" y2="470" stroke="black" stroke-width="4"/>
+    <rect x="1052" y="470" width="620" height="130" fill="white" stroke="black" stroke-width="4"/>
+    <text x="1362" y="520" text-anchor="middle" font-size="32">3 cara: timing transaksi; pilihan</text>
+    <text x="1362" y="558" text-anchor="middle" font-size="32">metode alokasi; smoothing klasifikatoris</text>
+  </g>
+</svg>
