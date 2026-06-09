@@ -15,3 +15,9 @@
 **Q — Mengapa EPS perlu distandardisasi seketat itu, padahal ia "hanya" satu angka ringkas?**
 
 **A —** Justru karena EPS adalah *summary indicator* yang paling sering dikutip pasar — satu angka yang memadatkan seluruh kinerja menjadi nilai per lembar saham — maka kerapian definisinya menentukan segalanya. *Decision usefulness*-nya tinggi karena ringkas, tetapi keringkasan itu pula yang membuatnya rapuh: bila tiap perusahaan bebas menentukan sendiri penyebut dan cara memperlakukan efek dilutif, dua angka EPS yang tampak setara sebenarnya tidak dapat dibandingkan. Standardisasi yang ketat menutup celah itu agar daya banding antarperusahaan — bahkan antarnegara — tetap terjaga. Pelajarannya: makin sebuah angka diandalkan banyak pihak, makin tinggi taruhan pada keseragaman aturan yang melahirkannya.
+
+## Slide 22 — Development Stage Enterprises
+
+**Q — Mengapa perlakuan biaya ditentukan oleh sifat biayanya, bukan oleh jenis (status) perusahaannya?**
+
+**A —** Karena yang menentukan ekonomi sebuah biaya adalah sifat biaya itu sendiri, bukan label perusahaan yang menanggungnya. Jika aturan dibedakan menurut jenis entitas — perusahaan tahap-rintis diistimewakan dibanding perusahaan mapan — maka dua biaya yang ekonominya identik akan dicatat berbeda hanya karena status pelakunya, dan daya banding antarentitas runtuh. *Rigid uniformity* di sini justru melindungi *representational faithfulness*: substansi transaksi yang sama dipetakan ke perlakuan yang sama. Pelajaran jangka panjangnya sederhana namun mendasar — begitu akuntansi mulai bertanya "siapa yang mencatat" alih-alih "apa yang terjadi", laporan kehilangan netralitasnya.
