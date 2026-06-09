@@ -9,3 +9,9 @@
 **Q — Mengapa *prior period adjustment* dibebankan langsung ke saldo awal laba ditahan, bukan ke laba bersih tahun berjalan?**
 
 **A —** Karena koreksi itu secara konseptual *milik* periode lalu: ia membetulkan kesalahan yang sudah terkunci di dalam laba periode sebelumnya, bukan buah dari kinerja manajemen tahun ini. Bila dipaksakan masuk ke laba berjalan, angka laba tahun ini bercampur dengan untung-rugi yang tidak dihasilkan aktivitas tahun ini — melanggar *representational faithfulness* sekaligus merusak daya banding antarperiode. Dengan menyesuaikan saldo awal laba ditahan secara retrospektif, laporan laba rugi tetap menjadi ukuran kinerja periode yang bersih. Dan justru di situ letak taruhannya: kredibilitas sebuah laba bergantung pada apakah pembaca bisa mempercayai bahwa angka itu menggambarkan apa yang dicapai perusahaan tahun ini — bukan warisan kesalahan masa lalu.
+
+## Slide 21 — Earnings Per Share (EPS)
+
+**Q — Mengapa EPS perlu distandardisasi seketat itu, padahal ia "hanya" satu angka ringkas?**
+
+**A —** Justru karena EPS adalah *summary indicator* yang paling sering dikutip pasar — satu angka yang memadatkan seluruh kinerja menjadi nilai per lembar saham — maka kerapian definisinya menentukan segalanya. *Decision usefulness*-nya tinggi karena ringkas, tetapi keringkasan itu pula yang membuatnya rapuh: bila tiap perusahaan bebas menentukan sendiri penyebut dan cara memperlakukan efek dilutif, dua angka EPS yang tampak setara sebenarnya tidak dapat dibandingkan. Standardisasi yang ketat menutup celah itu agar daya banding antarperusahaan — bahkan antarnegara — tetap terjaga. Pelajarannya: makin sebuah angka diandalkan banyak pihak, makin tinggi taruhan pada keseragaman aturan yang melahirkannya.
