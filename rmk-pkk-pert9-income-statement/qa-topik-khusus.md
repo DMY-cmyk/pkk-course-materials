@@ -27,3 +27,9 @@
 **Q — Mengapa mengukur restrukturisasi utang tanpa mendiskontokan arus kas masa depan disebut "kemenangan konsekuensi ekonomi atas kesetiaan representasional"?**
 
 **A —** Karena mendiskontokan arus kas adalah cara mengakui bahwa uang yang diterima lebih lambat dan lebih sedikit bernilai lebih rendah hari ini — itu realitas ekonomi. Aturan awal mengabaikannya: selama jumlah nominal arus kas masa depan masih menutup nilai tercatat, untung-rugi dianggap nihil, sehingga kreditor yang sebenarnya menanggung kerugian bisa melaporkan seolah tak terjadi apa-apa. Hasilnya enak dipandang — beban kerugian tertunda — tetapi tidak setia pada substansi; di situlah "konsekuensi ekonomi" menang atas *representational faithfulness*. Pesan visionernya: standar yang dirancang agar angka terlihat nyaman justru paling perlu diwaspadai, sebab laporan yang menyenangkan secara politis belum tentu jujur secara ekonomi.
+
+## Slide 24 — Early Extinguishment of Debt
+
+**Q — Apa pelajaran dari satu item — pelunasan dini utang — yang berpindah klasifikasi tiga kali (luar biasa → operasi biasa → seperti luar biasa) dalam waktu singkat?**
+
+**A —** Pelajarannya bukan soal mana klasifikasi yang "benar", melainkan soal harga dari ketidakstabilan itu sendiri. Bagaimana sebuah pos dikelompokkan — luar biasa atau operasi biasa — mengubah cara pembaca menilai apakah laba itu berkelanjutan; maka ketika satu item berpindah kelas tiga kali dalam waktu singkat, laba "inti" perusahaan bisa tampak naik-turun tanpa ada satu pun perubahan ekonomi yang nyata. Yang tergerus adalah daya banding antarperiode dan kemampuan pembaca memprediksi. Inilah pesan jangka panjangnya: konsistensi dan kejelasan alasan sebuah aturan sering lebih bernilai daripada penyempurnaan teknisnya, sebab standar yang labil membuat pengguna kesulitan memisahkan perubahan ekonomi dari sekadar perubahan aturan.
