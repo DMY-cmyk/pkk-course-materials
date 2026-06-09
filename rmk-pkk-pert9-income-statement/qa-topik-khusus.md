@@ -21,3 +21,9 @@
 **Q — Mengapa perlakuan biaya ditentukan oleh sifat biayanya, bukan oleh jenis (status) perusahaannya?**
 
 **A —** Karena yang menentukan ekonomi sebuah biaya adalah sifat biaya itu sendiri, bukan label perusahaan yang menanggungnya. Jika aturan dibedakan menurut jenis entitas — perusahaan tahap-rintis diistimewakan dibanding perusahaan mapan — maka dua biaya yang ekonominya identik akan dicatat berbeda hanya karena status pelakunya, dan daya banding antarentitas runtuh. *Rigid uniformity* di sini justru melindungi *representational faithfulness*: substansi transaksi yang sama dipetakan ke perlakuan yang sama. Pelajaran jangka panjangnya sederhana namun mendasar — begitu akuntansi mulai bertanya "siapa yang mencatat" alih-alih "apa yang terjadi", laporan kehilangan netralitasnya.
+
+## Slide 23 — Troubled Debt Restructuring
+
+**Q — Mengapa mengukur restrukturisasi utang tanpa mendiskontokan arus kas masa depan disebut "kemenangan konsekuensi ekonomi atas kesetiaan representasional"?**
+
+**A —** Karena mendiskontokan arus kas adalah cara mengakui bahwa uang yang diterima lebih lambat dan lebih sedikit bernilai lebih rendah hari ini — itu realitas ekonomi. Aturan awal mengabaikannya: selama jumlah nominal arus kas masa depan masih menutup nilai tercatat, untung-rugi dianggap nihil, sehingga kreditor yang sebenarnya menanggung kerugian bisa melaporkan seolah tak terjadi apa-apa. Hasilnya enak dipandang — beban kerugian tertunda — tetapi tidak setia pada substansi; di situlah "konsekuensi ekonomi" menang atas *representational faithfulness*. Pesan visionernya: standar yang dirancang agar angka terlihat nyaman justru paling perlu diwaspadai, sebab laporan yang menyenangkan secara politis belum tentu jujur secara ekonomi.
