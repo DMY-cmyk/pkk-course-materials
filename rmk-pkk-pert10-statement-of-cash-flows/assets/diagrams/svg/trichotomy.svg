@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712 620" width="1712" height="620">
+  <rect width="1712" height="620" fill="white"/>
+
+  <!-- Title -->
+  <text x="856" y="52" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="36" font-weight="bold" fill="#1a1a1a">Trikotomi Arus Kas (SFAS No. 95)</text>
+
+  <!-- Column 1: Aktivitas Operasi -->
+  <!-- Header box -->
+  <rect x="60" y="90" width="500" height="80" rx="6" ry="6" fill="#1a1a1a"/>
+  <text x="310" y="136" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="26" font-weight="bold" fill="white">AKTIVITAS OPERASI</text>
+
+  <!-- Detail box -->
+  <rect x="60" y="182" width="500" height="380" rx="6" ry="6" fill="white" stroke="#4d4d4d" stroke-width="2"/>
+  <text x="310" y="232" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Kas dari pelanggan</text>
+  <text x="310" y="268" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Kas ke pemasok &amp; karyawan</text>
+  <text x="310" y="304" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Pajak penghasilan</text>
+  <text x="310" y="340" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Bunga &amp; dividen diterima *</text>
+  <text x="310" y="376" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Bunga dibayar *</text>
+  <text x="310" y="432" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Aktivitas inti bisnis yang</text>
+  <text x="310" y="458" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">memengaruhi laba rugi</text>
+
+  <!-- Column 2: Aktivitas Investasi -->
+  <rect x="606" y="90" width="500" height="80" rx="6" ry="6" fill="#4d4d4d"/>
+  <text x="856" y="136" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="26" font-weight="bold" fill="white">AKTIVITAS INVESTASI</text>
+
+  <rect x="606" y="182" width="500" height="380" rx="6" ry="6" fill="white" stroke="#4d4d4d" stroke-width="2"/>
+  <text x="856" y="232" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Pembelian/penjualan aset</text>
+  <text x="856" y="268" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">jangka panjang</text>
+  <text x="856" y="316" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Investasi sekuritas</text>
+  <text x="856" y="364" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Pinjaman kepada pihak lain</text>
+  <text x="856" y="432" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Perolehan &amp; pelepasan</text>
+  <text x="856" y="458" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">sumber daya jangka panjang</text>
+
+  <!-- Column 3: Aktivitas Pendanaan -->
+  <rect x="1152" y="90" width="500" height="80" rx="6" ry="6" fill="#8c8c8c"/>
+  <text x="1402" y="136" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="26" font-weight="bold" fill="white">AKTIVITAS PENDANAAN</text>
+
+  <rect x="1152" y="182" width="500" height="380" rx="6" ry="6" fill="white" stroke="#4d4d4d" stroke-width="2"/>
+  <text x="1402" y="232" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Penerbitan/pelunasan utang</text>
+  <text x="1402" y="280" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Penerbitan saham</text>
+  <text x="1402" y="328" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Pembelian saham treasuri</text>
+  <text x="1402" y="376" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" fill="#1a1a1a">Pembayaran dividen</text>
+  <text x="1402" y="432" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Transaksi dengan penyedia</text>
+  <text x="1402" y="458" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">modal (kreditur &amp; pemegang saham)</text>
+
+  <!-- Footnote -->
+  <text x="856" y="590" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-style="italic" fill="#4d4d4d">* Tiga anggota FASB berpendapat bunga/dividen diterima = investasi &amp; bunga dibayar = pendanaan (SFAS No. 95, par. 22–23); FASB menempatkan keduanya di operasi.</text>
+</svg>

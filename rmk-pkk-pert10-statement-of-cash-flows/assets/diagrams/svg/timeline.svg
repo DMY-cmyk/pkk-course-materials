@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712 440" width="1712" height="440">
+  <rect width="1712" height="440" fill="white"/>
+
+  <!-- Title -->
+  <text x="856" y="48" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="36" font-weight="bold" fill="#1a1a1a">Kronologi Pelaporan Arus Kas: SFAS No. 95 &amp; Pendahulunya</text>
+
+  <!-- Horizontal timeline axis -->
+  <line x1="80" y1="220" x2="1640" y2="220" stroke="#4d4d4d" stroke-width="3"/>
+  <!-- Arrowhead at end -->
+  <polygon points="1640,213 1660,220 1640,227" fill="#4d4d4d"/>
+
+  <!-- Event 1: 1963 APB Opinion No. 3 -->
+  <!-- x = 220 -->
+  <circle cx="220" cy="220" r="10" fill="#1a1a1a"/>
+  <!-- Box above -->
+  <rect x="90" y="75" width="260" height="110" rx="5" ry="5" fill="#1a1a1a"/>
+  <text x="220" y="108" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="white">1963</text>
+  <text x="220" y="135" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" fill="white">APB Opinion No. 3</text>
+  <text x="220" y="158" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#d9d9d9">SCFP direkomendasikan</text>
+  <text x="220" y="178" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#d9d9d9">(sukarela)</text>
+  <!-- Stem -->
+  <line x1="220" y1="185" x2="220" y2="210" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Event 2: 1971 APB Opinion No. 19 — x=580 -->
+  <circle cx="580" cy="220" r="10" fill="#1a1a1a"/>
+  <!-- Box below -->
+  <rect x="450" y="268" width="260" height="120" rx="5" ry="5" fill="#4d4d4d"/>
+  <text x="580" y="300" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="white">1971</text>
+  <text x="580" y="327" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" fill="white">APB Opinion No. 19</text>
+  <text x="580" y="352" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#d9d9d9">SEC mewajibkan SCFP;</text>
+  <text x="580" y="373" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#d9d9d9">SCFP jadi laporan wajib</text>
+  <!-- Stem -->
+  <line x1="580" y1="230" x2="580" y2="268" stroke="#4d4d4d" stroke-width="2"/>
+
+  <!-- Event 3: 1987 SFAS No. 95 — x=940 -->
+  <circle cx="940" cy="220" r="10" fill="#1a1a1a"/>
+  <!-- Box above -->
+  <rect x="810" y="60" width="260" height="125" rx="5" ry="5" fill="#1a1a1a"/>
+  <text x="940" y="93" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="white">1987</text>
+  <text x="940" y="120" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" fill="white">SFAS No. 95</text>
+  <text x="940" y="147" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#d9d9d9">Statement of Cash Flows;</text>
+  <text x="940" y="168" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#d9d9d9">trikotomi O/I/F wajib</text>
+  <!-- Stem -->
+  <line x1="940" y1="185" x2="940" y2="210" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Event 4: 2008 FASB-IASB Discussion Paper — x=1300 (dashed box) -->
+  <circle cx="1300" cy="220" r="10" fill="#8c8c8c" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Box below, dashed border -->
+  <rect x="1170" y="268" width="260" height="120" rx="5" ry="5" fill="white" stroke="#4d4d4d" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="1300" y="300" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a1a1a">2008</text>
+  <text x="1300" y="327" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" fill="#1a1a1a">FASB-IASB Discussion</text>
+  <text x="1300" y="352" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#4d4d4d">Paper: klasifikasi berbasis</text>
+  <text x="1300" y="373" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" fill="#4d4d4d">"business" diusulkan</text>
+  <!-- Stem -->
+  <line x1="1300" y1="230" x2="1300" y2="268" stroke="#8c8c8c" stroke-width="2" stroke-dasharray="5,4"/>
+
+  <!-- Legend note for dashed -->
+  <text x="1490" y="290" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" font-style="italic" fill="#4d4d4d">(kotak putus-putus =</text>
+  <text x="1490" y="310" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" font-style="italic" fill="#4d4d4d">usulan, belum diadopsi)</text>
+
+  <!-- Footer -->
+  <text x="856" y="415" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-style="italic" fill="#4d4d4d">Sumber: Wolk, Dodd &amp; Tearney (2017), Ch. 13 — diolah penulis</text>
+</svg>
