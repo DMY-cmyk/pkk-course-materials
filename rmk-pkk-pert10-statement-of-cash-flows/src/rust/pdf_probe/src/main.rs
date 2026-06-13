@@ -29,9 +29,9 @@ struct Args {
     #[arg(long, default_value = "extraction/verification-report.md")]
     report: String,
 
-    /// First print-page number of this chapter
-    #[arg(long, default_value_t = 375)]
-    start_print: u32,
+    /// Authoritative print-page range for this chapter (e.g. "375-409")
+    #[arg(long, default_value = "375-409")]
+    print_pages: String,
 }
 
 // ── Pure helper ───────────────────────────────────────────────────────────────
@@ -146,13 +146,12 @@ fn main() -> Result<()> {
         per_page.push((*page_num, img_count));
     }
     let total_images: u32 = per_page.iter().map(|(_, c)| c).sum();
-    let range_str = print_page_range(args.start_print, n_pages);
 
     // ── Write chapter-range.json ──────────────────────────────────────────────
     let range_out = RangeOut {
         start_page: 1,
         end_page: n_pages,
-        print_pages: range_str.clone(),
+        print_pages: args.print_pages.clone(),
     };
     let out_path = Path::new(&args.out);
     std::fs::create_dir_all(out_path.parent().unwrap_or(Path::new(".")))?;
@@ -166,7 +165,7 @@ fn main() -> Result<()> {
     md.push_str("# PDF Probe — Verification Report\n\n");
     md.push_str(&format!("- **PDF:** `{}`\n", args.pdf));
     md.push_str(&format!("- **Page count:** {}\n", n_pages));
-    md.push_str(&format!("- **Print-page range:** {}\n", range_str));
+    md.push_str(&format!("- **Print-page range:** {}\n", args.print_pages));
     md.push_str("\n## Per-page Image XObject Count\n\n");
     md.push_str("| PDF page | image count |\n");
     md.push_str("|----------|-------------|\n");
@@ -185,7 +184,7 @@ fn main() -> Result<()> {
     // ── Summary ───────────────────────────────────────────────────────────────
     println!(
         "pdf_probe: {} pages, print range {}, {} total image XObjects → {} | {}",
-        n_pages, range_str, total_images, args.out, args.report
+        n_pages, args.print_pages, total_images, args.out, args.report
     );
 
     Ok(())
