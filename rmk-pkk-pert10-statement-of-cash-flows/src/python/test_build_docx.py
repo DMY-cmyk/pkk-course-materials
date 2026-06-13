@@ -6,8 +6,6 @@ NOTE: build() is NOT called here — content/*.md do not exist yet (Task 7).
 import os
 import sys
 
-import pytest
-
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
@@ -137,3 +135,21 @@ def test_group_cornell_cue_without_notes_is_dropped():
     grouped = group_cornell(blocks)
     # orphan cue: no notes block appended → nothing flushed → empty
     assert grouped == []
+
+
+def test_group_cornell_dangling_cue_before_block_is_dropped():
+    # a cue with no notes, then a non-cornell block, then a real pair:
+    blocks = [("cue", "Q1"),
+              ("heading", "H"),
+              ("cue", "Q2"), ("notes", "A2")]
+    grouped = group_cornell(blocks)
+    # Q1 must NOT pair with A2; Q1 is dropped, heading passes through, then (Q2,A2)
+    assert ("heading", "H") in grouped
+    assert ("cornell", [("Q2", "A2")]) in grouped
+    assert all(not (k == "cornell" and any(c == "Q1" for c, _ in rows))
+               for k, rows in grouped if k == "cornell")
+
+
+def test_group_cornell_orphan_notes_produces_empty_cue():
+    grouped = group_cornell([("notes", "Answer with no question")])
+    assert grouped == [("cornell", [("", "Answer with no question")])]

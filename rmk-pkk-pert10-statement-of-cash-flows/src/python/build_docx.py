@@ -80,9 +80,9 @@ def parse_blocks(md_text):
             in_refs = "referensi" in text.lower() or "daftar pustaka" in text.lower()
         elif line.startswith("# "):
             flush()
-        elif TABLE_RE.match(stripped):
+        elif m := TABLE_RE.match(stripped):
             flush()
-            blocks.append(("table", TABLE_RE.match(stripped).group(1)))
+            blocks.append(("table", m.group(1)))
         elif line.startswith("!["):
             m = IMAGE_RE.match(stripped)
             if m:
@@ -128,6 +128,7 @@ def group_cornell(blocks):
             last_cue = None
         else:
             flush_rows()
+            last_cue = None
             out.append((kind, payload))
 
     flush_rows()
@@ -172,10 +173,6 @@ def _add_para(doc, runs, font_size=12, bold=False,
         run = para.add_run(text)
         _style_run(run, font_size=font_size, bold=bold or b, italic=i or italic_all)
     return para
-
-
-def add_blank(doc):
-    return _add_para(doc, [("", False, False)], space_after_pt=0)
 
 
 def add_rule(doc):
