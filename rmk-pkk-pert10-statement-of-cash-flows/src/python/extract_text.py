@@ -6,7 +6,7 @@ counts.
 PyMuPDF (fitz) is the documented Python fallback for text extraction in this
 otherwise-Rust pipeline: Rust lopdf.extract_text returns only page footers on
 this SAGE-edition PDF (fonts lack ToUnicode CMaps), so it cannot read the body.
-Consumes extraction/chapter-range.json (from the chapter_locator Rust crate).
+Consumes extraction/chapter-range.json (from the pdf_probe Rust crate).
 """
 import json
 import os
@@ -81,7 +81,7 @@ def main():
     root = os.path.normpath(os.path.join(here, "..", ".."))
     range_path = os.path.join(root, "extraction", "chapter-range.json")
     if not os.path.exists(range_path):
-        sys.exit(f"missing {range_path} — run chapter_locator first")
+        sys.exit(f"missing {range_path} — run cargo run -p pdf_probe first")
     with open(range_path, encoding="utf-8") as f:
         rng = json.load(f)
     start, end = int(rng["start_page"]), int(rng["end_page"])

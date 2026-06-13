@@ -2,7 +2,7 @@
 
 **Course:** Pelaporan Keuangan Korporat (MNK202) — S2  
 **Author:** Dzaki Muhammad Yusfian (NIM 1225 01079)  
-**Source:** Wolk, Dodd & Tearney, Ch. 13 — Statement of Cash Flows  
+**Source:** Wolk, Dodd & Rozycki, Ch. 13 — Statement of Cash Flows  
 **Output:** `output/01079_Dzaki Muhammad Yusfian_RMK Pert. 10.docx`
 
 ---

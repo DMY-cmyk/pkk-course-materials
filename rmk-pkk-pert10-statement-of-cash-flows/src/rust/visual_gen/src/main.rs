@@ -30,7 +30,7 @@ struct Args {
 fn main() -> Result<()> {
     let args = Args::parse();
     let mut db = resvg::usvg::fontdb::Database::new();
-    db.load_system_fonts(); // Times New Roman from C:\Windows\Fonts
+    db.load_system_fonts(); // load all installed system fonts for SVG text rendering
     let db = std::sync::Arc::new(db);
     let mut count = 0;
     for entry in std::fs::read_dir(&args.svg_dir)

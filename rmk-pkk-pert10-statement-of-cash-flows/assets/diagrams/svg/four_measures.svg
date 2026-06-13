@@ -3,7 +3,7 @@
 
   <!-- Title -->
   <text x="856" y="52" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="36" font-weight="bold" fill="#1a1a1a">Empat Ukuran Kinerja Arus Kas: ABC Company 2005–2007</text>
-  <text x="856" y="90" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-style="italic" fill="#4d4d4d">Sumber: Wolk, Dodd &amp; Tearney (2017), Ch. 13</text>
+  <text x="856" y="90" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-style="italic" fill="#4d4d4d">Sumber: Wolk, Dodd &amp; Rozycki (2017), Ch. 13</text>
 
   <!-- Y-axis label -->
   <text x="36" y="420" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="20" fill="#4d4d4d" transform="rotate(-90, 36, 420)">Juta Dolar AS</text>

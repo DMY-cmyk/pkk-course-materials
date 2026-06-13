@@ -3,7 +3,7 @@
 ## Project Purpose
 
 Individual deliverable for the S2 (Graduate) course **Pelaporan Keuangan Korporat** (MNK202),
-Pertemuan 10. Format: **Cornell Notes** in MS Word. Topic: **Wolk, Dodd & Tearney Ch. 13 —
+Pertemuan 10. Format: **Cornell Notes** in MS Word. Topic: **Wolk, Dodd & Rozycki Ch. 13 —
 Statement of Cash Flows**.
 
 The pipeline produces a single Word document:

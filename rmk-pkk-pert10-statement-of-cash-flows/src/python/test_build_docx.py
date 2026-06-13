@@ -1,7 +1,7 @@
 """
 test_build_docx.py — pure-function unit tests for build_docx.py (pert10).
 Run: python -m pytest src/python/test_build_docx.py -q
-NOTE: build() is NOT called here — content/*.md do not exist yet (Task 7).
+# These are pure-function unit tests only; build() is exercised by the Task 8 end-to-end run.
 """
 import os
 import sys
