@@ -8,21 +8,21 @@ from extract_text import segment, page_numbers  # noqa: E402
 # ── copied from pert9 (content-agnostic helpers) ──────────────────────────────
 
 def test_segments_in_order_with_preamble():
-    secs = [("Income Definitions", "02_income"), ("Revenue Recognition", "04_rev")]
-    lines = ["[[page:1]]", "Title preamble", "Income Definitions", "body A",
-             "[[page:2]]", "Revenue Recognition", "body B"]
+    secs = [("Section A", "02_section_a"), ("Section B", "04_section_b")]
+    lines = ["[[page:1]]", "Title preamble", "Section A", "body A",
+             "[[page:2]]", "Section B", "body B"]
     segs = segment(lines, secs)
-    assert [s for s, _ in segs] == ["00_preamble", "02_income", "04_rev"]
+    assert [s for s, _ in segs] == ["00_preamble", "02_section_a", "04_section_b"]
     assert "body A" in segs[1][1] and "body B" in segs[2][1]
 
 
 def test_substring_decoy_does_not_cut():
     # "Summary indicator was coined..." must NOT match the "Summary" heading.
-    secs = [("Income Definitions", "02_income"), ("Summary", "14_summary")]
-    lines = ["Income Definitions", "The term Summary indicator was coined",
+    secs = [("Section A", "02_section_a"), ("Summary", "14_summary")]
+    lines = ["Section A", "The term Summary indicator was coined",
              "more body", "Summary", "the real summary"]
     segs = segment(lines, secs)
-    assert [s for s, _ in segs] == ["02_income", "14_summary"]
+    assert [s for s, _ in segs] == ["02_section_a", "14_summary"]
     assert "Summary indicator" in segs[0][1]      # decoy stayed in prior section
     assert "the real summary" in segs[1][1]
 

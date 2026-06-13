@@ -88,45 +88,48 @@ def main():
 
     pdf_path = os.path.join(
         root, "input", "chapter", "PKK Pert. 10 - Statement of Cashflow.pdf")
-    doc = fitz.open(pdf_path)
+    with fitz.open(pdf_path) as doc:
+        if end > len(doc):
+            sys.exit(f"chapter-range end_page {end} exceeds PDF page count {len(doc)}")
 
-    lines = []
-    for p in range(start, end + 1):
-        lines.append(f"[[page:{p}]]")
-        page_text = doc[p - 1].get_text()
-        lines.extend(page_text.splitlines())
-    if not "".join(lines).strip():
-        sys.exit("extracted chapter text is empty — extraction failed")
+        lines = []
+        for p in range(start, end + 1):
+            lines.append(f"[[page:{p}]]")
+            page_text = doc[p - 1].get_text()
+            lines.extend(page_text.splitlines())
+        if not "".join(lines).strip():
+            sys.exit("extracted chapter text is empty — extraction failed")
 
-    segs = segment(lines, SECTIONS)
-    matched = max(len(segs) - 1, 0)  # minus preamble
-    if matched < 4:
-        sys.exit(f"only {matched} of {len(SECTIONS)} headings matched — inspect extraction")
+        segs = segment(lines, SECTIONS)
+        matched = max(len(segs) - 1, 0)  # minus preamble
+        MIN_MATCHED = len(SECTIONS) // 2   # tolerate up to half missing before aborting
+        if matched < MIN_MATCHED:
+            sys.exit(f"only {matched} of {len(SECTIONS)} headings matched — inspect extraction")
 
-    out_dir = os.path.join(root, "extraction", "text")
-    os.makedirs(out_dir, exist_ok=True)
-    page_map = {}
-    for slug, body in segs:
-        with open(os.path.join(out_dir, f"{slug}.md"), "w", encoding="utf-8") as f:
-            f.write(body)
-        page_map[slug] = page_numbers(body)
-    with open(os.path.join(root, "extraction", "page-map.json"), "w", encoding="utf-8") as f:
-        json.dump(page_map, f, indent=2)
+        out_dir = os.path.join(root, "extraction", "text")
+        os.makedirs(out_dir, exist_ok=True)
+        page_map = {}
+        for slug, body in segs:
+            with open(os.path.join(out_dir, f"{slug}.md"), "w", encoding="utf-8") as f:
+                f.write(body)
+            page_map[slug] = page_numbers(body)
+        with open(os.path.join(root, "extraction", "page-map.json"), "w", encoding="utf-8") as f:
+            json.dump(page_map, f, indent=2)
 
-    # Verification report — image counts per page (do NOT assert zero; this chapter may have figures)
-    rpt = ["# Verification report — exhibit presence, Wolk Ch. 13 (SAGE edition)\n",
-           "| PDF page | image count |", "|---|---|"]
-    total = 0
-    for p in range(start, end + 1):
-        n = len(doc[p - 1].get_images(full=True))
-        total += n
-        rpt.append(f"| {p} | {n} |")
-    rpt.append(f"\n**Total images: {total}.**")
-    with open(os.path.join(root, "extraction", "verification-report.md"), "w", encoding="utf-8") as f:
-        f.write("\n".join(rpt))
+        # Verification report — image counts per page (do NOT assert zero; this chapter may have figures)
+        rpt = ["# Verification report — exhibit presence, Wolk Ch. 13 (SAGE edition)\n",
+               "| PDF page | image count |", "|---|---|"]
+        total = 0
+        for p in range(start, end + 1):
+            n = len(doc[p - 1].get_images(full=True))
+            total += n
+            rpt.append(f"| {p} | {n} |")
+        rpt.append(f"\n**Total images: {total}.**")
+        with open(os.path.join(root, "extraction", "verification-report.md"), "w", encoding="utf-8") as f:
+            f.write("\n".join(rpt))
 
-    print(f"wrote {len(segs)} segment files, page-map.json, "
-          f"verification-report.md (total images: {total})")
+        print(f"wrote {len(segs)} segment files, page-map.json, "
+              f"verification-report.md (total images: {total})")
 
 
 if __name__ == "__main__":
