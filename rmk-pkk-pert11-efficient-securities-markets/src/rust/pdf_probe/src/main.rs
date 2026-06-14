@@ -29,8 +29,8 @@ struct Args {
     #[arg(long, default_value = "extraction/verification-report.md")]
     report: String,
 
-    /// Authoritative print-page range for this chapter (e.g. "375-409")
-    #[arg(long, default_value = "375-409")]
+    /// Authoritative print-page range for this chapter (e.g. "120-152")
+    #[arg(long, default_value = "120-152")]
     print_pages: String,
 }
 
