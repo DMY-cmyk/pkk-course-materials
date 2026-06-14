@@ -1,5 +1,5 @@
 """
-build_docx.py — assembles output/01079_Dzaki Muhammad Yusfian_RMK Pert. 10.docx
+build_docx.py — assembles output/01079_Kelompok 3_RMK Pert. 11.docx
 from content/*.md + assets/. python-docx is the documented Python exception in
 this otherwise-Rust pipeline (see README: proven K2 typography conventions;
 docx-rs would need exact-18pt spacing, hanging indents, captioned tables and
@@ -7,6 +7,7 @@ footer fields re-proven from scratch).
 Styling layer adapted from pert9 build_docx.py (K2 / Kelompok 2 lineage).
 Layout B: Cornell two-column (cue | notes) for Section A; remainder standard.
 """
+import copy as _copy
 import os
 import re
 import tomllib
@@ -18,10 +19,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
 
+from latex_to_omml import latex_to_omath, render_eq_png
+
 FONT = "Calibri"
-STUDENT = "Dzaki Muhammad Yusfian"
-NIM = "1225 01079"
-OUT_NAME = "01079_Dzaki Muhammad Yusfian_RMK Pert. 10.docx"
+OUT_NAME = "01079_Kelompok 3_RMK Pert. 11.docx"
 
 # --- markdown parsing (K2 lineage, + ### / @table / @cue / @notes) ----------
 
@@ -93,6 +94,9 @@ def parse_blocks(md_text):
         elif line.startswith("- "):
             flush()
             blocks.append(("bullet", line[2:].strip()))
+        elif stripped.startswith("@eq "):
+            flush()
+            blocks.append(("eq", stripped[4:].strip()))
         elif stripped.startswith("@cue "):
             flush()
             blocks.append(("cue", stripped[5:].strip()))
@@ -222,6 +226,28 @@ def _add_caption(doc, caption, space_after_pt=6):
                   space_before_pt=0, space_after_pt=space_after_pt)
 
 
+_EQ_COUNTER = {"n": 0}
+
+
+def add_equation(doc, latex, root):
+    """Append a centered native Word equation; fall back to a PNG on failure."""
+    omath = latex_to_omath(latex)
+    para = doc.add_paragraph()
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    para.paragraph_format.space_before = Pt(4)
+    para.paragraph_format.space_after = Pt(4)
+    if omath is not None:
+        para._p.append(_copy.deepcopy(omath))   # native OMML; deepcopy detaches from XSLT result tree
+        return para
+    _EQ_COUNTER["n"] += 1                         # fallback: high-DPI PNG
+    png = os.path.join(root, "assets", "equations", f"eq-{_EQ_COUNTER['n']}.png")
+    os.makedirs(os.path.dirname(png), exist_ok=True)
+    render_eq_png(latex, png)
+    run = para.add_run()
+    run.add_picture(png, width=Cm(10))
+    return para
+
+
 def add_image_with_caption(doc, img_path, caption):
     doc.add_picture(img_path, width=Cm(14.5))
     pic = doc.paragraphs[-1]
@@ -334,6 +360,8 @@ def build():
                 caption, rel = payload
                 img_path = os.path.normpath(os.path.join(content_dir, rel))
                 add_image_with_caption(doc, img_path, caption)
+            elif kind == "eq":
+                add_equation(doc, payload, root)
             elif kind == "table":
                 toml_path = os.path.normpath(os.path.join(content_dir, payload))
                 add_table_from_toml(doc, toml_path)

@@ -153,3 +153,10 @@ def test_group_cornell_dangling_cue_before_block_is_dropped():
 def test_group_cornell_orphan_notes_produces_empty_cue():
     grouped = group_cornell([("notes", "Answer with no question")])
     assert grouped == [("cornell", [("", "Answer with no question")])]
+
+
+def test_parse_blocks_emits_eq():
+    md = "@eq \\beta_j = \\frac{Cov(R_j,R_M)}{Var(R_M)}\n"
+    blocks = parse_blocks(md)
+    assert blocks[0][0] == "eq"
+    assert blocks[0][1].startswith("\\beta_j")
