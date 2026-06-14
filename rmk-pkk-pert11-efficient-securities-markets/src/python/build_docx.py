@@ -24,7 +24,7 @@ from latex_to_omml import latex_to_omath, render_eq_png
 FONT = "Calibri"
 OUT_NAME = "01079_Kelompok 3_RMK Pert. 11.docx"
 
-# --- markdown parsing (K2 lineage, + ### / @table / @cue / @notes) ----------
+# --- markdown parsing (K2 lineage, + ### / @table / @cue / @notes / @eq) -----
 
 def parse_inline_runs(text):
     runs = []
