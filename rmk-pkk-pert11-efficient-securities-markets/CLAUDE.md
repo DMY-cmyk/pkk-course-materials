@@ -120,8 +120,8 @@ Python-only; no Rust equivalent exists.
 | 2. Text extraction | Python (exception 1) | `src/python/extract_text.py` |
 | 3. Exhibit cropping | Python (exception 2) | `src/python/crop_exhibits.py` |
 | 4. Diagram generation | Rust | `src/rust/visual_gen` |
-| 5. Equation rendering | Python (exception 4) | `src/python/latex_to_omml.py` |
-| 6. DOCX assembly | Python (exception 3) | `src/python/build_docx.py` |
+| 5. Equation rendering (helper module, invoked during stage 6) | Python (exception 4) | `src/python/latex_to_omml.py` |
+| 6. DOCX assembly (renders @eq equations inline via stage-5 module) | Python (exception 3) | `src/python/build_docx.py` |
 
 ---
 

@@ -45,13 +45,13 @@ python src/python/crop_exhibits.py
 cargo run --release -p visual_gen
 # Outputs: assets/diagrams/*.png
 
-# Stage 5 — Equation rendering (Python exception: latex2mathml + lxml + matplotlib, see CLAUDE.md)
-python src/python/latex_to_omml.py
-# Outputs: assets/equations/*.omml (or *.png fallback)
+# Stage 5 — Equation rendering: NOT a standalone step. `src/python/latex_to_omml.py`
+# is a helper MODULE imported by build_docx.py; it converts each @eq LaTeX to native
+# Word OMML during assembly (300-DPI PNG fallback per equation). (Python exception 4, see CLAUDE.md)
 
 # Stage 6 — DOCX assembly (Python exception: python-docx, see CLAUDE.md)
 python src/python/build_docx.py
-# Outputs: output/01079_Kelompok 3_RMK Pert. 11.docx
+# Outputs: output/01079_Kelompok 3_RMK Pert. 11.docx (equations rendered inline here)
 ```
 
 ---
