@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1712 620" width="1712" height="620">
+  <rect width="1712" height="620" fill="white"/>
+
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5a0000"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0a4a0a"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="856" y="48" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="34" font-weight="bold" fill="#1a1a1a">Masalah Adverse Selection dan Antidotnya: Full Disclosure</text>
+  <text x="856" y="84" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" font-style="italic" fill="#4d4d4d">Scott, Financial Accounting Theory (7th ed.), Ch. 4</text>
+
+  <!-- ── BOX 1: Insider information ── -->
+  <!-- x=40, width=340, centre=210, top=118, height=140 -->
+  <rect x="40" y="118" width="340" height="140" rx="8" ry="8" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="210" y="158" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a1a1a">Informasi Orang Dalam</text>
+  <text x="210" y="186" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="20" fill="#1a1a1a">(Insider Information)</text>
+  <text x="210" y="218" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Manajer mengetahui lebih banyak</text>
+  <text x="210" y="242" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">dari investor luar</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="382" y1="188" x2="448" y2="188" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- ── BOX 2: Information asymmetry ── -->
+  <!-- x=450, width=330, centre=615 -->
+  <rect x="450" y="118" width="330" height="140" rx="8" ry="8" fill="#e0e8f0" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="615" y="158" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1a1a1a">Asimetri Informasi</text>
+  <text x="615" y="184" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="20" fill="#1a1a1a">(Information Asymmetry)</text>
+  <text x="615" y="214" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Investor tidak dapat membedakan</text>
+  <text x="615" y="238" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">perusahaan berkualitas tinggi vs. rendah</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="782" y1="188" x2="848" y2="188" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- ── BOX 3: Adverse selection / lemons ── -->
+  <!-- x=850, width=380, centre=1040 -->
+  <rect x="850" y="118" width="380" height="140" rx="8" ry="8" fill="#f8e8e0" stroke="#8c2000" stroke-width="2.5"/>
+  <text x="1040" y="155" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="#8c2000">Adverse Selection</text>
+  <text x="1040" y="179" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="19" fill="#8c2000">(Lemons Problem — Akerlof, 1970)</text>
+  <text x="1040" y="207" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Pembeli tidak dapat membedakan</text>
+  <text x="1040" y="229" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">sekuritas "bagus" dari sekuritas "buruk"</text>
+  <text x="1040" y="251" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-style="italic" fill="#8c2000">(seperti mobil bekas cacat yang tidak terlihat)</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="1232" y1="188" x2="1298" y2="188" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- ── BOX 4: Market consequence ── -->
+  <!-- x=1300, width=372, centre=1486 -->
+  <rect x="1300" y="118" width="372" height="140" rx="8" ry="8" fill="#fce8e8" stroke="#8c2000" stroke-width="2.5"/>
+  <text x="1486" y="155" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="22" font-weight="bold" fill="#8c2000">Respons Investor</text>
+  <text x="1486" y="181" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="19" fill="#1a1a1a">&amp; Akibat Pasar</text>
+  <text x="1486" y="207" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">Investor price-protect: bid-ask spread</text>
+  <text x="1486" y="229" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#4d4d4d">melebar, likuiditas menurun</text>
+  <text x="1486" y="251" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-style="italic" fill="#8c2000">Pasar bisa menyempit (market thinning)</text>
+
+  <!-- ── FEEDBACK / ANTIDOTE ARC ── -->
+  <!-- Vertical drop from box 4 bottom-centre to below, then left to box 2, then up to box 2 bottom -->
+  <!-- Box bottoms all at y=258. Antidote arc runs at y=370 (below boxes). -->
+  <!-- Arc: from (1486,258) down to (1486,370), left to (615,370), up to (615,258) -->
+  <line x1="1486" y1="258" x2="1486" y2="372" stroke="#0a4a0a" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <line x1="1486" y1="372" x2="615" y2="372" stroke="#0a4a0a" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <line x1="615" y1="372" x2="615" y2="260" stroke="#0a4a0a" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrowhead-green)"/>
+
+  <!-- Antidote label on the horizontal segment -->
+  <rect x="820" y="378" width="536" height="58" rx="6" ry="6" fill="#e8f8e8" stroke="#0a4a0a" stroke-width="1.5"/>
+  <text x="1088" y="400" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="21" font-weight="bold" fill="#0a4a0a">ANTIDOT: Full Disclosure &amp; Pelaporan Keuangan</text>
+  <text x="1088" y="426" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="18" font-style="italic" fill="#0a4a0a">Pengungkapan penuh mengurangi asimetri informasi → pasar berfungsi lebih efisien</text>
+
+  <!-- ── COLUMN LABELS below boxes ── -->
+  <text x="210" y="304" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-weight="bold" fill="#4d4d4d">① Sumber masalah</text>
+  <text x="615" y="304" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-weight="bold" fill="#4d4d4d">② Kondisi pasar</text>
+  <text x="1040" y="304" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-weight="bold" fill="#8c2000">③ Kegagalan pasar</text>
+  <text x="1486" y="304" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="17" font-weight="bold" fill="#8c2000">④ Dampak</text>
+
+  <!-- ── BOTTOM EXPLANATION ── -->
+  <text x="856" y="470" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a1a1a">Implikasi bagi Akuntansi</text>
+  <text x="856" y="498" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="19" fill="#1a1a1a">Standar pengungkapan wajib (mandatory disclosure) dan laporan keuangan berkualitas tinggi berperan</text>
+  <text x="856" y="522" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="19" fill="#1a1a1a">mengurangi asimetri informasi antara manajer dan investor, mendukung efisiensi pasar semi-strong.</text>
+  <text x="856" y="556" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="19" fill="#1a1a1a">Tanpa disclosure memadai, pasar berpotensi mengalami adverse selection parah — biaya modal naik,</text>
+  <text x="856" y="580" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="19" fill="#1a1a1a">alokasi sumber daya terdistorsi, dan nilai perusahaan berkualitas tinggi undervalued secara sistematis.</text>
+
+  <!-- Footnote -->
+  <text x="856" y="610" text-anchor="middle" font-family="Calibri, Arial, sans-serif" font-size="16" font-style="italic" fill="#4d4d4d">Sumber: Scott (2015) Ch. 4; Akerlof, G. A. (1970). The Market for 'Lemons'. Quarterly Journal of Economics, 84(3), 488–500.</text>
+</svg>
