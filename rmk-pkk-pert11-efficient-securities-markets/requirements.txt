@@ -1,0 +1,6 @@
+python-docx==1.2.0
+PyMuPDF
+Pillow
+latex2mathml
+matplotlib
+lxml

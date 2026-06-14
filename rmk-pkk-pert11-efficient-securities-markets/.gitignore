@@ -1,0 +1,7 @@
+/input/
+/extraction/
+/assets/diagrams/*.png
+/assets/exhibits/*.png
+/target/
+**/__pycache__/
+.pytest_cache/
