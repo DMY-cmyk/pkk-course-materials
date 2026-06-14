@@ -95,7 +95,7 @@ def main():
         lines = []
         for p in range(start, end + 1):
             lines.append(f"[[page:{p}]]")
-            page_text = doc[p - 1].get_text()
+            page_text = doc[p - 1].get_text("text")  # explicit mode → typed as str
             lines.extend(page_text.splitlines())
         if not "".join(lines).strip():
             sys.exit("extracted chapter text is empty — extraction failed")
