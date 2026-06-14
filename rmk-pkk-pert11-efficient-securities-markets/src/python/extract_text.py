@@ -1,5 +1,5 @@
 """
-extract_text.py — extracts Wolk Ch. 13 text per page and segments it by the
+extract_text.py — extracts Scott Ch. 4 text per page and segments it by the
 chapter's section headings; writes a verification report with per-page image
 counts.
 
@@ -14,23 +14,23 @@ import sys
 
 import fitz  # PyMuPDF
 
-# Ordered top-level headings of Wolk Ch. 13 (SAGE edition) -> output slugs.
-# Strings must match the exact text as it appears on a standalone line in the PDF.
-# Tuned after inspecting extracted text in Step 5.
+# Ordered top-level headings of Scott Ch. 4 "Efficient Securities Markets"
+# (Pearson 7th ed.) -> output slugs.
+# Strings must match the exact text as it appears on a standalone line in the PDF
+# after line.strip().  Verified by PyMuPDF page dump (see Step 2 of Task 2).
+# Note: 4.7 and 4.2.2 headings wrap across two PDF lines; only the first line
+# is matchable by segment(), so its stripped text is used as the key here.
 SECTIONS = [
-    ("Learning Objectives", "01_learning_objectives"),
-    ("The Statement of Changes in Financial Position", "02_scfp"),
-    ("The Motivation for a Cash Flow Statement", "05_motivation"),
-    ("Requirements of the Cash Flow Statement", "06_requirements"),
-    ("The Nonarticulation Problem", "07_nonarticulation"),
-    ("Classification Problems of SFAS No. 95", "08_classification"),
-    ("Analytical Usefulness of the Cash Flow Statement", "09_analytical"),
-    ("Issues Relating to Rules for Classifying Cash Flows", "09b_issues"),
-    ("Cash Flow Needs of Different Users", "10_users"),
-    ("Cash and Funds Flow Research", "11_research"),
-    ("Improving the SCF", "12_improving"),
-    ("Summary", "13_summary"),
-    ("Questions", "14_questions"),
+    ("4.1  OVERVIEW", "01_overview"),
+    ("4.2  EFFICIENT SECURITIES MARKETS", "02_efficient_markets"),
+    ("4.2.1  The Meaning of Efficiency", "02a_meaning"),
+    ("4.2.2  How Do Market Prices Fully Reflect All Available", "02b_how_prices"),
+    ("4.3  IMPLICATIONS OF EFFICIENT SECURITIES MARKETS", "03_implications"),
+    ("4.4  THE INFORMATIVENESS OF PRICE", "04_informativeness"),
+    ("4.5  A MODEL OF COST OF CAPITAL", "05_capm"),
+    ("4.6  INFORMATION ASYMMETRY", "06_asymmetry"),
+    ("4.7  THE SOCIAL SIGNIFICANCE OF SECURITIES", "07_social"),
+    ("4.8  CONCLUSIONS ON EFFICIENT SECURITIES MARKETS", "08_conclusions"),
 ]
 
 
@@ -87,7 +87,7 @@ def main():
     start, end = int(rng["start_page"]), int(rng["end_page"])
 
     pdf_path = os.path.join(
-        root, "input", "chapter", "PKK Pert. 10 - Statement of Cashflow.pdf")
+        root, "input", "chapter", "Efficient Securities Market - Pert. 11 (Kel. 3 Baru).pdf")
     with fitz.open(pdf_path) as doc:
         if end > len(doc):
             sys.exit(f"chapter-range end_page {end} exceeds PDF page count {len(doc)}")
@@ -117,7 +117,7 @@ def main():
             json.dump(page_map, f, indent=2)
 
         # Verification report — image counts per page (do NOT assert zero; this chapter may have figures)
-        rpt = ["# Verification report — exhibit presence, Wolk Ch. 13 (SAGE edition)\n",
+        rpt = ["# Verification report — exhibit presence, Scott Ch. 4 (Pearson 7th ed.)\n",
                "| PDF page | image count |", "|---|---|"]
         total = 0
         for p in range(start, end + 1):

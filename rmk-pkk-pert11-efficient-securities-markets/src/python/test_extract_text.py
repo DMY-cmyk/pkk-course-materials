@@ -38,18 +38,21 @@ def test_page_numbers():
     assert page_numbers("[[page:305]] a [[page:307]] b [[page:305]]") == [305, 307]
 
 
-# ── Ch.13-specific tests ──────────────────────────────────────────────────────
+# ── Ch.4-specific tests ───────────────────────────────────────────────────────
+# Replaced Ch.13 (Wolk) headings with Ch.4 (Scott) headings.
+# Test intent is identical: verify segment() correctly splits on real chapter
+# headings, preserves preamble, and places body in the right bucket.
 
-def test_segment_splits_on_ch13_headings():
-    lines = ["[[page:1]]", "preamble text",
-             "Statement of Changes in Financial Position", "scfp body",
-             "Free Cash Flow", "fcf body"]
-    sections = [("Statement of Changes in Financial Position", "02_scfp"),
-                ("Free Cash Flow", "10_fcf")]
+def test_segment_splits_on_ch4_headings():
+    lines = ["[[page:2]]", "preamble text",
+             "4.2  EFFICIENT SECURITIES MARKETS", "esm body",
+             "4.6  INFORMATION ASYMMETRY", "asymm body"]
+    sections = [("4.2  EFFICIENT SECURITIES MARKETS", "02_efficient_markets"),
+                ("4.6  INFORMATION ASYMMETRY", "06_asymmetry")]
     out = dict(segment(lines, sections))
     assert "00_preamble" in out
-    assert "scfp body" in out["02_scfp"]
-    assert "fcf body" in out["10_fcf"]
+    assert "esm body" in out["02_efficient_markets"]
+    assert "asymm body" in out["06_asymmetry"]
 
 
 def test_page_numbers_parses_markers():
