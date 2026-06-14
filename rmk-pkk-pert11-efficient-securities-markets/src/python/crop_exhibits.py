@@ -1,7 +1,18 @@
 """
 crop_exhibits.py
-Crops Exhibits from "PKK Pert. 10 - Statement of Cashflow.pdf" (Wolk Ch.13)
+Crops figures/tables from Scott, Financial Accounting Theory (7th ed.), Ch. 4
+"Efficient Securities Markets — Pert. 11 (Kel. 3 Baru).pdf"
 into 300-DPI PNGs for the RMK docx.
+
+Four visuals:
+  fig-4-1   Figure 4.1  — Organisation of Chapter 4 (flowchart, vector, p.1)
+  table-4-1 Table 4.1   — Beaver football-forecasting results (text table, p.5)
+  tip-4-1   Theory in Practice 4.1 — Malkiel / WSJ dartboard / Reg FD (box, p.6)
+  fig-4-2   Figure 4.2  — Role of Financial Reporting (concentric circles, p.22)
+
+IMPORTANT: This PDF has ZERO embedded raster images — all figures are vector
+graphics + text. Crops are taken by RECTANGLE from rasterised pages, not from
+image XObjects.
 
 Usage:
   python src/python/crop_exhibits.py --pages    # render full survey pages to assets/exhibits/tmp/
@@ -15,73 +26,43 @@ import fitz  # pymupdf
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PDF = os.path.join(HERE, "..", "..", "input", "chapter", "PKK Pert. 10 - Statement of Cashflow.pdf")
+PDF = os.path.join(HERE, "..", "..", "input", "chapter",
+                   "Efficient Securities Market - Pert. 11 (Kel. 3 Baru).pdf")
 ZOOM = 300 / 72  # 300 DPI
 MAT = fitz.Matrix(ZOOM, ZOOM)
 
-SURVEY_PAGES = [3, 4, 7, 8, 9, 10, 12, 13, 15, 16, 18, 19, 20]  # exhibit-bearing pages (1-based)
+SURVEY_PAGES = [1, 2, 5, 6, 22]  # exhibit-bearing pages (1-based) + immediate neighbours
 
 # name -> list of (pdf_page_1based, fitz.Rect in PDF points).
 # Multiple entries are stitched vertically (for an exhibit spanning pages).
-# Page size is A4 (595 x 842 pt). Content column spans x ~50..545.
-# SAGE convention: the "Exhibit 13.x" caption line sits ABOVE its table; the
-# table may flow onto / live on the next page, so several exhibits are stitched
-# from two page-clips ([caption page] + [table page]).
+# Page size is A4 (595 x 842 pt). Content column spans x ~48..550.
+# Scott 7th-ed convention: caption line is PART of the figure area; include it.
 #
 # Coordinates confirmed by:
-#   - page.get_text("blocks") for text-only tables (y-bounds of caption + list items)
-#   - page.get_text("rawdict") IMAGE bbox for embedded raster tables
+#   - page.get_text("blocks") for text-only tables/boxes (y-bounds of caption + rows)
+#   - page.get_drawings() bounding boxes for vector figures (circles/boxes/arrows)
 EXHIBITS = {
-    # Caption "Exhibit 13.1 Standard Format…" at p3 y=623–635; "Sources" subtitle
-    # y=641–653; bulleted Sources list y=672–737 (bottom of page).
-    # "Uses of Resources" header + bulleted Uses list at p4 y=72–168; body text
-    # resumes at y=196 — stop there.
-    "exhibit-13-1": [
-        (3, fitz.Rect(48, 617, 550, 742)),
-        (4, fitz.Rect(48, 66, 550, 175)),
-    ],
-    # caption + COMPANY M header + table start on p7, table body on p8 (stop
-    # before the 13.3 caption at y=601).
-    "exhibit-13-2": [
-        (7, fitz.Rect(48, 696, 550, 770)),
-        (8, fitz.Rect(48, 66, 550, 594)),
-    ],
-    # caption + reconciliation table on p8, tail rows on p9 (ends "Liabilities
-    # assumed $630" at y=411).
-    "exhibit-13-3": [
-        (8, fitz.Rect(48, 596, 550, 770)),
-        (9, fitz.Rect(48, 66, 550, 420)),
-    ],
-    # caption (y=242) + "Company ($000,000)" + embedded table image (y 266..367).
-    "exhibit-13-4": [(10, fitz.Rect(48, 237, 550, 372))],
-    # caption on p12 (y=465) + embedded table image on p13 (y 70..374.5).
-    "exhibit-13-5": [
-        (12, fitz.Rect(48, 459, 550, 478)),
-        (13, fitz.Rect(48, 66, 550, 380)),
-    ],
-    # caption on p15 (y=656) + embedded table image on p16 (y 70..209).
-    "exhibit-13-6": [
-        (15, fitz.Rect(48, 650, 550, 670)),
-        (16, fitz.Rect(48, 66, 550, 214)),
-    ],
-    # Exhibit 13.7 — Income Statement and Balance Sheet for ABC Company.
-    # Caption at p18 y=80–91; IMAGE (raster) at p18 y=91.5–500.
-    "exhibit-13-7": [(18, fitz.Rect(48, 74, 550, 506))],
-    # Exhibit 13.8 — Statement of Cash Flows for ABC Company.
-    # Caption at p18 y=687–697; IMAGE continues to p19 y=70–431.
-    "exhibit-13-8": [
-        (18, fitz.Rect(48, 681, 550, 702)),
-        (19, fitz.Rect(48, 66, 550, 437)),
-    ],
-    # Exhibit 13.9 — Statement of Free Cash Flows for ABC Company.
-    # Caption at p19 y=487–497; IMAGE on p20 y=70–610.
-    "exhibit-13-9": [
-        (19, fitz.Rect(48, 481, 550, 500)),
-        (20, fitz.Rect(48, 66, 550, 615)),
-    ],
-    # Exhibit 13.10 — Computing Free Cash Flow From the SCF for ABC Company.
-    # Caption at p20 y=627–637; IMAGE at p20 y=638–759.
-    "exhibit-13-10": [(20, fitz.Rect(48, 621, 550, 765))],
+    # Figure 4.1 — Organisation of Chapter 4.
+    # Caption "Figure 4.1 Organization of Chapter 4" at p1 y=221–231.
+    # Vector drawings span y=240..434 (boxes, arrows, text labels inside figure).
+    # Body text ("4.1 OVERVIEW") resumes at y=446 — stop before it.
+    "fig-4-1": [(1, fitz.Rect(48, 215, 550, 445))],
+
+    # Table 4.1 — Forecasting Outcomes of Football Games (Beaver, 1981).
+    # Caption at p5 y=382–393; table rows y=401–528; footnote + source y=552–605.
+    "table-4-1": [(5, fitz.Rect(48, 376, 550, 612))],
+
+    # Theory in Practice 4.1 — Malkiel / WSJ dartboard / Regulation FD.
+    # Box caption at p6 y=293–304; box body y=320–594 (two-column text).
+    # Body text resumes above (y<293) — exclude it.
+    "tip-4-1": [(6, fitz.Rect(38, 287, 450, 602))],
+
+    # Figure 4.2 — Role of Financial Reporting in an Efficient Market.
+    # Caption "Figure 4.2 Role of Financial Reporting…" at p22 x=37.6 y=398–408.
+    # Vector drawings (concentric ovals) span y=419..612; text labels inside.
+    # Prose continues at p23 y=76 — figure fully fits on p22.
+    # x0=32 to avoid clipping the leading space before "Figure 4.2".
+    "fig-4-2": [(22, fitz.Rect(32, 392, 500, 622))],
 }
 
 
