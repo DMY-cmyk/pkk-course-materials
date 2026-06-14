@@ -2,6 +2,9 @@
 /extraction/
 /assets/diagrams/*.png
 /assets/exhibits/*.png
+/assets/equations/*.png
 /target/
+/build/
+/output/
 **/__pycache__/
 .pytest_cache/
