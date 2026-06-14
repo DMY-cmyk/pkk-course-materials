@@ -2,10 +2,15 @@
 Python exception #4: no Rust crate emits Word OMML. Route: latex2mathml → MathML →
 OMML via Microsoft's shipped MML2OMML.XSL (lxml). Fallback: 300-DPI matplotlib PNG.
 Imported by build_docx.py; not a standalone CLI.
+
+NOTE: latex2mathml.convert() is lenient — it does NOT raise on malformed LaTeX,
+it wraps unrecognized tokens as <mi> identifiers. So a typo yields a valid-but-wrong
+oMath rather than None. Transcribe each equation's LaTeX carefully and eyeball the
+rendered result in the built .docx.
 """
 import glob
 import latex2mathml.converter
-from lxml import etree
+from lxml import etree  # type: ignore[attr-defined]  # lxml C-ext lacks Pyright stubs
 
 
 def _find_xsl():
