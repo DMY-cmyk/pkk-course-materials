@@ -27,8 +27,8 @@ Panduan pembagian peran dan naskah presentasi kelas untuk Pertemuan 11, mata kul
 | # | Anggota (NIM) | Seksi | Fokus | Durasi |
 |---|---|---|---|---|
 | 1 | Adinda Putri Dewi (086) | 4.1 + 4.2.1 | Pembuka, agenda, definisi efisiensi semi-strong & empat properti | ± 4′ |
-| 2 | Efri Nurmalinda (049) | 4.2.2 | Mekanisme pembentukan harga: konsensus, independensi, Theory in Practice 4.1 | ± 3,5′ |
-| 3 | Dzaki Muhammad Yusfian (079) | 4.3 + 4.4 | Implikasi Beaver & paradoks informativeness (Grossman, noise traders) | ± 4′ |
+| 2 | Efri Nurmalinda (049) | 4.2.2 + 4.3 (implikasi 1–2) | Mekanisme pembentukan harga + dua implikasi pertama Beaver (kebijakan tanpa efek kas, full disclosure) | ± 4′ |
+| 3 | Dzaki Muhammad Yusfian (079) | 4.3 (implikasi 3–4) + 4.4 | Dua implikasi terakhir Beaver (price-protected, akuntan bersaing) + paradoks informativeness (Grossman, noise traders) | ± 4′ |
 | 4 | Prasetya A. S. Gumilang (068) | 4.5 | CAPM, market model, dan kritik empat asumsi | ± 4′ |
 | 5 | Odisiana Manek (041) | 4.6 | Asimetri informasi, lemons problem, fundamental value | ± 4′ |
 | 6 | Kunthi Talibrata (097) | 4.7 + 4.8 | Signifikansi sosial, simpulan bab, pimpin tanya-jawab | ± 3,5′ |
@@ -70,7 +70,7 @@ Membuka presentasi, menyampaikan agenda, dan memastikan kelas memahami apa itu p
 Menjelaskan bagaimana harga pasar bisa mencerminkan seluruh informasi melalui perata-rataan, dan mengapa independensi keputusan menjadi syarat mutlaknya.
 
 ### Durasi & Posisi
-± 3,5 menit; pembicara kedua.
+± 4 menit; pembicara kedua.
 
 ### Naskah Poin
 - **Teka-teki sentral**: dua investor yang sama-sama rasional bisa bereaksi berbeda atas informasi yang sama karena keyakinan awal dan keahlian mereka berbeda. Analogi "mobil": model keputusan menyediakan kendaraan untuk mengolah informasi, tetapi tak menyeragamkan cara menyetir.
@@ -78,6 +78,9 @@ Menjelaskan bagaimana harga pasar bisa mencerminkan seluruh informasi melalui pe
 - **Contoh konsensus ramalan sepak bola Beaver (1981)**: 15–16 peramal membuat 619 ramalan selama 1966–1968; tak ada satu peramal pun konsisten unggul, tetapi ramalan *konsensus* selalu menang dan menempati peringkat pertama saat ketiga tahun digabung. Analoginya ke pasar: peramal = investor, ramalan = keputusan beli/jual, konsensus = harga pasar.
 - **Syarat krusial — independensi**: argumen perata-rataan hanya berlaku bila keputusan investor independen. Tanpa independensi (peramal berunding lebih dulu, atau investor bias kolektif), argumen runtuh — bisa muncul *share price momentum* sehingga harga "terlalu tinggi" karena terdorong kenaikan masa lalu, bukan penilaian rasional.
 - **Theory in Practice 4.1**: Malkiel, *A Random Walk Down Wall Street* (1973), berargumen melempar dart acak ke daftar saham NYSE menghasilkan return setinggi manajer profesional — sebab tak ada saham "murah" (fair game). Uji WSJ tahun 1990-an (100 kontes pertama): profesional rata-rata 10,9%, dart 4,5%, indeks Dow Jones 6,8%. Pembelaan Malkiel: profesional mungkin pilih saham lebih berisiko dan pasar 1990-an didominasi firma besar; tambahan — profesional mungkin punya akses informasi orang dalam, karena *Regulation FD* baru berlaku tahun 2000.
+- **Jembatan ke implikasi pelaporan (Beaver, 1973)**: keunggulan harga rata-rata membawa konsekuensi langsung bagi pelaporan keuangan. Beaver (1973) menulis untuk menjelaskan implikasi teori pasar efisien kepada akuntan praktik; saya sampaikan dua implikasi pertamanya.
+- **Implikasi 1 — kebijakan akuntansi tanpa efek arus kas tidak menggerakkan harga**: sepanjang kebijakan diungkapkan dan dapat dikonversi, pilihan seperti amortisasi garis lurus vs saldo menurun hanya berefek "di atas kertas" — laba berubah, arus kas dan pajak tidak. Pasar "menembus" sampai implikasi kas yang sesungguhnya dan tak terkecoh oleh perbedaan kebijakan. Pengungkapan kebijakan ini diwajibkan *IAS 1* sebagai bagian laporan keuangan lengkap.
+- **Implikasi 2 — full disclosure**: pasar efisien berjalan seiring pengungkapan penuh. Ungkapkan informasi relevan yang murah secara tepat waktu selama manfaat > biaya, karena (a) investor pasti memakai setiap informasi sehingga tak terbuang, dan (b) makin terbuka, makin tumbuh kepercayaan pasar karena makin sedikit informasi orang dalam yang dikhawatirkan.
 
 ### Istilah Kunci
 - **Konsensus / harga rata-rata** — agregat keputusan banyak investor; analogi harga pasar.
@@ -85,33 +88,33 @@ Menjelaskan bagaimana harga pasar bisa mencerminkan seluruh informasi melalui pe
 - **Independensi keputusan** — syarat agar kekeliruan individual saling meniadakan.
 - **Share price momentum** — kecenderungan harga terus bergerak searah karena dorongan masa lalu.
 - **Regulation FD** — aturan SEC (berlaku 2000) yang melarang manajer membocorkan informasi ke analis sebelum publik.
+- **Cash-flow effect** — pembeda kebijakan akuntansi yang berdampak nyata vs "di atas kertas".
+- **Full disclosure** — pengungkapan penuh selama manfaat melampaui biaya; yang dihargai pasar adalah muatan informasi, bukan bentuknya.
 
 ### Kalimat Transisi
-"Kalau harga rata-rata pasar begitu unggul, apa konsekuensinya bagi pelaporan keuangan — dan apakah tidak ada paradoksnya? Dzaki akan membahas implikasi Beaver dan inkonsistensi informativeness."
+"Itulah dua implikasi pertama Beaver — netralitas kebijakan dan *full disclosure*. Dzaki akan melanjutkan ke dua implikasi terakhir dan paradoks yang justru disingkapkan keduanya."
 
 ### Antisipasi Tanya-Jawab
 - **Kalau konsensus selalu menang, kenapa masih perlu analis & laporan keuangan?** Justru inilah paradoks yang dibahas seksi berikutnya (Grossman) — diselesaikan lewat konsep noise traders sehingga harga hanya *partially informative* dan analisis tetap bernilai.
 - **Bukankah hasil dart yang kalah dari profesional membantah efisiensi?** Belum tentu — bisa karena perbedaan risiko, dominasi firma besar, atau akses informasi orang dalam; Malkiel berargumen hasil itu masih konsisten dengan efisiensi.
+- **Mengapa pilihan metode amortisasi tidak menggerakkan harga?** Karena tidak berefek arus kas atau pajak; pasar menembus sampai ke implikasi kas yang sesungguhnya asalkan kebijakan diungkapkan dan dapat dikonversi.
 
 ## Bagian 3 — Dzaki Muhammad Yusfian (079) · Seksi 4.3 + 4.4 — Implikasi Pelaporan & Informativeness
 
 ### Tujuan
-Menjelaskan empat implikasi Beaver (1973) bagi pelaporan keuangan, lalu paradoks informativeness (Grossman) dan penyelesaiannya.
+Melanjutkan Efri dengan dua implikasi terakhir Beaver (1973) bagi pelaporan keuangan, lalu paradoks informativeness (Grossman) dan penyelesaiannya.
 
 ### Durasi & Posisi
 ± 4 menit; pembicara ketiga.
 
 ### Naskah Poin
-- **Implikasi 1 (Beaver, 1973)**: kebijakan akuntansi tanpa efek arus kas tidak memengaruhi harga, asalkan diungkapkan dan dapat dikonversi. Contoh: amortisasi garis lurus vs saldo menurun hanya berefek "di atas kertas"; laba berubah, arus kas dan pajak tidak. Pengungkapan kebijakan ini bahkan diwajibkan *IAS 1* sebagai bagian laporan keuangan lengkap.
-- **Implikasi 2 — full disclosure**: ungkapkan informasi relevan yang murah secara tepat waktu selama manfaat > biaya; alasannya, investor pasti memakai setiap informasi (tak terbuang) dan keterbukaan menumbuhkan kepercayaan pasar.
+- **Sambungan dari Efri**: Efri telah menyampaikan dua implikasi pertama Beaver — netralitas kebijakan tanpa efek kas dan *full disclosure*. Saya lanjutkan dengan dua implikasi sisanya, lalu inkonsistensi logis yang muncul setelahnya.
 - **Implikasi 3 — naïve investor price-protected**: asalkan cukup investor terinformasi memahami pengungkapan, harga sama seolah semua paham; investor naif bisa menyewa ahli atau meniru keputusan investor terinformasi — mereka terlindungi oleh harga efisien.
 - **Implikasi 4 — akuntan bersaing**: akuntan bersaing dengan penyedia informasi lain dan tak punya jaminan bertahan; keempat implikasi ini menopang konsep *decision usefulness* yang menjadi fondasi *Conceptual Framework*.
 - **Paradoks Grossman (1976)**: bila harga *fully informative*, insentif mengumpulkan informasi yang mahal lenyap → investor berhenti mencari → harga tak lagi mencerminkan seluruh informasi; ekuilibrium stabil tak terbentuk, harga berosilasi liar. Ini mengancam kegunaan analisis laporan keuangan.
 - **Penyelesaian — noise traders + rational expectations**: keberadaan *noise traders* (beli/jual karena alasan acak) membuat investor rasional tak bisa memastikan apakah harga tinggi disebabkan informasi superior pihak lain atau sekadar noise, sehingga harga menjadi *partially informative*. Insentif memburu informasi pulih — lewat analisis laporan keuangan, kebijakan konservatif sebagai sinyal, *voluntary disclosure*, dan MD&A. Prediksi empiris: harga firma besar lebih informatif sehingga merespons lebih sedikit terhadap informasi laporan keuangan dibanding firma kecil.
 
 ### Istilah Kunci
-- **Cash-flow effect** — pembeda kebijakan akuntansi yang berdampak nyata vs "di atas kertas".
-- **Full disclosure** — pengungkapan penuh selama manfaat melampaui biaya.
 - **Price-protected** — investor naif ikut terlindungi oleh harga efisien.
 - **Decision usefulness** — kegunaan informasi untuk pengambilan keputusan; fondasi Conceptual Framework.
 - **Fully / partially informative** — harga mencerminkan seluruh vs sebagian informasi.
@@ -121,7 +124,6 @@ Menjelaskan empat implikasi Beaver (1973) bagi pelaporan keuangan, lalu paradoks
 "Untuk memformalkan hubungan harga–risiko–return secara matematis, Prasetya akan membawa kita ke Capital Asset Pricing Model."
 
 ### Antisipasi Tanya-Jawab
-- **Mengapa pilihan metode amortisasi tidak menggerakkan harga?** Karena tidak berefek arus kas atau pajak; pasar menembus sampai ke implikasi kas yang sesungguhnya asalkan kebijakan diungkapkan dan dapat dikonversi.
 - **Kalau harga sudah mencerminkan semua informasi, untuk apa membaca laporan keuangan?** Karena harga hanya *partially informative* akibat noise; analisis cermat bisa menyingkap sekuritas yang salah-harga dan menjadi peluang laba.
 
 ## Bagian 4 — Prasetya A. S. Gumilang (068) · Seksi 4.5 — Capital Asset Pricing Model
