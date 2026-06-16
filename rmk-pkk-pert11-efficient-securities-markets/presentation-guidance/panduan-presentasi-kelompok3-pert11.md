@@ -17,7 +17,6 @@ Panduan pembagian peran dan naskah presentasi kelas untuk Pertemuan 11, mata kul
 
 - **Total durasi** ± 23 menit penyajian + sesi tanya-jawab. Setiap pembicara ± 3,5–4 menit.
 - **Urutan** mengikuti alur bab: 1 → 2 → 3 → 4 → 5 → 6. Pembicara 1 membuka, pembicara 6 menutup dan memimpin tanya-jawab.
-- **Wajib hafal kalimat transisi** ke pembicara berikutnya agar perpindahan mulus dan tidak ada jeda canggung.
 - **Jaga professor-voice**: bahasa akademik yang lugas, sebut angka dan nama studi secara spesifik, hindari menyederhanakan ala ringkasan sarjana.
 - **Semua anggota wajib menguasai benang merah bab** — bahwa yang dihargai pasar adalah *muatan informasi* (bukan bentuk pengungkapan), dan bahwa *asimetri informasi* adalah alasan keberadaan akuntansi — supaya siapa pun bisa membantu menjawab pertanyaan di luar seksinya.
 - **Konsistensi istilah**: pakai istilah Inggris–Indonesia secara seragam mengacu pada Glosarium Bersama di bagian akhir; latih sekali dengan timer sebelum tampil.
@@ -57,9 +56,6 @@ Membuka presentasi, menyampaikan agenda, dan memastikan kelas memahami apa itu p
 - **Fair game** — tidak ada peluang return di atas return normal sesuai risiko.
 - **Random walk** — perubahan harga tak berkorelasi antarwaktu.
 
-### Kalimat Transisi
-"Setelah memahami definisi dan empat sifat efisiensi, muncul pertanyaan: bagaimana mungkin harga mencerminkan *seluruh* informasi padahal tiap investor menafsirkannya berbeda? Saya serahkan kepada Efri."
-
 ### Antisipasi Tanya-Jawab
 - **Apakah pasar efisien berarti harga selalu benar / sama dengan nilai riil?** Tidak. Efisiensi relatif terhadap informasi publik; harga bisa keliru bila info publiknya tidak lengkap atau salah (mis. menjelang 2007–2008). Yang dijamin: harga tak bias terhadap info publik dan bereaksi cepat atas informasi baru.
 - **Apa beda semi-strong dan strong form?** Semi-strong mencerminkan informasi publik saja; strong form mencakup informasi orang dalam. Bab ini memakai semi-strong karena menghapus seluruh informasi orang dalam terlampau mahal.
@@ -91,9 +87,6 @@ Menjelaskan bagaimana harga pasar bisa mencerminkan seluruh informasi melalui pe
 - **Cash-flow effect** — pembeda kebijakan akuntansi yang berdampak nyata vs "di atas kertas".
 - **Full disclosure** — pengungkapan penuh selama manfaat melampaui biaya; yang dihargai pasar adalah muatan informasi, bukan bentuknya.
 
-### Kalimat Transisi
-"Itulah dua implikasi pertama Beaver — netralitas kebijakan dan *full disclosure*. Dzaki akan melanjutkan ke dua implikasi terakhir dan paradoks yang justru disingkapkan keduanya."
-
 ### Antisipasi Tanya-Jawab
 - **Kalau konsensus selalu menang, kenapa masih perlu analis & laporan keuangan?** Justru inilah paradoks yang dibahas seksi berikutnya (Grossman) — diselesaikan lewat konsep noise traders sehingga harga hanya *partially informative* dan analisis tetap bernilai.
 - **Bukankah hasil dart yang kalah dari profesional membantah efisiensi?** Belum tentu — bisa karena perbedaan risiko, dominasi firma besar, atau akses informasi orang dalam; Malkiel berargumen hasil itu masih konsisten dengan efisiensi.
@@ -119,9 +112,6 @@ Melanjutkan Efri dengan dua implikasi terakhir Beaver (1973) bagi pelaporan keua
 - **Decision usefulness** — kegunaan informasi untuk pengambilan keputusan; fondasi Conceptual Framework.
 - **Fully / partially informative** — harga mencerminkan seluruh vs sebagian informasi.
 - **Noise traders** — pedagang yang bertransaksi karena alasan acak, bukan penilaian informasi.
-
-### Kalimat Transisi
-"Untuk memformalkan hubungan harga–risiko–return secara matematis, Prasetya akan membawa kita ke Capital Asset Pricing Model."
 
 ### Antisipasi Tanya-Jawab
 - **Kalau harga sudah mencerminkan semua informasi, untuk apa membaca laporan keuangan?** Karena harga hanya *partially informative* akibat noise; analisis cermat bisa menyingkap sekuritas yang salah-harga dan menjadi peluang laba.
@@ -149,9 +139,6 @@ Memformalkan hubungan antara harga efisien, risiko, dan return melalui Sharpe–
 - **Market model** — bentuk regresi ex post dari CAPM; memisah return harapan dan abnormal.
 - **Abnormal return (εjt)** — bagian return yang tak terduga di awal periode.
 - **Estimation risk** — risiko karena tak tahu nilai sebenarnya dari parameter (mis. beta).
-
-### Kalimat Transisi
-"CAPM tadi belum memperhitungkan informasi orang dalam — dan justru di situlah inti seluruh teori akuntansi keuangan: asimetri informasi, yang akan dibawakan Odisiana."
 
 ### Antisipasi Tanya-Jawab
 - **Mengapa hanya beta, bukan risiko total, yang menentukan return?** Karena risiko spesifik perusahaan terdiversifikasi habis dalam portofolio; hanya risiko sistematis (beta) yang tersisa dan layak dikompensasi.
@@ -181,9 +168,6 @@ Menjelaskan asimetri informasi (adverse selection vs moral hazard), *lemons prob
 - **Fundamental value** — nilai saham seandainya tak ada informasi orang dalam.
 - **Sarbanes-Oxley (2002)** — undang-undang yang memperketat pelaporan demi memulihkan kepercayaan.
 
-### Kalimat Transisi
-"Kalau pelaporan berkualitas mendekatkan harga ke nilai fundamental, apa artinya bagi masyarakat dan alokasi modal? Kunthi akan menutup dengan signifikansi sosial dan simpulan bab."
-
 ### Antisipasi Tanya-Jawab
 - **Apa beda adverse selection dan moral hazard?** Adverse selection adalah informasi tersembunyi sebelum transaksi (kualitas aset / kejujuran orang dalam); moral hazard adalah aksi tersembunyi setelahnya (usaha manajer yang tak teramati).
 - **Bagaimana perusahaan menurunkan biaya modalnya?** Lewat *superior disclosure* yang mengurangi informasi orang dalam → estimation risk turun → harga naik dan biaya modal turun, persis seperti penjual mobil bekas yang membuka catatan servisnya.
@@ -210,9 +194,6 @@ Menjelaskan signifikansi sosial pasar yang bekerja baik bagi alokasi modal, meny
 - **Market depth** — jumlah saham yang dapat ditransaksikan tanpa menggoyang harga.
 - **Stick vs carrots** — regulasi (tongkat) vs insentif pasar (wortel).
 - **Dua syarat sosial** — informasi berguna tersedia publik & harga efisien relatif terhadapnya.
-
-### Kalimat Transisi
-"Demikian pemaparan Kelompok 3. Kami buka sesi diskusi dan tanya-jawab — silakan."
 
 ### Antisipasi Tanya-Jawab
 - **Mengapa pelaporan berkualitas menjadi urusan sosial, bukan sekadar urusan perusahaan?** Karena modal langka; harga yang dekat nilai fundamental mengarahkan modal ke proyek paling produktif sehingga kesejahteraan sosial naik — ditopang bukti Wurgler, FHKP, dan BHV.
