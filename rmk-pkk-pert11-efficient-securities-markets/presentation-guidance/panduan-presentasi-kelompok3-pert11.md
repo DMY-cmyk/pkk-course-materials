@@ -64,7 +64,7 @@ Membuka presentasi, menyampaikan agenda, dan memastikan kelas memahami apa itu p
 - **Apakah pasar efisien berarti harga selalu benar / sama dengan nilai riil?** Tidak. Efisiensi relatif terhadap informasi publik; harga bisa keliru bila info publiknya tidak lengkap atau salah (mis. menjelang 2007–2008). Yang dijamin: harga tak bias terhadap info publik dan bereaksi cepat atas informasi baru.
 - **Apa beda semi-strong dan strong form?** Semi-strong mencerminkan informasi publik saja; strong form mencakup informasi orang dalam. Bab ini memakai semi-strong karena menghapus seluruh informasi orang dalam terlampau mahal.
 
-## Bagian 2 — Efri Nurmalinda (049) · Seksi 4.2.2 — Mekanisme Pembentukan Harga
+## Bagian 2 — Efri Nurmalinda (049) · Seksi 4.2.2 + 4.3 (implikasi 1–2) — Mekanisme Pembentukan Harga & Dua Implikasi Pertama Beaver
 
 ### Tujuan
 Menjelaskan bagaimana harga pasar bisa mencerminkan seluruh informasi melalui perata-rataan, dan mengapa independensi keputusan menjadi syarat mutlaknya.
@@ -99,7 +99,7 @@ Menjelaskan bagaimana harga pasar bisa mencerminkan seluruh informasi melalui pe
 - **Bukankah hasil dart yang kalah dari profesional membantah efisiensi?** Belum tentu — bisa karena perbedaan risiko, dominasi firma besar, atau akses informasi orang dalam; Malkiel berargumen hasil itu masih konsisten dengan efisiensi.
 - **Mengapa pilihan metode amortisasi tidak menggerakkan harga?** Karena tidak berefek arus kas atau pajak; pasar menembus sampai ke implikasi kas yang sesungguhnya asalkan kebijakan diungkapkan dan dapat dikonversi.
 
-## Bagian 3 — Dzaki Muhammad Yusfian (079) · Seksi 4.3 + 4.4 — Implikasi Pelaporan & Informativeness
+## Bagian 3 — Dzaki Muhammad Yusfian (079) · Seksi 4.3 (implikasi 3–4) + 4.4 — Implikasi Pelaporan & Informativeness
 
 ### Tujuan
 Melanjutkan Efri dengan dua implikasi terakhir Beaver (1973) bagi pelaporan keuangan, lalu paradoks informativeness (Grossman) dan penyelesaiannya.
@@ -224,7 +224,7 @@ Daftar istilah ini wajib dipahami seragam oleh seluruh anggota agar siapa pun da
 
 - **Efficient securities market (semi-strong)** — harga selalu mencerminkan sepenuhnya informasi yang diketahui publik.
 - **Fully reflect** — hasil perata-rataan taksiran investor yang tak bias.
-- **Full disclosure** — pengungkapan penuh; yang dihargai pasar adalah muatan informasi, bukan bentuknya.
+- **Full disclosure** — pengungkapan penuh selama manfaat melampaui biaya; yang dihargai pasar adalah muatan informasi, bukan bentuknya.
 - **Information asymmetry** — ketimpangan informasi; alasan terdalam keberadaan akuntansi.
 - **Adverse selection / moral hazard** — informasi tersembunyi (pra-transaksi) vs aksi tersembunyi (pasca-transaksi).
 - **Noise traders & partially informative** — pedagang acak yang membuat harga hanya sebagian informatif, sehingga analisis laporan keuangan tetap berguna.
