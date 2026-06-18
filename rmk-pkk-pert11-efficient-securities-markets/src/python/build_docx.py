@@ -18,6 +18,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
+from PIL import Image
 
 from latex_to_omml import latex_to_omath, render_eq_png
 
@@ -275,8 +276,22 @@ def add_equation(doc, latex, root):
     return para
 
 
+def fit_image_dims(w_px, h_px, max_w_cm=14.5, max_h_cm=12.0):
+    """Aspect-ratio-preserving fit within both a width and a height cap (cm)."""
+    ar = h_px / w_px
+    width_cm = max_w_cm
+    height_cm = width_cm * ar
+    if height_cm > max_h_cm:
+        height_cm = max_h_cm
+        width_cm = height_cm / ar
+    return width_cm, height_cm
+
+
 def add_image_with_caption(doc, img_path, caption):
-    doc.add_picture(img_path, width=Cm(14.5))
+    with Image.open(img_path) as im:
+        w_px, h_px = im.size
+    width_cm, height_cm = fit_image_dims(w_px, h_px)
+    doc.add_picture(img_path, width=Cm(width_cm), height=Cm(height_cm))
     pic = doc.paragraphs[-1]
     pic.alignment = WD_ALIGN_PARAGRAPH.CENTER
     pic.paragraph_format.space_before = Pt(2)

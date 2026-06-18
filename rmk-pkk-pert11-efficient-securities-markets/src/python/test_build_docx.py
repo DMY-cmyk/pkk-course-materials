@@ -11,6 +11,7 @@ sys.path.insert(0, HERE)
 
 from build_docx import (  # noqa: E402
     parse_inline_runs, parse_blocks, split_caption, group_cornell, split_cue_tag,
+    fit_image_dims,
 )
 
 
@@ -192,3 +193,25 @@ def test_group_cornell_section_passthrough_flushes_pending():
     assert grouped[0] == ("cornell", [("Q1", "A1")])
     assert grouped[1] == ("section", "§4.3 — Implikasi")
     assert grouped[2] == ("cornell", [("Q2", "A2")])
+
+
+# --- fit_image_dims ---------------------------------------------------------
+
+def test_fit_image_dims_wide_is_width_bound():
+    w, h = fit_image_dims(1792, 984)        # Table 4.1 shape
+    assert abs(w - 14.5) < 1e-6             # width hits the cap
+    assert abs(h - 14.5 * 984 / 1792) < 1e-6
+    assert h <= 12.0 + 1e-6
+
+
+def test_fit_image_dims_tall_is_height_bound():
+    w, h = fit_image_dims(1000, 2000)       # very tall: ar = 2.0
+    assert abs(h - 12.0) < 1e-6             # height hits the cap
+    assert w < 14.5                         # width scaled down
+    assert abs(w - 12.0 / 2.0) < 1e-6
+
+
+def test_fit_image_dims_never_exceeds_caps():
+    for (wpx, hpx) in [(1717, 1314), (1859, 959), (1712, 620)]:
+        w, h = fit_image_dims(wpx, hpx)
+        assert w <= 14.5 + 1e-6 and h <= 12.0 + 1e-6
