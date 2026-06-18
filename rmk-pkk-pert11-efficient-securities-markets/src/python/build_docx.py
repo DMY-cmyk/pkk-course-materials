@@ -229,6 +229,16 @@ def add_page_number_footer(section):
 
 CAPTION_PREFIX_RE = re.compile(r'^((?:Gambar|Tabel) \d+\.)\s*(.*)$')
 
+CUE_TAG_RE = re.compile(r'^\s*(§[\d.]+[A-Za-z]?)\s*\|\s*(.*)$', re.DOTALL)
+
+
+def split_cue_tag(cue):
+    """Split '§4.2.1 | question' -> ('§4.2.1', 'question'). No tag -> (None, cue)."""
+    m = CUE_TAG_RE.match(cue)
+    if m:
+        return m.group(1), m.group(2).strip()
+    return None, cue
+
 
 def _add_caption(doc, caption, space_after_pt=6):
     title, source = split_caption(caption)
@@ -309,16 +319,26 @@ def add_cornell_table(doc, rows):
     table.style = 'Table Grid'
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     for i, (cue, notes) in enumerate(rows):
-        for j, txt in enumerate((cue, notes)):
-            cell = table.rows[i].cells[j]
-            cell.text = ""
-            para = cell.paragraphs[0]
-            para.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
-            para.alignment = (WD_ALIGN_PARAGRAPH.LEFT if j == 0
-                              else WD_ALIGN_PARAGRAPH.JUSTIFY)
-            for t, b, it in parse_inline_runs(txt):
-                _style_run(para.add_run(t), font_size=11,
-                           bold=(b or j == 0), italic=it)
+        # --- cue cell (col 0) ---
+        cue_cell = table.rows[i].cells[0]
+        cue_cell.text = ""
+        cue_para = cue_cell.paragraphs[0]
+        cue_para.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
+        cue_para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        tag, question = split_cue_tag(cue)
+        if tag:
+            _style_run(cue_para.add_run(tag), font_size=11, bold=True)
+            cue_para.add_run().add_break()
+        for t, b, it in parse_inline_runs(question):
+            _style_run(cue_para.add_run(t), font_size=11, bold=True, italic=it)
+        # --- notes cell (col 1) ---
+        notes_cell = table.rows[i].cells[1]
+        notes_cell.text = ""
+        notes_para = notes_cell.paragraphs[0]
+        notes_para.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
+        notes_para.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        for t, b, it in parse_inline_runs(notes):
+            _style_run(notes_para.add_run(t), font_size=11, bold=b, italic=it)
     for row in table.rows:
         row.cells[0].width = Cm(5)
         row.cells[1].width = Cm(10)

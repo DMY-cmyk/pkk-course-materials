@@ -9,7 +9,9 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from build_docx import parse_inline_runs, parse_blocks, split_caption, group_cornell  # noqa: E402
+from build_docx import (  # noqa: E402
+    parse_inline_runs, parse_blocks, split_caption, group_cornell, split_cue_tag,
+)
 
 
 # --- parse_inline_runs -------------------------------------------------------
@@ -98,6 +100,20 @@ def test_group_cornell_pairs_consecutive_rows():
     assert grouped[0] == ("cornell", [("Q1", "A1"), ("Q2", "A2")])
     assert grouped[1][0] == "image"
     assert grouped[2] == ("cornell", [("Q3", "A3")])
+
+
+# --- split_cue_tag -----------------------------------------------------------
+
+def test_split_cue_tag_with_tag():
+    assert split_cue_tag("§4.2.1 | Apa definisi efisiensi?") == ("§4.2.1", "Apa definisi efisiensi?")
+
+
+def test_split_cue_tag_section_level():
+    assert split_cue_tag("§4.5 | Apa itu market model?") == ("§4.5", "Apa itu market model?")
+
+
+def test_split_cue_tag_without_tag():
+    assert split_cue_tag("Apa definisi efisiensi?") == (None, "Apa definisi efisiensi?")
 
 
 def test_group_cornell_single_pair():
