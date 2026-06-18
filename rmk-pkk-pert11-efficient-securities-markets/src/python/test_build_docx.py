@@ -160,3 +160,19 @@ def test_parse_blocks_emits_eq():
     blocks = parse_blocks(md)
     assert blocks[0][0] == "eq"
     assert blocks[0][1].startswith("\\beta_j")
+
+
+def test_parse_blocks_emits_section():
+    md = "@section §4.2 — Pasar Sekuritas Efisien\n"
+    blocks = parse_blocks(md)
+    assert blocks[0] == ("section", "§4.2 — Pasar Sekuritas Efisien")
+
+
+def test_group_cornell_section_passthrough_flushes_pending():
+    blocks = [("cue", "Q1"), ("notes", "A1"),
+              ("section", "§4.3 — Implikasi"),
+              ("cue", "Q2"), ("notes", "A2")]
+    grouped = group_cornell(blocks)
+    assert grouped[0] == ("cornell", [("Q1", "A1")])
+    assert grouped[1] == ("section", "§4.3 — Implikasi")
+    assert grouped[2] == ("cornell", [("Q2", "A2")])

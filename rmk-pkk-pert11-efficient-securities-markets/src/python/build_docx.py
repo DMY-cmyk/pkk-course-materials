@@ -94,6 +94,9 @@ def parse_blocks(md_text):
         elif line.startswith("- "):
             flush()
             blocks.append(("bullet", line[2:].strip()))
+        elif stripped.startswith("@section "):
+            flush()
+            blocks.append(("section", stripped[9:].strip()))
         elif stripped.startswith("@eq "):
             flush()
             blocks.append(("eq", stripped[4:].strip()))
@@ -190,6 +193,20 @@ def add_rule(doc):
     bottom.set(qn('w:color'), '000000')
     pBdr.append(bottom)
     pPr.append(pBdr)
+    return para
+
+
+def add_section_divider(doc, text):
+    """Bold, lightly shaded chapter-section divider (e.g. '§4.2 — ...')."""
+    para = _add_para(doc, parse_inline_runs(text), font_size=12, bold=True,
+                     alignment=WD_ALIGN_PARAGRAPH.LEFT,
+                     space_before_pt=10, space_after_pt=4)
+    pPr = para._p.get_or_add_pPr()
+    shd = OxmlElement('w:shd')
+    shd.set(qn('w:val'), 'clear')
+    shd.set(qn('w:color'), 'auto')
+    shd.set(qn('w:fill'), 'D9D9D9')
+    pPr.append(shd)
     return para
 
 
@@ -365,6 +382,8 @@ def build():
             elif kind == "table":
                 toml_path = os.path.normpath(os.path.join(content_dir, payload))
                 add_table_from_toml(doc, toml_path)
+            elif kind == "section":
+                add_section_divider(doc, payload)
             elif kind == "heading":
                 _add_para(doc, parse_inline_runs(payload), font_size=13, bold=True,
                           alignment=WD_ALIGN_PARAGRAPH.LEFT,
