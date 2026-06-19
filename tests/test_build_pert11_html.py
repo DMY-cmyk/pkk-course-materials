@@ -59,3 +59,24 @@ def test_controls_js_defines_all_behaviors():
     assert "Escape" in js and "overview" in js
     assert "clientX" in js  # left/right click-zone logic
     assert "progress" in js and "cur" in js
+
+def test_build_html_is_complete_and_self_contained():
+    import os
+    ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    html = b.build_html(os.path.join(ROOT, b.SOURCE_PDF))
+    assert html.count('class="slide"') == 18
+    assert "{{SLIDES}}" not in html and "{{CONTROLS_JS}}" not in html \
+        and "{{SLIDE_COUNT}}" not in html
+    assert "> / 18" not in html  # counter substituted
+    for bad in ("http://", "https://", "<link", "@import"):
+        assert bad not in html
+    # ids unique across whole document
+    import re
+    ids = re.findall(r'id="([^"]+)"', html)
+    assert len(ids) == len(set(ids))
+
+def test_build_html_deterministic():
+    import os
+    ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    p = os.path.join(ROOT, b.SOURCE_PDF)
+    assert b.build_html(p) == b.build_html(p)
