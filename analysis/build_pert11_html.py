@@ -65,8 +65,10 @@ def build_html(pdf_path: str) -> str:
             f'<section class="slide" data-index="{idx}">{ns}</section>'
         )
     slides = "\n".join(sections)
-    tpl = open(TEMPLATE, encoding="utf-8").read()
-    js = open(CONTROLS, encoding="utf-8").read()
+    with open(TEMPLATE, encoding="utf-8") as f:
+        tpl = f.read()
+    with open(CONTROLS, encoding="utf-8") as f:
+        js = f.read()
     html = (tpl.replace("{{SLIDE_COUNT}}", str(len(svgs)))
                .replace("{{CONTROLS_JS}}", js)
                .replace("{{SLIDES}}", slides))

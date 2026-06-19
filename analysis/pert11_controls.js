@@ -5,7 +5,6 @@
   var cur = document.getElementById('cur');
   var progress = document.getElementById('progress');
   var overview = document.getElementById('overview');
-  var deck = document.getElementById('deck');
 
   function show(idx) {
     i = Math.max(0, Math.min(n - 1, idx));

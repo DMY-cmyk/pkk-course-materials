@@ -88,11 +88,11 @@ def main():
         chrome_img = Image.open(chrome_png).convert("RGB")
         if chrome_img.size != (W, H):
             print(
-                "page %02d: SCREENSHOT SIZE %s != (%d, %d) - check display DPI/scale"
+                "page %02d: SCREENSHOT SIZE %s != (%d, %d) - check display DPI/scale  CHECK"
                 % (i + 1, chrome_img.size, W, H)
             )
             all_ok = False
-            chrome_img = chrome_img.resize((W, H))
+            continue
         c = np.asarray(chrome_img, dtype=np.int16)
         diff = np.abs(a - c)
         mad = float(diff.mean())
