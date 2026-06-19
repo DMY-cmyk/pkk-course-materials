@@ -21,6 +21,17 @@ def test_render_equation_writes_valid_png_and_svg(tmp_path):
         assert "<svg" in fh.read()
 
 
+def test_svg_output_is_deterministic(tmp_path):
+    # Same equation rendered twice must produce byte-identical SVG (no embedded timestamp).
+    png = os.path.join(tmp_path, "x.png")
+    svg_a = os.path.join(tmp_path, "a.svg")
+    svg_b = os.path.join(tmp_path, "b.svg")
+    render_equation(EQUATIONS["eq-capm"], png, svg_a)
+    render_equation(EQUATIONS["eq-capm"], png, svg_b)
+    with open(svg_a, "rb") as fa, open(svg_b, "rb") as fb:
+        assert fa.read() == fb.read()
+
+
 def test_main_writes_all_ten_files():
     main()
     for eq_id in EXPECTED_IDS:

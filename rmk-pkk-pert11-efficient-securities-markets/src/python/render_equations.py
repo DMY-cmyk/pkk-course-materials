@@ -32,7 +32,10 @@ def render_equation(latex, png_path, svg_path, dpi=300):
     fig = plt.figure(figsize=(6, 1))
     fig.text(0.5, 0.5, f"${latex}$", fontsize=18, ha="center", va="center")
     fig.savefig(png_path, dpi=dpi, bbox_inches="tight", transparent=True)
-    fig.savefig(svg_path, format="svg", bbox_inches="tight", transparent=True)
+    # metadata={"Date": None} omits matplotlib's embedded <dc:date> so SVG output is
+    # byte-deterministic across runs (no spurious git diffs on re-render).
+    fig.savefig(svg_path, format="svg", bbox_inches="tight", transparent=True,
+                metadata={"Date": None})
     plt.close(fig)
     return png_path, svg_path
 
