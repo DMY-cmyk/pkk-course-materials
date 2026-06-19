@@ -40,6 +40,32 @@
 
 ---
 
+## Section Tracker (navigasi per-slide)
+
+Setiap CONTENT slide (S4–S23) menampilkan sebuah band navigasi tipis di sepanjang tepi atas slide. Band ini berisi enam label seksi yang tertera dalam urutan nomor kecil atau enam titik bertanda:
+
+| No. | Label Seksi | Pembicara |
+|---|---|---|
+| 1 | Definisi & Efisiensi | Adinda |
+| 2 | Pembentukan Harga & Implikasi | Efri |
+| 3 | Informativeness | Dzaki |
+| 4 | CAPM | Prasetya |
+| 5 | Asimetri Informasi | Odisiana |
+| 6 | Signifikansi Sosial & Simpulan | Kunthi |
+
+**Aturan tampilan band:**
+- Tinggi band ≤ 18pt — band adalah navigasi, bukan konten; ia tidak boleh menjadi latar yang ramai (Winston: background clutter is a crime).
+- Seksi yang **sedang aktif** (sesuai field `**Tracker:**` pada slide) ditampilkan dengan warna aksen / bold — terbaca jelas.
+- Lima seksi lainnya ditampilkan muted / low-contrast grey — hadir tapi tidak menarik perhatian.
+- Band tidak boleh bersaing dengan focal element slide; white space antara band dan konten utama wajib dijaga.
+- **Slide yang TIDAK menampilkan band tracker:** Cover (S1), Vision (S2), Daftar Materi (S3), dan Appendix (S24).
+- Setiap content slide (S4–S23) membawa satu baris `**Tracker:** [N/6 · <label seksi>]` yang memberi tahu Claude Design seksi mana yang harus di-highlight.
+- **Kasus khusus S23 (Penutup):** label `Penutup — semua bagian selesai` bukan salah satu dari enam seksi; render keenam penanda dalam keadaan *selesai* (done-state) — semuanya bertanda centang/terisi penuh, tidak ada satu pun yang di-mute dan tidak ada satu pun yang di-highlight tunggal.
+
+**Pengenalan tracker:** Slide S3 (Daftar Materi) adalah "peta" — di sanalah konsep band ini pertama kali diperkenalkan kepada audiens. Band per-slide adalah "you are here" — penanda posisi sepanjang presentasi.
+
+---
+
 ## Field Schema
 
 Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1–S24):
@@ -97,25 +123,32 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 
 ---
 
-## Slide S3 — Vision · Adinda Putri Dewi
+## Slide S3 — Daftar Materi · Adinda Putri Dewi
 
-**Headline:** Empat langkah: dari pasar efisien ke pengungkapan penuh.
+**Headline:** Daftar Materi: enam bagian, satu benang merah.
 
 **On-slide text:**
-- Adinda · 4.1–4.2.1: definisi efisiensi
-- Efri & Dzaki · 4.3–4.4: implikasi
-- Prasetya · 4.5: CAPM
-- Odisiana & Kunthi · 4.6–4.8: asimetri
 
-**Visual:** `assets/exhibits/fig-4-1.png` — caption: Organisasi Bab 4 (Scott)
+*(Agenda list — exempt from ≤6-word bullet cap; keep each line tight)*
 
-**Speaker script (id):** Bab empat bergerak dalam empat blok besar. Adinda membuka dengan definisi *efficient securities market* versi Fama dan empat properti efisiensi. Efri dan Dzaki menelusuri implikasi langsung bagi pelaporan, termasuk paradoks informativeness yang dipecahkan *noise traders*. Prasetya memformalkan hubungan risiko dan return lewat CAPM. Terakhir, Odisiana dan Kunthi menyambungkan seluruh bab ke *information asymmetry*, *fundamental value*, dan signifikansi sosial pelaporan berkualitas.
+1. Definisi & empat sifat efisiensi — Adinda (4.1–4.2.1)
+2. Pembentukan harga & implikasi 1–2 — Efri (4.2.2–4.3)
+3. Implikasi 3–4 & informativeness — Dzaki (4.3–4.4)
+4. CAPM & market model — Prasetya (4.5)
+5. Asimetri informasi & nilai fundamental — Odisiana (4.6)
+6. Signifikansi sosial & simpulan — Kunthi (4.7–4.8)
 
-**Design hint:** Flowchart `fig-4-1.png` ditampilkan full-width sebagai focal point utama. Empat bullet line-up pembicara disusun sebagai band tipis di bawah flowchart — font kecil, satu baris per blok. Tidak ada teks lain yang bersaing dengan diagram.
+**Visual:** build: daftar bernomor bersih (1–6) dengan nama pembicara; footer line tipis bertuliskan "Yang dihargai pasar adalah informasi, bukan bentuknya." sebagai benang merah — caption: Daftar Materi · Kelompok 3
+
+**Speaker script (id):** Sebelum masuk ke materi, biarkan saya memetakan perjalanan kita hari ini. Bab empat bergerak melalui enam bagian yang saling terhubung oleh satu benang merah: pasar menghargai *informasi*, bukan bentuknya — dan *asimetri informasi* adalah alasan terdalam mengapa akuntansi ada sebagai profesi. Adinda membuka dengan makna *efficient securities market* dan empat sifat efisiensi. Efri menelusuri bagaimana harga terbentuk dan dua implikasi pertama bagi pelaporan. Saya — Dzaki — melanjutkan dengan dua implikasi terakhir dan paradoks *informativeness* yang diselesaikan *noise traders*. Prasetya memformalkan hubungan risiko dan *return* lewat CAPM dan *market model*. Odisiana menyambungkan seluruh itu ke asimetri informasi, *lemons problem*, dan *fundamental value*. Kunthi menutup dengan signifikansi sosial dan simpulan bab. Di setiap slide berikutnya, Anda akan melihat band tipis di tepi atas yang menunjukkan posisi kita dalam peta ini — itulah *tracker* yang akan menemani Anda dari bagian pertama hingga terakhir.
+
+**Design hint:** Daftar bernomor 1–6 menjadi focal element tunggal — cetak ≥40pt, terpusat atau rata kiri dengan indentasi bersih. Nama pembicara tiap baris ditulis lebih kecil atau dengan warna aksen berbeda agar tidak bersaing dengan nomor. Footer line benang merah ("Yang dihargai pasar adalah informasi, bukan bentuknya.") ditampilkan sebagai garis tipis paling bawah, italic, ≥28pt, low-emphasis namun terbaca. Generous white space di sekeliling daftar; tidak ada gambar atau diagram yang bersaing. Perkenalkan konsep section tracker di sini: slide ini adalah "peta" — band per-slide adalah "you are here".
 
 ---
 
 ## Slide S4 — 4.1 · Adinda Putri Dewi — Efficient market defined
+
+**Tracker:** [1/6 · Definisi & Efisiensi — Adinda]
 
 **Headline:** Pasar efisien: harga mencerminkan sepenuhnya informasi publik.
 
@@ -125,15 +158,17 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 - Informed investors bergerak cepat
 - Efisiensi: model, bukan kesempurnaan
 
-**Visual:** build: kartu definisi tunggal terpusat — kutipan singkat "harga mencerminkan sepenuhnya informasi publik" — dengan callout kecil di pojok bawah bertuliskan "model, bukan kesempurnaan" — caption: Fama (1970) via Scott (2015), hlm. Bab 4
+**Visual:** build: kartu definisi tunggal terpusat — kutipan singkat "harga mencerminkan sepenuhnya informasi publik" — dengan callout kecil di pojok bawah bertuliskan "model, bukan kesempurnaan" + inset kecil di pojok: `assets/exhibits/fig-4-1.png` (peta organisasi Bab 4, sebagai orientasi) — caption: Fama (1970) via Scott (2015), hlm. Bab 4
 
-**Speaker script (id):** Fama (1970) mendefinisikan *efficient securities market* dalam bentuk *semi-strong*: harga sekuritas pada setiap saat mencerminkan sepenuhnya semua informasi yang diketahui publik. Ini bukan *strong form* — yang mengklaim harga mencerminkan pula informasi orang dalam — karena menghapus seluruh informasi orang dalam dari pasar terlampau mahal; dalam praktiknya, hampir mustahil. Mesin yang menyelaraskan harga dengan informasi adalah *arbitrage*: begitu informasi baru muncul, *informed investors* — yang rela menanggung biaya untuk memperoleh dan mengolah informasi — bergerak cepat, membeli atau menjual hingga harga kembali mencerminkan informasi tersebut. Yang perlu ditekankan: efisiensi adalah sebuah *model*, bukan klaim kesempurnaan. Pertanyaan yang tepat bukan "efisien atau tidak", melainkan seberapa dekat pasar nyata mendekati ideal — pertanyaan yang makin relevan setelah *meltdown* 2007–2008.
+**Speaker script (id):** Bab empat bergerak dari makna efisiensi, ke implikasi bagi pelaporan, ke CAPM, ke asimetri informasi, hingga signifikansi sosial pengungkapan — seperti yang terlihat di peta pojok ini; kita mulai dari maknanya. Fama (1970) mendefinisikan *efficient securities market* dalam bentuk *semi-strong*: harga sekuritas pada setiap saat mencerminkan sepenuhnya semua informasi yang diketahui publik. Ini bukan *strong form* — yang mengklaim harga mencerminkan pula informasi orang dalam — karena menghapus seluruh informasi orang dalam dari pasar terlampau mahal; dalam praktiknya, hampir mustahil. Mesin yang menyelaraskan harga dengan informasi adalah *arbitrage*: begitu informasi baru muncul, *informed investors* — yang rela menanggung biaya untuk memperoleh dan mengolah informasi — bergerak cepat, membeli atau menjual hingga harga kembali mencerminkan informasi tersebut. Yang perlu ditekankan: efisiensi adalah sebuah *model*, bukan klaim kesempurnaan. Pertanyaan yang tepat bukan "efisien atau tidak", melainkan seberapa dekat pasar nyata mendekati ideal — pertanyaan yang makin relevan setelah *meltdown* 2007–2008.
 
-**Design hint:** Satu kartu definisi (definition card) mendominasi slide — teks definisi dicetak ≥40pt, terpusat. Callout kecil "model, bukan kesempurnaan" ditempatkan di sudut bawah kanan dengan bingkai tipis atau warna kontras ringan, ukuran ≥28pt. Empat bullet on-slide disusun di sisi atau bawah kartu — singkat, ≥40pt. Latar bersih, satu focal point.
+**Design hint:** Satu kartu definisi (definition card) mendominasi slide — teks definisi dicetak ≥40pt, terpusat. Callout kecil "model, bukan kesempurnaan" ditempatkan di sudut bawah kanan dengan bingkai tipis atau warna kontras ringan, ukuran ≥28pt. Empat bullet on-slide disusun di sisi atau bawah kartu — singkat, ≥40pt. Latar bersih, satu focal point. Inset `fig-4-1.png` ditempatkan di pojok atas atau bawah yang berlawanan dengan callout, ukuran ≤20% lebar slide, low-emphasis (opacity ringan atau bingkai tipis abu-abu) — ia adalah thumbnail orientasi, bukan konten utama; kartu definisi tetap menjadi satu-satunya focal point.
 
 ---
 
 ## Slide S5 — 4.2.1 · Adinda Putri Dewi — Three forms
+
+**Tracker:** [1/6 · Definisi & Efisiensi — Adinda]
 
 **Headline:** Tiga bentuk efisiensi: weak ⊂ semi-strong ⊂ strong.
 
@@ -148,6 +183,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 ---
 
 ## Slide S6 — 4.2.1 · Adinda Putri Dewi — Four properties
+
+**Tracker:** [1/6 · Definisi & Efisiensi — Adinda]
 
 **Headline:** Empat sifat: relatif, bukan mahatahu, fair game, random walk.
 
@@ -167,6 +204,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 
 ## Slide S7 — 4.2.2 · Efri Nurmalinda — Konsensus
 
+**Tracker:** [2/6 · Pembentukan Harga & Implikasi — Efri]
+
 **Headline:** Konsensus mengalahkan setiap peramal individual.
 
 **On-slide text:**
@@ -184,6 +223,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 ---
 
 ## Slide S8 — 4.2.2 · Efri Nurmalinda — Random Walk Malkiel
+
+**Tracker:** [2/6 · Pembentukan Harga & Implikasi — Efri]
 
 **Headline:** Dart acak menyaingi manajer profesional — karena fair game.
 
@@ -203,6 +244,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 
 ## Slide S9 — 4.3 implikasi 1–2 · Efri Nurmalinda (Beaver 1973)
 
+**Tracker:** [2/6 · Pembentukan Harga & Implikasi — Efri]
+
 **Headline:** Kebijakan tanpa efek kas tak menggerakkan harga.
 
 **On-slide text:**
@@ -220,6 +263,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 ---
 
 ## Slide S10 — 4.3 implikasi 3–4 · Dzaki Muhammad Yusfian
+
+**Tracker:** [3/6 · Informativeness — Dzaki]
 
 **Headline:** Investor naif terlindungi harga; akuntan bersaing untuk bertahan.
 
@@ -239,6 +284,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 
 ## Slide S11 — 4.4 · Dzaki Muhammad Yusfian — Grossman paradox
 
+**Tracker:** [3/6 · Informativeness — Dzaki]
+
 **Headline:** Jika harga sepenuhnya informatif, insentif mencari informasi lenyap.
 
 **On-slide text:**
@@ -257,6 +304,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 
 ## Slide S12 — 4.4 · Dzaki Muhammad Yusfian — Noise-traders resolution
 
+**Tracker:** [3/6 · Informativeness — Dzaki]
+
 **Headline:** Noise traders membuat harga hanya partially informative — analisis pulih.
 
 **On-slide text:**
@@ -274,6 +323,8 @@ Setiap slide block memiliki lima field berikut (format baku untuk semua slide S1
 ---
 
 ## Slide S13 — 4.5 · Prasetya A. S. Gumilang — CAPM equation
+
+**Tracker:** [4/6 · CAPM — Prasetya]
 
 **Headline:** CAPM menautkan harga efisien, risiko, dan return.
 
@@ -296,6 +347,8 @@ E(Rjt) = Rf(1 − βj) + βj · E(RMt)
 
 ## Slide S14 — 4.5 · Prasetya A. S. Gumilang — Beta / systematic risk
 
+**Tracker:** [4/6 · CAPM — Prasetya]
+
 **Headline:** Hanya risiko sistematis (beta) yang dikompensasi.
 
 **On-slide text:**
@@ -316,6 +369,8 @@ E(Rjt) = Rf(1 − βj) + βj · E(RMt)
 ---
 
 ## Slide S15 — 4.5 · Prasetya A. S. Gumilang — Market model + critique
+
+**Tracker:** [4/6 · CAPM — Prasetya]
 
 **Headline:** Market model memisah return harapan dari abnormal — lalu digugat.
 
@@ -339,6 +394,8 @@ Rjt = αj + βj · RMt + εjt
 
 ## Slide S16 — 4.6 · Odisiana Manek — Dua asimetri informasi
 
+**Tracker:** [5/6 · Asimetri Informasi — Odisiana]
+
 **Headline:** Asimetri informasi: adverse selection vs moral hazard.
 
 **On-slide text:**
@@ -356,6 +413,8 @@ Rjt = αj + βj · RMt + εjt
 ---
 
 ## Slide S17 — 4.6 · Odisiana Manek — Lemons problem (PROP MOMENT)
+
+**Tracker:** [5/6 · Asimetri Informasi — Odisiana]
 
 **Headline:** Pembeli tak bisa bedakan mobil bagus dari lemon — harga semua tertekan.
 
@@ -375,6 +434,8 @@ Rjt = αj + βj · RMt + εjt
 
 ## Slide S18 — 4.6 · Odisiana Manek — Fundamental value (SIMBOL + SLOGAN + PROP)
 
+**Tracker:** [5/6 · Asimetri Informasi — Odisiana]
+
 **Headline:** Selisih dua lingkaran itu = informasi orang dalam.
 
 **On-slide text:**
@@ -391,6 +452,8 @@ Rjt = αj + βj · RMt + εjt
 ---
 
 ## Slide S19 — 4.6 · Odisiana Manek — Bukti empiris
+
+**Tracker:** [5/6 · Asimetri Informasi — Odisiana]
 
 **Headline:** Bukti: pengungkapan superior menyusutkan laba orang dalam.
 
@@ -410,6 +473,8 @@ Rjt = αj + βj · RMt + εjt
 
 ## Slide S20 — 4.7 · Kunthi Talibrata — Social significance
 
+**Tracker:** [6/6 · Signifikansi Sosial & Simpulan — Kunthi]
+
 **Headline:** Pasar yang bekerja baik mengalokasikan modal yang langka.
 
 **On-slide text:**
@@ -428,6 +493,8 @@ Rjt = αj + βj · RMt + εjt
 
 ## Slide S21 — 4.7 · Kunthi Talibrata — Stick vs carrots + evidence
 
+**Tracker:** [6/6 · Signifikansi Sosial & Simpulan — Kunthi]
+
 **Headline:** Regulasi (stick) dan insentif pasar (carrots) berdampingan.
 
 **On-slide text:**
@@ -445,6 +512,8 @@ Rjt = αj + βj · RMt + εjt
 ---
 
 ## Slide S22 — 4.8 · Kunthi Talibrata — Chapter synthesis
+
+**Tracker:** [6/6 · Signifikansi Sosial & Simpulan — Kunthi]
 
 **Headline:** Asimetri informasi adalah alasan akuntansi ada.
 
@@ -466,6 +535,8 @@ Rjt = αj + βj · RMt + εjt
 ---
 
 ## Slide S23 — Close · Kunthi Talibrata — Contributions close
+
+**Tracker:** [6/6 · Penutup — semua bagian selesai]
 
 **Headline:** Yang kini Anda kuasai.
 
