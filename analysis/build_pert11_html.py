@@ -3,6 +3,7 @@
 Deterministic: re-running produces byte-identical output. Render mode is
 text_as_path=True so the design is pixel-faithful with zero font dependency.
 """
+import argparse
 import os
 import re
 import fitz  # PyMuPDF
@@ -16,13 +17,13 @@ OUTPUT = os.path.join(_ROOT, "presentasi-pert11.html")
 SOURCE_PDF = "Presentasi PKK Pert. 11 - Kelompok 3.pdf"
 EXPECTED_PAGES = 18
 
-def load_pages(pdf_path: str) -> list[str]:
+def load_pages(pdf_path: str, expected_pages: int = EXPECTED_PAGES) -> list[str]:
     """Return one SVG string per PDF page (text as vector paths)."""
     doc = fitz.open(pdf_path)
     try:
-        if doc.page_count != EXPECTED_PAGES:
+        if doc.page_count != expected_pages:
             raise ValueError(
-                f"expected {EXPECTED_PAGES} pages, got {doc.page_count}"
+                f"expected {expected_pages} pages, got {doc.page_count}"
             )
         svgs = []
         for i in range(doc.page_count):
@@ -56,8 +57,8 @@ def namespace_svg_ids(svg: str, page_index: int) -> str:
                  svg)
     return svg
 
-def build_html(pdf_path: str) -> str:
-    svgs = load_pages(pdf_path)
+def build_html(pdf_path: str, expected_pages: int = EXPECTED_PAGES) -> str:
+    svgs = load_pages(pdf_path, expected_pages)
     sections = []
     for idx, svg in enumerate(svgs, start=1):
         ns = namespace_svg_ids(svg, idx)
@@ -74,11 +75,24 @@ def build_html(pdf_path: str) -> str:
                .replace("{{SLIDES}}", slides))
     return html
 
-def main() -> None:
-    html = build_html(os.path.join(_ROOT, SOURCE_PDF))
-    with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(
+        description="Build a self-contained HTML slide deck from a Canva PDF export."
+    )
+    parser.add_argument("--source", default=SOURCE_PDF,
+                        help="source PDF path, relative to project root")
+    parser.add_argument("--output", default=OUTPUT,
+                        help="output HTML path (absolute, or relative to project root)")
+    parser.add_argument("--pages", type=int, default=EXPECTED_PAGES,
+                        help="expected page count (build aborts on mismatch)")
+    args = parser.parse_args(argv)
+
+    output = args.output if os.path.isabs(args.output) \
+        else os.path.join(_ROOT, args.output)
+    html = build_html(os.path.join(_ROOT, args.source), args.pages)
+    with open(output, "w", encoding="utf-8", newline="\n") as f:
         f.write(html)
-    print(f"wrote {OUTPUT} ({len(html.encode('utf-8'))} bytes)")
+    print(f"wrote {output} ({len(html.encode('utf-8'))} bytes)")
 
 if __name__ == "__main__":
     main()

@@ -85,3 +85,31 @@ def test_build_html_deterministic():
     ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     p = os.path.join(ROOT, b.SOURCE_PDF)
     assert b.build_html(p) == b.build_html(p)
+
+
+TEMPLATE_PDF = "Presentation Template Pert. 11 Canva.pdf"
+
+def test_load_pages_accepts_expected_pages_param():
+    svgs = b.load_pages(os.path.join(ROOT, TEMPLATE_PDF), expected_pages=10)
+    assert len(svgs) == 10
+    for i, s in enumerate(svgs):
+        assert "<svg" in s and "</svg>" in s, f"page {i} missing svg tags"
+        assert len(s) > 1000, f"page {i} suspiciously small"
+
+def test_load_pages_wrong_expected_count_raises():
+    with pytest.raises(ValueError):
+        b.load_pages(os.path.join(ROOT, TEMPLATE_PDF), expected_pages=18)
+
+def test_build_html_template_has_10_slides():
+    html = b.build_html(os.path.join(ROOT, TEMPLATE_PDF), expected_pages=10)
+    assert html.count('class="slide"') == 10
+    assert "/ 10" in html
+    assert "{{SLIDES}}" not in html and "{{SLIDE_COUNT}}" not in html \
+        and "{{CONTROLS_JS}}" not in html
+
+def test_main_writes_named_output(tmp_path):
+    out = tmp_path / "deck.html"
+    b.main(["--source", TEMPLATE_PDF, "--output", str(out), "--pages", "10"])
+    html = out.read_text(encoding="utf-8")
+    assert html.count('class="slide"') == 10
+    assert "/ 10" in html
