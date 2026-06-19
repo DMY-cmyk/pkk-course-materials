@@ -3,6 +3,7 @@
 Deterministic: re-running produces byte-identical output. Render mode is
 text_as_path=True so the design is pixel-faithful with zero font dependency.
 """
+import re
 import fitz  # PyMuPDF
 
 SOURCE_PDF = "Presentasi PKK Pert. 11 - Kelompok 3.pdf"
@@ -25,3 +26,24 @@ def load_pages(pdf_path: str) -> list[str]:
         return svgs
     finally:
         doc.close()
+
+def namespace_svg_ids(svg: str, page_index: int) -> str:
+    """Prefix all ids and their references with p{NN}_ to keep ids unique
+    when many SVGs are inlined into one document."""
+    prefix = f"p{page_index:02d}_"
+    # Collect declared ids first so we only rewrite references we actually own.
+    ids = set(re.findall(r'id="([^"]+)"', svg))
+
+    def repl_id(m):
+        return f'id="{prefix}{m.group(1)}"'
+    svg = re.sub(r'id="([^"]+)"', repl_id, svg)
+
+    def repl_url(m):
+        name = m.group(1)
+        return f'url(#{prefix}{name})'
+    svg = re.sub(r'url\(#([^)]+)\)', repl_url, svg)
+
+    svg = re.sub(r'(?P<attr>href|xlink:href)="#([^"]+)"',
+                 lambda m: f'{m.group("attr")}="#{prefix}{m.group(2)}"',
+                 svg)
+    return svg

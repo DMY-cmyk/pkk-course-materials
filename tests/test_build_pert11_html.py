@@ -16,3 +16,21 @@ def test_load_pages_returns_18_nonempty_svgs():
 def test_load_pages_is_deterministic():
     p = os.path.join(ROOT, b.SOURCE_PDF)
     assert b.load_pages(p) == b.load_pages(p)
+
+def test_namespace_svg_ids_prefixes_ids_and_refs():
+    svg = (
+        '<svg><clipPath id="clip_1"><rect/></clipPath>'
+        '<g clip-path="url(#clip_1)"><image href="#img_2"/></g></svg>'
+    )
+    out = b.namespace_svg_ids(svg, 3)
+    assert 'id="p03_clip_1"' in out
+    assert 'url(#p03_clip_1)' in out
+    assert 'href="#p03_img_2"' in out
+    assert 'id="clip_1"' not in out  # no bare id remains
+
+def test_namespace_no_collisions_across_pages():
+    svg = '<svg><clipPath id="clip_1"/><g clip-path="url(#clip_1)"/></svg>'
+    combined = b.namespace_svg_ids(svg, 1) + b.namespace_svg_ids(svg, 2)
+    # each page's id appears, and they differ
+    assert 'id="p01_clip_1"' in combined and 'id="p02_clip_1"' in combined
+    assert combined.count('id="p01_clip_1"') == 1
