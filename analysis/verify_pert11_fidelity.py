@@ -10,6 +10,7 @@ browser-rendered deliverable. Requires Chrome or Edge, Pillow, and numpy.
 Run from the project root as a module so the package import resolves:
     python -m analysis.verify_pert11_fidelity
 """
+import argparse
 import os
 import subprocess
 import sys
@@ -63,16 +64,25 @@ def render_svg_png(browser, svg, idx):
     return png_path
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Page-by-page fidelity check: source PDF vs. deck SVGs (browser render)."
+    )
+    parser.add_argument("--source", default=b.SOURCE_PDF,
+                        help="source PDF path, relative to project root")
+    parser.add_argument("--pages", type=int, default=b.EXPECTED_PAGES,
+                        help="expected page count")
+    args = parser.parse_args(argv)
+
     os.makedirs(OUT, exist_ok=True)
     browser = find_browser()
     if not browser:
         print("NO BROWSER FOUND - install Chrome or Edge to run the fidelity check")
         sys.exit(2)
     print("browser:", browser)
-    pdf_path = os.path.join(ROOT, b.SOURCE_PDF)
+    pdf_path = os.path.join(ROOT, args.source)
     doc = fitz.open(pdf_path)
-    svgs = b.load_pages(pdf_path)
+    svgs = b.load_pages(pdf_path, args.pages)
     assert len(svgs) == doc.page_count, (
         "page count mismatch: %d svgs vs %d pdf pages"
         % (len(svgs), doc.page_count)
