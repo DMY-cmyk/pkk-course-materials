@@ -67,11 +67,16 @@ def test_build_html_is_complete_and_self_contained():
     assert html.count('class="slide"') == 18
     assert "{{SLIDES}}" not in html and "{{CONTROLS_JS}}" not in html \
         and "{{SLIDE_COUNT}}" not in html
-    assert "> / 18" not in html  # counter substituted
-    for bad in ("http://", "https://", "<link", "@import"):
-        assert bad not in html
-    # ids unique across whole document
+    assert "/ 18" in html  # counter total substituted
+    # Self-contained: the only http(s) URIs allowed are XML namespace
+    # declarations (e.g. xmlns="http://www.w3.org/2000/svg"), which are
+    # identifiers, not network loads. Strip them, then require no real
+    # external references remain.
     import re
+    non_ns = re.sub(r'\sxmlns(?::\w+)?="[^"]*"', '', html)
+    for bad in ("http://", "https://", "<link", "@import", 'src="//'):
+        assert bad not in non_ns, f"external reference found: {bad}"
+    # ids unique across whole document
     ids = re.findall(r'id="([^"]+)"', html)
     assert len(ids) == len(set(ids))
 

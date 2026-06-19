@@ -56,20 +56,11 @@ def namespace_svg_ids(svg: str, page_index: int) -> str:
                  svg)
     return svg
 
-def _strip_svg_xmlns(svg: str) -> str:
-    """Remove xmlns namespace declarations from the SVG opening tag.
-
-    These are redundant inside HTML5 and contain http:// URIs that would
-    falsely trigger the 'no external refs' check.
-    """
-    return re.sub(r'\s+xmlns(?::\w+)?="[^"]*"', '', svg)
-
 def build_html(pdf_path: str) -> str:
     svgs = load_pages(pdf_path)
     sections = []
     for idx, svg in enumerate(svgs, start=1):
         ns = namespace_svg_ids(svg, idx)
-        ns = _strip_svg_xmlns(ns)
         sections.append(
             f'<section class="slide" data-index="{idx}">{ns}</section>'
         )
