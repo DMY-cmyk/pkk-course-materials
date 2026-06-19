@@ -40,10 +40,11 @@ def namespace_svg_ids(svg: str, page_index: int) -> str:
 
     def repl_url(m):
         name = m.group(1)
-        return f'url(#{prefix}{name})'
+        return f'url(#{prefix}{name})' if name in ids else m.group(0)
     svg = re.sub(r'url\(#([^)]+)\)', repl_url, svg)
 
     svg = re.sub(r'(?P<attr>href|xlink:href)="#([^"]+)"',
-                 lambda m: f'{m.group("attr")}="#{prefix}{m.group(2)}"',
+                 lambda m: (f'{m.group("attr")}="#{prefix}{m.group(2)}"'
+                            if m.group(2) in ids else m.group(0)),
                  svg)
     return svg

@@ -20,7 +20,7 @@ def test_load_pages_is_deterministic():
 def test_namespace_svg_ids_prefixes_ids_and_refs():
     svg = (
         '<svg><clipPath id="clip_1"><rect/></clipPath>'
-        '<g clip-path="url(#clip_1)"><image href="#img_2"/></g></svg>'
+        '<g clip-path="url(#clip_1)"><image id="img_2" href="#img_2"/></g></svg>'
     )
     out = b.namespace_svg_ids(svg, 3)
     assert 'id="p03_clip_1"' in out
