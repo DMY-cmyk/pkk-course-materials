@@ -44,3 +44,18 @@ def test_template_has_required_placeholders_and_no_external_refs():
     for bad in ("http://", "https://", "src=\"//", "<link", "@import"):
         assert bad not in tpl, f"external reference found: {bad}"
     assert "aspect-ratio" in tpl  # 16:9 stage present
+
+def test_controls_js_defines_all_behaviors():
+    import os
+    ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    js = open(os.path.join(ROOT, "analysis", "pert11_controls.js"),
+              encoding="utf-8").read()
+    # keyboard
+    assert "keydown" in js
+    for key in ("ArrowRight", "ArrowLeft", "Home", "End", " "):
+        assert key in js
+    # fullscreen + overview + click zones + progress
+    assert "requestFullscreen" in js
+    assert "Escape" in js and "overview" in js
+    assert "clientX" in js  # left/right click-zone logic
+    assert "progress" in js and "cur" in js
