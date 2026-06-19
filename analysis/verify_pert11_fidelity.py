@@ -73,6 +73,10 @@ def main():
     pdf_path = os.path.join(ROOT, b.SOURCE_PDF)
     doc = fitz.open(pdf_path)
     svgs = b.load_pages(pdf_path)
+    assert len(svgs) == doc.page_count, (
+        "page count mismatch: %d svgs vs %d pdf pages"
+        % (len(svgs), doc.page_count)
+    )
     worst_mad = 0.0
     worst_pct = 0.0
     all_ok = True
@@ -81,9 +85,15 @@ def main():
         doc[i].get_pixmap(matrix=fitz.Matrix(1, 1), alpha=False).save(pdf_png)
         chrome_png = render_svg_png(browser, svgs[i], i + 1)
         a = np.asarray(Image.open(pdf_png).convert("RGB"), dtype=np.int16)
-        c = np.asarray(
-            Image.open(chrome_png).convert("RGB").resize((W, H)), dtype=np.int16
-        )
+        chrome_img = Image.open(chrome_png).convert("RGB")
+        if chrome_img.size != (W, H):
+            print(
+                "page %02d: SCREENSHOT SIZE %s != (%d, %d) - check display DPI/scale"
+                % (i + 1, chrome_img.size, W, H)
+            )
+            all_ok = False
+            chrome_img = chrome_img.resize((W, H))
+        c = np.asarray(chrome_img, dtype=np.int16)
         diff = np.abs(a - c)
         mad = float(diff.mean())
         pct = float((diff.max(axis=2) > 20).mean() * 100)
