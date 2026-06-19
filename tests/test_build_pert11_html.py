@@ -34,3 +34,13 @@ def test_namespace_no_collisions_across_pages():
     # each page's id appears, and they differ
     assert 'id="p01_clip_1"' in combined and 'id="p02_clip_1"' in combined
     assert combined.count('id="p01_clip_1"') == 1
+
+def test_template_has_required_placeholders_and_no_external_refs():
+    tpl = open(os.path.join(ROOT, "analysis", "pert11_shell_template.html"),
+               encoding="utf-8").read()
+    for token in ("{{SLIDE_COUNT}}", "{{SLIDES}}", "{{CONTROLS_JS}}"):
+        assert token in tpl, f"missing placeholder {token}"
+    # self-contained: no external resource loads
+    for bad in ("http://", "https://", "src=\"//", "<link", "@import"):
+        assert bad not in tpl, f"external reference found: {bad}"
+    assert "aspect-ratio" in tpl  # 16:9 stage present
